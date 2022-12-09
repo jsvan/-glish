@@ -1,0 +1,26 @@
+Message passing can send standard types, strings, arrays, etc. but it CANNOT send maps. Maps will be erased on message pass. JSONing the map is problematic because char encoding issues.
+Instead of map, use array if possible.
+
+One way to sync data for message passing is to have the message sent function passed in as a callback to your async functions, instead of other way around.
+These methods that send these messages with async payloads will need to RETURN TRUE; to allow the receiver to listen for a longer time to accept the data.
+If this sending method has RETURN TRUE, but is also labelled as ASYNC in the function header, the receiver will NOT listen for a longer time for some reason, and the connection will be prematurely closed.
+In the case of a connection being prematurely closed, there is a "ghost" message sent with empty contents, undeclared payload.
+
+Don't expect "await"s to work. Once you start async, its easiest to do everything in nested callbacks.
+
+Using fetch().then()'s is pretty nice. Code and variables can be set in the anonymous functions of the then()s, but nothing will be returned.
+The fetch will return a promise.
+Promise.then(), if you have multiple statements (ie, you use brackets), it needs to return something (i do placeholder return 1;, or else it's
+an async promise with the future thens.....) . If you don't use brackets, it seems to be synchronous.
+
+Stackoverflow has many typo problems, especially with manifest advice.
+
+Setting a dictionary of key value in storage does not set what the key and value refer to.... only the value acts as expected.
+The KEY resolves to the string representation of itself, idk how to make it refer to a variable of that name!!!!!
+I have it refer to a string variable refering to itself, because the GET method I think resolves to the representation of the variable,
+not the variable name itself!!!!!
+
+Nothing happens in any kind of logical order. I have the async GET methods basically all before I need to use any method.
+Total callback hell. Yuck.
+
+

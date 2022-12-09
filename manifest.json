@@ -1,0 +1,44 @@
+{
+  "name": "Onsite Unigram Translator",
+  "version": "1.00",
+  "description": "Vocab learner with common foreign words injected into your english websites.",
+  "permissions": ["contextMenus", "activeTab", "notifications", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["translate.js"],
+      "css": ["hoverover.css"]
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Nosey Vocab",
+    "default_icon": { 
+      "16": "images/NVicon16.png",
+      "32": "images/NVicon32.png",
+      "48": "images/NVicon48.png",
+      "128": "images/NVicon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "icons": {
+    "16": "images/NVicon16.png",
+    "32": "images/NVicon32.png",
+    "48": "images/NVicon48.png",
+    "128": "images/NVicon128.png"
+  },
+  "web_accessible_resources": [
+    {"resources" :[
+      "languagepacks/*.txt",
+    "languagepacks/english3000.tsv",
+    "languagepacks/available_languages.txt"],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "manifest_version": 3,
+  "minimum_chrome_version": "6"
+}

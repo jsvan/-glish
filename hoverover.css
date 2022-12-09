@@ -1,0 +1,21 @@
+.b { transition-delay: 0s;
+    display:none;
+}
+.a:hover + .b {
+    display:block;
+}
+.b:hover {
+    display:block;
+}
+table {
+    background:#fafafa;
+}
+iframe {
+    background: #fafafa;
+}
+.b iframe {
+    border:3px;
+
+    z-index:1000;
+    transition: 0.2s 1s;
+}

@@ -1,0 +1,13 @@
+arabic	ar
+chinese	zh
+czech	cs
+french	fr
+german	de
+hindi	hi
+italian	it
+japanese	jp
+korean	sk
+portuguese	po
+russian	ru
+spanish	es
+turkish	tu

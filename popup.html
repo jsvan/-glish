@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>Nosey Vocab</title>
+    <style>
+        .boxdiv {
+            border: 1px groove WhiteSmoke;
+            padding: 7px;
+        }
+        .myPadding {
+            padding: 9px;
+        }
+        body {
+            font-size: 1em;
+        }
+        button button {
+            width: 100%;
+        }
+        #survey {
+            display: block;
+        }
+        #collapsed {
+            display: none;
+        }
+
+
+
+    </style>
+</head>
+<body style="background-color: #fff4eb; min-width: 250px;">
+    <div class="myPadding">
+        <div class="boxdiv" style="text-align:center">
+            <br>
+            <div style="alignment:center" id="Title">Nosey Vocab</div>
+            <br>
+            <img src="images/NVicon128.png" alt="Icon of an impressionist painting with a young man smirking.">
+            <br><br>
+
+
+            <select id="LanguageSelect">
+                <option value="" id="defaultopt" disabled="disabled" selected="selected">Please select a language</option>
+            </select>
+
+            <br>
+            <input type="range" id="Aggression" min="0" max="100" value="5" step="5" />
+            <div id="AggroCount">5</div>
+
+
+            <br>
+            <input type="checkbox" value="activated" id="Activated" /> <label for="Activated">Enable this app</label>
+            <br>
+        </div>
+    </div>
+    <script src="popup.js">
+    </script>
+</body>
+</html>
