@@ -73,20 +73,6 @@ const AGGRO_STORAGE_TAG = "AGGRO_STORAGE_TAG";
 const ACTIVE_STORAGE_TAG = 'ACTIVE_STORAGE_TAG';
 const LANG_STORAGE_TAG = 'LANG_STORAGE_TAG';
 
-console.log("START GET ALL KEYS")
-chrome.storage.sync.get(null, function(items) {
-	console.log(items)
-	console.log(Object.keys(items));
-	console.log(Object.values(items));
-});
-getEnglish()
-	.then((result) =>
-	getAggression()
-		.then((results) => getLangData()
-			.then(() => {}
-		)
-	)
-)
 
 chrome.runtime.onInstalled.addListener(function () {
 	ACTIVATED = true;
@@ -104,9 +90,9 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		getActivated().then(()=>{
 			if (ACTIVATED) {
 				getEnglish().then(() =>
-
 					getLangData().then(() =>
 						getAggression().then(()=> {
+							console.log("Aggression is: " + AGGRESSION)
 							console.log("preparing translation: Got Lang data")
 
 							const chunks_to_translate = request.payload;
@@ -129,10 +115,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 
 	} else if (request.message === "get_agr") {
 
-		getAggression().then(() =>{
-
-			console.log("Sending aggression, value of " + AGGRESSION)
-		}).then(() => {
+		getAggression().then(() => {
 			sendResponse({
 				payload: AGGRESSION
 			});
@@ -140,13 +123,12 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 
 	} else if (request.message === "get_act") {
-		getActivated().then((val) => {
-			console.log("BACKGROUND sending POPUP activation: "+ val)
+		getActivated().then((val) =>
 			sendResponse({
 				message: "hellow",
 				payload: val
-			});
-		})
+			})
+		)
 		return true;
 
 	} else if (request.message === "get_lng") {
@@ -157,9 +139,6 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			});
 		} else {
 			getLangData().then(() => {
-				console.log("Sending complete data")
-				return 1;
-			}).then(() => {
 				let pyld = null;
 				if (LANG_DATA !== null) {
 					pyld = LANG_DATA[0];
@@ -240,7 +219,6 @@ function getLangData() {
 	} else{
 		return Promise.resolve(LANG_DATA);
 	}
-
 }
 
 /*
@@ -311,7 +289,6 @@ function loadWikiTables(){
 			return json;
 		})
 		.then((json) => WIKI_TABLES = new Map(Object.entries(json)));
-
 }
 
 /*

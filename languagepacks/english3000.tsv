@@ -1,5 +1,4 @@
 sr	words	p.o.s	level
-1	a, an	indefinite, article	a1
 2	abandon	verb	b2
 3	ability	noun	a2
 4	able	adjective.	a2
@@ -15,7 +14,7 @@ sr	words	p.o.s	level
 14	accident	noun	a2
 15	accommodation	noun	b1
 16	accompany	verb	b2
-17	according to	prep.	a2
+17	according	prep.	a2
 18	account	noun, verb	b1, b2
 19	accurate	adjective.	b2
 20	accuse	verb	b2
@@ -359,7 +358,6 @@ sr	words	p.o.s	level
 358	butter	noun	a1
 359	button	noun	a2
 360	buy	verb	a1
-361	by	prep., adverb.	a1, b1
 362	bye	exclam.	a1
 363	cable	noun	b2
 364	cafe	noun	a1
@@ -372,8 +370,8 @@ sr	words	p.o.s	level
 371	campaign	noun, verb	b1
 372	camping	noun	a2
 373	campus	noun	b1
-374	can1	modal v.	a1
-375	can2	noun	a2
+374	can	modal v.	a1
+375	can	noun	a2
 376	cancel	verb	b2
 377	cancer	noun	b2
 378	candidate	noun	b1
@@ -472,8 +470,8 @@ sr	words	p.o.s	level
 471	climate	noun	a2
 472	climb	verb, noun	a1, b1
 473	clock	noun	a1
-474	close1	verb, noun	a1, b2
-475	close2	adjective., adverb.	a2, b1
+474	close	verb, noun	a1, b2
+475	close	adjective., adverb.	a2, b1
 476	closed	adjective.	a2
 477	closely	adverb.	b2
 478	cloth	noun	b1
@@ -569,7 +567,7 @@ sr	words	p.o.s	level
 568	contain	v.	a2
 569	container	n.	b1
 570	contemporary	adjective.	b2
-571	content1	n.	b1
+571	content	n.	b1
 572	contest	n. v.	b2
 573	context	n.	a2
 574	continent	n.	a2
@@ -778,7 +776,7 @@ sr	words	p.o.s	level
 777	divide	verb, noun	b1, b2
 778	division	noun	b2
 779	divorced	adjective.	a2
-780	do1	verb, auxiliary verb	a1
+780	do	verb, auxiliary verb	a1
 781	doctor	noun	a1
 782	document	noun, verb	a2, b2
 783	documentary	noun	b1
@@ -1491,7 +1489,7 @@ sr	words	p.o.s	level
 1490	lay	v.	b1
 1491	layer	n.	b1
 1492	lazy	adjective.	a2
-1493	lead1	v., n.	a2, b1
+1493	lead	v., n.	a2, b1
 1494	leader	n.	a2
 1495	leadership	n.	b2
 1496	leading	adjective.	b1
@@ -1518,8 +1516,8 @@ sr	words	p.o.s	level
 1517	level	n., adjective., v	a2, b1, b2
 1518	library	n.	a1
 1519	licence	n.	b2
-1520	lie1	v.	a1
-1521	lie2 (tell a lie)	v. n.	b2
+1520	lie	v.	a1
+1521	lie (tell a lie)	v. n.	b2
 1522	life	n.	a1
 1523	lifestyle	n.	a2
 1524	lift	v.,	n.
@@ -1527,7 +1525,7 @@ sr	words	p.o.s	level
 1526	light (not heavy)	adjective.	a2
 1527	like (similar)	prep.	a1
 1528	like (find sb/sth pleasant)	v., n	a1, b1
-1529	n.	b1	
+1529	 	n.	b1
 1530	likely	adjective.	a2
 1531	limit	n. v.	b1
 1532	limited	adjective.	b2
@@ -1541,8 +1539,8 @@ sr	words	p.o.s	level
 1540	listener	n.	a2
 1541	literature	n.	b1
 1542	little	adjective. det./pron., adverb	a1, a2
-1543	live1	v.	a1
-1544	live2	adjective. adverb.	b1
+1543	live	v.	a1
+1544	live	adjective. adverb.	b1
 1545	lively	adjective.	b2
 1546	living	adjective. n.	b1
 1547	load	n.v.	b2
@@ -1554,7 +1552,7 @@ sr	words	p.o.s	level
 1553	lock	v. n.	a2
 1554	logical	adjective.	b2
 1555	lonely	adjective.	b1
-1556	long1	adjective. adverb.	a1
+1556	long	adjective. adverb.	a1
 1557	long-term	adjective. adverb.	b2
 1558	look	v., n.	a1, a2
 1559	loose	adjective.	b2
@@ -1657,7 +1655,7 @@ sr	words	p.o.s	level
 1656	minister	n.	b2
 1657	minor	adjective.	b2
 1658	minority	n.	b2
-1659	minute1	n.	a1
+1659	minute	n.	a1
 1660	mirror	n.	a2
 1661	miss	v.	a1
 1662	missing	adjective.	a2
@@ -1900,7 +1898,7 @@ sr	words	p.o.s	level
 1899	pen	n.	a1
 1900	pencil	n.	a1
 1901	penny	n.	a2
-1902	pension1	n.	b2
+1902	pension	n.	b2
 1903	people	n.	a1
 1904	pepper	n.	a1
 1905	per	prep.	a2
@@ -1963,7 +1961,7 @@ sr	words	p.o.s	level
 1962	pleasure	n.	b1
 1963	plenty	pron.	b1
 1964	plot	n., v.	b1, b2
-1965	plus1	prep., adjective. conj., n.	b1, b2
+1965	plus	prep., adjective. conj., n.	b1, b2
 1966	pocket	n.	a2
 1967	poem	n.	b1
 1968	poet	n.	b1
@@ -2165,7 +2163,7 @@ sr	words	p.o.s	level
 2164	refer	v.	a2
 2165	reference	n.	b1
 2166	reflect	v.	b1
-2167	refuse1	v.	a2
+2167	refuse	v.	a2
 2168	regard	v. n.	b2
 2169	region	n.	a2
 2170	regional	adjective.	b2
@@ -2245,8 +2243,8 @@ sr	words	p.o.s	level
 2244	rid	v.	b2
 2245	ride	v., n.	a1, a2
 2246	right	adjective. adverb. n.	a1
-2247	ring1	n.	a2
-2248	ring2	v., n.	a2, b1
+2247	ring	n.	a2
+2248	ring	v., n.	a2, b1
 2249	rise	v., n.	a2, b1
 2250	risk	n. v.	b1
 2251	river	n.	a1
@@ -2265,7 +2263,7 @@ sr	words	p.o.s	level
 2264	round	adjective. adverb. prep., n.	a2, b2
 2265	route	n.	a2
 2266	routine	n., adjective.	a1, b2
-2267	row1	n.	b1
+2267	row	n.	b1
 2268	royal	adjective.	b1
 2269	rub	v.	b2
 2270	rubber	n. adjective.	b2
@@ -2648,8 +2646,8 @@ sr	words	p.o.s	level
 2647	teacher	n.	a1
 2648	teaching	n.	a2
 2649	team	n.	a1
-2650	tear1	v. n.	b2
-2651	tear2	n.	b2
+2650	tear	v. n.	b2
+2651	tear	n.	b2
 2652	technical	adjective.	b1
 2653	technique	n.	b1
 2654	technology	n.	a2
@@ -2672,7 +2670,6 @@ sr	words	p.o.s	level
 2671	thank	v.	a1
 2672	thanks	exclam. n.	a1
 2673	that	det. pron. conj., adverb	a1, b1
-2674	the	definite article	a1
 2675	theatre	n.	a1
 2676	their	det.	a1
 2677	theirs	pron.	b1
@@ -2703,8 +2700,6 @@ sr	words	p.o.s	level
 2702	threaten	v.	b2
 2703	three	number	a1
 2704	throat	n.	b1
-2705	through	prep. adverb	a1
-2706	throughout	prep./adverb.	b1
 2707	throw	v.	a2
 2708	thursday	n.	a1
 2709	thus	adverb.	b2
@@ -2719,7 +2714,6 @@ sr	words	p.o.s	level
 2718	tip	n., v.	a2, b1
 2719	tired	adjective.	a1
 2720	title	n.	a1, b2
-2721	to	prep., infinitive marker	a1
 2722	today	adverb. n.	a1
 2723	toe	n.	b1
 2724	together	adverb.	a1
@@ -2801,7 +2795,6 @@ sr	words	p.o.s	level
 2800	uncle	n.	a1
 2801	uncomfortable	adjective.	b1
 2802	unconscious	adjective.	b2
-2803	under	prep. adj	a1
 2804	underground	adjective. adverb	a2
 2805	understand	v.	a1
 2806	understanding	n.	a2
@@ -2829,7 +2822,6 @@ sr	words	p.o.s	level
 2828	unusual	adjective.	a2
 2829	up	adverb. pron.	a1
 2830	update	v. n.	b1
-2831	upon	prep.	b1
 2832	upper	adjective.	b2
 2833	upset	adjective. v	b1
 2834	upstairs	adverb., adjective.	a1, a2
@@ -2944,8 +2936,8 @@ sr	words	p.o.s	level
 2943	will	modal, noun, verb	a1,
 2944	willing	adjective.	b2
 2945	win	v., n.	a1, b1
-2946	wind1	n.	a2
-2947	wind2	v.	b2
+2946	wind	n.	a2
+2947	wind	v.	b2
 2948	window	n.	a1
 2949	wine	n.	a1
 2950	wing	n.	b1

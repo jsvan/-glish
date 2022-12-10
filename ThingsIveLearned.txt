@@ -1,5 +1,5 @@
-Message passing can send standard types, strings, arrays, etc. but it CANNOT send maps. Maps will be erased on message pass. JSONing the map is problematic because char encoding issues.
-Instead of map, use array if possible.
+Message passing can send standard types, strings, arrays, etc. but it CANNOT send maps. Maps will be erased on message pass.
+JSONing the map is problematic because char encoding issues. Instead of map, use array if possible.
 
 One way to sync data for message passing is to have the message sent function passed in as a callback to your async functions, instead of other way around.
 These methods that send these messages with async payloads will need to RETURN TRUE; to allow the receiver to listen for a longer time to accept the data.
@@ -15,7 +15,7 @@ an async promise with the future thens.....) . If you don't use brackets, it see
 
 Stackoverflow has many typo problems, especially with manifest advice.
 
-Setting a dictionary of key value in storage does not set what the key and value refer to.... only the value acts as expected.
+Setting a dictionary of key value in storage does not set what the key and value refer to.... but the value acts as expected.
 The KEY resolves to the string representation of itself, idk how to make it refer to a variable of that name!!!!!
 I have it refer to a string variable refering to itself, because the GET method I think resolves to the representation of the variable,
 not the variable name itself!!!!!

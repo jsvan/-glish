@@ -5,9 +5,9 @@ french	fr
 german	de
 hindi	hi
 italian	it
-japanese	jp
-korean	sk
-portuguese	po
+japanese	ja
+korean	ko
+portuguese	pt
 russian	ru
 spanish	es
-turkish	tu
+turkish	tr

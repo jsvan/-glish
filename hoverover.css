@@ -1,7 +1,7 @@
 .b { transition-delay: 0s;
     display:none;
 }
-.a:hover + .b {
+.a:active + .b {
     display:block;
 }
 .b:hover {
@@ -9,9 +9,12 @@
 }
 table {
     background:#fafafa;
+
 }
 iframe {
     background: #fafafa;
+    width:550px;
+    height:350px;
 }
 .b iframe {
     border:3px;
