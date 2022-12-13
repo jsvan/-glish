@@ -3,9 +3,10 @@ Translate random common words within your webpages to a language of your choice.
 
 
 TODO:
-* Chrome extension
-* Hardcoded list of english words to search for
-* popdown corner menu with scaler of how many vocab words to include, randomized option
-* content script reads htmltext, replaces words found in sub-list
-* mouseover iframe effect connecting turned words to wiktionary page
-* query wiktionary for english -> dest_lang word translation (take first option), store result in chrome storage. 
+* Make instruction page
+* Make option for loading random translations rather than best
+* Fix bug where words don't translate unless you fiddle with the Aggression popdown menu (??)
+* Add pictures of what it does!
+* Make sure iframes are visualized properly
+* Save to git
+* Look into stemmijng words etc. to find translations
