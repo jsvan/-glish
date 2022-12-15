@@ -17,7 +17,8 @@ TO USE:
 5) jiggle the number bar a bit. This changes percentage of vocab words translated
 
 
-![image](https://user-images.githubusercontent.com/9337973/207832156-371945d3-8047-49bb-a17f-e9fb20c084fd.png)
+![image]()
+<img src="https://user-images.githubusercontent.com/9337973/207832156-371945d3-8047-49bb-a17f-e9fb20c084fd.png" width="50%" height="50%">
 (Example of pulldown menu icon page necessary to get the app going)
 
 
