@@ -58,7 +58,7 @@ ihnen#sie ihnen
 Leute#Leute Volk besiedeln Verwandten Angehörigen bevölkern bewohnen Familie
 nehmen#einnehmen greifen vertragen nehmen aushalten dauern tragen annehmen
 mich#mich ich mir
-heraus#raus aus- aus outen heraus fern draußen hinaus hinfort
+raus#raus aus- aus outen heraus fern draußen hinaus hinfort
 in#nach in gegen hinsichtlich gen auf für
 angemessen#bloß grad berechtigt genau nur total soeben gerecht gerade angemessen einfach eben
 ihm#ihn ihm
