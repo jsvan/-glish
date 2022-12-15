@@ -16,6 +16,11 @@ TO USE:
 4) choose language
 5) jiggle the number bar a bit. This changes percentage of vocab words translated
 
+
+![image](https://user-images.githubusercontent.com/9337973/207832156-371945d3-8047-49bb-a17f-e9fb20c084fd.png)
+(Example of pulldown menu icon page necessary to get the app going)
+
+
 Still in alpha mode so let me know what you think
 
 
