@@ -33,9 +33,9 @@
   },
   "web_accessible_resources": [
     {"resources" :[
-      "languagepacks/*.txt",
-    "languagepacks/english3000.tsv",
-    "languagepacks/available_languages.txt"],
+      "updated_langauge_packs/available_languages.txt",
+      "updated_language_packs/*.txt"
+    ],
       "matches": ["https://*/*"]
     }
   ],

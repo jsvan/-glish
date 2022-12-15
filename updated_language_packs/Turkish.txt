@@ -1,0 +1,4372 @@
+--
+bulunmak#var olmak olmak var bulunmak imek
+ve#ve ile
+-in#-in -ün -ın -un
+--#a
+içinde#-tan -de -dan -a iken -te sırasında -e -ta -den içinde -ten -da
+-mek#-mek -e -a
+sahip olmak#sahip olmak
+o#ebe o
+ben#ben
+ki#onlar şunlar o ki şu
+için#için
+sizi#sen siz seni sizler sizi
+o#o
+ile#-le ile
+üstünde#üstünde
+yapmak#uygun olmak yatmak kılmak yeterli olmak etmek acaba yapmak
+söylemek#söylemek okumak demek yazmak
+onlar#onlar o
+bu#bunlar bu
+ama#ama hariç lakin başka fakat ancak
+-da#-de -da
+biz#biz ikimiz
+onun#onun
+-den#-tan -ten -dan -den
+değil#değil -me
+tarafından#tarafından
+veya#ya da veya
+o#o
+gibi#olarak gibi
+ne#ne
+gitmek#go gitmek
+onların#onların
+--
+kim#kim
+-ebilmek#-ebilmek -abilmek kutu
+elde etmek#olmak almak ele geçirmek anlamak elde etmek
+eğer#ise -se -sa eğer
+bütün#bütün
+--
+onun#onun
+--
+çepeçevre#dair hakkında çepeçevre
+benim#benim
+bilmek#anlamak tanımak bilmek haberi olmak
+şurada#şurada orada oraya ora
+bir#bir
+yukarı#yukarı
+zaman#zaman kere defa saat çağ vakit
+yıl#yıl sene
+o kadar#böyle kadar o kadar şöyle öyle
+düşünmek#düşünmek sanmak
+görmek#görmek anlamak bak
+hangi#hangi
+ne zaman#ne zaman
+bazısı#bir kimi kimisi bazısı bazı
+onlar#onlar
+halk#millet halk insanlar
+almak#tutuş taşımak katlanmak sürmek tutma görüş almak kabul etmek tepki götürmek tahammül etmek kâr dayanmak seçmek tutmak kazanç
+beni#beni
+--
+içine#içine karşı
+adil#sadece yalnızca ucu ucuna demin adil adaletli
+ona#onu ona
+gelmek#gelmek olmak
+senin#sizin senin
+şimdi#-dan şimdi -den
+ERROR
+göre#göre -dan -den
+hoşlanmak#sevmek beğenmek benzer gibi hoşlanmak
+diğer#başka diğer öbür
+bir zamanlar#o zaman sonra öyleyse o hâlde bir zamanlar eskiden
+nasıl#nice nasıl
+onun#onun
+iki#iki
+bizim#bizim
+daha#daha
+bu#bunlar bu
+istemek#istemek istek
+yol#yol
+mi#değil vowel harmony mı mü mi hayır yok mu
+bakmak#görünüş görünmek görüntü görünüm bakmak bakma bakış
+ilk#başlangıç önce birinci ilk başta
+ayrıca#hem da de ayrıca
+yeni#yeni
+çünkü#çünkü işte
+gün#gündüz gün
+kullanma#kullanmak yarar kullanım kullanma fayda kullanış
+adam#er kişi taş erkek adamım adam er beşer kişi insan
+burada#burası burada işte
+bulmak#bulmak buluntu
+vermek#vermek
+şey#olay kurultay şey nesne mal toplantı mahluk
+iyi#adamakıllı pekala pınar öyleyse kaynak güzelce bak taşmak güzel iyi epeyce dolmak memba hayli iyice kuyu oldukça epey epeyi şey peki yani işte epeyice
+çok#fazla pek çok çok birçok
+sadece#sadece tek yalnızca
+--
+söylemek#söylemek demek
+çok#pek çok
+çift#da çift hatta dahi bile
+arka#geri sırt arka
+--
+iyi#iyi
+--
+boyunca#boyunca aracılığıyla
+kadın#gacı cıvır karı hatun kadın bayan
+yaşam#ömür hayat dirim yaşam
+çocuk#çocuk evlat
+--
+iş#işletmek emek işlemek çalıştırmak işe yaramak yapıt iş görmek meslek iş eser çalışmak
+sonra#yerine peşinde arkasında sonra
+çağrı#çağrı aramak çağırmak
+--
+dünya#Dünya dünya alem evren acun âlem cihan yüre
+bitti#bitti tekrar üstünde üzerinde tamam
+--
+hâlâ#hâlâ hala
+denemek#teşebbüs etmek girişim çalışmak denemek
+okul#üniversite okul sürü fakülte ekol
+son#sürmek nihayet sonuncu son dayanmak
+sormak#sormak dilemek
+de#fazla çok da de
+gereksinim#gerekmek gereksinim ihtiyaç gereklilik ihtiyaç duymak gereksinmek -malı -meli eksik
+üç#üç
+hissetmek#hissetmek duymak
+olmak#olmak
+devlet#eyalet durum il devlet vilayet hâl
+asla#asla hiç
+arasında#arasında
+yüksek#yüce fazla sarhoş tiz aşırı uca iyi ulu esrik uzun ali yüksek
+bir şey#bir şey
+aslında#gerçekten aslında cidden
+en#çoğu en
+başka#başka farklı
+çok#çok
+--
+aile#ocak aile familya
+ev#in ev hanedan hane meclis
+bırakmak#çıkmak bırakmak
+koymak#koymak
+eski#önceki yaşlı eski
+iken#rağmen aynı zamanda iken
+planlamak#planlamak yol açmak kastetmek demek istemek neden olmak cimri sebep olmak manaya gelmek anlamına gelmek yol tasarlamak
+--
+neden#neden niçin niye
+cumhurbaşkanı#başkan cumhurbaşkanı
+tutmak#devam etmek durmak bakmak tutmak saklamak
+aynı#aynı
+büyük#büyük ünlü
+başlamak#başlamak
+--
+görünmek#görünmek gözükmek
+grup#grup gruplanmak gruplaşmak gruplandırmak küme
+eyalet#eyalet kırsal taşra memleket ülke il devlet el
+konuşmak#konuşmak
+sorun#problem soru sorun
+nerede#nereye nerede
+dönmek#keşik döndürmek doldurmak sıra nöbet tur dönmek
+öğrenci#öğrenci
+her#her
+el#el ibre
+yardım#imdat yardım yardımcı yardım etmek
+karşı#karşı
+başlangıç#start başlamak başlangıç
+Amerikalı#Amerikalı
+parça#kısım parça bölüm
+göstermek#göstermek şov gösteri program
+güç#kuvvet güç
+böyle#böylesine böyle bu kadar
+yer#yer meydan mekan
+yeniden#gene yeniden tekrar yine bir daha
+kent#oram şehir kent
+--
+az#az
+usul#sistem usul düzen
+hafta#yedil hafta
+işletme#bölük firma işletme şirket
+her#her her biri
+yüzde#yüzde
+işitmek#işitmek duymak
+süresince#süresince sırasında
+soru#soru sorgulamak
+düz#dikey dik hak düz doğrultmak muhafazakâr sağ tutucu düzeltmek
+izlence#program izlence
+koşmak#koşu koşma koşmak
+sayı#rakam numaralamak sayı saymak numara adet
+küçük#küçük ufak
+hükûmet#hükûmet
+oynamak#oyun oynamak çalmak piyes
+--
+hareket etmek#hamle devinmek hareket etmek
+her zaman#daima her zaman
+gece#gece
+inanmak#inanmak
+bugün#bugün
+tutmak#tutmak
+nokta#nokta punto
+yaşamak#canlı yaşamak oturmak
+olmak#yer bulmak olmak meydana gelmek
+getirmek#getirmek
+gelecek#ertesi yakın gelecek yanında
+-siz#-suz -sız -siz
+önce#önce
+ERROR
+-meli#koşul -malı şıra gereklilik şart zorunluluk -meli
+savaş#çatışmak savaş cenk harp muharebe çelişmek
+ev#yuva memleket eve baba evi evde ev vatan yurt
+altında#altında
+yer#yer oda
+--
+alan#bölge alan
+millî#ulusal millî
+yazmak#yazmak
+para#para servet nakit zenginlik tıngır akçe
+öykü#öykü hikaye
+--#su
+anne#anne ana
+ayrı#başka ayrı farklı değişik
+genç#gençlik genç
+ay#ay
+--
+kitap#albüm cilt kitap betik
+göz#göz
+çalışmak#okumak incelemek çalışmak öğrenmek
+görev#görev vazife iş
+tür#tür
+sözcük#sözcük kelime
+--
+yan#taraf yüz yan
+dört#dört
+--
+--
+baş#kafa baş
+uzak#ırak uzak
+uzun#uzun
+kara#karanlık siyah kara
+milyon#milyon
+--
+küçük#küçük az
+evet#ha evet he
+beri#beri
+--
+--
+hizmet#servis hizmet
+önemli#önemli mühim
+oturmak#oturmak
+--
+arkadaş#tanış tanıdık arkadaş ahbap dost sevgili
+bununla birlikte#bununla birlikte lakin ancak
+güç#kuvvet güç iktidar üs
+daha#daha
+baba#ata baba
+saat#saat
+sık#sık sık sık
+--
+siyasi#politik siyasal siyasi
+hat#dize çizgi sıra replik satır doğru hat kuyruk mısra sıralamak
+son#sonlandırmak bitmek bitirmek tüketmek son tükenmek ölüm
+ayakta durmak#katlanmak durmak ayakta durmak tahammül etmek dayanmak kaldırmak
+--
+oyun#oyun
+hep#ebediyen hep hiç her zaman
+kaybetmek#zayıflamak gözden kaçırmak kilo vermek kaybetmek yitirmek
+kötü#kötü
+üye#üye kamış aza uzuv
+karşılaşmak#rastlamak rastlaşmak karşılamak karşılaşmak kesişmek buluşmak
+ödemek#ödemek
+yasa#ilke hukuk yasa kanun asayiş
+neredeyse#neredeyse
+araba#kabin kölük otomobil araba
+sonra#sonra
+ad#adlandırmak ad isim ad koymak
+dâhil etmek#dâhil etmek ihtiva etmek içermek
+beş#beş
+merkez#orta özek merkez
+--#bir defa
+üniversite#üniversite darülfünun
+devam etmek#sürdürmek sürmek devam etmek
+--
+doğru#doğru hakiki
+ak#ak beyaz
+değişmek#değişmek bozuk değiştirmek değişim
+koymak#donatmak koymak belirlemek takım kurmak ayarlamak kararlı dizmek tamamlamak hazır küme
+birkaç#muhtelif birkaç çeşitli
+önce#önce
+bilgi#bilgi malumat
+hiç#önemsiz hiç ehemmiyetsiz
+cemiyet#toplum cemaat topluluk cemiyet ümmet
+aşmak#geçmek aşmak
+düşünce#düşünce
+kurşun#uç kurşun
+vücut#cisim karoser korpus beden gövde kuruluş vücut
+öğrenmek#öğrenmek
+oğlak#çocuk oğlak
+dakika#dakika
+masa#cetvel masa tablo
+--
+anlamak#anlamak
+takım#ekip takım koşum
+saat#gözetmek dikkat etmek izlemek saat nöbet bekçi bakmak göz kulak olmak seyretmek nöbetçi gözlemlemek
+birlikte#birlikte bir arada beraber
+izlemek#izlemek takip etmek
+durmak#durdurmak durmak durak kesmek mola
+yüz#çehre yüz
+--
+--
+toplumsal#toplumsal sosyal
+zaten#zaten
+ebeveyn#ebeveyn
+konuşmak#konuşmak haberleşmek yazışma
+yaratmak#yaratmak tekvin etmek meydana getirmek ortaya koymak oluşturmak
+makam#büro ofis yazıhane iş yeri makam
+--
+düzey#düzey seviye
+okumak#okumak
+harcamak#geçirmek harcamak
+kişi#şahıs beden şahs vücut kişi
+kapı#kapı
+emin#emin
+--
+sokak#sokak
+tarih#tarih ötük
+parti#şölen eğlenti zümre taraf parti
+büyümek#büyümek
+neden#sebep akıl neden açıklama
+sabah#sabah
+açık#açık açmak
+--
+rağmen#rağmen
+yürümek#yürümek yürüyüş
+haber#haber haberler
+sağlık#sağlık sıhhat
+avlu#kort avlu mahkeme
+kuvvet#kuvvet zorlamak
+erken#erken
+--
+hava#arya tenek hava
+alçak#alçak düşük
+sanat#zanaat dörüt elişi yapıt sanat eser sanat eseri epik
+sonuç#sonuçlanmak sonuç
+an#moment dakika an
+öneri#arz öneri önermek sunmak sunu teklif teklif etmek
+hatırlamak#öğrenmek bellemek anımsamak hatırlamak
+araştırma#tetkik araştırma tetkik etmek araştırmak tahkik etmek teftiş etmek tahkik
+yeterli#yeter yeterli yeteri kadar yeterince
+kız#kız
+oğlan#oğlan
+kazanmak#galibiyet yenmek kazanmak
+yiyecek#yemek yiyecek azık aş besin
+--
+--
+ikinci#ikinci saniye
+muktedir#muktedir
+--
+olabilir#belki olabilir
+süreç#işlem proses süreç
+herşey#herşey
+--
+ömür#yaş olgunluk devir ergin yaşlandırmak yaşlanmak çağ yaşam yetişkin ömür yaşlılık
+--#poliçe
+--
+dahil#dahil
+muhtemelen#muhtemelen
+eğitim#eğitim öğrenim
+sevgi#arzulamak emre sevmek sevişmek sevgili sevi aşkım sevgi aşk
+aslında#aslında
+satın almak#satın almak sakmak yemek
+beklemek#beklemek
+ölmek#ölmek zar
+beşeri#beşeri insani insanca
+göndermek#yollamak göndermek
+harç#harç ücret
+--
+--
+duyu#aklıselimlik sağduyu algı valör idrak yeti deme yetenek algılamak mana duyumsamak duyu anlam
+öğretmen#öğretmen hoca muallim
+pazar#çarşı piyasaya sürmek satışa çıkarmak pazar piyasa pazarlamak
+kalmak#kalmak durmak
+yapmak#inşa etmek kurmak yapmak
+millet#millet ulus devlet
+düşmek#düşmek
+--
+ölüm#mevt çöküş memat vefat irtihal son bitim ölüm
+plan#plan planlamak
+faiz#çıkar ürem getiri ilgi faiz
+biri#biri
+deneyim#tecrübe deneyim eksperyans deneyimlemek
+kesmek#kesik kesim biçmek kesme kesmek
+öldürmek#öldürmek öldürme
+--
+--#uzatmak
+altı#altı
+yerel#yerel yerli mevzii mahallî yöresel mahalleli lokal
+kalmak#sürdürmek kalmak artakalmak
+etki#efekt tesir etki sonuç yürürlük
+önermek#önermek iddia etmek
+kontrol etmek#kontrol kumanda etmek kontrol etmek
+belki#belki
+kaldırmak#kabartmak biriktirmek kaldırmak
+sınıf#sınıf
+geç#merhum geç
+binbaşı#binbaşı ergin
+--
+--
+geçit#boğaz giriş kartı durum geçit paso geçmek vaziyet pas geçmek pasaport ruhsat
+--#fotoğraf çekmek
+satmak#satmak
+--
+alan#saha tarla alan
+--#kolej
+bazen#ara sıra bazen
+önce#önceki önce ilk eski
+ilerleme#gelişim ilerleme gelişme kalkınma
+gerektirmek#gereksinmek gerektirmek
+--#boyunca birlikte ileri
+karar vermek#karar vermek
+güvenlilik#emniyet güvenlilik
+olası#mümkün olası
+--
+rol#rol görev işlev
+--
+oran#oran taksit ücret
+güçlü#dayanıklı güçlü kuvvetli dirençli etkileyici sağlam mukavim sert
+müzik#müzik musiki
+raporlamak#röpörtaj bildirmek raporlamak rapor
+rehber#öncü kösem lider önder yolbaşçı rehber
+ışık#ışık
+tam#tüm tam bütün
+ses#çatı ses
+renk#renk boyamak
+yürek#kalp gönül kupa yürek dil
+dikkat#ilgilenmek bakım bakmak kaygı tasa özen tedavi dikkat
+polis#sakçı polis
+ekonomik#ekonomik
+karı#karı avrat
+akıl#akıl us zihin
+--
+uyuşturucu#uyuşturucu narkotik
+--
+geri dönmek#kayıtmak geri dönmek döndürmek iade etmek geri çekilmek
+ERROR
+çekmek#çekmek
+--
+açıklamak#izah etmek açıklamak
+taşımak#taşımak
+gelişmek#geliştirmek gelişmek
+--#görünüm
+özgür#serbest bırakmak gevşek bedava engellenmemiş boş özgür serbest
+ummak#ümit etmek umut ümit umut etmek ummak
+güdüleme#zorlamak sürüş mecbur etmek gitmek sürü yol güdüleme haydamak dürtü götürmek motive etmek çalıştırmak sevk etmek sürmek icbar etmek sürme kullanmak vurmak isteklendirme sürücü harekete geçirmek
+oğul#oğul oğlan
+kol#kol
+bölüm#bölüm şube
+gerçek#gerçek doğru sadık
+fiyat#fiyat paha
+--
+--
+kırılmak#ara seri bozulmak bozmak kırmak kırılmak
+aksiyon#aksiyon münasebet fiil eylem amel
+değer#değerler kıymet önem ton değer ehemmiyet
+teşekkür etmek#teşekkür etmek
+ilişki#hısımlık ilişki kohumluk akrabalık karabet bağlantı
+ilçe#ilçe şehir kasaba bucak
+inşa#inşa inşaat yapı bina
+almak#almak
+toplum#toplum
+fark#fark ayrım kalan
+kilise#cemaat kilise
+dolu#tok dolu
+birleştirmek#birleştirmek bir araya gelmek çakışmak üye olmak katılmak birleşmek kesişmek
+yol#yol
+uluslararası#enternasyonal uluslararası
+--
+--#yerleştirmek
+vergi#vergi salma
+--
+katılmak#kabul etmek onaylamak katılmak anlaşmak
+madde#madde
+özellikle#özellikle
+form#form
+kayıt#rekor tescil kayıt plak belge kaydetmek
+özel#özel has
+--
+kimin#kimin
+sert#kıyın çetin sert zor
+kazma#seçmek çilingir kazma dermek
+kâğıt#kağıt makale evrak kâğıt çönge
+resmî#resmî
+mevsim#çeşnilemek çeşni mevsim sezon çeşni katmak
+giymek#giymek takmak yıpranma
+olay#vaka olay hadise
+destek olmak#çözüm desteklemek destek destek olmak tutmak
+boşluk#mekan uzam uzay ara feza alan yer boşluk
+oyuncu#sporcu çapkın çalgıcı oyuncu oyunbaz
+herkes#herkes
+çift#çift
+temel#baz üs temel taban karargâh kaide merkez
+proje#proje
+üretmek#üretmek
+Web sitesi#Web sitesi
+durum#hal durum yağday
+--#isabet
+endüstri#endüstri
+yarım#yarım yarı buçuk
+aktivite#aktivite
+--
+--
+--#şekil çözmek
+mal olmak#mal olmak masraf
+kolay#rahat kolay
+oldukça#oldukça
+resim#çizim resim tasvir
+--
+kapak#örtmek kuver sofra takımı kapak örtü giriş ücreti
+tanımlamak#tanımlamak
+resim#yansıtmak görüntü görüntülemek yansımak resim imaj
+öğretmek#öğretmek ders vermek yol göstermek
+sur#sur duvar
+doktor#doktor
+yeni#yeni
+ürün#ürün sonuç mal çarpım netice meyve mahsul
+veri#data veri bilgi malumat
+alıştırma#alıştırma egzersiz pratik
+aramak#aramak telefonlamak telefon etmek
+parça#parça
+kesin#kesin belirli malum muayyen emin belli
+--
+yağ#petrol yağ
+--
+test#test sınav deneme
+kişisel#kişisel zatî özel şahsi
+yıldız#yıldız ünlü şöhret
+kara#indirmek inmek kara
+üçüncü#üçüncü
+general#general
+bilgisayar#bilgisayar
+film#film
+işçi#faale amele işçi emekçi
+kapmak#kapmak
+tip#tip tuşlamak tür
+kuzey#kuzey şimal
+adım#adım atmak
+--
+teknoloji#teknoloji
+organizasyon#organizasyon
+bebek#yavru bebek
+kaynak#kaynak memba
+çizmek#çekmek çizmek
+sebep#sebep neden uğratmak
+ağaç#ağaç
+film#film çekmek film
+seçmek#seçmek
+ispat#kanıt ispat delil
+--
+zor#müşkül güç zor çetin kıyın ağır
+yüzyıl#asır yüzyıl
+neredeyse#hemen hemen neredeyse
+kırmızı#kızıl kırmızı al
+pencere#pencere cam
+park#park
+devir#nokta dönem devir
+kültür#kültür hars
+saç#saç kıl tüy
+dinlemek#duymak dinlemek
+şans#şans talih ihtimal olanak baht kader kısmet fırsat kaza
+var#mevcut var
+erkek kardeş#kardeş erkek kardeş abi birader ağabey
+yaz#yaz
+gerçekleştirmek#kavramak bilincine varmak gerçekleştirmek farkına varmak fark etmek
+--#er
+bilim#fen bilgi ilim bilim malumat
+harf#harf mektup
+kongre#konferans kongre
+şart#hal durum şart
+kısa#kısa
+--
+fırsat#fırsat
+kural#kaide kural
+seçim#seçim
+tek#tek bekar bütün boydak tek kişilik yegane yekpare
+sabırlı#sabırlı hasta
+zemin#zemin nakavt etmek taban yer yere sermek
+terim#terim
+--
+mil#mil
+idare#yönetim hükümet idare
+--
+savunma#savunma koruma
+bitki#nebat bitki dikmek ekmek
+enerji#enerji güç erke
+kampanya#kampanya
+nüfus#popülasyon nüfus
+ateş#ocak od yangın ateş
+kapatmak#örtmek kapatmak kitlemek yakın
+kız#kız kız evlat
+--
+koca#koca korumak eş
+yanlış#yersiz ahlaksız hatalı kötü uygunsuz bozuk yanlış
+kesinlikle#kesinlikle
+artmak#büyüme fazlalaşmak yükselmek artmak yükselme fazlalaşma arttırmak çoğalma gelişme artma gelişmek çoğalmak kâr kâr etmek artış büyümek
+gelecek#gelecek
+güney#cenup güney
+tıbbi#tıbbi
+tahta#borda heyet kurul tahta bordalamak sancak
+--
+dağıtmak#el dağıtmak anlaşma
+hastane#sayrılarevi hastane
+dinlenme#dinlenme dinlenmek
+aramak#aramak
+kendim#kendim şahsen
+--#kontluk
+savaşmak#savaş dövüş dövüşmek savaşmak
+özne#konu kul tebaa maruz dal ders özne fail alan
+risk#risk
+düzen#sipariş takım buyruk söylemek derece sipariş vermek emretmek sipariş etmek düzen emir tertip
+batı#batı garp
+ekonomi#iktisat ekonomi tutum
+çabuk#çabuk tez
+atmak#fırlatma atma atmak satmak fırlatmak
+yatak#döşek yatak
+subay#subay
+--
+birazdan#derhal hemen birazdan memnuniyetle şimdi yakında erken
+üst#aktif üst
+--
+yazar#müellif yazar
+geçmiş#önceki geçmiş zaman geçen geçmiş
+--
+amaç#gol hedef amaç maksat kale
+davranış#davranış tutum
+damla#damla
+tabiat#doğa tabiat
+ajans#ajans acentelik
+--
+--
+yabancı#yabancı
+akım#güncel akım geçerli
+performans#performans
+banka#banka
+sağlıklı#iyi boğaz sağlıklı ses
+itmek#itmek itelemek itiş
+odak#odak odaklanmak
+--
+muhtıra#nota muhtıra
+cerime#cerime ceza
+yakın#yakın
+hareket#hareket
+--
+milyar#trilyon milyar
+kan#kan kan bağı
+sayfa#sayfa bet
+cesaretsizlik#önyargı şaşkınlık cesaretsizlik kaygı endişe özen
+fakir#kembağal fukara zavallı züğürt fakir kötü perişan zayıf yoksul rezil berbat
+girmek#girmek işlemek
+pay#pay paylaşmak hisse
+seri#dizi seri
+genellikle#genellikle
+doğal#natürel doğal tabii
+sıcak#sıcak acı acılı
+yarış#yarışmak ırk yarış müsabaka
+dil#lisan til dil
+ırmak#ırmak nehir
+ölü#ölmüş ölü
+--
+önemli#kayda değer anlamlı önemli manalı
+--
+--
+--#onlu
+makale#madde tanımlık harfitarif makale betke
+böylece#böylece
+yedi#yedi
+ateş etmek#vurmak ateş etmek çekmek etmek
+doğu#gün doğusu şark doğu doğulu
+hayvan#çer töm hayvan dingil
+benzer#benzer
+kurtarmak#saklamak kurtarmak korumak tasarruf etmek kaydetmek
+etken#etken çarpan faktör
+merkezi#orta merkezi
+olmak#olmak hazır olmak aklına gelmek hatırlamak
+kurul#kurul komite
+ciddi#ciddi salmaklı
+spor#spor yöndün
+uzanmak#yalan söylemek martaval yatmak yalan uzanmak palavra
+--
+kesinlikle#kesinlikle tam
+ERROR
+mutlu#şanslı kutlu mutlu
+sekiz#sekiz
+korumak#korumak
+liste#liste
+çap#boy çap ölçü boyut beden
+kalite#kaliteli nitelik kalite
+basınç#basınç
+kabul etmek#kabul etmek
+hazır#anık razı anıklamak hazırlamak meyyal hazır
+yaklaşmak#yaklaşmak
+işaret#alamet kol çekmek imzalamak gösterge işaret
+saldırı#saldırmak hücum hamle taarruz saldırı
+birey#birey bireysel
+kariyer#kariyer
+yanıt#cevap yanıt cevap vermek
+köpek#köpek it
+medya#medya
+düşünce#düşünme düşünüş fikir düşünce
+neyse#neyse
+--
+televizyon#televizyon alıcısı televizyon
+toplantı#toplantı
+--
+başarı#başarı başarılı sükse
+hazırlamak#hazırlanmak hazırlamak sofra kurmak
+--
+basın#matbuat basmak basın
+--
+kaynak#kaynak
+miktar#miktar
+münakaşa etmek#tartışmak kavga etmek münakaşa etmek
+tanımak#tanımak
+tedavi#tedavi
+sol#sol
+derece#derece
+--#soy şebboy
+belirtmek#göstermek belirtmek
+büyüme#büyüme
+basit#sade basit
+--
+dolar#dolar
+birlik#birlik
+hastalık#sayrılık hastalık
+herkes#herkes
+harika#harika merak etmek deha tansık dahi mucize
+seçim#saylav seçim
+--#kayıp
+kutu#sandık kutu
+--
+finanse etmek#finanse etmek
+ıskalamak#sağınmak özlemek kaçırmak ıska gözden kaçırmak ıskalamak
+güzel#güzel
+bölge#nahiye bölge
+duygusal#duygusal hissetme his duyarlı duygu hassas
+yatırmak#yumurtlamak yatırmak döşemek
+antrenman#antrenman temrin idman
+haber#haber mesaj
+varmak#varmak
+standart#standart flama ölçün sancak
+--#harici dışsal
+--#sınıfta kalmak
+alım satım#zanaat alışveriş değiş tokuş alım satım marifet tecim takas etmek takas ticaret bilirkişi
+baston#çomak baston personel asa
+yarar#yarar fayda avantaj
+karakter#sembol özellik harf simge karakter ahlak hususiyet kişilik
+ordu#ordu leşker
+--
+çalışma#ameliyat işlem operasyon çalışma işleyiş
+hazır#takdim etmek şimdiki sunmak hazır
+suç#suç cinayet
+fincan#kâse tas kupa fincan
+ada#aral cezire ada
+analiz#çözümleme analiz tahlil
+şah#şah kontrol hesap
+fotoğraf#fotoğraf çekmek fotoğraf kılık resim çekmek fotoğraflamak
+cam#bardak sırça büyüteç cam
+ileri#öne sevk etmek forvet ön müstakbel ileri iletmek olası
+otorite#bilirkişi otorite yetki yetkililer yetkili uzman
+toprak#yer toprak topraklamak
+safha#staj evre sahne safha
+cins#soy cins
+durak#istasyon gar durak konuşlanmak
+--
+karşılaştırmak#karşılaştırmak
+--
+bilim#bilim bilgi marifet
+hüzünlü#sıkıntılı mavi mavileşmek ağartmak çivitlemek demokrat mavili mavilik çivit maviler kök gökçe gök hüzünlü ağartıcı
+örnek#ibret örnek
+strateji#izlem strateji
+dağ#yığın dağ
+--
+abla#kardeş abla rahibe kız kardeş aba bacı hemşire
+tabanca#top tüfek tabanca
+çeşitli#çeşitli
+gülmek#gülmek
+çevre#çevre doğal çevre
+dizayn#bileşim desen dizayn tasarım niyet tasarlamak kompozisyon
+güneş#güneş gün
+avukat#avukat
+cinsel ilişki#cinsiyet cinsel ilişki seks cins
+bayağı#bayağı bilakis
+sanatçı#ressam sanatçı
+kulüp#kulüp sinek gece kulübü çomak
+ispat etmek#ispat etmek
+--
+beceri#kabiliyet marifet ustalık yetenek beceri maharet
+gerçek#hakikat gerçek
+ERROR
+müdür#menajer yönetici müdür idareci
+icra#icra
+--
+iddia etmek#öne sürmek iddia etmek
+unutmak#unutmak
+asmak#asmak
+bütün#tam bütün yekpare
+bacak#ayak bacak
+--
+yerleştirmek#yerleştirmek tespit etmek saptamak yapmak
+demokratik#demokratik
+--
+ana#ana
+profesör#profesör hoca
+mali#finansal mali
+haz almak#haz almak eğlenmek
+ağ#bağlamak ağ şebeke bağlanmak
+tartışmak#tartışmak
+final#final
+deney#tecrübe duruşma deney
+hukuki#kanuni tüzel yasal hukuksal hukuki meşru adli
+soğuk#dumağı üşütme nevazil nezle tumağı ingin soğuk
+--#daha üstünde
+sallamak#rock şoke etmek sallamak sallanmak
+--
+silah#yarak silah savut
+şarkı#şarkı
+usta#bilirkişi ustaca usta mütehassıs üstat uzman
+radyo#radyo
+hoş#hoş güzel iyi
+kaçınmak#kaçınmak savuşturmak
+hafıza#bellek hafıza hatıra hatır anı
+--
+ücret#ücret
+ilkbahar#yay bahar bulak pınar ilkbahar kaynak zemberek memba
+kart#kart
+--
+kuram#teori kuram nazariye
+ziyaret etmek#ziyaret ziyaret etmek
+tasavvur etmek#tasavvur etmek
+bitiş#bitirmek bitiş bitmek
+açıklama#ekstre bildirge demeç bildiri deklarasyon açıklama beyanat
+--#firma şirket
+kocaman#kocaman
+--
+popüler#popüler
+--
+geleneksel#geleneksel gelenekçi
+--
+barış#barış sulh huzur
+yeşil#kekre yaş acemi çiğ buruk yeşil toy tor olmamış yeşillendirmek ham taze
+sağ ol#teşekkür ederim teşekkürler sağ ol
+--
+çarpma#tesir vuruş etki çarpma
+yapı#yapı yapılandırmak
+--
+yön#istikamet yön
+sinek#sinek kaçmak uçurmak uçmak gitmek şık seyahat etmek uçuş kanatlanmak
+üstünde#üstünde üstüne
+kral#padişah papaz king kral şah
+açığa vurmak#açığa vurmak
+hücre#hücre
+dinî#dindar dinî inançlı dinsel dini
+top#taşak gülle mermi küre yumak top yumurta balo haya
+--#tikel
+çalışan#çalışan personel
+aniden#ansızın gafleten birden aniden birdenbire
+--
+--
+kültürel#kültürel
+koltuk#başkanlık etmek iskemle sandalye koltuk
+ERROR
+adalet#adalet
+keşfetmek#keşfetmek
+ölçmek#ölçü ölçmek
+politika#politika siyaset
+--
+--
+kendin#kendin
+acı#keder acı ağrı dert
+akşam#akşam suare
+birim#birim
+--
+üretim#üretim
+gem#matkap az sonra bit biraz parça delgi gem oyan an
+iç#içeri iç içinde
+sıradağ#sıradağ menzil
+kaygı#kaygı tasa endişe korkutmak kaygılandırmak
+--
+gerekli#lazım gerekli elzem
+konferans#konferans
+aday#namzet aday
+müze#müze
+--
+--
+koridor#hol salon dalan koridor
+balık#balıklar balık
+gezi#seyahat çelme gezi yolculuk
+bahsetmek#söylemek zikretmek dile getirmek söz etmek değinmek bahsetmek
+kenar#avantaj bıçak sırtı kenar
+başağrısı#sıkıntı problem başağrısı arıza gayret efor
+mülakat#mülakat
+stil#stil biçem üslup
+orta#bel orta merkez
+on#on
+ağırlık#halter ağırlık
+yetişkin#yetişkin ergin
+rüya#hayal düş rüya rüya görmek arzu ummak düş görmek
+korku#korkmak ürkmek korku
+karanlık#koyu karanlık
+yöntem#yöntem usul tarz metod
+kimse#kimse
+dergi#şarjör dergi
+yansıtmak#yansımak yansıtmak
+ağır#ağır
+asker#çeri asker
+mal#mülkiyet vasıf emlak nitelik mal mülk
+güzel#güzel
+müellif#yazıcı müellif yazar
+şey#şey hammadde şeyler
+fotoğraf makinesi#kamera fotoğraf makinesi
+düzeltmek#iyileştirmek düzeltmek
+omuz#omuz çiyin
+bar#meyhane önünü kesmek sürgülemek bar yasaklamak
+otel#konakçı otel
+yerine#yerine
+tepe#yokuş tepe
+var olmak#var olmak
+deniz#deniz derya
+müessese#müessese kuruluş kurum
+--
+kalıp#örüntü şablon kalıp
+detay#detay
+makine#makine
+--
+sahip#sahip iye malik
+acente#yapıcı aracı acente vekil temsilci fail
+--#sert
+--
+nesil#nesil
+reklam#reklam
+kimi#kimi
+yüzey#yüzey
+bütçe#bütçe
+senatör#senatör
+çanta#çanta çuvallamak paket torbalamak poşet poşetlemek torba
+gerçeklik#gerçeklik realite
+muharrir#editör muharrir
+--
+başvuru#hitabe unvan hitap başvuru konuşma tarz adres söylev
+sivil#sivil
+münakaşa#münakaşa tartışma
+ERROR
+şiddet#şiddet
+tutar#tüm tutar toplam bütün
+cilt#cilt yüzmek post derisini yüzmek deri
+ısı#ısı
+konsey#meclis konsey
+farkına varmak#farkına varmak farketmek
+vurmak#vurmak yenmek
+--#ne
+çağdaş#modern muasır çağcıl çağdaş
+oylama#oylama rey oylamak oy
+şarkı söylemek#şarkı söylemek
+kanser#kanser
+parmak#parmak
+göl#göl
+dilek#dilemek dilek istemek arzu istek
+evlilik#evlilik birliktelik düğün nikâh
+kurban#kurban
+--
+avlu#avlu yarda
+mutfak#mutfak kan
+--
+mesuliyet#mesuliyet sorumluluk
+ağız#ağız
+sözleşme#mukavele sözleşme
+avukat#avukat
+anapara#anapara sermaye kapital anamal
+tehdit#tehdit
+gülüş#gülüş gülümseme gülme tebessüm etmek gülümsemek tebessüm
+gaz#gaz
+pozitif#emin pozitif olumlu
+iz#parça iz
+yatırım#yatırım envestisman
+hesap#hesap
+varlıklı#varlıklı zengin varsıl
+yurttaş#vatandaş yurttaş sivil
+seyirci#seyirci okuyucu dinleyici izleyici
+hanım#hanım hanımefendi
+akşam yemeği#akşam yemeği
+batı#batı
+müzakere#müzakere tartışma
+tüketici#tüketici
+çoğunluk#ekseriyet çoğunluk
+ilginç#enteresan ilginç meraklı
+ERROR
+yolculuk#etmek seyahat yolculuk yapmak
+--
+--
+--
+--
+--
+cephe#cephe
+koç#antrenör koç
+ortak#ortak
+--#saçma aşınmak
+âlim#ilim adamı âlime âlim bilim insanı bilim kadını ilim kadını bilim adamı
+--#kıdemli
+--
+yalnız#tek yalnız
+toplama#koleksiyon toplama
+muvaffak#muvaffak
+konuşma#söz konuşma
+sonunda#sonunda
+anahtar#anahtar açar açkı tuş
+görev#görev
+--
+gazete#günce gazete ceride gaste ruzname
+rüzgâr#yel esinti rüzgâr esin
+reform#yenileştirmek ıslah etmek reform inkılap devrim düzeltmek
+--
+--
+--
+--
+bahçe#uğraşmak meşgul olmak bostan arkabahçe bahçe park
+--#erişim
+basmak#yayınlamak çıkarmak yayımlamak basmak açıklamak
+--
+--
+güney#güneyli güney
+senato#senato
+görüş#görüş fikir
+--
+hakim#hakim yargıç
+--
+müşteri#alıcı müşteri
+--
+köşe#kavşak köşe
+--
+gelir#gelir
+--
+tahliye etmek#yayınlamak neşretmek salıvermek tahliye etmek serbest bırakmak bırakmak yayımlamak
+lokanta#restoran lokanta
+civar#civar komşuluk yöre semt mahalle muhit yakınlık mahalleli yaka
+--
+ERROR
+--
+--
+anında#derhal anında hemen
+--
+orman#orman ormanlaştırmak ağaçlandırmak
+baba#baba
+ağrımak#acıtmak ağrımak ağrıtmak acımak
+video#görüntü video videokaset
+grev#grev
+güvenlik#güvenlik
+kesinlikle#kesinlikle
+binaenaleyh#dolayısıyla binaenaleyh
+özgürlük#hürriyet özgürlük azatlık erkinlik serbestlik
+sürüm#versiyon sürüm
+yüzey#rende düzlem çınar uçak yüzey tayyare planya
+--
+--
+--
+taze#taze
+--
+güçlü#güçlü
+kuş#kuş
+dokunmak#değmek dokunma duyusu ellemek dokunuş dokunmak
+--
+derin#derin
+metin#metin
+vasi#vasi geniş
+--
+dokuz#dokuz dokuzlu
+uyumak#uyku uyumak
+inceleme#inceleme tahkikat soruşturma
+--
+tamamen#tamamen
+--
+çatışma#çatışma anlaşmazlık
+--
+katılmak#katılmak
+katılımcı#katılımcı iştirakçı
+delil#münakaşa savunma argüman kanıt genlik sav delil tartışma hüccet değişken ispatlama akıl yürütme
+cisim#cisim nesne karşı çıkmak obje
+lütfen#lütfen iltimas
+nükleer#nükleer
+gökyüzü#gökyüzü gök
+öğleden sonra#öğleden sonra ikindi
+yüz#yüz
+teşvik etmek#teşvik etmek önermek desteklemek cesaretlendirmek yüreklendirmek
+mükemmel#mükemmel
+ihtimal#imkan olasılık olabilirlik ihtimal
+İngiliz#İngiliz İngilizcesi İngiliz
+muayene etmek#muayene etmek
+sohbet#konuşma muhabbet diyalog sohbet
+genellikle#genellikle çoğunlukla
+başlangıç#iptida başlangıç
+sekreter#sekreter katip
+kumsal#çimerlik plaj kumsal kıyı sahil
+emin#emin güvenilir kasa
+ruh#ruh ispirto
+hafta sonu#hafta sonu
+hurma#günlemeç buluşma tarih hurma randevu
+--#tanımlamak
+vasıf#vasıf hususiyet özellik
+global#global küresel
+öğe#unsur öğe element eleman
+--
+yavaş#yavaş yavaşça yavaş yavaş
+ilbay#ilbay vali
+kavram#mefhum düşünce kavram
+üzgün#afedersiniz pardon üzgün affedersin efendim affedersiniz
+kolayca#kolaylıkla kolayca
+harp#vuruşma savaş muharebe harp
+lig#fersah lig
+kamp#kamp
+tanıştırmak#tanıştırmak
+statü#statü durum
+sigorta#sigorta sigortacılık
+tamamlamak#tamam tamamlamak
+sopa#çubuk kol değnek bağlı kalmak çomak baston vites sopa asa vites kolu batırmak yapışmak dayak
+çözelti#eriyik solüsyon çözüm çözelti çare
+Web#Web
+görme#görme
+taş#taş taşlamak
+eksiklik#eksiklik yoksun olmak noksan yoksunluk yokluk
+sürücü#şoför sürücü
+--
+kamyon#kamyon
+bakan#vezir bakan
+sap#kol sap
+delik#delik
+yelpaze#yelpaze vantilatör yelpazelemek taraftar hayran
+benek#leke benek spot
+kriz#kriz bunalım nöbet çöküntü buhran
+--
+--
+içmek#içmek
+araştırmacı#araştırıcı araştırmacı araştırman
+gelenek#gelenek töre
+komünikasyon#iletişim mesaj geçit bağlantı komünikasyon pasaj
+ara#ara mesafe
+gemi#gemi göndermek
+--#kazanç
+--
+bağımsız#bağımsız
+buz#buz
+pul#pul tırmanmak
+beyin#anlak öke beyin çaşıt bilge us
+kış#kışlamak kış
+komisyon#komisyon
+odun#odun ağaç
+bölme#pay bölme işlemi tümen bölme anlaşmazlık bölüm
+tür#tür
+ERROR
+yuvarlamak#yuvarlanmak yuvarlamak
+saklamak#saklamak gizlemek gizlenmek deri saklanmak
+müşteri#istemci müvekkil tüketici müşteri
+durgun#sakin durgun
+sözleşme#kontrat sözleşme
+altın#altın
+gizil#gizli potansiyel gizil gizil güç
+--
+enstitü#enstitü
+paravan#paravan ekran
+Çin#Çin Çinli Çince
+at#kasa süvari eroin beygir at atlı
+Avrupalı#Avrupalı
+hedef#nişan hedef
+--
+anket#inceleme anket tetkik
+--
+--
+kalabalık#izdiham avam kalabalık
+hapis#hapishane hapis cezaevi
+ERROR
+bariz#bariz ortada
+--#taban temel
+apartman dairesi#apartman dairesi
+çiftlik#çiftlik
+uçma#uçma uçuş
+durum#form görünüş şekil şekillendirmek durum biçimlendirmek vaziyet
+talep#talep istek
+kuvvet#kuvvet güç
+köy#köy nahiye
+--
+muhabir#bildirmen muhabir
+bekçi#bekçi
+--
+--
+saymak#sayılmak kont saymak
+avantaj#avantaj
+vahşi#yabani vahşi
+önceki#önceki
+--
+--
+--
+liderlik#liderlik
+kayık#gemi sandal kayık
+--
+--
+--
+taşıt#taşıt vasıta araç
+libre#libre
+küçük#küçük küçücük minik
+anlayış#anlayış
+yerleşmek#yerleşmek
+--
+yarın#yarın
+kuruluş#fondöten vakıf kuruluş temel
+--
+ada#ada
+okuyucu#okuyucu
+katılmak#katılmak toplamak
+konuk#konuk misafir
+--
+alet#araç alet teçhiz etmek
+koruma#koruma muhafaza
+güzel#kayda değer festival kusursuz açık insaflı fuar masum doğru güzel
+--
+desteklemek#desteklemek
+ekipman#donatma ekipman teçhizat donatım malzeme
+--
+boyama#boyama resim
+beslemek#beslemek yem
+prensip#prensip kanun ilke
+çanak#piyale çanak
+teknik#teknik
+kısıtlayıcı#sınırlamak tahdit etmek kısıtlamak kısıtlayıcı
+hüviyyet#hüviyyet
+--
+eleştirmen#eleştirmen
+--
+ağlamak#ağlamak
+hudut#süs hudut sınırlamak serhat kenar sınır
+yükseltmek#asansör yükseltmek yürütmek çalmak kaldırmak
+patika#patika yol
+kip#kip
+evlenmek#evlendirmek birleştirmek dünya evine girmek evlenmek varmak
+dükkan#dükkân dükkan mağaza
+başarısızlık#başarısızlık arıza
+sürmek#otostop sürmek binmek
+sorumlu#mesul sorumlu
+toplamak#çıkarmak toplamak almak toplanmak biriktirmek derlemek buluşmak
+atlamak#atlamak
+örnek#örneklem numune örnek
+--
+layık#layık değer
+uymak#uymak uydurmak
+başkan#başkan reis
+ders#çimke ibret ders
+Noel#Noel
+ısrar etmek#bastırmak ısrar etmek üstelemek yinelemek
+--
+halk#halk
+--
+kulak#kulak
+metod#prosedür yöntem yordam işlem metod
+iştirakçi#partner iştirakçi ortak
+inç#inç
+ılık#ılık
+Afrikalı#Afrikalı
+Fransızca#Fransızca Fransız
+beyzbol#beyzbol
+--
+ayak#fit ayak
+Hristiyan#Hristiyan
+rekabet#rekabet yarış müsabaka
+--
+yaymak#yaymak sürmek yayılmak
+görmezden gelmek#görmezden gelmek
+yumuşak#yumuşak
+yıllık#yıllık
+harika#harika
+gözünü korkutmak#gözünü korkutmak
+--
+inkâr etmek#inkâr etmek
+zekâ#anlayış zekâ istihbarat teşkilatı akıl istihbarat
+düzenli#düzenli
+nüfuz#nüfuz tesir etki
+tepki#tepki reaksiyon
+çarpı#çaprazlamak orta çarpı karşı çarmıh çapraz istavroz geçmek haç
+komodor#usta hoca efendi kaptan komodor patron bey işveren
+takım elbise#kostüm simge takım elbise
+üflemek#üflemek esmek
+yok etmek#yok etmek mahvetmek
+hediye#yetenek kabiliyet armağan hediye
+kahve#konur gelinböceği kahve
+zaten#neyse zaten
+--
+yorum#tefsir yorum açıklama
+anlaşılan#anlaşılan besbelli
+--
+arka plan#arka plan arka
+çeyrek#civar semt mahalle muhit dördün bölge çeyrek yaka
+inceleme#inceleme teftiş
+inanç#iman güven inanç din vefa itikat
+hız#sürat hız
+--
+--
+--
+biraz#biraz hafif azıcık hafifçe
+--
+fonksiyon#fonksiyon işlev
+inşa#inşa inşaat konstrüksiyon
+yumurta#yumurta
+dalga#dalga
+dişi#dişi bayan
+cinayet#öldürmek katletmek adam öldürme cinayet
+bant#bant
+yanma#yanmak yanma yakmak
+--#kaynak
+--
+hata#yanlış galat hata
+sessiz#suskun sessiz
+bağlantı#aktarma bağlanma bağ bağlantı
+kundura#ayakkabı kundura
+giyim#giyim giysi örtüler
+söz#vaat söz söz vermek
+din#mezhep inanç bağlanç din
+--
+bağlam#kontekst bağlam
+aktif#faal etkin aktif
+gençlik#gençlik genç
+konum#konum lokasyon yer
+ERROR
+elbise#giysi elbise
+İnternet#genel ağ İnternet
+kategori#kategori
+tehlikeli#tehlikeli
+genişletmek#genişletmek uzatmak
+--
+sahil#kıyı sahil seyretmek
+--
+otobüs#otobüs
+--
+ertesi#sonraki ertesi
+--
+cehennem#cehennem tamu
+kemik#kılçık sünük kemik
+aşçı#aşçı pişirmek pişmek
+doğrudan doğruya#doğrudan doğruya
+--
+serin#sakin serin soğutmak soğukkanlı serinletmek
+hatırlatmak#hatırlatmak
+tarihî#tarihî tarihsel
+ahlaki#ahlaki ahlak
+seçmen#seçmen
+uygun#lâyık uygun yerinde
+meşhur#ünlü meşhur
+kiralamak#kiralamak
+zafer#galibiyet utku yengi zafer muzafferiyet galebe
+--
+--
+olumsuz#negatif olumsuz
+ilaç#ilaç em tedavi tıp
+katılmak#iştirak etmek katılmak
+not#not derece
+doğu#doğu
+arz#arz
+dün#dün
+--
+el erki#el erki demokrasi
+çift#çift
+sağlıklı#sağlıklı
+bağlamak#bağlamak
+doğum#doğum
+ilerleme#ilerleme terakki
+zarar#zarar hasar
+mübadele#borsa mübadele
+alt#dip alt pasif
+günlük#gündelikçi gündelik günlük
+belge#belgelemek doküman belge
+--
+günlük#günce dergi mecmua günlük jurnal
+diz#diz
+--
+aksi#aksi yoksa
+tren#katar tren
+yakalamak#kabzetmek kapmak ele geçirmek yakalamak tevkif etmek
+daire#daire
+ince#yağlı ince zayıf kıt yağsız dayanmak yaslanmak
+şarap#şarap koyu kırmızı bordo çakır içki şarap rengi mey
+--
+çiçek#çiçek çiçeklenmek
+aygıt#cihaz alet aygıt
+Iraklı#Iraklı
+tabak#tabak
+temiz#arı temiz temizlemek
+sağ#sağ yaşam dolu canlı diri
+--#aktör
+nefret etmek#tiksinmek ikrah etmek nefret etmek iğrenmek
+anlatım#ifade anlatım
+--
+--
+gezi#gezmek gezi turlamak tur gezinti
+--
+egzersiz#temrin egzersiz
+plastik#plastik
+tehlike#tehlike
+boyun#boyun yaka
+vadi#vadi
+--#akademisyen bilim işçisi
+başvuru#müracaat başvuru dilekçe uygulama tatbik
+--#planlamak
+erkek#adam erkek
+uzun#uzun yüksek
+kapatmak#kapatmak
+ERROR
+Hint#Kızılderili Hint
+saygı#itibar hürmet bakım saymak açı saygı duymak husus saygınlık saygı yön
+meslektaş#meslektaş
+yazı#yazı
+yağmur#yağmak yağdırmak yağmur baran yağış
+hızlı#oruç tutmak hızlı
+ayak topu#ayak topu futbol topu futbol tepik
+hoş geldiniz#selamlama hoş geldiniz hoş geldin karşılamak karşılama
+evcil#evcil
+birikinti#havuz birikinti gölet
+literatür#yazın edebiyat literatür
+--#ilave
+kuzey#kuzey
+arzu#arzu
+--#tüzel kurumsal
+oturum#toplantı celse oturum
+yüksek#yüce yüksek ulu
+atölye#stüdyo atölye işlik
+Rus#Rus Rusça rusca
+--
+öğrenme#öğrenme
+tırmanmak#çıkmak tırmanış tırmanmak
+önem#önem ehemmiyet
+--
+--
+--#dördüncü
+kuru#kurutmak sek kuru kurumak
+gözden kaybolmak#yok olmak gözden kaybolmak
+--
+piliç#piliç tavuk
+--
+harita#harita
+özenle#titizlikle özenle
+--#gide gide
+ERROR
+karmaşık#karmaşık
+metal#metal
+jüri#jüri
+tatlı#şirin tatlı
+teklif#teklif öneri
+olanaksız#imkânsız olanaksız
+bilimsel#bilimsel
+bilet#bilet
+yaprak#yaprak
+sınıf#sınıf derslik
+--
+öğle yemeği#öğle yemeği
+anlam#anlam mana kasıt
+zarar#zarar
+davet etmek#davet etmek çağırmak
+düşman#düşman hasım yağı
+tekrarlamak#yinelemek tekrarlamak tekrar etmek
+ayı#ayı
+dudak#dudak
+belediye başkanı#belediye başkanı
+ödül#ödül mükafat
+--
+sonuç#netice sonuç
+--
+sürpriz#şaşırtmak sürpriz sürpriz yapmak
+--
+ERROR
+araştırmak#keşfetmek muayene etmek tetkik etmek araştırmak incelemek
+--
+--
+--
+fırtına#fırtına hücum etmek esmek
+--
+hava#hava
+cep#cep delik yancık
+yardım#yardım yardımcı
+okuma#kıraat okuma
+ince#ince
+ruh#ruh tin can
+garip#tuhaf yabancı garip
+evli#evli
+--
+--
+yakıt#yakıt doldurmak
+kentsel#kentsel
+--
+tuz#tuz
+ziraatçı#ziraatçı çiftçi ekinci
+--#doğru
+tavsiye#tavsiye öneri öğüt
+--
+sıcaklık#ateş sıcaklık
+boş#boş boşaltmak
+bitirmek#bitirmek
+--
+--
+birincil#birincil
+meme#göğüs meme
+masa#masa büro sıra çalışma masası
+nefes#nefes
+tiyatro#tiyatro
+--
+ana konu#tema ana konu
+şişman#şişman yağ
+yazılım#yazılım
+şeker#şeker
+--
+bin#bin
+kod#kod
+--
+sarı#sarartmak sararmak sarı korkak
+enstrüman#enstrüman alet
+Japon#Japon Japonca
+pano#pano panel açık oturum
+kütüphane#kütüphane
+pahalı#pahalı
+duygusal#duygusal
+motor#motor
+teklif etmek#niyet etmek teklif etmek
+mental#mental zihinsel
+zorluk#zorluk
+kahverengi#kahverengi konur kongur
+--
+halka#ring çalmak halka yüzük
+not#not mark
+--
+arama#aramak arama
+--
+--
+ERROR
+--
+--
+belli#belli açık belirgin
+kızgın#sinirli asabi kızgın
+analist#analist
+kaza#kaza
+gidişat#moda gidişat akım trend tandans
+--
+halen#halen
+gölge#gölge
+yaratık#yaratık varlık
+ay#kamer uydu ay
+köprü#köprü briç
+tavsiye etmek#tavsiye etmek
+işitme duyusu#işitme duyusu işitim duyma duruşma murafaa
+meyve#puşt meyve yemiş ibne
+dans#bar raks dans etmek dans
+vardiya#vites değiştirme vardiya kaydırma
+konforlu#rahat konforlu
+mücadele#mücadele etmek vuruşma mücadele
+gelir#gelir irat kâr varidat
+fikir#nosyon mefhum eğilim görüş fikir kavram
+ERROR
+paket#paket
+--
+trafik#seyrüsefer trafik
+--
+tercih etmek#tercih etmek
+ekip#ekip mürettebat
+kazanç#fayda kazanç
+düzenleme#regülasyon düzenleme
+--
+--
+--
+havalimanı#havalimanı havaalanı
+--
+--
+ele geçirmek#yemek ele geçirmek
+benzersiz#benzersiz özgün eşsiz ünik
+gerçek#aktüel esas şimdiki asıl gerçek hakiki güncel
+sandık#sandık göğüs kutu kasa
+yemek#yemek irmik un öğün aş
+güzellik#güzellik
+--
+savunmak#korumak savunmak
+--
+düzine#düzine
+--
+--
+ERROR
+--
+gezegen#gezegen planet seyyare
+--
+etnik#etnik
+burun#burun
+borç#borç borçlanma ödünç kredi istikraz ikraz
+nakit#para nakit
+katkı#katkı
+yavaş#yavaş
+--
+şişe#şişelemek şişe
+--#açmak çalıştırmak açılmak
+yeni#yeni roman
+görev#görev
+kök#kaynak köken kök
+--
+parça#parça bileşen
+takdir etmek#kıymet vermek anlamak takdir etmek
+durum#hal durum
+--
+boya#boya boyamak
+kalın#yoğun kalın
+kedi#göcen kedi enik sarman
+--
+--
+doğru#düzeltmek doğru
+uyarmak#uyarmak
+kapasite#yetenek kapasite
+kongre#kongre kurultay gelenek antlaşma âdet toplantı
+politikacı#politikacı siyasetçi
+kovalamak#kovalamak başlamak hedeflemek
+--
+--
+pilot#kılavuz pilot
+sağlamak#sağlamak emin olmak
+nihayet#nihayet sonunda
+uyanmak#uyanmak uyandırmak kaldırmak
+gömlek#pirahen gömlek
+rehber#rehber
+ERROR
+karıştırmak#karıştırmak
+--
+çalmak#çalmak
+--
+suçlamak#suçlamak
+varak#sayfa varak
+--
+kabartma#rölyef kabartma
+birleştirme#birleşim dernek birlik cemiyet birleştirme kombinasyon
+yatırımcı#sermayedar yatırımcı
+--
+sessizlik#susturmak sessizlik sükut
+--
+kas#kas adale
+dal#dal budak şube
+zincir#zincir
+telefon#aramak telefon telefonlamak telefon etmek
+--
+Alman#Almanca Alman
+--
+--
+--
+--
+stres#sıkıntı vurgulamak vurgu stres
+eşleşmek#eşleşmek
+İngiliz#İngiliz İngilizce
+refah#refah yardım sosyal yardım gönenç
+--
+aptal#manyak deli kaçık zibidi aptal üşütük
+hariç#başka hariç
+komik#tuhaf gülünç acayip komik
+et#et
+temyiz etmek#temyiz etmek
+etraflıca#etraflıca
+--
+--
+--
+--
+sıra#satır sıra
+Musevi#Musevi Yahudi
+tekmelemek#tekmelemek
+kar#karlamak pük karınca kar kar yağmak
+üretici#prodüktör üretici yapımcı
+çözmek#halletmek çözmek
+muhalefet#karşıt muhalefet karşıtlık
+basketbol#basketbol basket
+--
+--#muhafazakâr
+güven#itibar güven itimat tröst güvenç güvenmek
+ayna#kopyalamak yansıtmak gözgü mirat taklit etmek ayna
+depo#tank depo
+--
+biraz#biraz bir parça bir nebze
+--
+--
+rejim#rejim
+onarmak#tamir etmek onarmak
+--
+--
+uzunluk#uzunluk boy
+sır#sır gizli saklı giz
+zevk#zevk memnuniyet şehvet
+dosya#saklamak talep etmek dosya arşivlemek eğe müracaat etmek törpü başvurmak
+diş#diş
+onaylamak#tasdik etmek onaylamak
+ayrı#ayırmak bölmek ayrı
+altın#altın
+--
+kanal#kanal
+yatak odası#yatak odası
+--
+antik#kadim antik antika
+--#kapsama alanı
+parkur#parkur
+ev sahibi#ev sahibi
+ameliyat#ameliyathane ameliyat cerrahlık muayenehane
+--
+nadir#nadir ender nadide
+çağ#asır devir çağ
+vermek#bağışlamak vermek bahşetmek
+okyanus#ana deniz okyanus
+cidden#cidden
+öz güven#güven itimat samimiyet teklifsizlik öz güven
+--
+kırmak#yırtılmak kırmak gözyaşı koparmak
+yargı#hüküm seziş yargı eleştiri
+endüstriyel#endüstriyel
+--
+karar#çözünürlük hal önerge kararlılık teklif çözüm niyet çözünme karar azim
+kopya#kopya suret nüsha
+kanat#kanat
+şüphelenmek#güman kuşkulanmak şüphe şek kuşku şüphelenmek
+eğlence#eğlenceli neşeli eğlence
+--
+dökmek#dökmek
+cins#cinsiyet cins eşey
+şaşkın#şaşkın
+bira#bira
+--
+artı#ayrıca artı
+borç#borç
+zeki#zeki akıllı ağrımak acımak
+korkunç#müthiş feci fahiş korkunç felaket berbat dehşet
+tanıklık#şahit tanık tanıklık
+referans#kaynak referans
+ahlaksızlık#ahlaksızlık fuhuş
+kahraman#alp idol protagonist bahadır başkahraman kahraman yiğit
+bomba#bomba bombalamak
+--
+meşgul#meşgul
+ERROR
+--
+mümessil#vekil temsilci mümessil
+--
+toprak#toprak
+otoyol#otoban otoyol
+iskelet#çerçevelemek iskelet çerçeve
+germek#esneklik yayılmak elastikiyet uzamak gerinmek gerinme germek uzanmak uzatmak çekmek gerilmek
+--
+--
+bulut#bulut
+ilk#başlak ilk ön
+değişken#değişken
+--
+--
+--
+--
+dadı#bakıcı hemşire dadı
+olay#olay kaza hadise
+kürtaj#kürtaj
+--
+hedef#nişan hedef
+yorgun#yorgun
+dikkatli#dikkatli
+ucuz#adi cimri kıytırık ucuz
+--
+--
+suçlu#kriminel suçlu
+--
+telaş#aşıkmak telaş acele etmek
+tüketici#kullanıcı sömürücü tüketici
+--
+galip#galip kazanan
+moda#moda tarz
+bahşiş#bahşiş tüyo
+elma#elma
+dev#dev muazzam engin
+--
+sınırlı#sınırlı
+kocaman#kocaman
+bayram#tatil bayram
+ERROR
+vurgulamak#vurgulamak
+sadece#sadece yalnızca
+eşelek#çekirdek eşelek öz maça ana
+maç#maç müsabaka kibrit
+manzara#manzara panaroma yatay peyzaj
+--
+golf#golf
+--
+rota#rota yol
+akış#akış akmak met
+--
+kablo#kablo
+kapı#kapı
+gururlu#gururlu
+tabak#taam yemek çanak aş tabak
+--
+ERROR
+--
+--
+dar#dar daralmak darlaşmak
+katı#katı
+çağdaş#zamandaş çağcıl modern çağdaş
+suçlamak#suçlamak
+maalesef#maalesef
+faydalı#yararlı faydalı
+gürültü#gürültü
+açığa çıkarmak#açığa çıkarmak
+kütle#kitle yığın ağırlık kütle
+çoklu#çoklu
+sebze#zerzevat bitki sebze et
+tohum#tohum tane
+reddetmek#reddetmek
+--
+deney#tecrübe deney deneme
+yasama#kanun yasama
+şapka#şapka başlık kalpak
+yığınsal#yığınsal
+ot#çimen ot çim
+kesinlikle#kesinlikle
+--
+--
+karıştırmak#karıştırmak
+Yüzbaşı#Yüzbaşı kaptan
+devrim#devrim darbe döngü ihtilal
+--
+--
+onaylamak#onaylamak
+amca#enişte amca dayı
+hacim#cilt hacim ses
+açıklama#izah açıklama
+cümle#cümle hüküm vermek vecize tümce mahkum etmek ahkam hüküm karar yargı
+kaçmak#kaçmak kurtulmak
+alışılmadık#alışılmadık olağandışı
+--
+kırsal#kırsal
+--
+ev halkı#ev halkı
+--
+çeşni#tatmak çeşni tat tadına bakmak lezzet
+--
+--
+edinmek#edinmek
+--
+düzgün#düzgün
+--
+mevzu#tema mevzu
+ERROR
+harcamak#harcamak
+tekerlek#çark jant tekerlek dümen teker dönmek
+sporcu#sporcu
+ikna etmek#ikna etmek
+--#başka seçenek farklı
+biber#karabiber paprika biberlemek biber
+kaymak#ezmek kaymak krem rengi pestilini çıkarmak döl krem kremlemek
+teknik#teknik
+kare#meydan kare
+bolluk#bolluk
+yatırım yapmak#yatırım yapmak
+--
+--
+yasa dışı#yasa dışı
+aşağı#aşağı indirmek
+boy ölçüşmek#boy ölçüşmek yarışmak
+yetenek#yetenek
+suçlu#suçlu
+süt#süt
+yükseklik#yükseklik boy
+yardım#yardım
+kişilik#şahsiyet kişilik
+İsrailli#İsrailli
+neşeli#homoseksüel şen eşcinsel renkli canlı parlak neşeli iç açıcı ibne
+daima#daima
+değerlendirmek#değerlendirmek
+zayıf#açık zayıf güçsüz hafif
+sigara#sigara çilim
+fırsat vermek#fırsat vermek
+yolcu#yolcu
+eleştiri#tenkit eleştiri
+yirmi#yirmi yirmilik
+kıvanç#hürmet saygı onurlandırmak şan kıvanç şeref onur namus ihtiram
+yaratıcı#yaratıcı
+çalmak#vurmak tıklatmak çalmak
+dürbün#dürbün ekran
+kampüs#yerleşke kampüs
+tarif#tarif tanım çözünürlük tanımlama
+gri#kır boz gri
+sinyal#sinyal
+uyarı#ikaz uyarı
+doktor#sagan tabip hekim doktor
+kolon#sütun kolon
+--
+dramatik#dramatik
+cumhuriyet#cumhuriyet
+--
+--#öncelik
+başarım#başarım
+istek#rica talep istek
+--#dürüm
+mühendis#mühendis
+pirinç#pirinç
+bilgin#bilgin âlim
+hava yolu#hava yolu
+masraf#masraf
+gözlem#gözlem
+--
+ajanda#andaç ajanda
+yaratı#yaratı yaratma yaratım kreasyon yaratış
+çekmek#sürüklemek çekmek sürükleme fırt
+varsaymak#varsaymak
+balıkçılık#balıkçılık
+ekmek#banak ekmek ekmek parası
+merhaba#merhaba selam
+--
+çığlık#çığlık bağırmak
+gazeteci#gazeteci
+kuruluş#anayasa kuruluş
+şanslı#şanslı
+mükemmel#mükemmel
+--
+seçme#ayırma seleksiyon seçme seçenek
+--
+tutuklama#tutuklamak tevkif etmek tutuklama
+--
+üzgün#zavallı melul mağmum üzgün üzücü kaygılı mutsuz gamlı mahzun tasalı acıklı
+çocukluk#çocukluk
+--
+--
+savcı#davacı savcı
+--
+iyileşmek#iyileşmek
+çatı#çatı örtü tavan dam
+tebdil#düzeltme tebdil ıslah
+duygu#duygu
+mevcut#mevcut
+--
+fabrika#tesis fabrika
+program#bağdarlama tarife program cetvel
+cadde#cadde
+spiritüel#spiritüel ruhsal manevi tinsel ruhani
+yıkamak#yıkamak yumak
+--
+kendi#kendi öz
+bağırmak#haykırmak bağırmak
+sessiz#sakin etkisiz lal dilsiz sessiz
+--
+yanlış#yanılgı yanlış hata
+--
+tanım#tanım tavsif
+--
+--
+--
+--
+uzlaşma#tediye uzlaşma yerleşim birimi tesviye
+dua#dua namaz duacı
+--#ilk adım inisiyatif girişim teşebbüs
+koalisyon#koalisyon
+karşılaştırma#karşılaştırma salıştırma mukayese
+pay#pay hisse
+rakip#rakip
+--
+bölüm#bölüm
+rahatsız etmek#rahatsız etmek canını sıkmak
+--#müfredat
+--
+göçmen#muhacir göçmen
+etkinleştirmek#etkinleştirmek
+fakülte#yeti fakülte
+çelik#çelik
+çöl#çöl
+varlık#varlık
+--
+--
+ilişkin#ilişkin
+algılamak#algılamak
+depresyon#bunalım depresyon
+--
+formel#resmî biçimsel formel
+bırakmak#terk etmek kovmak bırakmak
+çip#çip
+çift#çift
+--
+varlık#varoluş egzistans varlık
+peynir#peynir
+eklem#dal mafsal eklem
+ERROR
+korumak#muhafaza etmek sürdürmek korumak devam ettirmek
+diyet#diyet rejim
+bölge#bölge
+çay#çay
+bükmek#bükmek
+düzenlemek#planlamak düzenlemek ayarlamak aranje etmek sıralamak
+--
+geçiş#geçiş
+kilit#kilit
+mukavemet#direnç mukavemet
+çay#çay akım akmak akarsu stream dere akıntı
+kaydırak#saydam kaydırak kaymak
+keskin#sivri keskin diyez tiz
+çevirim#program çevirim devir
+--
+aşama#aşama evre devre
+geçiş#geçiş
+--
+müzakere#müzakere
+--
+alıntı#dikkate almak tırnak işareti vecize göz önüne almak belirtmek alıntılamak hesaba katmak iktibas etmek alıntı söz tırnak
+hak etmek#hak etmek
+satış#satış
+tabaka#tabaka
+düğün#düğün nikâh
+--
+benim#lağım benim maden mayın maden ocağı
+akademi#akademi yüksekokul
+kum#kum
+füze#füze
+seçmek#saylamak seçmek
+iklim#iklim
+iştirak#iştirak katılım
+bıçak#bıçak
+atmosfer#atmosfer
+fıkra#şaka fıkra şaka yapmak
+dürtü#arzu istek ittirmek dürtü
+sıradan#olağan sıradan
+--
+--
+--
+felsefe#felsefe
+intihar#müntehir intihar
+--
+--
+mal#mal
+--
+palto#palto kaplamak kaban
+--
+alkol#ruh alkol sün
+karşı#karşıt zıt karşı
+aynasız#aynasız dev
+uzay#evren cihan kâinat uzay
+nefes almak#nefes almak solumak
+--
+tedavi#tedavi terapi
+--
+ERROR
+--
+--
+disiplin#disiplin bilim dalı ceza
+yanıt#cevap yanıt
+Meksikalı#Meksikalı
+--
+hikaye#hikaye
+toz#toz
+öpmek#buse öpmek öpücük öpüşmek
+demir#demir
+istiklal#bağımsızlık istiklal
+İspanyol#İspanyolca İspanyol
+terfi etmek#ilerlemek terfi etmek öndelik ilerletmek
+tencere#tencere pot
+patates#patates yerelması
+motor#motor
+paketlemek#paketlemek
+hükmetmek#hükmetmek
+pazarlama#marketing pazarlama
+--
+--
+şikayet#şikayet
+--
+--
+ceket#ceket
+yoğun#yoğun
+--
+elektrikli#elektrik elektrikli
+araç#araç yerine getirmek uygulamak tatbik etmek
+--
+ERROR
+--
+--
+--
+konsantre olmak#konsantre olmak
+--
+--
+simge#sembol simge işaret
+büro#şifonyer büro
+laboratuvar#laboratuvar
+--
+--
+--
+ayarlama#düzenleme aranjman ayarlama
+araştırıcı#araştırıcı soruşturmacı araştırmacı
+şok#şok
+--
+işveren#işveren
+--
+papaz#keşiş rahip din adamı papaz
+gönüllü#gönüllü
+--
+eğlence#eğlence
+alışkanlık#adet alışkanlık
+--
+--
+--
+artırmak#artırmak geliştirmek iyileştirmek
+--
+ekran#ekran
+şaşırtıcı#şaşırtıcı
+fakirlik#fakirlik yoksulluk
+--
+patron#patron şef amir müdür
+esinlemek#esinlemek
+öfke#öfkelendirmek öfkelenmek kızmak kızdırmak sinirlendirmek sinirlenmek öfke hiddet kızgınlık
+--
+--
+yazdırmak#yazdırmak basmak
+yapan#yapımcı yapan yapıcı
+--
+ece#ece vezir kız kraliçe ibne
+gen#gen
+--
+yaklaşık#yaklaşık
+galeri#galeri
+değerlendirmek#değerlendirmek
+transfer etmek#yollamak transfer aktarmak transfer etmek
+olağan#olağan
+gizem#sır gizem
+giriş#kapı giriş
+--
+fasulye#fasulye eleman
+nesnel#objektif amaç nesne nesnel obje
+--
+kalıcı#sabit kalıcı
+--
+--
+istisna#istisna
+komutan#komutan kumandan
+ERROR
+--
+--
+tel#havale etmek tel
+emir#buyruk emretmek komut buyurmak emir
+endişeli#endişeli gergin sinirsel
+sözde#sözde
+--
+Asyalı#Asyalı
+kule#kule
+--
+yaratık#mahluk yaratık
+sis#duman sis
+Arap#Arap atı Arap
+prens#şehzade prens
+ittifak#ittifak
+nakliye#nakliyat ulaştırma nakliye
+uğur#şans uğur talih
+belirti#sendrom belirti semptom araz
+defnetmek#gömmek defnetmek saklamak
+klinik#klinik
+hastalık#hastalık maraz
+şampiyonluk#şampiyonluk şampiyona
+mahkum#tutsak mahkum mahpus esir
+ün#ün repütasyon şan nam şöhret
+basım#basım
+meyve suyu#meyve suyu
+salça#sos salça
+doruk#doruk
+--#yüzleşmek göğüs germek yüzleştirmek karşı koymak
+kahvaltı#kahvaltı etmek kahvaltı
+--#kabul tanınma takdir
+koku#koku koklamak kokmak
+müttefik#müttefik
+salt#saf arı salt
+oyuncak#oyuncak
+aylık#maaş aylık
+elektronik#elektronik
+banyo#banyo
+--
+--#psikolojik
+değerlendirme#değerlendirme
+boyut#evren boyut
+--#personel kadro
+kemer#kayış kuşak kemer
+--
+akıl yürütme#dolaylı anlatım istidlal gerektirme ima akıl yürütme
+albüm#albüm
+--
+--#oltu
+merhaba#merhaba selam efendim alo
+akraba#akraba
+turist#gezici seyyah gezgin turist gezmen
+fenomen#fenomen
+--
+atma#atma
+--
+--
+--
+kutsal#mukaddes kutsal
+--
+--#iç
+dua etmek#dua etmek
+çay#çay dere
+çizme#çizme başlatma
+fısıltı#fısıltı fısıldamak
+direnmek#direnmek
+yolculuk#seyahat yolculuk yolculuk etmek gezmek gezi
+bayrak#bayrak sancak
+--
+tasarımcı#tasarımcı dizayncı
+harfiyen#harfiyen resmen
+--
+--
+açı#açı bakış açısı
+pürüzsüz#düz pürüzsüz
+--
+yemek kaşığı#yemek kaşığı
+danışman#müşavir danışman
+ikiz#ikiz
+iyilik#iyilik
+boğaz#boğaz
+--
+doğum günü#doğum günü
+salıncak#salıncak
+--
+--#test etme
+makul#makul
+posta#posta
+gümüş#gümüş gümüş rengi
+--
+alıngan#nazik ince alıngan hassas darılgan
+--
+donanma#karagök bahriye donanma lacivert bahriyeli denizci
+terörizm#terörizm
+--
+--
+gözlemci#gözlemci
+--
+bağlamak#bağlamak birleştirmek ciltlemek
+ıslak#ıslak
+kazmak#kazmak
+bırakmak#bırakmak
+dijital#dijital
+ERROR
+--#asist
+hizmet#hizmet
+öneri#teklif öneri
+--
+--
+--
+mide#mide karın
+--
+--
+--
+intiba#intiba tesir
+ücret#yevmiye maaş gündelik ücret
+--#beşinci
+yanlış#yalan yapay sahte yanlış
+pembe#karanfil pembe
+yokluk#yokluk
+saldırgan#saldırgan
+darı#darı tahıl nasır
+karıştırmak#karıştırmak karışım
+--
+büyükanne#nine büyükanne
+--
+hapis#hapishane hapis
+mütehassıs#uzman mütehassıs
+--
+nazım#nazım manzume koşuk şiir
+tereyağı#tereyağı yağ
+--
+--
+niyet#niyet
+gözetlemek#gözetlemek akran lord taydaş yaşıt
+--
+tahta#tahta odun
+eleştirmek#değer biçmek eleştirmek değerlendirmek tenkit etmek
+bununla birlikte#bununla birlikte
+--
+tarihî#tarihî tarihsel
+--
+hazırlık#hazırlık
+Latince#Latince Romalı
+efendi#hakan beyefendi iye reis sahip kağan erk baş efendi ağa bey
+--
+--#müzikal
+tartmak#gelmek tartmak
+--
+temin etmek#temin etmek güvence altına almak
+izleyici#seyirci izleyici
+kalkmak#kalkmak
+--
+göçmenlik#göçmenlik hicret göç
+dürüst#dürüst
+köken#başlangıç soy sop orijin köken kaynak
+dev#dev
+--
+domates#banadura pamidor domates domat
+tavsiye etmek#tavsiye etmek
+biyolojik#dirim bilimsel biyolojik
+kabuk#kovan kabuk
+deneme#deneme kompozisyon
+tarihçi#müverrih tarihçi
+muavin#muavin
+--
+--
+tüp#tüp
+sığınmacı#sığınmacı göçmen mülteci
+derinlik#derinlik
+düz#düz
+--
+deli#deli kaçık kuduruk beç üşütük
+--#sakatlık engellilik
+izmihlal#yıkma izmihlal tahribat yıkım
+varsayım#varsayım
+--
+melek#melek ferişte
+--
+ERROR
+ikincil#ikincil yardımcı küçük minör
+kursak#kursak
+--
+--
+--
+değerli#değerli
+ifade#ifade
+kazık#pay çıkar kazık
+konser#konser
+etiket#etiket
+--#tekdüze sıradan
+servet#varlıklılık servet bolluk varlık
+çete#çete
+katmak#katmak
+marka#damgalamak marka dağlamak
+--
+tatil#tatil
+--
+peyk#peyk uydu
+fevkalade#fevkalade harikulade olağanüstü
+--
+kimyasal#kimyevî kimyasal
+--
+ERROR
+kek#kek
+deyim#deyim anlatmak öbek ifade etmek ifade tabir
+--
+--
+--
+Filistinli#Filistinli
+--
+çat#çat çıt
+--
+dava#dava
+--
+süpürmek#süpürmek
+festival#şenlik festival bayram
+taslak#taslak
+gökyüzü#gökyüzü gök cennet
+anahtar#nokta anahtar şalter
+eylemci#etkinci eylemci aktivist
+tavan#tavan
+saat#saat
+hala#bibi teyze yenge hala eme
+karanlık#karanlık
+baba#baba
+kraliyet#kraliyet
+reklam#reklam
+--
+gebe#hamile gebe
+--
+uzak#ırak uzak mesafeli soğuk
+--
+sağlamak#sağlamak yol vermek ürün kâr rekolte kazanç
+--
+mekanizma#mekanizma
+iğrenç#mertebe sınıf satır iğrenç gelmek paye rütbe
+katil#katil
+çit#çit çeper duvar çitlemek
+evrensel#evrensel
+dehşet#dehşet
+kurt#kurt börü
+kaygı#kaygı heves endişe anksiyete
+kurmak#temel atmak kurmak
+protein#protein
+mühendislik#mühendislik
+giysi#giysi giyim kuşam
+ilerlemek#ilerlemek devam etmek gitmek
+ERROR
+--
+dolanmak#yaldızlamak dönmek dolanmak eğirmek
+--#kabaca
+--
+hürriyet#hürriyet özgürlük
+içerik#malzeme içerik
+kalça#kalça
+--
+yük#yük sorumluluk yükümlülük zahmet
+--
+--
+--
+İtalyan#İtalyan İtalyanca
+yatak odası#yatak odası
+--
+--
+aptal#salak bön ahmaklar ahmak aptal
+bahis#bahis
+Müslüman#Müslüman
+çan#çalma zil çan
+soğan#soğan
+--
+--
+--#anayasal
+--
+fevkalade#kayda değer fevkalade
+kırık#bozuk kırık
+--
+yenmek#üstesinden gelmek yenmek atlatmak
+virüs#virüs
+--
+alıkoymak#alıkoymak kaybetmemek tutmak
+ödül#ikramiye ganimet kaldıraç ödül mükafat değer vermek manivela
+ip#dizgi tel ip
+sergi#sergi
+--
+--
+demet#demet
+yardımcı#asistan yardımcı muavin
+--
+kesin#kesin dakik
+yanak#yanak
+dizin#indeks endeks dizin
+--
+vites#vites
+garanti#güvence garanti teminat kefil
+çikolata#çikolata itimil
+seremoni#tören seremoni kutlama merasim ayin
+düğme#düğmelemek düğme tuş rozet buton
+alışveriş#alışveriş
+--
+mobilya#mobilya möble
+bahri#bahri
+istatistik#istatistik
+--
+silmek#silmek
+sözcü#sözcü
+süper#süper
+--
+tercüme etmek#çevirmek tercüme etmek terceme
+--
+--
+--
+cana yakın#dostane dostça cana yakın arkadaşça
+profil#profil
+pantolon#pantolon tuman şalvar boktan don külot
+--
+seçkinler#seçkinler
+liman#iskele liman port
+--
+halaoğlu#yeğen halaoğlu kuzen böle kuzin dayıoğlu
+--
+terörist#yıldırıcı terörist
+--
+çizim#resim çizim
+--
+--
+teşvik#teşvik
+suçsuz#masum suçsuz
+gerektirmek#anlamına gelmek işaret etmek gerektirmek
+stadyum#stadyum stat
+senaryo#senaryo
+--
+kör#âmâ görmez gözsüz görme engelli kör
+cemiyet#cemiyet dernek meclis
+para çekmek#para çekmek
+--#striptiz
+aşık#aşık
+--
+hava taşıtı#hava taşıtı hava aracı
+--
+--
+kum#dedikodu toprak pislik leke kir kum
+--
+--#tatil köyü
+--
+konsantrasyon#konsantrasyon derişim motivasyon
+--
+bakanlık#bakanlık
+şaşırtıcı#şaşırtıcı ilginç
+ERROR
+tavsiye#tavsiye
+--
+doğrulamak#ayarlamak doğrulamak
+--
+bank#bank
+mermi#kurşun mermi
+--#mod kip
+şampiyon#şampiyon
+--
+deste#yere sermek deste güverte
+ömür#ömür yaşam
+--
+cazip#çekici cazip
+--
+--
+ham#ham çiğ
+yanlış#yanlış hata
+--#klinik
+--
+--
+--
+--
+platform#podyum platform peron
+uzak#uzak kumanda
+servet#servet
+köle#esir odalık tutsak ikbal köle karavaş kul cariye
+--
+yansıma#yansıma
+alakalı#ilgili alakalı ilişkili
+bilinmeyen#bilinmeyen değişken meçhul bilinmez
+durmak#mola vermek durdurmak durmak teneffüs mola paydos
+doku#doku
+batmak#lavabo batmak
+tezgah#tezgah sayaç
+Kitab-ı Mukaddes#Kitab-ı Mukaddes Kutsal Kitap İncil
+ruhsat#lisans ruhsat
+--
+diyalog#konuşma diyalog sohbet
+ortak#ortak
+gevşek#bol gevşek
+--
+kibir#övünç duymak gurur gurur duymak kibir
+bilinç#bilinç bilinçlenme şuurlanma şuur uyanıklık farkındalık
+cereyan#cereyan elektrik
+--
+--
+--
+çevrim içi#çevrim içi
+--
+--
+maliye#finans finanse etmek maliye
+--
+kurucu#kurucu arpalama
+--#karakterize etmek
+itiraz#itiraz
+direk#direk kutup
+aydın#akıllı zeki entellektüel aydın
+komünist#komünist
+enfeksiyon#enfeksiyon
+ihtilaf#uyuşmazlık münazara ihtilaf tartışma anlaşmazlık cidal
+donmak#donmak dondurmak donma
+portre#portre tasvir
+ispat#delil ispat
+tatmin#tatmin
+--
+karargah#karargah
+merdiven#merdiven
+--
+meydana getirmek#teşkil etmek seçmek tayin etmek meydana getirmek oluşturmak oluşmak atamak
+otuz#otuz
+--
+ani#ani
+--
+kirli#lekelemek pis pis müstehcen pis kirli pisletmek kirletmek
+--
+genç#genç
+--
+haz#sevinç keyif mutluluk neşe zevk şetaret haz
+malik olmak#sahip olmak malik olmak
+kasırga#urağan kasırga
+--
+--
+--
+sözleşme#mukavele antlaşma akit sözleşme
+--
+anıt#abide anıt
+--
+musluk#musluk
+yüzmek#yüzme yüzmek
+--
+körfez#körfez
+dil#dil
+salata#salata
+sığınak#sığınak barınak
+muhabir#muhabir
+--
+cenaze#defin yuğ cenaze
+edebî#edebî
+dönüştürmek#çevirmek dönüştürmek değiştirmek
+--
+sürtmek#ovma ovalama sürtmek dokundurmak
+giriş#giriş girme
+epizot#epizot
+turnuva#turnuva
+yaşamsal#hayati yaşamsal
+ahır#ahır
+yarmak#çatlak bölünme yarık yarmak
+--
+kurgu#kurgu
+patika#hava yolu kulvar şerit su yolu patika
+ayrım#farklılık fark ayrım
+--
+şamil#kapsamlı şümullü şamil
+--
+--
+sunum#takdim sunma sunum
+ağ#file ağ şebeke
+sıkmak#sıkıştırmak sıkmak
+tütün#tütün
+önem#önem anlam mana
+hayal gücü#muhayyile imgelem hayal hayal gücü
+kandırmak#uydurmak rol yapmak numara yapmak kandırmak
+--
+--
+--
+--
+--#çeşitleme
+--
+avantür#avantür macera
+meslek#meslek
+heyecanlı#heyecanlı
+alın yazısı#alın yazısı kader yazgı
+--
+yük#yük
+şarkıcı#şantör şarkıcı şantöz
+dağıtmak#paylaştırmak dağıtmak
+ton#ton
+--
+--
+--
+--
+şair#şair ozan
+--
+ortaklık#ortaklık
+--
+Kanadalı#Kanadalı Kanada İngilizcesi
+ERROR
+ticaret#ticaret
+dede#dede
+fırınlamak#kurutmak fırınlamak
+sergen#sergen raf
+bal#bal bal rengi
+yuvarlak#tam küresel mermi yumuşak kurşun çember raunt tur el yuvarlak
+kaçmak#kaçmak
+uydurmak#uygun adapte adapte olmak uyarlamak adapte etmek uymak uydurmak
+alıcı#alıcı müşteri
+boşanma#boşanma boşamak boşanmak
+--
+bombardıman#bombalama bombardıman
+--
+işaret#jest gesture işaret
+şiir#şiir
+--#rezerv
+tatmin etmek#doyurmak tatmin etmek yetmek
+kirlilik#kirlilik kirlenme kirletme
+--
+ERROR
+bilgelik#hikmet akıl bilgelik
+konfor#konfor
+arsa#komplo arsa
+--
+patlama#patlama
+kuyruk#kuyruk yazı
+--
+sürdürmek#sürdürmek muhafaza etmek
+stabilite#stabilite direnç
+hayal#hayal
+--
+tanrı#ilah tanrı Allah Tanrı tengri
+bisiklet#velespit bisiklet derrace
+ERROR
+adet#adet görenek
+hasta#sayrı hasta
+ünlü#ünlü
+deri#deri
+--
+çatkı#iskele karkas çatkı çatık
+--#müzayaka
+küçük görmek#küçük görmek
+eğilim#tandans eğilim
+--#patlatmak
+--
+--#sağlamak türemek elde etmek
+konuşmacı#spiker konuşmacı sunucu hoparlör
+skandal#dedikodu rezalet skandal rezillik
+on beş#on beş
+--
+caz#caz
+--
+kutlama#kutlama bayram
+evrim#evrim
+dövüşçü#savaşçı dövüşçü
+ERROR
+bulmak#iz sürmek izlemek iz bulmak baskılı devre kartı takip etmek
+--
+dedektif#dedektif hafiye
+--
+dışında#dışında
+çorba#çorba
+fırın#ocak fırın
+--
+kovalama#kovalama kovalamak peşinden koşmak
+kozmopolit#komplike kozmopolit sofistike rafine şık
+boy#boy kabile
+kaval#lüle kaval biye boru
+geyik#geyik
+çizim#örnekleme çizim açıklama resim illüstrasyon
+ERROR
+monoton#monoton tekdüze bağdaşık üniforma homojen
+--
+--
+pil#pil yığmak yığın
+--
+benzemek#benzemek
+inanılmaz#şaşırtıcı inanılmaz olağanüstü fevkalade
+--#etkilemek
+ekonomist#iktisatçı ekonomist
+verimli#verimli
+elli#elli
+gölge#gölge
+opera#opera
+hesaplamak#hesaplamak
+tercih#tercih
+--
+kullanmak#kullanmak yoğaltmak yemek bitirmek tüketmek harcamak
+bakım#bakım
+--
+eldiven#eldiven
+burs#öğrenimlik burs
+eğitmek#eğitmek
+orantı#orantı
+atama#tayin atama
+--
+mit#tansık mit söylence efsane
+Güneş#Güneş
+tekne#damar gemi tekne kap
+zengin#varlıklı zengin bol varsıl
+arkadaşlık#arkadaşlık
+üyelik#üyelik
+hüner#zanaat açıkgözlülük yapmak kurmak biçmek elişi ustalık hüner kurnazlık gemi beceri maharet yaratmak uyanıklık zeka
+--
+--
+--
+sundurma#sundurma veranda
+tartışmalı#çelişmeli tartışmalı
+--
+--
+ERROR
+bebek#bebek minör
+inek#sığır kancık inek
+ERROR
+--
+meşe#meşe
+AVM#AVM
+ceza#ceza
+--
+--
+--#giriş ücreti
+frekans#frekans
+--#oran
+gecikme#gecikme ertelemek rötar
+gizlilik#gizlilik mahremiyet
+numara#numara kandırmak
+ERROR
+devre#devre
+müzisyen#müzisyen
+--
+ERROR
+kalender#mütevazı naçizane kalender alçak gönüllü naçiz
+helikopter#helikopter
+imparatorluk#imparatorluk
+ayrıntılı#mufassal detaylı ayrıntılı
+verimlilik#verimlilik
+ERROR
+ERROR
+acil#fena acil kötü
+tenis#tenis
+--
+--
+sarımsak#sarımsak
+--
+güçlendirmek#pekiştirmek güçlendirmek güçlenmek kuvvetlendirmek kuvvetlenmek yüreklendirmek
+gösteri#protesto gösteri
+--
+İrlanda#İrlanda
+avcı#avcı av köpeği
+--
+bir avuç#karış bir avuç
+--
+--
+absorbe etmek#absorbe etmek soğurmak
+--
+--
+komiser#komiser
+elmas#pırlanta elmas
+--
+--
+rezervasyon#rezervasyon
+merkezi#merkezi
+ayarlama#ayar ayarlama
+bileşme#terkip bileşim bileşme terekküp kompozisyon
+kaplan#kaplan
+kumaş#kumaş
+iddia etmek#öne sürmek iddia etmek
+ayrımcılık#ayrımcılık
+--
+--
+gözden kaçırmak#gözardı etmek gözden kaçırmak göz yummak hâkim olmak
+kolordu#kolordu
+--#sekans
+topuk#topuk
+--
+muayene#sınav imtihan muayene
+ufuk#ufuk
+mutlak#mutlak mükemmel
+--
+--
+--
+boğa#aynasız öküz boğa
+--
+metre#metre
+meşru#yerinde meşru gerçek hakiki sahici mantıklı
+maske#maske
+dişlemek#yemek dişlemek ısırık lokma sokmak ısırmak
+sıvazlamak#sıvazlamak okşamak
+--
+aslan#aslan
+tüfek#tüfek
+--#pırlanta
+--
+--
+çıplak#çıplak
+aç#aç
+--#bitişik
+alev#alev
+iktisat#iktisat
+kulübe#kulübe kabin
+portakal#portakal portakal rengi turuncu
+gezinmek#gezinmek
+--
+romantik#romantik
+--#adamak
+şişme#şişme enflasyon
+--
+çam#çam
+tarım#tarım ekincilik ziraat
+miras#miras
+--
+varil#varil
+--
+yazılmak#yazılmak kaydolmak
+çeşni#çeşni
+--
+--
+--
+garaj#kurluk garaj servis arabalık
+pamuk#pamuk
+operatör#operatör
+ceviz#somun ceviz eşik
+--
+--
+bağımlı#bağımlı bağlı
+karbon#karbon kömür
+miras#anane gelenek adet görenek miras
+organik#organik
+büyükelçi#elçi büyükelçi
+saldırı#saldırı işgal tecavüz
+zirve#zirve
+yaşam biçimi#yaşam biçimi
+--
+omuz silkmek#omuz silkmek
+danışma#tavsiye istişare avukat danışma
+ayırt etmek#temyiz etmek seçmek ayırt etmek ayırmak
+menü#menü
+berbat#berbat
+hasar#yara hasar yaralamak
+--
+tüketim#tüketim
+izin#müsaade izin ruhsat
+on iki#on iki
+saldırı#hücum saldırı hamle
+duş#duş
+çökmek#çökmek
+--
+bilinç#bilinç şuur
+bıkkınlık#bıkkınlık
+ERROR
+--
+--
+kapsam#kapsam
+tahıl#tahıl
+--
+--
+atölye#çalıştay atölye
+ERROR
+ERROR
+anlatıcı#anlatıcı
+fırça#fırça
+yasak#yasak
+--
+--
+ödünç almak#iktibas etmek ödünç almak ödünçlemek nakletmek
+kapmak#kapmak
+ruh bilimi#ruh bilimi psikoloji
+--
+--
+--
+mühlet#mühlet deadline termin
+--
+akıllı#bilge akıllı
+--
+--
+sıkça#sıkça
+roket#füze roket
+ün#ün şöhret şan
+akciğer#akciğer
+ERROR
+ikna etmek#ikna etmek razı etmek
+çadır#çerge çadır otağ
+--
+--
+--
+--
+müdür#okul müdürü müdür
+çirkin#çirkin
+yeterli#eşitlemek yeterli uygun
+--
+yaygın#yaygın
+dönüşüm#başkalaşım dönüşüm
+--
+sağlayıcı#sağlayıcı
+bayılmak#bayılmak
+başlık#başlık manşet
+mucize#tansık mucize
+--
+evsiz#evsiz vatansız
+etkileyici#etkileyici
+şef#şef
+--
+ölçüm#ölçüm
+--
+il#vilayet il
+--
+konsensüs#konsensüs
+--
+komedi#komedi
+sahil#kıyı sahil kenar
+fotoğrafçı#fotoğrafçı
+--#girişim teşebbüs
+rakip#rakip
+--
+--
+--
+korku#dehşet korku
+--
+haftalık#haftalık
+--
+sepet#basket sepet
+--
+battaniye#örtmek battaniye kaplamak kapsamak sarmak örtü
+kartal#baz şahbaz kartal
+ERROR
+fare#sıçan fare
+etik#etik ahlak
+hayalet#ruh hayalet
+gündelik#gündelik
+halat#halat
+formül#formül
+göstermek#sergilemek göstermek sunmak ibraz etmek ortaya koymak
+sinir#sinir
+--#cübbe
+--
+psikolog#psikolog
+asit#asit
+evcil hayvan#evcil hayvan okşamak
+reçine#perde reçine
+işgal#istila işgal
+cesaret#yüreklilik cesaret
+yenmek#mağlubiyet yenmek mağlup etmek yenilgi
+hamilelik#hamilelik
+ERROR
+yama#yama
+kenar#kenar kar
+sağlamlaştırmak#berkitmek takviye etmek pekiştirmek tahkim etmek sağlamlaştırmak kuvvetlendirmek
+--
+tuğla#tuğla
+hat#yazı betik hat senaryo
+aşçılık#aşçılık
+tünel#tünel
+beton#dongu beton
+acemi er#acemi er
+bakkal#bakkal
+limon#limon cıcık limoni dandik
+--
+dakik#dakik
+pil#pil akü folluk
+--
+sanatsal#sanatsal
+atık#martaval saçmalık adi sikindirik atık boktan göt zırva boş laf maval sıçmak
+--
+--
+yoğunluk#yoğunluk
+--
+piyano#piyano
+--
+kucak#kucak tur
+--
+mübahase#mübahase
+kahkaha#gülüş kahkaha
+yıl dönümü#yıl dönümü
+teleskop#teleskop ırakgörür
+ant içmek#küfretmek sövmek ant içmek yemin etmek
+--
+ipucu#ipucu
+mezar#vakarlı makber mezar ağırbaşlı sin ciddi kabir metfen gömüt vahim
+--
+--
+--
+uygun#makbul uygun
+kanepe#kanepe
+sanık#sanık
+bestelemek#bestelemek
+--
+bağlantılı#ilgili bağlantılı akraba ilintili alakalı ilişkili
+--
+turta#turta
+--
+--
+azalmak#azaltmak düşmek düşürmek azalmak
+tecavüz#zorlamak zor kullanmak canına okumak tecavüz tecavüz etmek
+kesilmek#araya girmek kesmek kesilmek
+mimar#mimar
+of çekmek#ahlamak of çekmek iç çekmek
+--
+icat etmek#yaratmak icat etmek uydurmak
+reçete#reçete
+ödül#ödüllendirmek ödül
+kutsal#kutsal
+organ#uzuv org organ
+yurtdışı#yurtdışı
+şeytan#şeytan
+sevgili#sevimli sevgili sayın
+üstün#üstün
+--
+uçak#uçak tayyare
+habitat#habitat
+kömür#kömür
+futbol#futbol
+--#adlandırmak izin vermek yetkilendirmek
+--
+--
+--#parlatmak
+--
+--
+--
+hap#komprime hap tablet
+--
+sade#sade ova
+--#müfettiş
+divan#forum divan
+pudra#pudra toz
+günah#vebal suç günah işlemek günah kabahat
+--#bariz
+--
+--#akseptans kabul
+--
+--
+--
+büyü#sihirli müthiş büyülü sihir gözbağı harikulade büyü efsun harika yada büyüleyici mucize
+kuzeybatı#kuzeybatı
+regüle etmek#regüle etmek
+--
+--#kolonyal
+--
+sivil#sivil
+liman#liman
+ERROR
+ritim#ritm ritim
+gece yarısı#gece yarısı
+--
+--
+saray#saray
+ERROR
+karışım#bileşim karışım
+çıplak#çıplak
+yankı#yankı
+--
+dilim#kesit dilimlemek dilim
+muharebe#boğuşmak muharebe
+--
+kütük#tomruk kütük
+cerrah#cerrah
+mazur görmek#bahane muaf tutmak mazeret mazur görmek
+ayin#ritüel ayin merasim
+istifa etmek#istifa etmek
+heyecanlı#heyecanlı hevesli
+--
+kötücül#kötücül kötülük
+acı#keskin acılı şiddetli yakıcı acı sert
+ihracat#ihracat
+kil#kil
+mantık#mantık
+erdem#sililik fazilet iffet erdem paklık itminan namus arılık
+kap#konteyner kap
+--
+yalvarmak#yalvarmak
+som#somon som
+selamlamak#selamlamak
+kıvrım#kıvırmak eğmek eğilmek bükmek kıvrılmak eğri kıvrım
+değirmen#bina değirmen yapı fabrika
+dolap#dolap
+iç#iç
+değnek#çubuk değnek çomak olta asa sopa
+tatlı#şeker tatlı bonbon
+sınırlamak#sınırlamak kısıtlamak
+--
+--
+etik#etik
+--#ikincil
+--#yönetimsel
+karıştırmak#karıştırmak
+--
+domuz#hınzır tiksindirici domuz pasaklı obur
+--
+madalya#madalya
+ahize#ahize
+--
+yılan#yılan
+yürüyüş#yürüyüş ilerleyiş yortmak yürümek geçit koşmak marş alay
+--
+medeniyet#sivilleşme insanlık medeniyet uygarlık uygarlaşma
+klasik#klasik
+katlamak#kat bükmek katlamak ağıl
+sıskalık#zayıflık sıskalık argınlık çelimsizlik
+koridor#dehliz koridor
+sert#zorlu haşin sert gaddar
+--
+ipotek#rehin tutu ipotek
+ERROR
+geliştirici#geliştirici
+efsane#kahraman efsane lejant
+--
+--
+--
+kovboy#kovboy
+--
+--
+güvenilir#güvenilir
+varoş#banliyö semt varoş mahalle bölge yörekent
+erimek#erimek
+--
+açıklamak#yalvarmak açıklamak ileri sürmek
+yazılı#yazılı
+sel#sel su taşkını taşmak
+gövde#gövde
+kaçınılmaz#kaçınılmaz
+cevher#esans cevher
+--
+--#kurnazca sinsice ustaca
+--#güm yere çalmak batırmak sövmek çarpma çarpmak bağırıp çağırmak
+işsizlik#işsizlik
+gövde#sandık gövde hortum bagaj
+ayrıcalık#kıyak torpil ayrıcalık imtiyaz
+patlamak#patlamak patlatmak
+mimarlık#mimarlık
+aylık#aylık
+eylemek#eylemek
+--
+--
+engel#mahzur engel mani ket
+--
+tuzak#gaga tuzak kapan
+--
+dirsek#dirsek
+söylenti#söylenti rivayet şayia
+yutmak#yutkunmak yudum yutmak kırlangıç almak kabul etmek tüketmek inanmak kabullenmek
+--
+konferans#haşlamak konferans fırça atmak ders
+kot#kot blucin
+ördek#eğilmek ördek
+yamaç#yamaç
+ERROR
+teftiş#teftiş
+--
+baskın#baskın kahir ezici
+--
+kayıp#kayıp
+ERROR
+dolandırıcılık#dolandırıcılık
+tatbik#tatbik uygulama
+avlamak#av avlamak
+sevgili#sevgili arkadaş
+--
+sıçan#sıçan fare
+yayın#yayınlamak yayın dağılmış
+Kore#Kore Koreli Korece
+tırnak#mıh çivi tırnak
+kalem#yazmak kaleme almak kalem yazgaç
+--
+yoldaş#yoldaş
+canavar#canavar dev öcü
+kâbus#kâbus karabasan
+sığır eti#sığır eti dana eti
+--
+yerküre#küre yerküre
+--#kolesterol
+parlamento#parlamento meclis
+--
+ERROR
+--#buradan
+--
+--#altıncı
+çamur#çamur
+pompa#pompa
+un#un
+rehine#rehine
+sahiplik#sahiplik iyelik malik
+kolaylaştırmak#kolaylaştırmak
+bodrum#bodrum
+korelasyon#korelasyon
+acele etmek#aşıkmak acele etmek telesmek
+böcek#haşere böcek
+--#arena
+--
+--
+in#in mağara oyuk
+--
+--#devamlı aralıksız düzenli
+--
+--
+maksimum#maksimum
+elbise#tanzim çokluk giyecek düzenleme sıra süslemek adet sütun giyim satır gürlük sayı giyim kuşam düzen aranjman elbise matris dizi bolluk çizelge miktar
+beklenmedik#umulmadık beklenmedik
+perde#perde perdelemek
+sandviç#sandviç
+barışta#barışta sakin huzurlu uysal yumuşak başlı
+--#insani insanlık insaniyet
+--
+Romalı#Romalı
+ideoloji#ideoloji
+--
+--
+boynuz#korna klakson boynuz korno
+--
+ilan#ilan anons beyan
+gölet#gölet
+affetmek#affetmek bağışlamak
+piskopos#fil piskopos
+--
+--
+rastgele#rassal rastgele gelişigüzel
+--
+--
+--
+suç#suç
+büyükbaş hayvan#sığır öküz davar hayvanlar büyükbaş hayvan
+--
+şerif#şerif
+davranmak#davranmak edebini takınmak
+kristal#kristal billur
+idam etmek#idam etmek
+bilek#bilek
+--#motif
+ressam#boyacı ressam
+mahkum etmek#hükümlü mahkûm mahkum etmek
+--
+resesyon#resesyon
+beklemek#beklemek
+ERROR
+doz#doz
+--
+--
+emmek#berbat olmak emmek
+düzenlemek#alışmak düzenlemek yerleştirmek tanzim etmek uydurmak
+--
+--
+--
+--
+--
+şefkatli#nazik yumuşak başlı tedricî yavaş yavaş hoşgörülü şefkatli anlayışlı
+--
+savaşçı#asker savaşçı
+--
+güneybatı#güneybatı
+sarhoş#sarhoş ayyaş içkici sarhoşluk esrik
+--
+--#akort etmek akortlamak
+zarar#zarar hasar incinme ziyan
+kumaş#kumaş
+--
+--
+--
+ödün#uzlaşma uzlaşmak anlaşmak ödün ara bulmak
+minnettar#müteşekkir minnettar
+--
+manda#manda
+--
+--
+--
+heykelcilik#yontuculuk yontu heykel heykelcilik heykeltıraşlık
+gider#gider
+şakak#şakak
+dansçı#dansöz dansçı
+havlu#havlu peşkir
+İslam#İslam
+sürekli#sürekli devamlı
+hüküm sürmek#idare etmek hüküm sürmek
+taç#taç
+--#müteahhit üstlenici
+--
+etek#etek
+ERROR
+--#benimseme
+akıllı#akıllı
+övgü#övgü hamt methiye övmek
+--
+--
+derin#derin
+tetik#tetik ateşlemek
+--
+--
+heves#coşku heves şevk
+karmaşıklık#karmaşık karmaşıklık
+--
+sanal#sanal neredeyse
+--
+birlik#birlik
+--
+sık sık#sık sık sıkça
+sonsuz#sonsuz
+retorik#retorik belagat
+özellik#vasıf özellik
+emeklilik#emeklilik
+orijinal#gerçek orijinal hakiki
+ter#ter dökmek terlemek ter
+--
+para birimi#para birimi geçerlilik
+kırk#kırk
+lobi#lobi dalan
+teorik#kuramsal teorik
+yarasa#yarasa
+makyaj#makyaj
+sevimli#sevimli güzel tatlı hoş
+--
+korkunç#korkunç berbat
+--
+--
+--
+--
+--
+terfi#promosyon terfi
+--
+galaksi#galaksi gök ada
+topluca#cümbür cemaat topluca
+özür dilemek#özür dilemek
+altyapı#altyapı enfrastrüktür
+mekik#mekik
+başparmak#başparmak karıştırmak
+--
+kaldırım#kaldırım
+iş adamı#iş adamı
+acaip#doğaüstü garip esrarengiz tuhaf yadırgatıcı acaip
+radyasyon#ışınım radyasyon
+--
+korkutmak#korkutmak
+--
+kukla#kavırçak ninik kukla bebek
+--
+iğne#iğne ibre
+--
+aktarmak#aktarmak devretmek iletmek
+--#tazminat ödence telafi
+seçkin#seçkin
+burmak#burmak
+dakik#dakik kesin
+--
+güneydoğu#güneydoğu
+--
+--
+dağılmak#serpiştirmek serpmek yaymak dağılmak savurmak saçmak
+isyancı#isyancı isyan etmek
+furgon#furgon
+--
+utanç#utanç ayıp
+--
+ERROR
+ERROR
+--
+kanca#kanca çengel
+teğmen#teğmen
+--
+--
+görünmez#görünmez
+alın#alın
+ERROR
+anlamlı#anlamlı manalı
+--
+koloni#koloni müstemleke sömürge
+imza#imza
+veritabanı#veritabanı
+yazman#yazman kâtip
+--
+--
+endişeli#endişeli huzursuz kaygılı istekli
+toplam#meblağ yekûn toplam toplamak
+donuk#donuk donmuş
+--
+--
+cezalandırmak#ceza vermek cezalandırmak
+emeklemek#emeklemek
+ayık#uyanık farkında ayık
+albay#albay
+--
+iniş#sahanlık iniş
+doktrin#ilke öğreti doktrin talim
+--
+papa#papa
+--
+--
+--
+--
+edinim#edinim
+kurtarmak#kurtarmak
+--
+özet#özet
+--
+yakışıklı#yakışıklı
+sarılma#sarılma sarılmak
+vay#oha vay
+--#uğraş meşgale
+konut#ev konut hane rezidans
+yüksek#yüksek
+--
+disk#plak sabit disk disk
+--
+tanı#tanı teşhis
+gözcü#keşfetmek gözcü
+--
+--
+zarf#zarf
+ERROR
+kiriş#ışın kiriş
+isteksiz#gönülsüz hevessiz isteksiz
+eş#eş
+akışkan#akışkan
+çıkış#çıkış yolu çıkış
+--
+ERROR
+küvet#hamam yıkamak banyo yunak küvet
+saygın#onat yeterli uygun makul adam gibi terbiyeli saygın müsait giyinik edepli
+ayak bileği#bilek ayak bileği
+--
+--
+çukur#pit çukur
+--
+oksijen#müvellidülhumuza oksijen
+ırkçılık#ırkçılık
+yumruk#yumruk
+çöp#çöp süprüntü
+gitar#gitar
+ustalık#ustalık
+gösteri#dizi gösteri sıra silsile alay geçit töreni
+keşif#keşif
+oymak#oymak
+--
+--
+--
+--#önyargı
+--#ışık güneş ışığı
+lamba#lamba ampul
+bağışçı#donör bağışçı verici
+onarmak#tamir etmek onarmak
+--
+--
+rehberlik#güdüm yönlendirme hidayet kılavuzluk rehberlik yol gösterme
+--
+mor#mor erguvani
+prenses#prenses
+mum#mum
+cömert#semih selek eli açık cömert bol
+gereklilik#gereklilik lüzum ihtiyaç
+--
+heykel#kurçak yontu heykel
+--
+--
+sinyal#sinyal
+--
+uzuv#uzuv
+cesur#cesur kalın
+çekinmek#çekinmek
+ERROR
+--
+--
+zarif#zarif şık kibar
+nişan#nişan
+--
+--
+gerçekçi#gerçekçi
+amaç#amaç niyet
+metafor#metafor mecaz istiare
+otomobil#araba otomobil
+--
+desteklemek#tasvip etmek onaylamak desteklemek
+--
+itiraf etmek#itiraf etmek günah çıkarmak
+kır#kır
+--#küçültmek azaltmak
+--
+mutluluk#mutluluk saadet
+tayf#tayf
+ipucu#ipucu
+--
+soyut#abstre soyut
+devrimci#devrimci
+--
+--
+parçacık#ilgeç parçacık edat
+--
+--#otomatikman otomatik olarak
+tan#şafak tan seher
+--
+--
+vitamin#vitamin
+--#şapşal
+yapay#yapay sahte yapmacık
+mükemmel#mükemmel
+soymak#soymak soyunmak
+sözlü#sözlü
+--
+girişmek#girişmek
+yalnız#garip tenha ıssız kimsesiz gariban yapayalnız yalnız
+hizmetçi#hizmetçi uşak kul
+--
+--#medeni
+--
+--
+tesadüfen#arasıra rahat rastgele sportif tesadüfen
+--#davranışsal
+azlık#kesinti azlık
+resepsiyon#resepsiyon
+--#kurban
+--
+--
+çene#çene
+fizik#fizik
+yok olmak#yok olmak
+karışım#karışım
+öğle#günorta öğle
+değerli#kıymetli değerli
+--
+korkunç#korkunç
+pizza#pizza
+--
+ipek#ipek
+--
+--
+--
+--
+azap#azap
+--
+komisyoncu#simsar kambiyo ajanı tellal komisyoncu
+--#inşallah
+alçalmak#alçalmak üşüşmek inmek saldırmak
+gelgit#gelgit
+--
+sözlü#eylemsi sözlü fiilimsi
+--
+adli#adli
+--
+envanter#envanter
+aptal#salak kandırmak ahmak budala aptal
+sadakat#vefa sadakat
+ERROR
+--
+romans#romans
+miktar#miktar
+--
+terapist#terapist
+ERROR
+--
+sodyum#sodyum
+fok#fok
+römork#treyler fragman römork
+--
+--
+--
+saçma#tuhaf saçma gülünç komik
+--
+ikilem#dilemma ikilem
+arama#arama
+yastık#yastık
+ERROR
+lazer#lazer
+katı#kesin sabit katı sert bükülmez
+--
+--
+dahi#dâhi dahi
+--#antre
+--
+Kübalı#Kübalı
+--
+kurban#kurban kurbanlık
+--
+sille#tokat vurmak sille şaplak aşk etmek tokatlamak şamarlamak şamar
+gizemli#esrarlı gizemli
+--
+çatal#çatal
+davet#davetiye davet
+yelken#yelken
+--
+--
+--
+--
+ithalat#ithalat ithal
+--#sıkıca
+denklem#denklem
+hazine#define hazine
+çene#çene
+taramak#taramak taratmak
+kınamak#kahretmek lanetlemek kamulaştırmak istimlak etmek kınamak
+--
+--
+haysiyet#haysiyet şeref
+--
+otomatik#otomatik
+tüccar#tacir tüccar perakendeci
+Yunan#Yunan Yunanistanlı Yunanca Rum
+--
+--
+vatan#vatan yurt anavatan
+benzin#benzin petrol
+kütle çekimi#kütle çekimi ağırbaşlılık ciddiyet
+--
+yay#yay
+--
+iyimser#iyimser
+çavuş#çavuş
+--
+teslim etmek#ödün vermek teslim etmek taviz vermek itiraf etmek
+kanlı#kanlı hunhar lanet
+ahır#ambar ahır
+--
+birleştirmek#birleştirmek
+--#adına
+geri bildirim#geri besleme geri bildirim
+hüzün#keder hüzün
+kin#kin garez
+dik#çözelti demlemek daldırmak dik
+--
+yaratmak#anlamak yaratmak gebe kalmak
+narin#narin müşfik gevrek sevecen çıtkırıldım kıtır hassas
+kıta#kıta
+donanım#donanım hırdavat
+--
+--
+çıktı#çıktı
+--
+yaşlı#ihtiyar yaşlı mürver
+kafes#kafes
+--
+sabır#pasiyans faysal sabır
+sığ#sığ
+deprem#deprem zelzele
+--
+girdi#girdi
+tuval#tuval
+tık#tık
+kılıç#kılıç
+--#çift
+--#portföy
+böcek#kızdırmak böcek
+buzdolabı#buzdolabı frijider
+kuzeydoğu#kuzeydoğu
+--#yedinci
+direk#sütun kazık direk posta
+--
+yabancı#yabancı ecnebi uzaylı
+--#gönüllülük
+gizli#gizli saklı
+--
+--
+--
+--
+--
+kalıntı#harabe kalıntı ören virane yıkıntı
+davul#davul
+--
+ince#ince
+--
+vazgeçirmek#vazgeçirmek
+ark#kanal ark
+--
+--
+desise#kumpas tuzak desise
+buhar#islim buğu buhar istim
+sefarethane#elçilik sefarethane
+--
+tropikal#tropikal
+tezden#derhâl anında tezden hemen
+köpük#köpük
+sakin#dinginlik sakin durgun dinmek sükunet sakinleşmek dindirmek dingin sakinleştirmek
+koyun#koyun
+vurgu#aksan şive tonlama vurgu vurgulamak
+kavramak#kavramak
+--
+sırıtmak#sırıtmak
+toksik#toksik
+--
+şiddet#şiddet büyüklük kadir
+ERROR
+--#ilerici
+--
+aşı#aşı
+anıt#abide anıt
+hüküm#hüküm
+esneklik#esneklik elastik
+açıklama#bildiri bildirge deklarasyon açıklama beyanat beyanname
+kostüm#kostüm
+çekmece#çekmece çizer göz
+kutsamak#takdis etmek kutsamak
+--#askılık
+ERROR
+nötr#yansız nötr
+--
+korkunç#korkunç müthiş dehşet
+--
+muhteşem#muhteşem
+ons#ons
+--
+han#konak han meyhane
+imece#emektaşlık iş birliği imece
+--
+--
+çorap#çorap
+--
+--
+--
+bayılma#bayılmak baygınlık bayılma
+büyü#kodlamak büyü hecelemek tılsım
+İncil#İncil
+balina#balina
+ERROR
+--
+--
+--
+--#kabin
+izole etmek#izole etmek izolasyon
+--
+--
+içgüdü#içgüdü insiyak sevkitabii
+--
+--
+--#nüfuzlu
+--
+--
+sekmek#sekmek kaçmak
+on bir#on bir
+--
+--
+ata#ata
+--
+--
+--
+--#asgari
+--#belirsiz şüpheli
+Farsça#Acemce Farsça Pers Fars Acem
+--
+orkestra#orkestra
+hazine#hazine
+--
+--#galon
+uyluk#but uyluk
+Allah'tan#Allah'tan
+hırslı#hırslı arzulu hevesli istekli
+--
+esneklik#esneklik elastikiyet
+kavanoz#kavanoz
+kokain#kokain
+--
+dolayısıyla#dolayısıyla
+belgesel#belgesel belgesel film
+--
+--
+işlevsel#işlevsel fonksiyonel
+iflas#iflas
+koşucu#koşucu
+işletim#işletim ölüm cezası idam
+--
+ahbap#ahbap
+iş yeri#iş yeri
+kafatası#baş çanağı kafatası
+--
+sabit#sabit değişmez
+muadil#muadil
+kumarhane#kumarhane gazino
+--#güvenilirlik
+--#beklendik
+çıban#kaynatmak apse haşlamak kaynamak çıban
+kamçı#kamçılamak kamçı kırbaçlamak kırbaç
+ilahi#ilahi lahuti
+--
+nüfus sayımı#nüfus sayımı
+--
+günlük#günlük
+yuva#yuva
+--
+ERROR
+--
+beslenme#beslenme
+meltem#çocuk oyuncağı yel meltem rüzgâr iş esinti
+yanılsama#yanılgı yanılsama
+isimsiz#isimsiz adsız anonim
+--
+--
+değiştirmek#değiştirmek
+--
+kale#saray şato kermen hisar kale
+--
+ERROR
+diyabet#diyabet şeker hastalığı
+çeviri#tercüme çeviri
+Hollandalı#Hollandalı Hollandaca
+tezat#tezat ironi istihza
+--
+ERROR
+ada tavşanı#tavşan ada tavşanı
+sabun#sabun sabunlamak
+stant#kulübe stant kabin
+--
+--
+--
+--#tırmanmak çırpmak şifreleme acele etmek çalkalamak
+--
+--
+gayrisafi#iğrenç gayrisafi
+borç#borç
+erişilebilir#erişilebilir
+mekanikçi#mekanikçi
+göt#göt kıç popo makat
+estetik#estetik
+tatlı#tatlı
+bel#bel
+--
+cesur#korkusuz cesaretli mert cesur yürekli
+ilik#ilik döngü
+--
+kısmen#kısmen
+--
+--
+iliştirmek#tutturmak iliştirmek sabitlemek
+--
+--
+sendrom#sendrom
+--
+ısrar etmek#ısrar etmek
+--
+--
+--
+geçici#öncü geçici ilk ön
+gün batımı#gün batımı
+taciz#taciz
+--
+ateş#ateş
+panik#telaş panik
+--
+--
+yetiştirmek#evlatlık büyütmek beslemek yetiştirmek
+--
+--#bilinen
+--
+--#kısa vadeli kısaca
+sundurma#dökmek külüstür baraka sundurma bölmek akıtmak taksim etmek
+--
+geçit#geçit pasaj
+sübvansiyon#sübvansiyon
+seküler#seküler dünyevi
+ERROR
+uçurum#yar uçurum falez
+gram#gram
+--
+aklen#aklen
+istila etmek#istila etmek
+--
+çözmek#çözünmek çözmek
+utangaç#utangaç
+madenî para#jeton sikke madenî para demir para
+--
+yaratıcılık#yaratıcılık
+vesayet#vesayet gözaltı inam vedia velayet sorumluluk emanet
+--
+kaşık#kaşık
+arı#be arı
+--
+--
+lanetlemek#lanetlemek
+baraj#set baraj
+--
+--
+sıvı#likit sıvı
+--
+mantar#mantar göbelek
+--
+ERROR
+--
+--
+durmak#durdurmak durmak
+--
+--
+--
+bonus#ek ilave ekstra bonus
+emsalsiz#emsalsiz görülmemiş
+idare etmek#yönetmek idare etmek gözetmek izlemek bakmak denetlemek kontrol etmek
+--
+federasyon#ittifak federasyon
+saldırganlık#saldırganlık
+--
+--
+bağış#bağış
+--
+ERROR
+aldatmak#dolandırmak aldatmak
+--#ses
+--
+atılımcı#girişimci atılımcı müteşebbis
+ilan etmek#duyurmak ilan etmek
+--
+rakip#benzer eş emsal denk rakip
+andaç#hatırlatma andaç
+iyileştirmek#iyileştirmek iyileşmek
+--
+--
+liyakat#liyakat
+itki#itki momentum
+--
+--
+--
+--
+biyoloji#canlı bilimi biyoloji dirim bilimi
+fotoğrafçılık#fotoğrafçılık
+--
+cüzdan#portföy cüzdan
+--#oy hakkı ayrıcalık imtiyaz
+gönül#rıza gönül
+--
+arefe#akşam arefe
+serpinti#filiz aerosol püskürtmek çisenti serpinti sprey
+--
+balıkçı#balıkçı
+--
+--
+--#yığın
+--
+--
+an#şipşak an acil hazır
+nabız#nabız
+--
+kask#kask miğfer
+merdiven#merdiven
+açıkça#açıkça
+vahşi#azılı azgın sert hararetli vahşi
+ERROR
+küçülmek#küçülmek
+--
+nokta#nokta
+güçsüzleştirmek#zayıflamak güçsüzleştirmek dayanıksızlaşmak güçsüzleşmek zayıflatmak
+filtre#filtre
+--
+--
+videoteyp#videoteyp video
+kısmi#kısmi
+buluş belgesi#patent buluş belgesi
+tepsi#sini tepsi
+cengel#cengel
+--
+--
+--
+--#reyon
+grafik#grafik
+seksi#seksi efsane dehşet
+rahatsız etmek#rahatsız etmek
+--
+bankacı#bankacı
+kurulum#enstalasyon kurulum
+yüzme#yüzme
+--
+--
+teklifsiz#teklifsiz senli benli gayriresmî
+çuval#çuval yağmalamak
+--#sekizinci
+--
+ızgara#ızgara gril
+--
+renkli#rengarenk renkli alaca
+hokey#hokey
+--
+yaka#yaka
+--
+--
+yıldırım#yıldırım şimşek
+--
+indirim#iskonto indirim
+--#dil balığı
+böbürlenme#övünme böbürlenme iftihar etmek böbürlenmek övünmek
+etiket#etiket
+kardeş#kardeş
+soba#soba ocak
+antrenör#antrenör koç
+dikey#dikey
+ERROR
+--
+tedavi#kür sağaltmak tedavi etmek tedavi iyileştirmek
+merak#merak tuhaflık meraklılık
+--#örgütsel
+karides#karides
+--
+--
+--
+--#andaç müfekkire ajanda
+--
+aynen#keza bilmukabele aynen
+maymun#maymun
+--
+--
+bile bile#bile bile
+bisiklet#velespit bisiklet derrace
+pozisyon#pozisyon
+yörünge#girmek sokmak yörünge uydu dönmek
+--
+çökkün#üzgün bunalımlı çökkün keyifsiz
+organizma#canlı organizma
+--
+--
+--
+kaş#kaş
+--
+bulmaca#bulmaca muamma
+ikon#ikon simge
+--
+ERROR
+--
+filo#donanma filo
+--
+--
+--
+--
+--
+Hristiyanlık#Hristiyanlık
+banmak#banmak
+hayal kırıklığı#hayal kırıklığı
+kol#yen kol
+--
+buğday#buğday
+parça#parça
+--
+sığınak#sığınak
+--
+--
+--
+--
+--
+döllenme#aşılanma döllenme
+tüy#tüy
+fil#fil
+--
+--
+--
+zafer#zafer
+--
+küre#top küre alan
+açlık#aç açlık acıkmak
+yoğunluk#yoğunluk
+--
+--
+protokol#protokol
+yasa koyucu#yasa koyucu
+açık artırma#mezat müzayede açık artırma
+eşitlik#eşitlik
+riskli#riskli
+ERROR
+inşaatçı#inşaatçı kurucu
+uyanık#uyanık uyandırmak
+--
+--
+--
+--
+kısıtlama#tahdit sınırlama kısıtlama
+--#uyma
+--
+ayrıntılı#mufassal ayrıntılı teferruatlı detaylı tafsilatlı
+--
+çiğnemek#çiğnemek
+benzerlik#benzerlik
+kurşun kalem#kurşun kalem kalem
+hesaplama#hesap sonuç hesaplama tahmin
+tolerans#tolerans
+gök bilimci#gök bilimci astronom
+cüsse#yığın cüsseli hacim hacimli cüsse kütle
+ara#ara aralık
+not defteri#notebook defter betlek not defteri
+--
+--
+--
+kaburga#kaburga
+--
+--#meşruluk geçerlik geçerlilik meşruiyet
+yönetmek#yönetmek
+--
+köpek balığı#köpek balığı
+--
+programlama#programlama
+aptal#saçma aptal
+eskiden#eskiden
+--
+--
+enkaz#yıkıntı enkaz
+köylü#köylü dışarlıklı hödük yerli taşralı ekinci
+--
+temiz#temiz
+--
+krallık#alem krallık
+--
+--
+--
+--
+pey#pey yatırmak
+--
+hamur#hamur
+kapak#kapak
+--
+gazetecilik#gazetecilik
+--
+ERROR
+itiraz#itiraz
+gelişmek#inkişaf etmek gelişmek büyümek
+--
+--
+--
+mutsuz#üzgün mutsuz
+miting#miting
+kaşımak#çizmek çizik kaşımak kaşındırmak
+robot#robot
+çevirim#çevirim tahavvül konversiyon dönüştürüm tahvil dönüşüm
+süpermarket#süpermarket
+göz kırpmak#göz kırpmak
+--
+--
+tire#iplik tire
+sözde#sözde
+kül#kül dişbudak
+dinamik#dinamik
+inkar#inkar değilleme
+isyan#isyan
+süzülmek#süzülmek yükselmek ermek uçmak kanatlanmak
+hoca#hoca
+sakal#sakal
+dul#dul
+--
+--
+--
+kıç#kalça kıç izmarit
+yasaklamak#yasak etmek yasaklamak
+--
+havuç#havuç
+armoni#armoni uyum ahenk
+--
+--
+--
+--#egzoz eritmek salmak
+makarna#makarna
+ERROR
+bölüm#kısım parça bölüm kesir
+--
+--
+--
+--
+uygun#uygun yerinde
+--
+kölelik#kölelik
+balon#balon
+--
+kalabalık#kalabalık
+karaciğer#karaciğer
+dinleyici#dinleyici
+--
+--
+mal#emtia eşya mal
+kürk#kürk post
+--
+--
+keçi#keçi
+aksiyoner#aksiyoner hissedar
+sefer#sefer
+sadık#vefalı sadakatli sadık
+vicdan#vicdan
+kırılgan#narin çıtkırıldım kırılgan hassas
+takvim#takvim
+mineral#mineral maden
+gelme#gelme
+ücret#yolcu ücret
+bereket#baht talih bereket
+liberasyon#özgürleştirme kurtuluş liberasyon
+biftek#biftek
+ekolojik#ekolojik
+muz#muz
+ERROR
+--#patlama
+--
+taşınabilir#taşınabilir dekorasyon
+saman#balya saman hasır
+--#yansı
+kauçuk#şapka kauçuk prezervatif kondom
+--#bir anda aniden geceleyin
+--
+--
+ERROR
+--
+--#demografik
+--
+--
+entegre#entegre tümleşik bütünleşik
+--
+kanepe#kanepe
+vida#sikmek vida
+kalkan#korumak kalkan
+buluş#buluş icat
+ERROR
+zalim#zalim
+bombardıman uçağı#bombacı bombardıman uçağı
+--
+özerklik#özerklik
+--#yayımcılık yayıncılık
+--
+ilahiyat#tanrı bilimi ilahiyat teoloji
+--#epeyce haddi zatında esasen aslında çok oldukça
+konak#konak saray mansiyon malikane
+--
+ERROR
+--
+yoğunlaşmak#düşünmek yoğunlaşmak
+--
+matematik#matematik
+eski kafalı#eski kafalı
+ERROR
+eşik#eşik
+radar#radar
+az#nadiren az
+baş ağrısı#baş ağrısı
+--
+ajan#ajan casus çaşıt
+--#mesen
+--
+--#yazar kasa
+--
+koordinat#koordinat
+satıcı#satıcı
+parça#kısım parça kırıntı bölüm
+çekiç#çekiç çekiçlemek
+--
+--
+yer fıstığı#yer fıstığı
+--
+--
+--
+--
+--
+--
+insan yapımı#insan yapımı
+tekne#havza leğen koy tekne
+--
+üzüm#üzüm
+ego#ego
+--
+--#organize
+büyülemek#büyülemek
+süveter#kazak süveter
+--#jant
+--
+sevinç#neşe mutluluk sevinç
+yorgunluk#yorgunluk bitkinlik
+--
+--
+--
+turizm#turizm
+sıcaklık#sıcakkanlılık ısı sıcaklık
+--
+güncelleme#güncellemek güncelleme
+suçlama#suçlama
+diyagram#diyagram
+--
+--#mezuniyet
+kıvılcım#kıvılcım
+--
+--
+--
+--
+buyruk#dikte etmek buyruk dikta ferman emir buyuru
+--#regülatör dedantör
+savunucu#savunucu
+--
+--
+kiremit#kiremit karo
+yabancı#yabancı ecnebi çet elli
+--
+vatandaşlık#yurttaşlık vatandaşlık
+meydan#meydan
+tasarlamak#tasarlamak
+--
+kimya#kimya
+bürokrasi#bürokrasi
+doğal#doğal
+risk#mani mania risk riziko engel tehlike göze almak
+--
+gelin#gelin
+işlemci#işlemci
+kova#kova
+kerestelik#kerestelik orman kereste
+feminist#feminist
+tümör#tümör ur
+itizar#müdafaa itizar özür
+--
+ok#ok
+--
+güneşli#güneşli
+teknisyen#teknisyen
+ödev#ödev
+sis#sis
+--
+ölümlülük#ölümlülük
+--
+--
+--
+--
+serpmek#serpmek
+--#isteka
+salgın#salgın
+--
+--
+diplomat#diplomat
+kurdele#kurdele şerit
+geçiş#geçiş transit
+--
+diz çökmek#diz çökmek
+satıcı#satıcı
+--
+--#zorlayıcı
+sağlık#gönenç sağlık dirlik erinç
+yıkama#çamaşırhane yıkama çamaşır
+itiraf#tevbe itiraf ikrar
+--#yirminci
+yoğun#sık yoğun kalın
+hızlandırmak#hızlanmak hızlandırmak
+--
+--
+--
+mermer#misket bilye ebrulamak mermer
+--
+sıkıcı#sıkıcı
+--#yoğunlaşmak
+tuhaf#tuhaf acayip garip
+--
+boğulmak#boğulmak
+biyografi#yaşamöyküsü biyografi
+--
+--
+kuşkucu#kuşkucu septik
+şort#şort
+mercek#mercek lens adese
+şiş#şiş tükürmek tükürük
+--
+antrepo#antrepo ambar depo
+cennet#cennet
+--
+gelişmiş#gelişmiş
+--
+torun#torun
+--
+--
+--
+stereotip#stereotip
+--
+dokumak#dokumak
+--
+yetersiz#yetersiz kıt az
+elektronik#elektronik
+yontmak#yontmak tıraş etmek ayarlamak süslemek doğru

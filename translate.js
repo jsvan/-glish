@@ -1,17 +1,10 @@
-let LANG = null;
-let FOREIGN = null;
-let ENGLISH = null;
-let WIKI_TABLES = null;
-const SRIDX = 0;
-const WORDIDX = 1;
-const POSIDX = 2;
-const LEVELIDX = 3;
-let AGGRESSION = 0;
 let HTML_BLOCKS = null;
 let TEXT_SECTIONS = null;
 let BLOCKS_TO_SEND = null;
 let FOREIGN_HTML = null;
 let ACTIVATE = true;
+let LANGUAGE = null;
+let PREV_WIKI_IFRAME = null;
 console.log("Loaded translate.js")
 
 /*
@@ -84,30 +77,12 @@ function just_go() {
 		console.log("Received lang data:")
 		console.log(response)
 		console.log(response.payload)
+		LANGUAGE = response.language;
 		translate_page(HTML_BLOCKS, TEXT_SECTIONS, response.payload);
 		console.log("setting inner HTML")
 		document.body.innerHTML = FOREIGN_HTML.join(" ");
 	})
 }
-
-
-
-function get_wiki_table(word) {
-	if (WIKI_TABLES === null) {
-		return "<iframe width=\"550px\" height=\"350px\" srcdoc='None'></iframe>";
-	} else {
-		return WIKI_TABLES.get(word);
-	}
-}
-
-const verb_html_replacement = function (verb, original) {
-	return "<mark style='background-color:orange'><span class=\"a\" title='"+ original +"'>" + verb +
-		"</span><span class=\"b\">" + get_wiki_table(verb) + "</span></mark>";
-};
-
-const word_html_replacement = function (word, original) {
-	return "<mark><span class=\"a\" title='"+ original +"'>"+ word + "</span></mark>";
-};
 
 
 
@@ -122,12 +97,33 @@ function translate_page(html_blocks, text_sections, translated_blocks) {
 		let textidx = text_sections[i];
 		FOREIGN_HTML[textidx] = translated_blocks[i];
 	}
+
 	console.log("Translated page, filled FOREIGN_HTML")
 }
 
+document.body.addEventListener("mousedown", function(e) {
+	const t = e.target;
+	console.log(t);
+	if (!t || !t.attributes || !t.attributes.class || t.attributes.class.value !== "a") {
+		return;
+	}
+	const parent_node = document.getElementById(t.attributes.id.value+"W");
 
+	if (PREV_WIKI_IFRAME && PREV_WIKI_IFRAME.parentNode === parent_node) {
+		console.log("The parents are the same. Building nothing")
+	} else {
+		console.log("The parents are not the same. Deleting old baby. ")
+		if (PREV_WIKI_IFRAME){
+			PREV_WIKI_IFRAME.parentNode.removeChild(PREV_WIKI_IFRAME);
+		}
+		const foreign_word = t.textContent;
+		const baby_iframe = document.createElement("iframe");
+		baby_iframe.setAttribute("src", "https://en.wiktionary.org/wiki/"+foreign_word+"#"+LANGUAGE)
+		parent_node.appendChild(baby_iframe);
+		PREV_WIKI_IFRAME = baby_iframe;
+	}
 
-
+},false);
 
 
 
@@ -190,3 +186,11 @@ function combHTML(){
 	}
 	return [results, textsections, blocks_to_send];
 }
+
+
+/*
+TODO: Add listeners for every word on page.
+ 	On word click:
+ 	 	add to the iframe a src attribute with the wikipedia site
+ 	 	Don't need to remove any iframes, bc once viewed and loaded, it wont continually reping wiki.org or anything.
+ */

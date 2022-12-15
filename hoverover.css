@@ -1,11 +1,24 @@
 .b { transition-delay: 0s;
     display:none;
+
 }
 .a:active + .b {
     display:block;
+
 }
+iframe::-moz-selection {
+    background-color: transparent;
+    color: #000;
+}
+
+iframe::selection {
+    background-color: transparent;
+    color: #000;
+}
+
 .b:hover {
     display:block;
+
 }
 table {
     background:#fafafa;
@@ -14,7 +27,9 @@ table {
 iframe {
     background: #fafafa;
     width:550px;
-    height:350px;
+    height:550px;
+    padding: 5px;
+    border: 1px solid #ccc;
 }
 .b iframe {
     border:3px;

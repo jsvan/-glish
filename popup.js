@@ -34,6 +34,7 @@ send messages to background:
 
 document.getElementById("Title").addEventListener("click", forcerun);
 document.getElementById("Aggression").addEventListener("mouseup", rangeCount);
+document.getElementById("Aggression").addEventListener("input", changeRange);
 document.getElementById("Activated").addEventListener('change', activate);
 document.getElementById("LanguageSelect").addEventListener("change", set_fgn)
 
@@ -63,17 +64,19 @@ function activate() {
 }
 
 function rangeCount(){
-    let rangeslider = document.getElementById("Aggression");
-    let output = document.getElementById("AggroCount");
-    output.innerHTML = rangeslider.value;
+    changeRange();
 
     // Save value to session storage:
-    chrome.runtime.sendMessage({message: "set_agr", payload: rangeslider.value});
+    chrome.runtime.sendMessage({message: "set_agr", payload: document.getElementById("Aggression").value});
+}
+function changeRange(){
+    console.log("Changed aggrocount")
+    document.getElementById("AggroCount").innerHTML = document.getElementById("Aggression").value;
 }
 
 function load_page() {
     // Populate language options
-    const url = chrome.runtime.getURL("./languagepacks/available_languages.txt");
+    const url = chrome.runtime.getURL("./updated_language_packs/available_languages.txt");
     fetch(url)
         .then((response) => response.text())
         .then((text) => langs2menu(text))

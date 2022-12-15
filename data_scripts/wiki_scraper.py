@@ -7,7 +7,7 @@ from pprint import pprint as pp
 class Scraper:
 
 	def __init__(self):
-		with open('../languagepacks/available_languages.txt') as F:
+		with open('../updated_language_packs/available_languages.txt') as F:
 			self.short_2_langname = {x.split('\t')[1]:self.uppercase(x.split('\t')[0]) for x in F.read().split('\n')}
 			self.cpl_language_dict = {x:dict() for x in self.short_2_langname.values()}
 

@@ -13,6 +13,26 @@ import time
 from bs4 import BeautifulSoup
 from wiki_scraper import Scraper
 
+
+"""
+
+Could be in the translation table, it gives you a link to SEE SOMEOTHER PAGE, and we should try that out.
+<div class="pseudo NavFrame">
+	<div class="NavHead" style="text-align: left;">
+		a place where the dead are buried
+		<span style="font-weight: normal">
+			—
+			<i>
+				see
+			</i>
+		</span>
+		<a href="/wiki/graveyard" title="graveyard">
+			graveyard
+		</a>
+	</div>
+</div>
+
+"""
 def main():
 
 	with open('../updated_language_packs/eng_todo.txt') as F:
