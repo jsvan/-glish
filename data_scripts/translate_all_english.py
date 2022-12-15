@@ -9,6 +9,7 @@ Scrape wiktionary for all translations for a word
 """
 
 from wiki_scraper import Scraper
+import time
 
 def main():
 
@@ -24,6 +25,12 @@ def main():
 
 		except KeyboardInterrupt as e:
 			input("Keyboard Interrupt detected. Waiting for button press...")
+			print('\rRetrying: ', i, '/', len(listofenglishwords), end='')
+			scraper.html_to_filled_vocab_dict(word, force=True)
+		except Exception as e:
+			print('\rRetrying: ', i, '/', len(listofenglishwords), end='. Waiting 10 seconds. ')
+			time.sleep(10) # wait 10 seconds before trying again
+			scraper.html_to_filled_vocab_dict(word, force=True)
 
 	print("\nsaving to disk")
 	scraper.save_dict_overwrite(listofenglishwords)
