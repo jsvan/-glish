@@ -112,14 +112,19 @@ document.body.addEventListener("mousedown", function(e) {
 	if (PREV_WIKI_IFRAME && PREV_WIKI_IFRAME.parentNode === parent_node) {
 		console.log("The parents are the same. Building nothing")
 	} else {
-		console.log("The parents are not the same. Deleting old baby. ")
 		if (PREV_WIKI_IFRAME){
-			PREV_WIKI_IFRAME.parentNode.removeChild(PREV_WIKI_IFRAME);
+			try{
+				PREV_WIKI_IFRAME.parentNode.removeChild(PREV_WIKI_IFRAME);
+			} catch (e){
+				console.log(e);
+			}
+
 		}
-		const foreign_word = t.textContent;
+		const foreign_word = t.firstChild.textContent.toLowerCase();
 		const baby_iframe = document.createElement("iframe");
-		baby_iframe.setAttribute("src", "https://en.wiktionary.org/wiki/"+foreign_word+"#"+LANGUAGE)
+		baby_iframe.setAttribute("src", "https://en.wiktionary.org/wiki/"+foreign_word+"#"+LANGUAGE);
 		parent_node.appendChild(baby_iframe);
+		console.log("Appended iframe "+baby_iframe)
 		PREV_WIKI_IFRAME = baby_iframe;
 	}
 

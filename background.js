@@ -72,8 +72,7 @@ const LANG_STORAGE_TAG = 'LANG_STORAGE_TAG';
 chrome.runtime.onInstalled.addListener(function () {
 	ACTIVATED = true;
 	chrome.storage.sync.set({ACTIVE_STORAGE_TAG:ACTIVATED}, () => {});
-	AGGRESSION = 5;
-	chrome.storage.sync.set({AGGRO_STORAGE_TAG:AGGRESSION}, () => {});
+	chrome.storage.sync.set({AGGRO_STORAGE_TAG:5}, () => {});
 	chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
 
 })
@@ -89,7 +88,9 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 						getAggression().then(()=> {
 							console.log("Aggression is: " + AGGRESSION)
 							console.log("preparing translation: Got Lang data")
-
+							if (!FOREIGN) {
+								return 0;
+							}
 							const chunks_to_translate = request.payload;
 							const translated_chunks = [];
 							let idint = 0;
@@ -99,16 +100,15 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 								translated_chunks.push(newstring);
 							}
 							console.log("BACKGROUND sending translated response")
-							console.log(translated_chunks)
+							//console.log(translated_chunks)
 							console.log("Lang Data is: "+LANG_DATA[0])
 							sendResponse({payload: translated_chunks, language: capitalize(LANG_DATA[0])});
 							return 1;
 						})
-
 					)
 				)
 			}
-			return 1;
+			return 0;
 		})
 		return true;
 
@@ -198,14 +198,20 @@ function sendmessage(messagedict) {
 Gets from mem or chrome storage Aggression and Scaled aggression.
 Returns [Aggression, Scaled Aggression]
  */
-function getAggression(){
+function getAggression() {
 	if (AGGRESSION === null) {
+		console.log("Getting Aggression chef from storage")
 		return chrome.storage.sync.get([AGGRO_STORAGE_TAG]).then((result) => {
 			AGGRESSION = result.AGGRO_STORAGE_TAG;
+			if (!AGGRESSION) {
+				AGGRESSION = 5;
+			}
 			SCALED_AGGRESSION = aggressionToIdx(AGGRESSION);
+			console.log("got scaled aggro " + SCALED_AGGRESSION )
 			return AGGRESSION;
 		});
 	} else {
+		console.log("Aggressions exists: "+AGGRESSION)
 		return Promise.resolve(null);
 	}
 
@@ -264,7 +270,6 @@ function loadForeign(){
 	return fetch(fileloc)
 		.then((response) => response.text())
 		.then((text) => prepareVocab(text))
-		.then((vlist) => vlist.map(x => x.length > 1 ? x[0] : ''))
 		.then((vlist) => {
 			LANG_DATA.push(vlist);
 			console.log(vlist);
@@ -272,6 +277,8 @@ function loadForeign(){
 		})
 		.then((vlist) => {
 			FOREIGN = vlist;
+			console.log(FOREIGN)
+			console.log("This is foreign")
 			return vlist;
 		})
 
@@ -282,14 +289,22 @@ function loadForeign(){
 Split filetext by line, and each line by tabs.
 Returns list of lists.
 
-Tested: this works properly
+
  */
 function prepareVocab(filetxt){
 	let ret =  filetxt.split("\n");
 	ret = ret.map((x) => x.split("#"));
+	ret = ret.map((x) => {
+		if (x.length < 2) {
+			return []
+		}
+		if (x[0] === '--') {
+			return x[1].split(' ');
+		}
+		return [x[0]]
+	})
 	return ret;
 }
-
 
 function loadEnglish(){
 	const fileloc = chrome.runtime.getURL("./updated_language_packs/eng_todo.txt");
@@ -311,15 +326,11 @@ function loadEnglish(){
 		});
 }
 
-
 const word_html_replacement = function (translated, original, idnum) {
-	const toret = 	"<em><strong>" +
-				"<span class=\"a\" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>" +
-				"<span class=\"b\" id='Nos"+idnum+"VocW'>" + "</span>" +
-			"</strong></em>";
+	const toret = "<em><strong>" + "<span class=\"a\" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>" +
+				"<span class=\"b\" id='Nos"+idnum+"VocW'>" + "</span></strong></em>";
 	return toret;
 };
-
 
 /*
 replaceNodeVocab(nodetext)
@@ -331,8 +342,6 @@ Calls:
 
  */
 function replaceNodeVocab(nodetext, idint){
-
-	//console.log("Replacing "+nodetext);
 	let node = nodetext.trim()
 	if (!node){
 		return [nodetext, idint]
@@ -346,29 +355,42 @@ function replaceNodeVocab(nodetext, idint){
 			continue
 		}
 		let replacementword = word;
-		let cleanword = word.replace(/[^a-z]/gi, '').toLowerCase();
+		const upper = word.charAt(0) === word.charAt(0).toUpperCase();
+		let cleanword = word.toLowerCase(); //.replace(/[^a-z]/gi, '');
 		if (cleanword.length > 0 && in_working(cleanword)) {
-			replacementword = formatTranslateWord(cleanword, idint);
+			replacementword = formatTranslateWord(cleanword, idint, upper);
 			idint += 1;
 		}
 		newwords.push(replacementword);
 	}
 	return [newwords.join(" "), idint]
-
 }
 
 function in_working(word) {
 	return ENGLISH.has(word) && ENGLISH.get(word) < SCALED_AGGRESSION;
 }
 
-function formatTranslateWord(englishword, idint){
+function subpar_word(fwordlst) {
+	fwordlst.push('')
+	const r = Math.floor(Math.random() * fwordlst.length)
+	if (!fwordlst[r]){
+		return ''
+	}
+	return fwordlst[r] + "<sub style=\"font-weight:normal\">(?)</sub>"
+}
+
+function formatTranslateWord(englishword, idint, upper){
 	const englishidx = ENGLISH.get(englishword);
-	let foreignword = FOREIGN[englishidx];
+	const fwordlst = FOREIGN[englishidx];
+	if (!fwordlst){
+		return englishword
+	}
+	let foreignword = fwordlst.length < 2 ? fwordlst[0] : subpar_word(fwordlst, englishword);
 	if (!foreignword || foreignword === '--') {
 		return englishword
 	}
-	if (englishword.charAt(0) === englishword.charAt(0).toUpperCase()){
-		foreignword = capitalize(foreignword)
+	if (upper){
+		foreignword = capitalize(foreignword);
 	}
 	foreignword = word_html_replacement(foreignword, englishword, idint);
 	return foreignword;
