@@ -23,7 +23,7 @@ Here is an example of the pulldown menu icon page.
 
 Here is an example of what it does to your page. Words are replaced with foreign language vocabulary word.
 
-<img src="https://user-images.githubusercontent.com/9337973/208025242-c2d285ef-ce45-4960-b7f4-23ac44120d31.png" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/9337973/208025242-c2d285ef-ce45-4960-b7f4-23ac44120d31.png" >
 
 
 Still in alpha mode so let me know what you think
