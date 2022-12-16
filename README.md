@@ -3,6 +3,23 @@ Translate random common words within your webpages to a language of your choice.
 This app is intended for people who'd like to expose themselves to foreign vocabulary, but aren't sufficiently knowledgable to read foreign websites.
 Do not learn grammar from this app. The words are translated directly and often incorrectly. Use this app as a type of flashcard practice to adjust to foreign words in the context of an uunderstood sentence.
 
+Available languages in version 1.0 are:
+* arabic
+* chinese
+* czech
+* french
+* german
+* hindi
+* italian
+* japanese
+* korean
+* portuguese
+* (Ukrainian sometime later)
+* russian
+* spanish
+* turkish
+
+
 TO INSTALL:
 1) Download/unzip code
 2) open chrome, go to website " chrome://extensions/ "
@@ -23,7 +40,7 @@ Here is an example of the pulldown menu icon page.
 <img src="https://user-images.githubusercontent.com/9337973/207832156-371945d3-8047-49bb-a17f-e9fb20c084fd.png" width="25%" height="25%">
 
 
-Here is an example of what it does to your page. Words are replaced with foreign language vocabulary word.
+Here are examples of what it does to your page. Words are replaced with foreign language vocabulary word.
 
 <img src="https://user-images.githubusercontent.com/9337973/208025242-c2d285ef-ce45-4960-b7f4-23ac44120d31.png" >
 
