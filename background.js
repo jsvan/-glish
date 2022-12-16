@@ -67,6 +67,7 @@ let FOREIGN = null;
 const AGGRO_STORAGE_TAG = "AGGRO_STORAGE_TAG";
 const ACTIVE_STORAGE_TAG = 'ACTIVE_STORAGE_TAG';
 const LANG_STORAGE_TAG = 'LANG_STORAGE_TAG';
+const SEEN = new Set();
 
 
 chrome.runtime.onInstalled.addListener(function () {
@@ -339,9 +340,10 @@ Returns string.
 Calls:
 * in_working()
 * formatTranslateWord()
-
+* Changing this to only translate a word once per node
  */
 function replaceNodeVocab(nodetext, idint){
+	SEEN.clear();
 	let node = nodetext.trim()
 	if (!node){
 		return [nodetext, idint]
@@ -357,8 +359,9 @@ function replaceNodeVocab(nodetext, idint){
 		let replacementword = word;
 		const upper = word.charAt(0) === word.charAt(0).toUpperCase();
 		let cleanword = word.toLowerCase(); //.replace(/[^a-z]/gi, '');
-		if (cleanword.length > 0 && in_working(cleanword)) {
+		if (cleanword.length > 0 && in_working(cleanword) && !SEEN.has(cleanword)) {
 			replacementword = formatTranslateWord(cleanword, idint, upper);
+			SEEN.add(cleanword);
 			idint += 1;
 		}
 		newwords.push(replacementword);
