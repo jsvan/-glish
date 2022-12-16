@@ -16,10 +16,14 @@ TO USE:
 4) choose language
 5) jiggle the number bar a bit. This changes percentage of vocab words translated
 
+Here is an example of the pulldown menu icon page.
 
-<img src="https://user-images.githubusercontent.com/9337973/207832156-371945d3-8047-49bb-a17f-e9fb20c084fd.png" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/9337973/207832156-371945d3-8047-49bb-a17f-e9fb20c084fd.png" width="25%" height="25%">
 
-(Example of pulldown menu icon page necessary to get the app going)
+
+Here is an example of what it does to your page. Words are replaced with foreign language vocabulary word.
+
+<img src="https://user-images.githubusercontent.com/9337973/208025242-c2d285ef-ce45-4960-b7f4-23ac44120d31.png" width="50%" height="50%">
 
 
 Still in alpha mode so let me know what you think
