@@ -25,8 +25,7 @@ Here is an example of what it does to your page. Words are replaced with foreign
 
 <img src="https://user-images.githubusercontent.com/9337973/208025242-c2d285ef-ce45-4960-b7f4-23ac44120d31.png" >
 
-![image](https://user-images.githubusercontent.com/9337973/208040537-e03767a7-89e7-48d3-9332-8c4a6e958bd7.png)
-
+![image](https://user-images.githubusercontent.com/9337973/208040857-bc6e37e5-7b7a-4ffe-9f1a-4aa166b7e435.png)
 
 Still in alpha mode so let me know what you think
 
