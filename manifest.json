@@ -1,5 +1,5 @@
 {
-  "name": "Onsite Unigram Translator",
+  "name": "Nosey Vocab",
   "version": "1.00",
   "description": "Vocab learner with common foreign words injected into your english websites.",
   "permissions": ["contextMenus", "activeTab", "notifications", "storage"],
