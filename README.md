@@ -1,6 +1,7 @@
 # Nosey Vocab (Foreign Vocab Learner)
 Translate random common words within your webpages to a language of your choice. Learn foreign vocab in the context of an English sentence. Choose the language and the quantity of translated words. As you get more familiar with the vocab lists, you can increase the variety of words translated.
 This app is intended for people who'd like to expose themselves to foreign vocabulary, but aren't sufficiently knowledgable to read foreign websites.
+Do not learn grammar from this app. The words are translated directly and often incorrectly. Use this app as a type of flashcard practice to adjust to foreign words in the context of an uunderstood sentence.
 
 TO INSTALL:
 1) Download/unzip code
