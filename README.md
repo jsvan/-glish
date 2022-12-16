@@ -28,6 +28,8 @@ Here is an example of what it does to your page. Words are replaced with foreign
 
 ![image](https://user-images.githubusercontent.com/9337973/208040857-bc6e37e5-7b7a-4ffe-9f1a-4aa166b7e435.png)
 
+Hovering your mouse over translated words will reveal the original text in English. Clicking (& holding) on a word will open that word's foreign language page in wikipedia.
+
 Still in alpha mode so let me know what you think
 
 
