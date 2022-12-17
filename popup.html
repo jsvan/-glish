@@ -23,53 +23,71 @@
             display: none;
         }
 
-
-
     </style>
 </head>
 <body style="background-color: #fff4eb; min-width: 250px;">
-    <div class="myPadding">
-        <div class="boxdiv" style="text-align:center">
-            <br>
-            <div style="alignment:center" id="Title">Nosey Vocab</div>
-            <br>
+<div class="myPadding">
+    <div class="boxdiv" style="text-align:center">
+        <br>
+        <div style="alignment:center" id="Title">Nosey Vocab</div>
+        <br>
+        <div class="boxdiv" style="max-width: 129px; max-height: 129px; margin:0 auto;">
             <img src="images/NVicon128.png" alt="Icon of an impressionist painting with a young man smirking.">
+        </div>
+
+        <br><br>
+
+
+        <select id="LanguageSelect">
+            <option value="" id="defaultopt" disabled="disabled" selected="selected">Please select a language</option>
+        </select>
+
+        <br>
+        <br>
+        <input type="range" id="Aggression" min="0" max="100" value="5" step="2" />
+        <div id="AggroCount">5</div>
+
+
+        <br>
+        <input type="checkbox" value="activated" id="Activated" /> <label for="Activated">Enable this app</label>
+        <br>
+        <br>
+    </div>
+
+    <p><a href="javascript:void(0);" id="Instructions" title="Instructions Menu">Instructions and Tricks</a></p>
+    <div class="boxdiv" id="Instructions_Menu" style="display: none;">
+        <div class="myPadding">
+
+            <p>&#9733 <em><strong>HOVER</strong></em></p><p>on a word to reveal original English word.</p>
+            <br>
+
+            <p>&#9733 <em><strong>CLICK+HOLD</strong></em></p><p>on a word to open a word's detailed information page.</p>
+            <br>
+        </div>
+    </div>
+    <p><a href="javascript:void(0);" id="Support" title="Support Menu">Support</a></p>
+    <div class="boxdiv" id="Support_Menu" style="text-align:center; display: none;">
+        <div class="myPadding">
+            <p >Enjoying?</p>
+            <p>My first greatest appreciation is you using my app.</p><p>However...</p>
+
+            <script type='text/javascript' src='external/KoFi.js'></script>
+            <script type='text/javascript' src="external/runKoFi.js"></script>
+            <br>
+            <p>I also appreciate liquidity. <!--They generally use Venmo. <br><a href="https://account.venmo.com/u/Julian-Vanecek"  target="_blank">(@Julian-Vanecek)</a>--> </p>
+            <br>
+            <br>
+            <p>Though unaffiliated with me, this project depends heavily on the fantastic work of <i>Wikimedia Foundation's</i> crowdsourced <i>Wiktionary</i> project.</p>
+            <img src="images/wikimedia_foundation.svg" title="Wikimedia Foundation" alt="Wikimedia Foundation" style="width:100px;">
+            <br>
+            <p>Please consider donating to them as well.</p>
+            <script type='text/javascript' src='external/Wiki.js'></script>
+            <script type='text/javascript' src="external/runWiki.js"></script>
             <br><br>
-
-
-            <select id="LanguageSelect">
-                <option value="" id="defaultopt" disabled="disabled" selected="selected">Please select a language</option>
-            </select>
-
-            <br>
-            <br>
-            <input type="range" id="Aggression" min="0" max="100" value="5" step="2" />
-            <div id="AggroCount">5</div>
-
-
-            <br>
-            <input type="checkbox" value="activated" id="Activated" /> <label for="Activated">Enable this app</label>
-            <br>
-
         </div>
     </div>
-    <div class="myPadding">
-        <div class="boxdiv">
-
-            <p style="text-align:center">Special things you can do with translated words: </p><br>
-            <div class="myPadding">
-
-                <p>&#9733 <em><strong>HOVER</strong></em></p><p>(reveal original English word.)</p>
-                <br>
-
-                <p>&#9733 <em><strong>CLICK+HOLD</strong></em></p><p>(open a word's detailed information page.)</p>
-
-                <br>
-            </div>
-        </div>
-    </div>
-
-    <script src="popup.js">
-    </script>
+</div>
+<script src="popup.js">
+</script>
 </body>
 </html>

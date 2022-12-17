@@ -37,11 +37,33 @@ document.getElementById("Aggression").addEventListener("mouseup", rangeCount);
 document.getElementById("Aggression").addEventListener("input", changeRange);
 document.getElementById("Activated").addEventListener('change', activate);
 document.getElementById("LanguageSelect").addEventListener("change", set_fgn)
+document.getElementById("Support").addEventListener("mouseup", support);
+document.getElementById("Instructions").addEventListener("mouseup", instructions);
+
 
 window.addEventListener('load',
     function() {
         load_page();
     }, false);
+
+
+function support() {
+    hideshow("Support");
+}
+function instructions() {
+    hideshow("Instructions")
+}
+function hideshow(id) {
+    const link = document.getElementById(id);
+    const menustyle = document.getElementById(id+"_Menu").style;
+    if (menustyle.display === 'none'){
+        menustyle.display = 'block';
+        link.innerText = "Hide " + link.innerText
+    } else {
+        menustyle.display = 'none';
+        link.innerText = link.innerText.substring(5);
+    }
+}
 
 function forcerun(){
     console.log("sending force run command")
@@ -67,7 +89,7 @@ function rangeCount(){
     changeRange();
 
     // Save value to session storage:
-    chrome.runtime.sendMessage({message: "set_agr", payload: document.getElementById("Aggression").value});
+    chrome.runtime.sendMessage({message: "set_agr", payload: document.getElementById("Aggression").value}, ()=>{});
 }
 function changeRange(){
     console.log("Changed aggrocount")

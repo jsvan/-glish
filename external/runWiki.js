@@ -1,0 +1,1 @@
+jsvnvwkwidget.init('Support Wikimedia', '#29abe0', '');jsvnvwkwidget.draw();
