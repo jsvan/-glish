@@ -37,8 +37,9 @@ document.getElementById("Aggression").addEventListener("mouseup", rangeCount);
 document.getElementById("Aggression").addEventListener("input", changeRange);
 document.getElementById("Activated").addEventListener('change', activate);
 document.getElementById("LanguageSelect").addEventListener("change", set_fgn)
-document.getElementById("Support").addEventListener("mouseup", support);
-document.getElementById("Instructions").addEventListener("mouseup", instructions);
+document.getElementById("Support").addEventListener("mouseup", function(){hideshow("Support")});
+document.getElementById("About").addEventListener("mouseup", function(){hideshow("About")});
+document.getElementById("Instructions").addEventListener("mouseup", function(){hideshow("Instructions")});
 
 
 window.addEventListener('load',
@@ -47,12 +48,6 @@ window.addEventListener('load',
     }, false);
 
 
-function support() {
-    hideshow("Support");
-}
-function instructions() {
-    hideshow("Instructions")
-}
 function hideshow(id) {
     const link = document.getElementById(id);
     const menustyle = document.getElementById(id+"_Menu").style;
