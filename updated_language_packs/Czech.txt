@@ -206,7 +206,7 @@ muset#mošt muset
 válka#vojna válka boj
 domov#doma domov domů
 pod#pod
-prostor#prostor místo místnost pokoj
+pokoj#prostor místo místnost pokoj
 fakt#fakt skutečnost
 plocha#oblast plocha
 národní#státní národní
