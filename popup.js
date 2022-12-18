@@ -1,40 +1,10 @@
-/*
-
-needs a button to deactivate
-
-
-
-listener needed:
-    on load: set local values to ACTIVATE, LANG, AGGRESSION
-
-send messages to background:
-    1) activate/deactivate
-    2) lang
-    3) aggression
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.getElementById("Title").addEventListener("click", forcerun);
-document.getElementById("Aggression").addEventListener("mouseup", rangeCount);
-document.getElementById("Aggression").addEventListener("input", changeRange);
+document.getElementById("Aggression").addEventListener("mouseup", sendAggression);
+document.getElementById("Aggression").addEventListener("input", function(){changeRange("Aggression")});
+document.getElementById("Chance").addEventListener("mouseup", sendChance);
+document.getElementById("Chance").addEventListener("input", function(){changeRange("Chance")});
+document.getElementById("Boredom").addEventListener("mouseup", sendBoredom);
+document.getElementById("Boredom").addEventListener("input", function(){changeRange("Boredom", "Aggression")});
 document.getElementById("Activated").addEventListener('change', activate);
 document.getElementById("LanguageSelect").addEventListener("change", set_fgn)
 document.getElementById("Support").addEventListener("mouseup", function(){hideshow("Support")});
@@ -80,15 +50,33 @@ function activate() {
     });
 }
 
-function rangeCount(){
-    changeRange();
-
+function sendAggression(){
+    changeRange("Aggression");
     // Save value to session storage:
     chrome.runtime.sendMessage({message: "set_agr", payload: document.getElementById("Aggression").value}, ()=>{});
 }
-function changeRange(){
-    console.log("Changed aggrocount")
-    document.getElementById("AggroCount").innerHTML = document.getElementById("Aggression").value;
+function sendChance(){
+    changeRange("Chance");
+    // Save value to session storage:
+    chrome.runtime.sendMessage({message: "set_chn", payload: document.getElementById("Chance").value}, ()=>{});
+}
+function sendBoredom(){
+    changeRange("Boredom");
+    // Save value to session storage:
+    chrome.runtime.sendMessage({message: "set_brd", payload: document.getElementById("Boredom").value}, ()=>{});
+}
+function changeRange(id){
+    document.getElementById(id+"Count").innerHTML = document.getElementById(id).value + "%";
+}
+
+function changeBoredomRange() {
+    const aggroval = document.getElementById("Aggression").value;
+    const rangebar = document.getElementById("Boredom");
+    rangebar.max = ""+aggroval;
+    if (rangebar.value > aggroval){
+        rangebar.value = aggroval;
+        changeRange("Boredom");
+    }
 }
 
 function load_page() {
@@ -109,15 +97,26 @@ function load_page() {
             document.getElementById('Activated').toggleAttribute("checked", true);
         }
     });
-
     chrome.runtime.sendMessage({message: "get_agr"}, function(response){
         const newagr = response.payload;
-        document.getElementById("AggroCount").innerHTML = newagr;
         document.getElementById("Aggression").value = newagr;
+        changeRange("Aggression");
         console.log("Aggression is now: " + newagr);
     });
-
+    chrome.runtime.sendMessage({message: "get_chn"}, function(response){
+        const newchn = response.payload;
+        document.getElementById("Chance").value = newchn;
+        changeRange("Chance");
+        console.log("Chance is now: " + newchn);
+    });
+    chrome.runtime.sendMessage({message: "get_brd"}, function(response){
+        const newbrd = response.payload;
+        document.getElementById("Boredom").value = newbrd;
+        changeRange("Boredom");
+        console.log("Boredom is now: " + newbrd);
+    });
 }
+
 function setChosenLang() {
     chrome.runtime.sendMessage({message: "get_lng"}, function(response){
         const langname = response.payload;
@@ -161,139 +160,3 @@ function capitalize(word){
 function lowerize(word){
     return word.charAt(0).toLowerCase() + word.slice(1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//TODO: Delete below
-    /*
-    if (getHighlight()) {
-        document.getElementById("highlight").innerHTML = "On";
-        document.getElementById("highlighttext").innerHTML = "<mark>text highlighting</mark>";
-    }
-    else {
-        document.getElementById("highlight").innerHTML = "Off";
-        document.getElementById("highlighttext").innerHTML = "text highlighting";
-    }
-
-    var wealth = getLS("WEALTH");
-    var nationalism = getLS("NATIONALISM");
-    var country = getLS("COUNTRY");
-    var identity = getLS("GROUP_IDENTITY");
-
-    if (wealth) {
-        document.getElementsByName("wealth")[wealth - 1].checked = "checked";
-    }
-
-    if (nationalism) {
-        document.getElementsByName("nationalism")[nationalism - 1].checked = "checked";
-    }
-
-    if (country) {
-        document.getElementById("country").value = country;
-    }
-
-    if (identity) {
-        document.getElementsByName("group_identity")[identity - 1].checked = "checked";
-    }
-
-    if (wealth && nationalism && country && identity) {
-        document.getElementById("survey").style.display = "none";
-        document.getElementById("collapsed").style.display = "block";
-    }
-}
-
-// Stores a user's answers to the popup questions in LS
-function submitSurvey() {
-    var wealthrad = document.getElementsByName("wealth");
-    for (var i = 0, length = wealthrad.length; i < length; i++) {
-        if (wealthrad[i].checked) {
-            wealth = wealthrad[i].value.toString();
-            setLS("WEALTH", wealth); 
-            break;
-        }
-    }
-
-    var natrad = document.getElementsByName("nationalism");
-    for (var i = 0, length = natrad.length; i < length; i++) {
-        if (natrad[i].checked) {
-            nationalism = natrad[i].value.toString();
-            setLS("NATIONALISM", nationalism); 
-            break;
-        }
-    }
-
-    var country = document.getElementById("country").value;
-    setLS("COUNTRY", country); 
-
-    //var group_identity = document.getElementById("group_identity").value;
-    //setLS("GROUP_IDENTITY", group_identity);
-
-    var idnrad = document.getElementsByName("group_identity");
-    for (var i = 0, length = idnrad.length; i < length; i++) {
-        if (idnrad[i].checked) {
-            group_identity = idnrad[i].value.toString();
-            setLS("GROUP_IDENTITY", group_identity);
-            break;
-        }
-    }
-
-    document.getElementById("survey").style.display = "none";
-    document.getElementById("collapsed").style.display = "block";
-}
-
-// switches text highlighting on or off
-function toggleHighlight() {
-    if (getHighlight()) {  // OFF state
-        document.getElementById("highlight").innerHTML = "Off";
-        document.getElementById("highlighttext").innerHTML = "text highlighting";
-        setLS("highlight", "0")
-    } else {  // ON state
-        document.getElementById("highlight").innerHTML = "On";
-        document.getElementById("highlighttext").innerHTML = "<mark>text highlighting</mark>";
-        setLS("highlight", "1")
-    }
-}
-
-function expandSurvey() {
-    document.getElementById("survey").style.display = "block";
-    document.getElementById("collapsed").style.display = "none";
-}
-
-function openPrivacyPage() {
-    chrome.tabs.create({'url':"https://jsvan.github.io/Common_Sents_Privacy_Policy.html", 'active':true});
-};
-
-function openPrintPage() {
-    chrome.tabs.create({'url':chrome.runtime.getURL("printpage.html"), 'active':true});
-};
-
-function openInstructionsPage() {
-    chrome.tabs.create({'url':"https://jsvan.github.io/Common_Sents_Usage_Instructions.html", 'active':true});
-};
-
-function setLS(key, val) {
-    localStorage["senti_" + key] = val;
-}
-
-function getLS(key) {
-    return localStorage["senti_" + key];
-}
-
-function rmLS(key) {
-    localStorage.removeItem("senti_" + key);
-}
-
-function getHighlight() {
-    return parseInt(getLS("highlight"));
-}
-*/

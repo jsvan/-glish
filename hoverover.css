@@ -6,10 +6,6 @@
     display:block;
 
 }
-iframe::-moz-selection {
-    background-color: transparent;
-    color: #000;
-}
 
 iframe::selection {
     background-color: transparent;

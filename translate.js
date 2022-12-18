@@ -1,10 +1,14 @@
 let HTML_BLOCKS = null;
 let TEXT_SECTIONS = null;
+let COUNT_TEXT_SECTIONS = 0;
 let BLOCKS_TO_SEND = null;
 let FOREIGN_HTML = null;
 let ACTIVATE = true;
 let LANGUAGE = null;
 let PREV_WIKI_IFRAME = null;
+let DOWN = null;
+let UP = null;
+let PREV_IFRAME_WORD = null;
 console.log("Loaded translate.js")
 
 /*
@@ -73,14 +77,17 @@ function grab_and_go() {
 
 
 function just_go() {
+	console.log("GOT THIS MANY TEXT SECTIONS: "+ COUNT_TEXT_SECTIONS)
+	if (COUNT_TEXT_SECTIONS < 5){
+		return
+	}
 	chrome.runtime.sendMessage({message:"translate", payload:BLOCKS_TO_SEND}, function(response){
 		console.log("Received lang data:")
-		console.log(response)
-		console.log(response.payload)
 		LANGUAGE = response.language;
 		translate_page(HTML_BLOCKS, TEXT_SECTIONS, response.payload);
 		console.log("setting inner HTML")
 		document.body.innerHTML = FOREIGN_HTML.join(" ");
+		document.body.style.overflow = 'auto'
 	})
 }
 
@@ -102,14 +109,45 @@ function translate_page(html_blocks, text_sections, translated_blocks) {
 }
 
 document.body.addEventListener("mousedown", function(e) {
+	DOWN = new Date();
+	setTimeout(()=>{
+		if (UP <= DOWN) {
+			iframe(e);
+		}
+	}, 200)
+});
+document.body.addEventListener("mouseup", function(e) {
+	UP = new Date();
+	console.log('hello '+ (UP - DOWN));
+	console.log(e.target)
+	if ((UP - DOWN) < 120) {
+		// click
+		rotateWord(e);
+	}
+});
+
+function rotateWord(e){
+	const t = e.target;
+	if (!t || !t.attributes || !t.attributes.class || t.attributes.class.value !== "a") {
+		return;
+	}
+	console.log("Click good")
+
+	const otherwords = t.dataset.nvoc.split(' ');
+	const i = Number(t.dataset.nvi)  % otherwords.length;
+	t.dataset.nvi = ""+(i+1);
+	t.firstChild.textContent = otherwords[i];
+}
+
+function iframe(e) {
 	const t = e.target;
 	console.log(t);
 	if (!t || !t.attributes || !t.attributes.class || t.attributes.class.value !== "a") {
 		return;
 	}
 	const parent_node = document.getElementById(t.attributes.id.value+"W");
-
-	if (PREV_WIKI_IFRAME && PREV_WIKI_IFRAME.parentNode === parent_node) {
+	let foreign_word = t.firstChild.textContent;
+	if (PREV_WIKI_IFRAME && PREV_WIKI_IFRAME.parentNode === parent_node && foreign_word === PREV_IFRAME_WORD) {
 		console.log("The parents are the same. Building nothing")
 	} else {
 		if (PREV_WIKI_IFRAME){
@@ -120,7 +158,14 @@ document.body.addEventListener("mousedown", function(e) {
 			}
 
 		}
-		const foreign_word = t.firstChild.textContent.toLowerCase();
+		PREV_IFRAME_WORD = foreign_word;
+		console.log("CPT:")
+		console.log(typeof t.CPT);
+		console.log(t.CPT);
+
+		if (t.CPT) {
+			foreign_word = foreign_word.toLowerCase();
+		}
 		const baby_iframe = document.createElement("iframe");
 		baby_iframe.setAttribute("src", "https://en.wiktionary.org/wiki/"+foreign_word+"#"+LANGUAGE);
 		parent_node.appendChild(baby_iframe);
@@ -128,9 +173,7 @@ document.body.addEventListener("mousedown", function(e) {
 		PREV_WIKI_IFRAME = baby_iframe;
 	}
 
-},false);
-
-
+}
 
 /*
  This function is a massive handwritten regex
@@ -146,6 +189,7 @@ e.g. document.body.innerHTML = combHTML(document.body).map(x => x[0]).join(" ")
 
  */
 function combHTML(){
+	COUNT_TEXT_SECTIONS = 0;
 	const body = document.body.innerHTML.toString();
 	const results = [];
 	let previ = 0;
@@ -180,6 +224,9 @@ function combHTML(){
 		string_var = body.substring(previ, posti + 1);
 		results.push( string_var );
 		if (pushtext) {
+			if (string_var.length > 50) {
+				COUNT_TEXT_SECTIONS += 1;
+			}
 			blocks_to_send.push(string_var);
 			pushtext = false;
 		}

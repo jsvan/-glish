@@ -35,21 +35,41 @@
             <img src="images/NVicon128.png" alt="Icon of an impressionist painting with a young man smirking.">
         </div>
 
-        <br><br>
-
+        <br>
 
         <select id="LanguageSelect">
             <option value="" id="defaultopt" disabled="disabled" selected="selected">Please select a language</option>
         </select>
 
-        <br>
-        <br>
-        <input type="range" id="Aggression" min="0" max="100" value="5" step="2" />
-        <div id="AggroCount">5</div>
+        <br><br>
 
-
-        <br>
         <input type="checkbox" value="activated" id="Activated" /> <label for="Activated">Enable this app</label>
+        <br>
+
+
+
+
+
+    </div>
+<br>
+    <div class="boxdiv" style="text-align: center">
+        <br>
+        <div>
+            <label for="Aggression">Use up to <span id="AggressionCount">-- %</span> of Dictionary:</label>
+        </div>
+        <input type="range" id="Aggression" min="0" max="100" value="5" step="2" />
+        <br>
+        <br>
+        <div>
+            <label for="Boredom" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything.">Ignore first <span id="BoredomCount">-- %</span> of Dictionary:</label>
+        </div>
+        <input type="range" id="Boredom" min="0" max="100" value="0" step="2" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything."/>
+        <br>
+        <br>
+        <div>
+            <label for="Chance" >Translate <span id="ChanceCount">-- %</span> of found vocab:</label>
+        </div>
+        <input type="range" id="Chance" min="0" max="100" value="5" step="5" />
         <br>
         <br>
     </div>
@@ -59,25 +79,22 @@
         <div class="myPadding">
 
             <p>&#9733&nbsp;<em><strong>HOVER</strong> on a word</em> &nbsp;to reveal its original English word.</p>
-            <br>
-            <br>
-
             <p>&#9733&nbsp;<em><strong>CLICK+HOLD</strong> on a word</em> &nbsp;to open its detailed information page.</p>
-            <br>
-            <br>
+
         </div>
     </div>
     <p><a href="javascript:void(0);" id="Support" title="Support Menu">Support</a></p>
-    <div class="boxdiv" id="Support_Menu" style="text-align:justify; text-align-last: center; display: none;">
-        <div class="myPadding">
+    <div id="Support_Menu" style="text-align:justify; text-align-last: center; display: none;">
+        <div class="boxdiv myPadding">
             <p >Enjoying?</p>
 
             <script type='text/javascript' src='external/KoFi.js'></script>
             <script type='text/javascript' src="external/runKoFi.js"></script>
             <br>
-            <p><a href="https://account.venmo.com/u/Julian-Vanecek"  target="_blank">Venmo: @Julian-Vanecek</a></p>
             <br>
-            <br>
+        </div>
+        <br>
+        <div class="boxdiv myPadding">
             <p>Though unaffiliated with me, this project depends heavily on the work of <i>Wikimedia Foundation's</i> excellent <i>Wiktionary</i> project.</p>
             <img src="images/wikimedia_foundation.svg" title="Wikimedia Foundation" alt="Wikimedia Foundation" style="width:100px;">
             <br>

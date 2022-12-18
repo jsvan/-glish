@@ -21,50 +21,20 @@
  */
 
 
-
-
-/*
-TODO:
-write:
-
-	listener:
-	 1) for data change from POPUP for aggression, lang, activated
-	 	1a) save locally and to disk
-	 		1ai) aggression
-	 		1aii) activated
-	 		1aiii) lang
-	 	1b) pull lang verbs from disk to local variable, save in dict(lang:verbs)
-	 	1c) send data changes to content script (2)
-
-	 2) for data request from content page
-	 	2a) return [lang, tables, langpack] in one message dict
-	 	2b) return english
-	 	2c) return activate
-	 	2d) return aggression
-
-	on download:
-	 1) set default params aggression, lang, and activate
-
-	on load:
-	 1) read aggression, [lang, tables, langpack], english, activate,
-	 	--> if not None, send to content script
-
-need methods:
-	1) get lang OR from disk
-	2) get aggro OR from disk
-	3) get tables[lang] OR from disk
-	4) get activate OR from disk
-	5) get english OR from disk
-	6) langpack OR from disk
- */
 let AGGRESSION  = null;
 let SCALED_AGGRESSION = 0;
+let CHANCE = null;
+let SCALED_CHANCE = null
+let BOREDOM = null;
+let SCALED_BOREDOM = null;
 let LANG_DATA = null;
 let ENGLISH = null;
 let ACTIVATED = null;
 let LANG = null;
 let FOREIGN = null;
 const AGGRO_STORAGE_TAG = "AGGRO_STORAGE_TAG";
+const CHANCE_STORAGE_TAG = "CHANCE_STORAGE_TAG";
+const BOREDOM_STORAGE_TAG = "BOREDOM_STORAGE_TAG";
 const ACTIVE_STORAGE_TAG = 'ACTIVE_STORAGE_TAG';
 const LANG_STORAGE_TAG = 'LANG_STORAGE_TAG';
 const SEEN = new Set();
@@ -73,7 +43,9 @@ const SEEN = new Set();
 chrome.runtime.onInstalled.addListener(function () {
 	ACTIVATED = true;
 	chrome.storage.sync.set({ACTIVE_STORAGE_TAG:ACTIVATED}, () => {});
-	chrome.storage.sync.set({AGGRO_STORAGE_TAG:5}, () => {});
+	chrome.storage.sync.set({AGGRO_STORAGE_TAG:5},   () => {});
+	chrome.storage.sync.set({CHANCE_STORAGE_TAG:20}, () => {});
+	chrome.storage.sync.set({BOREDOM_STORAGE_TAG:0}, () => {});
 	chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
 
 })
@@ -84,28 +56,32 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		console.log("Preparing translation:")
 		getActivated().then(()=>{
 			if (ACTIVATED) {
-				getEnglish().then(() =>
-					getLangData().then(() =>
-						getAggression().then(()=> {
-							console.log("Aggression is: " + AGGRESSION)
-							console.log("preparing translation: Got Lang data")
-							if (!FOREIGN) {
-								return 0;
-							}
-							const chunks_to_translate = request.payload;
-							const translated_chunks = [];
-							let idint = 0;
-							let newstring = null;
-							for (let i = 0; i < chunks_to_translate.length; i++) {
-								[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
-								translated_chunks.push(newstring);
-							}
-							console.log("BACKGROUND sending translated response")
-							//console.log(translated_chunks)
-							console.log("Lang Data is: "+LANG_DATA[0])
-							sendResponse({payload: translated_chunks, language: capitalize(LANG_DATA[0])});
-							return 1;
-						})
+				getChance().then(() =>
+					getBoredom().then(() =>
+						getEnglish().then(() =>
+							getLangData().then(() =>
+								getAggression().then(()=> {
+									console.log("Aggression is: " + AGGRESSION)
+									console.log("preparing translation: Got Lang data")
+									if (!FOREIGN) {
+										return 0;
+									}
+									const chunks_to_translate = request.payload;
+									const translated_chunks = [];
+									let idint = 0;
+									let newstring = null;
+									for (let i = 0; i < chunks_to_translate.length; i++) {
+										[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
+										translated_chunks.push(newstring);
+									}
+									console.log("BACKGROUND sending translated response")
+									//console.log(translated_chunks)
+									console.log("Lang Data is: "+LANG_DATA[0])
+									sendResponse({payload: translated_chunks, language: capitalize(LANG_DATA[0])}, ()=>{});
+									return 1;
+								})
+							)
+						)
 					)
 				)
 			}
@@ -114,11 +90,26 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 
 	} else if (request.message === "get_agr") {
-
 		getAggression().then(() => {
 			sendResponse({
 				payload: AGGRESSION
-			});
+			}, ()=>{});
+		})
+		return true;
+
+	} else if (request.message === "get_chn") {
+		getChance().then(() => {
+			sendResponse({
+				payload: CHANCE
+			}, ()=>{});
+		})
+		return true;
+
+	} else if (request.message === "get_brd") {
+		getBoredom().then(() => {
+			sendResponse({
+				payload: BOREDOM
+			}, ()=>{});
 		})
 		return true;
 
@@ -127,7 +118,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			sendResponse({
 				message: "hellow",
 				payload: val
-			})
+			}, ()=>{})
 		)
 		return true;
 
@@ -136,7 +127,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			console.log("sending langname")
 			sendResponse({
 				payload: LANG_DATA[0]
-			});
+			}, ()=>{});
 		} else {
 			getLangData().then(() => {
 				let pyld = null;
@@ -145,7 +136,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 				}
 				sendResponse({
 					payload: pyld
-				});
+				}, ()=>{});
 				return 1;
 			})
 			return true;
@@ -182,6 +173,24 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		chrome.storage.sync.set({AGGRO_STORAGE_TAG:AGGRESSION}, ()=>{
 			sendmessage({message:"changed"});
 		});
+	} else if (request.message === "set_chn") {
+		CHANCE = request.payload;
+		SCALED_CHANCE = CHANCE / 100.0;
+		console.log("Received from set_chn: ")
+		console.log(request)
+		console.log(request.payload)
+		chrome.storage.sync.set({CHANCE_STORAGE_TAG:CHANCE}, ()=>{
+			sendmessage({message:"changed"});
+		});
+	} else if (request.message === "set_brd") {
+		BOREDOM = request.payload;
+		SCALED_BOREDOM = aggressionToIdx(BOREDOM);
+		console.log("Received from set_brd: ")
+		console.log(request)
+		console.log(request.payload)
+		chrome.storage.sync.set({BOREDOM_STORAGE_TAG:BOREDOM}, ()=>{
+			sendmessage({message:"changed"});
+		});
 	} else if (request.message === "frc_run") {
 		sendmessage({message:"changed"})
 	}
@@ -191,7 +200,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 
 function sendmessage(messagedict) {
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-		chrome.tabs.sendMessage(tabs[0].id, messagedict, function (response){		});
+		chrome.tabs.sendMessage(tabs[0].id, messagedict, function (response){	});
 	});
 }
 
@@ -213,9 +222,43 @@ function getAggression() {
 		});
 	} else {
 		console.log("Aggressions exists: "+AGGRESSION)
-		return Promise.resolve(null);
+		return Promise.resolve(AGGRESSION);
 	}
 
+}
+
+function getChance() {
+	if (CHANCE === null) {
+		console.log("Getting chance from storage")
+		return chrome.storage.sync.get([CHANCE_STORAGE_TAG]).then((result) => {
+			CHANCE = result.CHANCE_STORAGE_TAG;
+			if (!CHANCE) {
+				CHANCE = 20;
+			}
+			SCALED_CHANCE = CHANCE / 100.0;
+			return CHANCE;
+		})
+	} else {
+		console.log("CHANCE exists already returning "+ CHANCE);
+		return Promise.resolve(CHANCE);
+	}
+}
+
+function getBoredom() {
+	if (BOREDOM === null) {
+		console.log("Getting boredom from storage")
+		return chrome.storage.sync.get([BOREDOM_STORAGE_TAG]).then((result) => {
+			BOREDOM = result.BOREDOM_STORAGE_TAG;
+			if (!BOREDOM) {
+				BOREDOM = 0;
+			}
+			SCALED_BOREDOM = aggressionToIdx(BOREDOM);
+			return BOREDOM;
+		})
+	} else {
+		console.log("BOREDOM exists already returning "+ BOREDOM);
+		return Promise.resolve(BOREDOM);
+	}
 }
 
 /*
@@ -297,12 +340,9 @@ function prepareVocab(filetxt){
 	ret = ret.map((x) => x.split("#"));
 	ret = ret.map((x) => {
 		if (x.length < 2) {
-			return []
+			return [null, null]
 		}
-		if (x[0] === '--') {
-			return x[1].split(' ');
-		}
-		return [x[0]]
+		return [x[0], x[1]]
 	})
 	return ret;
 }
@@ -327,12 +367,6 @@ function loadEnglish(){
 		});
 }
 
-const word_html_replacement = function (translated, original, idnum) {
-	const toret = "<em><strong>" + "<span class=\"a\" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>" +
-				"<span class=\"b\" id='Nos"+idnum+"VocW'>" + "</span></strong></em>";
-	return toret;
-};
-
 /*
 replaceNodeVocab(nodetext)
 takes in a single block of text (string), cleans it, looks for vocab words, replaces vocab words.
@@ -353,16 +387,18 @@ function replaceNodeVocab(nodetext, idint){
 	let word = null;
 	for (let i=0; i< words.length; i++){
 		word = words[i].toString();
-		if (word.length > 40) {
+		if (word.length > 40) { // || (word.length > 1 && word === word.toUpperCase())
 			continue
 		}
 		let replacementword = word;
-		const upper = word.charAt(0) === word.charAt(0).toUpperCase();
-		let cleanword = word.toLowerCase(); //.replace(/[^a-z]/gi, '');
-		if (cleanword.length > 0 && in_working(cleanword) && !SEEN.has(cleanword)) {
-			replacementword = formatTranslateWord(cleanword, idint, upper);
-			SEEN.add(cleanword);
-			idint += 1;
+		if (Math.random() < SCALED_CHANCE) {
+			const upper = word.charAt(0) === word.charAt(0).toUpperCase();
+			let cleanword = word.toLowerCase(); //.replace(/[^a-z]/gi, '');
+			if (cleanword.length > 0 && in_working(cleanword) && !SEEN.has(cleanword)) {
+				replacementword = formatTranslateWord(cleanword, idint, upper);
+				SEEN.add(cleanword);
+				idint += 1;
+			}
 		}
 		newwords.push(replacementword);
 	}
@@ -370,10 +406,13 @@ function replaceNodeVocab(nodetext, idint){
 }
 
 function in_working(word) {
-	return ENGLISH.has(word) && ENGLISH.get(word) < SCALED_AGGRESSION;
+	return ENGLISH.has(word) &&
+		SCALED_BOREDOM < ENGLISH.get(word) &&
+		ENGLISH.get(word) < SCALED_AGGRESSION;
 }
 
 function subpar_word(fwordlst) {
+	fwordlst = fwordlst.split(' ')
 	fwordlst.push('')
 	const r = Math.floor(Math.random() * fwordlst.length)
 	if (!fwordlst[r]){
@@ -385,24 +424,43 @@ function subpar_word(fwordlst) {
 function formatTranslateWord(englishword, idint, upper){
 	const englishidx = ENGLISH.get(englishword);
 	const fwordlst = FOREIGN[englishidx];
-	if (!fwordlst){
+	if (!fwordlst[1]){
 		return englishword
 	}
-	let foreignword = fwordlst.length < 2 ? fwordlst[0] : subpar_word(fwordlst, englishword);
-	if (!foreignword || foreignword === '--') {
-		return englishword
-	}
+	console.log("GOT LIST "+ fwordlst)
+	let foreignword = fwordlst[0] === "--" ? subpar_word(fwordlst[1], englishword) : fwordlst[0];
+	let foreignlist = fwordlst[1];
+	console.log(foreignword, foreignlist)
 	if (upper){
 		foreignword = capitalize(foreignword);
 	}
-	foreignword = word_html_replacement(foreignword, englishword, idint);
+	foreignword = word_html_replacement(foreignword, englishword, idint, {"nvoc":foreignlist, "nvi":1, "CPT":upper});
 	return foreignword;
 }
 
+const word_html_replacement = function (translated, original, idnum, datadict={}) {
+	const mydata = Array.from(Object.entries(datadict), ([name, value]) => {
+		return ("data-" + name + "=\"" + value + "\"");
+	}).join(' ');
+
+	const toret = "<em><strong>" + "<span class=\"a\" "+mydata+" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>" +
+		"<span class=\"b\" id='Nos"+idnum+"VocW'>" + "</span></strong></em>";
+	if (Math.random() < .01){
+		console.log("Built:")
+		console.log(toret);
+	}
+	return toret;
+};
+
 function aggressionToIdx(aggro){
-	const percent = Number(aggro)/100;
-	const ret = ((ENGLISH.size * (percent*percent)));
-	console.log("From aggro "+ aggro+" to scalar percent^2 "+ percent*percent+", making a count of "+ ret+"/"+ENGLISH.size)
+	let ret = 0;
+	try {
+		const percent = Number(aggro) / 100;
+		ret = ((ENGLISH.size * (percent * percent)));
+		console.log("From aggro " + aggro + " to scalar percent^2 " + percent * percent + ", making a count of " + ret + "/" + ENGLISH.size)
+	} catch (e){
+		console.log("ERROR: "+e);
+	}
 	return ret
 }
 function getActivated() {
