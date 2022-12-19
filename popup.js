@@ -32,7 +32,9 @@ function hideshow(id) {
 
 function forcerun(){
     console.log("sending force run command")
-    chrome.runtime.sendMessage({message:"frc_run"}, function(response){});
+    chrome.runtime.sendMessage({message:"frc_run"}, function(response){
+        console.log("sent force");
+    });
 }
 
 function set_fgn() {
@@ -46,24 +48,30 @@ function set_fgn() {
 function activate() {
     document.getElementById('Activated').toggleAttribute("checked", true); //setAttribute("checked")
     chrome.runtime.sendMessage({message: "set_act"}, function(response){
-        console.log("set activation click");
+        console.log("sent activate");
     });
 }
 
 function sendAggression(){
     changeRange("Aggression");
     // Save value to session storage:
-    chrome.runtime.sendMessage({message: "set_agr", payload: document.getElementById("Aggression").value}, ()=>{});
+    chrome.runtime.sendMessage({message: "set_agr", payload: document.getElementById("Aggression").value}, function(response){
+        console.log("sent aggression");
+    });
 }
 function sendChance(){
     changeRange("Chance");
     // Save value to session storage:
-    chrome.runtime.sendMessage({message: "set_chn", payload: document.getElementById("Chance").value}, ()=>{});
+    chrome.runtime.sendMessage({message: "set_chn", payload: document.getElementById("Chance").value}, function(response){
+        console.log("sent chance");
+    });
 }
 function sendBoredom(){
     changeRange("Boredom");
     // Save value to session storage:
-    chrome.runtime.sendMessage({message: "set_brd", payload: document.getElementById("Boredom").value}, ()=>{});
+    chrome.runtime.sendMessage({message: "set_brd", payload: document.getElementById("Boredom").value}, function(response){
+        console.log("sent boredom");
+    });
 }
 function changeRange(id){
     document.getElementById(id+"Count").innerHTML = document.getElementById(id).value + "%";

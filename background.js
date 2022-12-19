@@ -427,14 +427,12 @@ function formatTranslateWord(englishword, idint, upper){
 	if (!fwordlst[1]){
 		return englishword
 	}
-	console.log("GOT LIST "+ fwordlst)
 	let foreignword = fwordlst[0] === "--" ? subpar_word(fwordlst[1], englishword) : fwordlst[0];
 	let foreignlist = fwordlst[1];
-	console.log(foreignword, foreignlist)
 	if (upper){
 		foreignword = capitalize(foreignword);
 	}
-	foreignword = word_html_replacement(foreignword, englishword, idint, {"nvoc":foreignlist, "nvi":1, "CPT":upper});
+	foreignword = word_html_replacement(foreignword, englishword, idint, {"nvoc":foreignlist, "nvi":1, "cpt":(upper ? 'y': 'n')});
 	return foreignword;
 }
 
@@ -442,7 +440,8 @@ const word_html_replacement = function (translated, original, idnum, datadict={}
 	const mydata = Array.from(Object.entries(datadict), ([name, value]) => {
 		return ("data-" + name + "=\"" + value + "\"");
 	}).join(' ');
-
+	console.log("Data:")
+	console.log(mydata)
 	const toret = "<em><strong>" + "<span class=\"a\" "+mydata+" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>" +
 		"<span class=\"b\" id='Nos"+idnum+"VocW'>" + "</span></strong></em>";
 	if (Math.random() < .01){

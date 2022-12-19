@@ -1,5 +1,5 @@
 {
-  "name": "Nosey Vocab",
+  "name": "-glish",
   "version": "1.00",
   "description": "Vocab learner with common foreign words injected into your english websites.",
   "permissions": ["contextMenus", "activeTab", "notifications", "storage"],
@@ -13,7 +13,7 @@
 
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Nosey Vocab",
+    "default_title": "-glish",
     "default_icon": { 
       "16": "images/NVicon16.png",
       "32": "images/NVicon32.png",

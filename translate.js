@@ -66,10 +66,12 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 })
 
 function grab_and_go() {
+	console.log("grabbing and going");
 	if (!ACTIVATE){
+		console.log("Falser")
 		return;
 	}
-	console.log("grabbing and going");
+	console.log("Yesr")
 	if (BLOCKS_TO_SEND === null) {
 		[HTML_BLOCKS, TEXT_SECTIONS, BLOCKS_TO_SEND] = combHTML();
 	}
@@ -112,6 +114,7 @@ function translate_page(html_blocks, text_sections, translated_blocks) {
 document.body.addEventListener("mousedown", function(e) {
 	DOWN = new Date();
 	setTimeout(()=>{
+		// click & hold
 		if (UP <= DOWN) {
 			iframe(e);
 		}
@@ -119,10 +122,8 @@ document.body.addEventListener("mousedown", function(e) {
 });
 document.body.addEventListener("mouseup", function(e) {
 	UP = new Date();
-	console.log('hello '+ (UP - DOWN));
-	console.log(e.target)
+	// click
 	if ((UP - DOWN) < TIMEOUT) {
-		// click
 		rotateWord(e);
 	}
 });
@@ -137,7 +138,9 @@ function rotateWord(e){
 	const otherwords = t.dataset.nvoc.split(' ');
 	const i = Number(t.dataset.nvi)  % otherwords.length;
 	t.dataset.nvi = ""+(i+1);
-	if (t.dataset.CPT){
+	console.log(t.dataset.cpt);
+	console.log(typeof t.dataset.cpt)
+	if (t.dataset.cpt === 'y'){
 		t.firstChild.textContent = capitalize(otherwords[i]);
 	} else{
 		t.firstChild.textContent = otherwords[i];
@@ -244,6 +247,12 @@ function combHTML(){
 	return [results, textsections, blocks_to_send];
 }
 
+function capitalize(word){
+	if (!word){
+		return
+	}
+	return word.charAt(0).toUpperCase() + word.slice(1);
+}
 
 /*
 TODO: Add listeners for every word on page.
