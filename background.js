@@ -45,7 +45,7 @@ chrome.runtime.onInstalled.addListener(function () {
 	chrome.storage.sync.set({ACTIVE_STORAGE_TAG:ACTIVATED}, () => {});
 	chrome.storage.sync.set({AGGRO_STORAGE_TAG:5},   () => {});
 	chrome.storage.sync.set({CHANCE_STORAGE_TAG:20}, () => {});
-	chrome.storage.sync.set({BOREDOM_STORAGE_TAG:0}, () => {});
+	chrome.storage.sync.set({BOREDOM_STORAGE_TAG:2}, () => {});
 	chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
 
 })

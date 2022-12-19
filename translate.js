@@ -9,6 +9,7 @@ let PREV_WIKI_IFRAME = null;
 let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
+const TIMEOUT = 200;
 console.log("Loaded translate.js")
 
 /*
@@ -120,7 +121,7 @@ document.body.addEventListener("mouseup", function(e) {
 	UP = new Date();
 	console.log('hello '+ (UP - DOWN));
 	console.log(e.target)
-	if ((UP - DOWN) < 120) {
+	if ((UP - DOWN) < TIMEOUT) {
 		// click
 		rotateWord(e);
 	}
@@ -136,7 +137,11 @@ function rotateWord(e){
 	const otherwords = t.dataset.nvoc.split(' ');
 	const i = Number(t.dataset.nvi)  % otherwords.length;
 	t.dataset.nvi = ""+(i+1);
-	t.firstChild.textContent = otherwords[i];
+	if (t.dataset.CPT){
+		t.firstChild.textContent = capitalize(otherwords[i]);
+	} else{
+		t.firstChild.textContent = otherwords[i];
+	}
 }
 
 function iframe(e) {
