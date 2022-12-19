@@ -23,4 +23,6 @@ not the variable name itself!!!!!
 Nothing happens in any kind of logical order. I have the async GET methods basically all before I need to use any method.
 Total callback hell. Yuck.
 
-
+If you rewrite document.innerHTML, you erase all eventlisteners, thereby ruining some websites.
+Also if some webpages use <script> tags, sometimes if you try to rewrite those, Chrome will see your extension tryijng to
+insert arbitrary javascript into the page and shut your extension down. So, will use TreeWalker to comb the pages.

@@ -54,7 +54,7 @@ var jsvnvwkwidget=jsvnvwkwidget ||(function(){
 					style = "<style>" + style + "</style>";
 					html = "<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>";
 					html += '<div class=btn-container>' +
-						'<a title="Support Wikimedia on https://wikimediafoundation.org/support/" class="jsvnvwk-button" style="background-color:[color];" href="https://wikimediafoundation.org/support/" target="_blank"> ' +
+						'<a title="Support Wikimedia at https://wikimediafoundation.org/support/" class="jsvnvwk-button" style="background-color:[color];" href="https://wikimediafoundation.org/support/" target="_blank"> ' +
 						'<span class="jsvnvwktext"><img src="https://www.wiktionary.org/portal/wiktionary.org/assets/img/Wiktionary-logo-tiles_2x.png" alt="Wiki donations" class="jsvnvwkimg"/>' +
 						'[text]</span></a></div>';
 				},

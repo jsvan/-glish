@@ -255,8 +255,16 @@ function capitalize(word){
 }
 
 /*
-TODO: Add listeners for every word on page.
- 	On word click:
- 	 	add to the iframe a src attribute with the wikipedia site
- 	 	Don't need to remove any iframes, bc once viewed and loaded, it wont continually reping wiki.org or anything.
+TODO:
+
+function getTextNodes(parent){
+    var all = [];
+    for (parent = parent.firstChild; parent; parent = parent.nextSibling) {
+        if (['SCRIPT','STYLE'].indexOf(parent.tagName) >= 0) continue;
+        if (parent.nodeType === Node.TEXT_NODE && parent.data.trim()) all.push(parent);
+        else all = all.concat(getTextNodes(parent));
+    }
+    return all;
+}
+
  */
