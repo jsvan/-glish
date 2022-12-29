@@ -54,12 +54,4 @@ Still in alpha mode so let me know what you think
 
 
 TODO:
-* Add new dial of what percent chance to translate words will be (now at 100% implicitly. Not every occurance needs to be translated).
-* Make instruction page
-* Add way to reduce early vocab (another slider bar? Range of vocab)
-* Make option for loading random translations rather than best
-* Fix bug where words don't translate unless you fiddle with the Aggression popdown menu (??)
-* Add pictures of what it does!
-* Make sure iframes are visualized properly
-* Save to git
 * Look into stemmijng words etc. to find translations
