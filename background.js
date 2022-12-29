@@ -376,11 +376,12 @@ Calls:
 * formatTranslateWord()
 * Changing this to only translate a word once per node
  */
-function replaceNodeVocab(nodetext, idint){
+function replaceNodeVocab(node, idint){
+	console.log("Nodetext:")
+	console.log(node)
 	SEEN.clear();
-	let node = nodetext.trim()
-	if (!node){
-		return [nodetext, idint]
+	if (!node.trim()){
+		return [node, idint]
 	}
 	const words = node.split(' ');
 	const newwords = [];
@@ -418,6 +419,7 @@ function subpar_word(fwordlst) {
 	if (!fwordlst[r]){
 		return ''
 	}
+//Zz	document.createElement()
 	return fwordlst[r] + "<sub style=\"font-weight:normal\">(?)</sub>"
 }
 

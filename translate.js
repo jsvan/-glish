@@ -1,8 +1,8 @@
-let HTML_BLOCKS = null;
-let TEXT_SECTIONS = null;
+let OG_TEXT_NODES = null;
+let WEB_PAGE_NODES = null;
 let COUNT_TEXT_SECTIONS = 0;
-let BLOCKS_TO_SEND = null;
-let FOREIGN_HTML = null;
+let OG_TEXT = null;
+
 let ACTIVATE = true;
 let LANGUAGE = null;
 let PREV_WIKI_IFRAME = null;
@@ -10,7 +10,6 @@ let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
 const TIMEOUT = 200;
-console.log("Loaded translate.js")
 
 /*
 
@@ -43,21 +42,28 @@ window.addEventListener('load',
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	console.log("received message, ["+request.message+"] " + request)
 	if (request.message === "changed") {
-		grab_and_go(); //page no longer valid, send page back to get translated.
+		if (OG_TEXT_NODES) {
+			just_go()
+		} else {
+			grab_and_go();
+		}
+		//page no longer valid, send page back to get translated.
 		return false;
 
 	} else if (request.message === "deactivate") {
 		ACTIVATE = false;
-		if (HTML_BLOCKS){
-			document.body.innerHTML = HTML_BLOCKS.join(" ");
+		console.log("Deactivating")
+		console.log(OG_TEXT_NODES)
+		if (OG_TEXT_NODES){
+			weave_nodes(OG_TEXT)
 		}
 
 	} else if (request.message === "activate") {
 		console.log("Activating")
 		ACTIVATE = true;
-		if (FOREIGN_HTML) {
+		if (OG_TEXT_NODES) {
 			console.log("Foreign HTML already exists, setting...")
-			document.body.innerHTML = FOREIGN_HTML.join(" ");
+			just_go();
 		} else {
 			console.log("No foreign HTML, grabbing and going...")
 			grab_and_go();
@@ -68,36 +74,42 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 function grab_and_go() {
 	console.log("grabbing and going");
 	if (!ACTIVATE){
-		console.log("Falser")
+		console.log("not activated")
 		return;
 	}
-	console.log("Yesr")
-	if (BLOCKS_TO_SEND === null) {
-		[HTML_BLOCKS, TEXT_SECTIONS, BLOCKS_TO_SEND] = combHTML();
-	}
+	WEB_PAGE_NODES = getTextNodes(document.body);
+	OG_TEXT_NODES = WEB_PAGE_NODES.slice()
+	OG_TEXT = OG_TEXT_NODES.map((x) => x.textContent)
 	just_go();
 }
 
 
 function just_go() {
-	console.log("GOT THIS MANY TEXT SECTIONS: "+ COUNT_TEXT_SECTIONS)
+	console.log("GOT THIS MANY TEXT SECTIONS: " + OG_TEXT_NODES.length)
 	if (COUNT_TEXT_SECTIONS < 5){
 		return
 	}
-	chrome.runtime.sendMessage({message:"translate", payload:BLOCKS_TO_SEND}, function(response){
+
+	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT}, function(response){
 		console.log("Received lang data:")
 		LANGUAGE = response.language;
-		translate_page(HTML_BLOCKS, TEXT_SECTIONS, response.payload);
+		const translated_info = response.payload;
+		weave_nodes(translated_info);
+		// translate_page(HTML_BLOCKS, TEXT_SECTIONS, response.payload);
 		console.log("setting inner HTML")
-		document.body.innerHTML = FOREIGN_HTML.join(" ");
 		document.body.style.overflow = 'auto'
 	})
 }
 
 
+function weave_nodes(node_list){
+	console.log("weaving nodes")
+	for (let i = 0; i < node_list.length; i++){
+		WEB_PAGE_NODES[i].innerHTML = node_list[i];
+	}
+}
 
-
-
+/*
 function translate_page(html_blocks, text_sections, translated_blocks) {
 	FOREIGN_HTML = [];
 	for (let i = 0; i < html_blocks.length; i++){
@@ -110,6 +122,7 @@ function translate_page(html_blocks, text_sections, translated_blocks) {
 
 	console.log("Translated page, filled FOREIGN_HTML")
 }
+ */
 
 document.body.addEventListener("mousedown", function(e) {
 	DOWN = new Date();
@@ -133,23 +146,18 @@ function rotateWord(e){
 	if (!t || !t.attributes || !t.attributes.class || t.attributes.class.value !== "a") {
 		return;
 	}
-	console.log("Click good")
-
 	const otherwords = t.dataset.nvoc.split(' ');
 	const i = Number(t.dataset.nvi)  % otherwords.length;
-	t.dataset.nvi = ""+(i+1);
-	console.log(t.dataset.cpt);
-	console.log(typeof t.dataset.cpt)
+	t.dataset.nvi = "" + (i + 1);
 	if (t.dataset.cpt === 'y'){
 		t.firstChild.textContent = capitalize(otherwords[i]);
-	} else{
+	} else {
 		t.firstChild.textContent = otherwords[i];
 	}
 }
 
 function iframe(e) {
 	const t = e.target;
-	console.log(t);
 	if (!t || !t.attributes || !t.attributes.class || t.attributes.class.value !== "a") {
 		return;
 	}
@@ -196,6 +204,7 @@ function iframe(e) {
 e.g. document.body.innerHTML = combHTML(document.body).map(x => x[0]).join(" ")
 
  */
+/*
 function combHTML(){
 	COUNT_TEXT_SECTIONS = 0;
 	const body = document.body.innerHTML.toString();
@@ -213,7 +222,7 @@ function combHTML(){
 	while (posti<body.length){
 		if (body[posti] ==="<") {
 			scriptsubstr = body.substring(posti, posti + 10);
-			inScript = (scriptsubstr.includes("<script") || scriptsubstr.includes("<style") || scriptsubstr.includes("<a "));
+			inScript = (scriptsubstr.includes("<script") || scriptsubstr.includes("<style") || scriptsubstr.includes("<a ") || scriptsubstr.includes("<code"));
 			while (posti < body.length && body[posti] !== ">") { posti++; }
 
 			if (inScript) {
@@ -246,6 +255,7 @@ function combHTML(){
 	}
 	return [results, textsections, blocks_to_send];
 }
+*/
 
 function capitalize(word){
 	if (!word){
@@ -254,17 +264,25 @@ function capitalize(word){
 	return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
-/*
-TODO:
 
-function getTextNodes(parent){
-    var all = [];
+function getTextNodes(parent = document.body){
+    let all = [];
     for (parent = parent.firstChild; parent; parent = parent.nextSibling) {
         if (['SCRIPT','STYLE'].indexOf(parent.tagName) >= 0) continue;
-        if (parent.nodeType === Node.TEXT_NODE && parent.data.trim()) all.push(parent);
-        else all = all.concat(getTextNodes(parent));
+        if (parent.nodeType === Node.TEXT_NODE && parent.data.trim()) {
+			all.push(parent.parentNode);
+			if (parent.textContent.length > 50) {
+				COUNT_TEXT_SECTIONS += 1;
+			}
+		}
+        else {
+			all = all.concat(getTextNodes(parent));
+		}
     }
     return all;
 }
-
+/*
+for (let i = 0; i < t.length; i++) {
+    t[i].textContent = t[i].parentNode.textContent.replace("Russia ", "the Russia ")
+}
  */
