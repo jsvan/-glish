@@ -6,13 +6,13 @@
   "content_scripts": [
     {
       "matches": ["https://*/*", "http://*/*"],
-      "js": ["translate.js"],
-      "css": ["hoverover.css"]
+      "js": ["src/translate.js"],
+      "css": ["src/hoverover.css"]
     }
   ],
 
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "src/popup.html",
     "default_title": "-glish",
     "default_icon": { 
       "16": "images/NVicon16.png",
@@ -22,7 +22,7 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background.js"
   },
 
   "icons": {
