@@ -1,4 +1,6 @@
 const DEBUG = true;
+let AGR = 0, BRD = 0;
+
 document.getElementById("Title").addEventListener("click", forcerun);
 document.getElementById("Aggression").addEventListener("mouseup", sendAggression);
 document.getElementById("Aggression").addEventListener("input", function(){changeRange("Aggression")});
@@ -58,10 +60,13 @@ function sendAggression(){
     // Save value to session storage:
     chrome.runtime.sendMessage({message: "set_agr", payload: document.getElementById("Aggression").value}, function(response){
         print("sent aggression");
+        AGR = response.payload;
+        set_vocab_size();
     });
 }
 function sendChance(){
     changeRange("Chance");
+    document.getElementById("Chance2").innerText = document.getElementById("Chance").value;
     // Save value to session storage:
     chrome.runtime.sendMessage({message: "set_chn", payload: document.getElementById("Chance").value}, function(response){
         print("sent chance");
@@ -72,6 +77,8 @@ function sendBoredom(){
     // Save value to session storage:
     chrome.runtime.sendMessage({message: "set_brd", payload: document.getElementById("Boredom").value}, function(response){
         print("sent boredom");
+        BRD = response.payload;
+        set_vocab_size();
     });
 }
 function changeRange(id){
@@ -108,22 +115,32 @@ function load_page() {
     });
     chrome.runtime.sendMessage({message: "get_agr"}, function(response){
         const newagr = response.payload;
+        AGR = newagr;
         document.getElementById("Aggression").value = newagr;
         changeRange("Aggression");
         print("Aggression is now: " + newagr);
+        chrome.runtime.sendMessage({message: "get_brd"}, function(response){
+            const newbrd = response.payload;
+            document.getElementById("Boredom").value = newbrd;
+            changeRange("Boredom");
+            print("Boredom is now: " + newbrd);
+            BRD = newbrd;
+            set_vocab_size();
+
+
+
+
+        });
     });
     chrome.runtime.sendMessage({message: "get_chn"}, function(response){
         const newchn = response.payload;
         document.getElementById("Chance").value = newchn;
+        document.getElementById("Chance2").innerText = newchn;
         changeRange("Chance");
         print("Chance is now: " + newchn);
     });
-    chrome.runtime.sendMessage({message: "get_brd"}, function(response){
-        const newbrd = response.payload;
-        document.getElementById("Boredom").value = newbrd;
-        changeRange("Boredom");
-        print("Boredom is now: " + newbrd);
-    });
+
+
 }
 
 function setChosenLang() {
@@ -174,4 +191,19 @@ function print(s) {
     if (DEBUG) {
         console.log(s);
     }
+}
+
+function set_vocab_size(){
+    const v_size = Math.floor(Math.max(0, aggressionToIdx(AGR) - aggressionToIdx(BRD)));
+    if (v_size === 0) {
+        document.getElementById("warning").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Warning: Not translating any words. Make sure you are using more of the dictionary than you are ignoring."
+    } else {
+        document.getElementById("warning").innerHTML = "";
+    }
+    document.getElementById("size2").innerText = "" + v_size;
+}
+
+function aggressionToIdx(aggro){
+    const percent = Number(aggro) / 100;
+    return ((4372 * (percent * percent)));
 }

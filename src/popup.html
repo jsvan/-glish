@@ -54,24 +54,28 @@
         <div class="boxdiv" style="text-align: center">
             <br>
             <div>
-                <label for="Aggression">Use up to <span id="AggressionCount">-- %</span> of Dictionary:</label>
+                <label for="Aggression" title="Select what range of the vocabulary you want to translate. 100% means to use every word in the vocab list.">Use up to the first <span id="AggressionCount">-- %</span> of dictionary:</label>
             </div>
-            <input type="range" id="Aggression" min="0" max="100" value="5" step="2" />
+            <input type="range" id="Aggression" min="0" max="100" value="5" step="2" title="Select what range of the vocabulary you want to translate. 100% means to use every word in the vocab list."/>
             <br>
             <br>
             <div>
-                <label for="Boredom" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything.">Ignore first <span id="BoredomCount">-- %</span> of Dictionary:</label>
+                <label for="Boredom" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything.">Ignore the first <span id="BoredomCount">-- %</span> of dictionary:</label>
             </div>
             <input type="range" id="Boredom" min="0" max="100" value="0" step="2" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything."/>
             <br>
             <br>
             <div>
-                <label for="Chance" >Translate <span id="ChanceCount">-- %</span> of found vocab:</label>
+                <label for="Chance" title="Raise or lower the number of words translated per page. 0% means no vocabulary words will be translated and 100% means every found vocabulary word will be converted.">Convert words with a <span id="ChanceCount">-- %</span> chance:</label>
             </div>
-            <input type="range" id="Chance" min="0" max="100" value="5" step="5" />
+            <input type="range" id="Chance" min="0" max="100" value="5" step="5" title="Raise or lower the number of words translated per page. 0% means no vocabulary words will be translated and 100% means every found vocabulary word will be converterd."/>
             <br>
             <br>
+            <p style="text-align: left"><em>&nbsp;&nbsp;&nbsp;&nbsp;You selected a <strong><span id="Chance2">5</span>%</strong> chance to translate words from a vocabulary list with <strong><span id="size2">0</span></strong> unique words in it.</em></p>
+            <p style="color:red; text-align: left; transform: rotate(-7deg);" id="warning"></p>
+
         </div>
+
 
         <p><a href="javascript:void(0);" id="Instructions" title="Instructions Menu">Features and Tricks</a></p>
         <div id="Instructions_Menu" style="text-align:left; display: none;">
@@ -112,12 +116,13 @@
         <p><a href="javascript:void(0);" id="About" title="About Menu">About</a></p>
         <div class="boxdiv" id="About_Menu" style="text-align:left; display: none;">
             <div class="myPadding">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;The dictionary uses the first 4000 most common words, in order of frequency. As you progress through the dictionary, rarer words are encountered.</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;This version uses a unigram langauge model for greedy translations. </p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Future versions could include n-gram models or in browser neural models if the performance is good enough.</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Thank you for your interest in this early stage :)</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;Made by Julian Vanecek 2022. Merry X-mas, mom!</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Made by Julian 2022. Merry X-mas, Kris!</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Kindly email me at [bitsintheskygmailcom]</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;Code on <a href="github.com/jsvan/Nosey-Vocab">github</a>.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Code on <a target="_blank" href="https://github.com/jsvan/-glish">github</a>.</p>
                 <br><br>
             </div>
         </div>

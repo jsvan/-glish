@@ -178,7 +178,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		chrome.storage.sync.set({AGGRO_STORAGE_TAG:AGGRESSION}, ()=>{
 			sendmessage({message:"changed"});
 		});
-		sendResponse({payload:"200"});
+		sendResponse({payload:AGGRESSION});
 		return true;
 
 	} else if (request.message === "set_chn") {
@@ -202,7 +202,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		chrome.storage.sync.set({BOREDOM_STORAGE_TAG:BOREDOM}, ()=>{
 			sendmessage({message:"changed"});
 		});
-		sendResponse({payload:"200"});
+		sendResponse({payload:BOREDOM});
 		return true;
 
 	} else if (request.message === "frc_run") {

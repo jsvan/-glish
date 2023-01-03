@@ -9,7 +9,7 @@ let PREV_WIKI_IFRAME = null;
 let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
-const TIMEOUT = 200;
+const TIMEOUT = 250;
 const DEBUG = true;
 
 /*
@@ -138,7 +138,7 @@ document.body.addEventListener("mousedown", function(e) {
 document.body.addEventListener("mouseup", function(e) {
 	UP = new Date();
 	// click
-	if (PREV_WIKI_IFRAME){// && PREV_WIKI_IFRAME.classList.contains('act')){
+	if (PREV_WIKI_IFRAME){
 		if (PREV_WIKI_IFRAME.parentNode.previousSibling.classList.contains('act')){
 			PREV_WIKI_IFRAME.parentNode.previousSibling.classList.remove('act')
 		}
@@ -219,7 +219,7 @@ function getTextNodes(parent = document.body){
     let all = [];
 
     for (parent = parent.firstChild; parent; parent = parent.nextSibling) {
-        if (['SCRIPT','STYLE', 'A', 'CODE'].indexOf(parent.tagName) >= 0) {
+        if (['SCRIPT','STYLE', 'A', 'CODE', "BUTTON"].indexOf(parent.tagName) >= 0) {
 			continue;
 		}
         if (parent.nodeType === Node.TEXT_NODE && parent.data.trim()) {
