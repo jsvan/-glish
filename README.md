@@ -38,7 +38,7 @@ TO USE:
 
 Here is an example of the pulldown menu icon page.
 
-<img src="https://user-images.githubusercontent.com/9337973/210306405-5591cf0e-2d32-4c8e-befd-3caf56571d59.png" >
+<img src="https://user-images.githubusercontent.com/9337973/210306405-5591cf0e-2d32-4c8e-befd-3caf56571d59.png" width="25%" height="25%">
 
 
 Here are examples of what it does to your page. Words are replaced with foreign language vocabulary word.
