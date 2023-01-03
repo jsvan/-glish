@@ -19,7 +19,7 @@
  * Also instead of pinging wiktionary a billion times for iframe info on verbs, there are only 208 verbs * 13 languages, and a single table from wikpedia
  * is 4.5KB. 2704 * 4.5 = 12,168 KB or 12 MB. I think this is an acceptable size because they look very nice.
  */
-
+const DEBUG = true;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
 let CHANCE = null;
@@ -49,9 +49,9 @@ chrome.runtime.onInstalled.addListener(function () {
 })
 
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
-	console.log("Background received message, "+request + ", "+ request.message)
+	print("Background received message, "+request + ", "+ request.message)
 	if (request.message === "translate") {
-		console.log("Preparing translation:")
+		print("Preparing translation:")
 		getActivated().then(()=>{
 			if (ACTIVATED) {
 				getChance().then(() =>
@@ -59,8 +59,8 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 						getEnglish().then(() =>
 							getLangData().then(() =>
 								getAggression().then(()=> {
-									console.log("Aggression is: " + AGGRESSION)
-									console.log("preparing translation: Got Lang data")
+									print("Aggression is: " + AGGRESSION)
+									print("preparing translation: Got Lang data")
 									if (!FOREIGN) {
 										return 0;
 									}
@@ -72,9 +72,9 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 										[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
 										translated_chunks.push(newstring);
 									}
-									console.log("BACKGROUND sending translated response")
-									//console.log(translated_chunks)
-									console.log("Lang Data is: "+LANG_DATA[0])
+									print("BACKGROUND sending translated response")
+									//print(translated_chunks)
+									print("Lang Data is: "+LANG_DATA[0])
 									sendResponse({payload: translated_chunks, language: capitalize(LANG_DATA[0])}, ()=>{});
 									return 1;
 								})
@@ -88,6 +88,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 
 	} else if (request.message === "get_agr") {
+		print("getting agr")
 		getAggression().then(() => {
 			sendResponse({
 				payload: AGGRESSION
@@ -96,6 +97,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 
 	} else if (request.message === "get_chn") {
+		print("Getting chn")
 		getChance().then(() => {
 			sendResponse({
 				payload: CHANCE
@@ -104,6 +106,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 
 	} else if (request.message === "get_brd") {
+		print("Getting brd")
 		getBoredom().then(() => {
 			sendResponse({
 				payload: BOREDOM
@@ -112,6 +115,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 
 	} else if (request.message === "get_act") {
+		print("Getting act")
 		getActivated().then((val) =>
 			sendResponse({
 				message: "hellow",
@@ -122,7 +126,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 
 	} else if (request.message === "get_lng") {
 		if (LANG_DATA !== null) {
-			console.log("sending langname")
+			print("sending langname")
 			sendResponse({
 				payload: LANG_DATA[0]
 			}, ()=>{});
@@ -132,6 +136,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 				if (LANG_DATA !== null) {
 					pyld = LANG_DATA[0];
 				}
+				print("Sending lang (else)")
 				sendResponse({
 					payload: pyld
 				}, ()=>{});
@@ -148,8 +153,9 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			} else {
 				sendmessage({message:"deactivate"})
 			}
+			sendResponse({payload:"200"});
 		} )
-
+		return true;
 
 	} else if (request.message === "set_lng") {
 		LANG_DATA = [];
@@ -160,37 +166,50 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 				sendmessage({message:"changed"});
 			});
 		});
-
+		sendResponse({payload:"200"});
+		return true;
 
 	} else if (request.message === "set_agr") {
 		AGGRESSION = request.payload;
-		console.log("Received from set_agr: ")
-		console.log(request)
-		console.log(request.payload)
+		print("Received from set_agr: ")
+		print(request)
+		print(request.payload)
 		SCALED_AGGRESSION = aggressionToIdx(AGGRESSION);
 		chrome.storage.sync.set({AGGRO_STORAGE_TAG:AGGRESSION}, ()=>{
 			sendmessage({message:"changed"});
 		});
+		sendResponse({payload:"200"});
+		return true;
+
 	} else if (request.message === "set_chn") {
 		CHANCE = request.payload;
 		SCALED_CHANCE = CHANCE / 100.0;
-		console.log("Received from set_chn: ")
-		console.log(request)
-		console.log(request.payload)
+		print("Received from set_chn: ")
+		print(request)
+		print(request.payload)
 		chrome.storage.sync.set({CHANCE_STORAGE_TAG:CHANCE}, ()=>{
 			sendmessage({message:"changed"});
 		});
+		sendResponse({payload:"200"});
+		return true;
+
 	} else if (request.message === "set_brd") {
 		BOREDOM = request.payload;
 		SCALED_BOREDOM = aggressionToIdx(BOREDOM);
-		console.log("Received from set_brd: ")
-		console.log(request)
-		console.log(request.payload)
+		print("Received from set_brd: ")
+		print(request)
+		print(request.payload)
 		chrome.storage.sync.set({BOREDOM_STORAGE_TAG:BOREDOM}, ()=>{
 			sendmessage({message:"changed"});
 		});
+		sendResponse({payload:"200"});
+		return true;
+
 	} else if (request.message === "frc_run") {
+		print("Sending force run")
 		sendmessage({message:"changed"})
+		return true;
+
 	}
 
 });
@@ -208,18 +227,18 @@ Returns [Aggression, Scaled Aggression]
  */
 function getAggression() {
 	if (AGGRESSION === null) {
-		console.log("Getting Aggression chef from storage")
+		print("Getting Aggression chef from storage")
 		return chrome.storage.sync.get([AGGRO_STORAGE_TAG]).then((result) => {
 			AGGRESSION = result.AGGRO_STORAGE_TAG;
 			if (!AGGRESSION) {
 				AGGRESSION = 5;
 			}
 			SCALED_AGGRESSION = aggressionToIdx(AGGRESSION);
-			console.log("got scaled aggro " + SCALED_AGGRESSION )
+			print("got scaled aggro " + SCALED_AGGRESSION )
 			return AGGRESSION;
 		});
 	} else {
-		console.log("Aggressions exists: "+AGGRESSION)
+		print("Aggressions exists: "+AGGRESSION)
 		return Promise.resolve(AGGRESSION);
 	}
 
@@ -227,7 +246,7 @@ function getAggression() {
 
 function getChance() {
 	if (CHANCE === null) {
-		console.log("Getting chance from storage")
+		print("Getting chance from storage")
 		return chrome.storage.sync.get([CHANCE_STORAGE_TAG]).then((result) => {
 			CHANCE = result.CHANCE_STORAGE_TAG;
 			if (!CHANCE) {
@@ -237,14 +256,14 @@ function getChance() {
 			return CHANCE;
 		})
 	} else {
-		console.log("CHANCE exists already returning "+ CHANCE);
+		print("CHANCE exists already returning "+ CHANCE);
 		return Promise.resolve(CHANCE);
 	}
 }
 
 function getBoredom() {
 	if (BOREDOM === null) {
-		console.log("Getting boredom from storage")
+		print("Getting boredom from storage")
 		return chrome.storage.sync.get([BOREDOM_STORAGE_TAG]).then((result) => {
 			BOREDOM = result.BOREDOM_STORAGE_TAG;
 			if (!BOREDOM) {
@@ -254,7 +273,7 @@ function getBoredom() {
 			return BOREDOM;
 		})
 	} else {
-		console.log("BOREDOM exists already returning "+ BOREDOM);
+		print("BOREDOM exists already returning "+ BOREDOM);
 		return Promise.resolve(BOREDOM);
 	}
 }
@@ -306,7 +325,7 @@ function loadForeign(){
 	if (!lang) {
 		return Promise.resolve(null);
 	}
-	console.log("In loadforeign, getting "+lang);
+	print("In loadforeign, getting "+lang);
 	let fileloc = chrome.runtime.getURL("../updated_language_packs/" + capitalize(lang) + ".txt");
 	return fetch(fileloc)
 		.then((response) => response.text())
@@ -317,7 +336,7 @@ function loadForeign(){
 		})
 		.then((vlist) => {
 			FOREIGN = vlist;
-			console.log("This is foreign")
+			print("This is foreign")
 			return vlist;
 		})
 }
@@ -355,7 +374,7 @@ function loadEnglish(){
 				}
 				ENGLISH.set(line, i);
 			}
-			console.log("English set");
+			print("English set");
 		});
 }
 
@@ -410,7 +429,6 @@ function subpar_word(fwordlst) {
 	if (!fwordlst[r]){
 		return ''
 	}
-//Zz	document.createElement()
 	return fwordlst[r] + "<sub style=\"font-weight:normal\">(?)</sub>"
 }
 
@@ -440,15 +458,12 @@ const word_html_replacement = function (translated, original, idnum, datadict={}
 };
 
 function aggressionToIdx(aggro){
-	let ret = 0;
-	try {
-		const percent = Number(aggro) / 100;
-		ret = ((ENGLISH.size * (percent * percent)));
-	} catch (e){
-		console.log("ERROR: "+e);
-	}
-	return ret
+	const percent = Number(aggro) / 100;
+	// hardcoding ENGLISH.size in as 4372 to avoid bug where english isnt loaded.
+	// warp the scaling to include fewer common words, but more less common words.
+	return ((4372 * (percent * percent)));
 }
+
 function getActivated() {
 	if (ACTIVATED === null) {
 		return chrome.storage.sync.get([ACTIVE_STORAGE_TAG]).then((response) => {
@@ -465,4 +480,10 @@ function capitalize(word){
 		return
 	}
 	return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function print(s) {
+	if (DEBUG) {
+		console.log(s);
+	}
 }

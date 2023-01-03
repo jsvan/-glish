@@ -10,6 +10,7 @@ let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
 const TIMEOUT = 200;
+const DEBUG = true;
 
 /*
 
@@ -40,7 +41,7 @@ window.addEventListener('load',
 
 
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
-	console.log("received message, ["+request.message+"] " + request)
+	print("received message, ["+request.message+"] " + request)
 	if (request.message === "changed") {
 		if (OG_TEXT_NODES) {
 			just_go()
@@ -48,37 +49,39 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			grab_and_go();
 		}
 		//page no longer valid, send page back to get translated.
-		return false;
+		sendResponse();
 
 	} else if (request.message === "deactivate") {
 		ACTIVATE = false;
-		console.log("Deactivating")
+		print("Deactivating")
 		if (OG_TEXT_NODES){
 			weave_nodes(OG_TEXT)
 		}
+		sendResponse();
 
 	} else if (request.message === "activate") {
-		console.log("Activating")
+		print("Activating")
 		ACTIVATE = true;
 		if (OG_TEXT_NODES) {
-			console.log("Foreign HTML already exists, setting...")
+			print("Foreign HTML already exists, setting...")
 			just_go();
 		} else {
-			console.log("No foreign HTML, grabbing and going...")
+			print("No foreign HTML, grabbing and going...")
 			grab_and_go();
 		}
+		sendResponse();
 	}
 })
 
 function grab_and_go() {
-	console.log("grabbing and going");
+	print("grabbing and going");
 	if (!ACTIVATE){
-		console.log("not activated")
+		print("not activated")
 		return;
 	}
 	WEB_PAGE_NODES = getTextNodes(document.body);
-	console.log("WEB NODES")
-	console.log(WEB_PAGE_NODES)
+	print("WEB NODES")
+	print(WEB_PAGE_NODES)
 	OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML)
 	OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent)
 	just_go();
@@ -86,12 +89,12 @@ function grab_and_go() {
 
 
 function just_go() {
-	console.log("GOT THIS MANY TEXT SECTIONS: " + OG_TEXT_NODES.length)
+	print("GOT THIS MANY TEXT SECTIONS: " + OG_TEXT_NODES.length)
 	if (COUNT_TEXT_SECTIONS < 5){
 		return
 	}
 	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT}, function(response){
-		console.log("Received lang data:")
+		print("Received lang data:")
 		if (!response) {
 			return;
 		}
@@ -99,37 +102,28 @@ function just_go() {
 		const translated_info = response.payload;
 		weave_nodes(translated_info);
 		// translate_page(HTML_BLOCKS, TEXT_SECTIONS, response.payload);
-		console.log("setting inner HTML")
+		print("setting inner HTML")
 		document.body.style.overflow = 'auto'
 	})
 }
 
 
 function weave_nodes(node_list){
-	console.log("weaving nodes")
+	print("weaving nodes")
 	let newnode = null;
 	for (let i = 0; i < node_list.length; i++){
-		newnode = document.createElement("span");
-		newnode.innerHTML = node_list[i];
-		WEB_PAGE_NODES[i].parentNode.replaceChild(newnode, WEB_PAGE_NODES[i]);
-		WEB_PAGE_NODES[i] = newnode;
+		try {
+			newnode = document.createElement("span");
+			newnode.innerHTML = node_list[i];
+			WEB_PAGE_NODES[i].parentNode.replaceChild(newnode, WEB_PAGE_NODES[i]);
+			WEB_PAGE_NODES[i] = newnode;
+		} catch (e) {
+			print(e);
+			print('"'+ node_list[i] +'"');
+		}
+
 	}
 }
-
-/*
-function translate_page(html_blocks, text_sections, translated_blocks) {
-	FOREIGN_HTML = [];
-	for (let i = 0; i < html_blocks.length; i++){
-		FOREIGN_HTML.push(html_blocks[i]);
-	}
-	for (let i = 0; i < text_sections.length; i++) {
-		let textidx = text_sections[i];
-		FOREIGN_HTML[textidx] = translated_blocks[i];
-	}
-
-	console.log("Translated page, filled FOREIGN_HTML")
-}
- */
 
 document.body.addEventListener("mousedown", function(e) {
 	DOWN = new Date();
@@ -171,7 +165,7 @@ function rotateWord(e){
 
 	//instead of fixing how i hand over words, im just gonna double tick if the new word is the same as the old.
 	if (t.firstChild.textContent.toLowerCase() === otherwords[i].toLowerCase()) {
-		console.log("SAME WORD DOUBLE TICKING... +1")
+		print("SAME WORD DOUBLE TICKING... +1")
 		i = (i + 1) % otherwords.length;
 	}
 	t.dataset.nvi = "" + (i + 1);
@@ -192,34 +186,33 @@ function iframe(e) {
 
 	if (PREV_WIKI_IFRAME && PREV_WIKI_IFRAME.parentNode === parent_node && foreign_word === PREV_IFRAME_WORD) {
 		t.classList.add("act");
-		console.log("The parents are the same. Building nothing");
+		print("The parents are the same. Building nothing");
 	} else {
 		if (PREV_WIKI_IFRAME)  {
 			try {
 				//PREV_WIKI_IFRAME.classList.remove("act");
 				PREV_WIKI_IFRAME.parentNode.removeChild(PREV_WIKI_IFRAME);
 			} catch (e) {
-				console.log(e);
+				print(e);
 			}
 		}
 		PREV_IFRAME_WORD = foreign_word;
 		t.classList.add("act");
-		if (t.dataset.cpt) {
+		if (t.dataset.cpt === 'y') {
 			foreign_word = foreign_word.toLowerCase();
 		}
 		const baby_iframe = document.createElement("iframe");
 		baby_iframe.setAttribute("src", "https://en.wiktionary.org/wiki/" + foreign_word + "#" + LANGUAGE);
 		parent_node.appendChild(baby_iframe);
-		console.log("Appended iframe " + baby_iframe)
+		print("Appended iframe " + baby_iframe)
 		PREV_WIKI_IFRAME = baby_iframe;
 	}
 }
 
 function capitalize(word){
-	if (!word){
-		return
+	if (word) {
+		return word.charAt(0).toUpperCase() + word.slice(1);
 	}
-	return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
 function getTextNodes(parent = document.body){
@@ -239,6 +232,12 @@ function getTextNodes(parent = document.body){
 		}
     }
     return all;
+}
+
+function print(s) {
+	if (DEBUG) {
+		console.log(s);
+	}
 }
 
 /*

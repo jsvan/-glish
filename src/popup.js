@@ -1,3 +1,4 @@
+const DEBUG = true;
 document.getElementById("Title").addEventListener("click", forcerun);
 document.getElementById("Aggression").addEventListener("mouseup", sendAggression);
 document.getElementById("Aggression").addEventListener("input", function(){changeRange("Aggression")});
@@ -31,24 +32,24 @@ function hideshow(id) {
 }
 
 function forcerun(){
-    console.log("sending force run command")
+    print("sending force run command")
     chrome.runtime.sendMessage({message:"frc_run"}, function(response){
-        console.log("sent force");
+        print("sent force");
     });
 }
 
 function set_fgn() {
     let langname = lowerize(document.getElementById("LanguageSelect").value);
-    console.log("Sending forieng langauge, ["+langname+"]");
+    print("Sending forieng langauge, ["+langname+"]");
     chrome.runtime.sendMessage({message: "set_lng", payload: langname}, function(response) {
-        console.log("Got response for set_lng, ["+response+"]")
+        print("Got response for set_lng, ["+response+"]")
     });
 }
 
 function activate() {
     document.getElementById('Activated').toggleAttribute("checked", true); //setAttribute("checked")
     chrome.runtime.sendMessage({message: "set_act"}, function(response){
-        console.log("sent activate");
+        print("sent activate");
     });
 }
 
@@ -56,21 +57,21 @@ function sendAggression(){
     changeRange("Aggression");
     // Save value to session storage:
     chrome.runtime.sendMessage({message: "set_agr", payload: document.getElementById("Aggression").value}, function(response){
-        console.log("sent aggression");
+        print("sent aggression");
     });
 }
 function sendChance(){
     changeRange("Chance");
     // Save value to session storage:
     chrome.runtime.sendMessage({message: "set_chn", payload: document.getElementById("Chance").value}, function(response){
-        console.log("sent chance");
+        print("sent chance");
     });
 }
 function sendBoredom(){
     changeRange("Boredom");
     // Save value to session storage:
     chrome.runtime.sendMessage({message: "set_brd", payload: document.getElementById("Boredom").value}, function(response){
-        console.log("sent boredom");
+        print("sent boredom");
     });
 }
 function changeRange(id){
@@ -96,10 +97,10 @@ function load_page() {
         .then(() => setChosenLang());
 
     chrome.runtime.sendMessage({message: "get_act"}, function(response){
-        console.log("GETACT:..")
-        console.log(response);
-        console.log(typeof response.payload);
-        console.log(response.payload);
+        print("GETACT:..")
+        print(response);
+        print(typeof response.payload);
+        print(response.payload);
         let activated_val = response.payload;
         if (activated_val) {
             document.getElementById('Activated').toggleAttribute("checked", true);
@@ -109,42 +110,42 @@ function load_page() {
         const newagr = response.payload;
         document.getElementById("Aggression").value = newagr;
         changeRange("Aggression");
-        console.log("Aggression is now: " + newagr);
+        print("Aggression is now: " + newagr);
     });
     chrome.runtime.sendMessage({message: "get_chn"}, function(response){
         const newchn = response.payload;
         document.getElementById("Chance").value = newchn;
         changeRange("Chance");
-        console.log("Chance is now: " + newchn);
+        print("Chance is now: " + newchn);
     });
     chrome.runtime.sendMessage({message: "get_brd"}, function(response){
         const newbrd = response.payload;
         document.getElementById("Boredom").value = newbrd;
         changeRange("Boredom");
-        console.log("Boredom is now: " + newbrd);
+        print("Boredom is now: " + newbrd);
     });
 }
 
 function setChosenLang() {
     chrome.runtime.sendMessage({message: "get_lng"}, function(response){
         const langname = response.payload;
-        console.log(langname);
+        print(langname);
         if (langname) {
-            console.log("Because there is a langname ("+langname+"), we are setting it to selected...")
+            print("Because there is a langname ("+langname+"), we are setting it to selected...")
             document.getElementById("defaultopt").removeAttribute("selected")
             document.getElementById(langname).setAttribute("selected", "selected")
         }
-        console.log("Selected language is now: " + langname + ".");
+        print("Selected language is now: " + langname + ".");
 
     });
 }
 
 function langs2menu(text) {
-    console.log(text);
-    console.log(typeof text);
+    print(text);
+    print(typeof text);
     text = text.split('\n');
-    console.log(text);
-    console.log(typeof text);
+    print(text);
+    print(typeof text);
 
     const langname2option = function (langname)
         { let x = document.createElement("option" );
@@ -167,4 +168,10 @@ function capitalize(word){
 
 function lowerize(word){
     return word.charAt(0).toLowerCase() + word.slice(1);
+}
+
+function print(s) {
+    if (DEBUG) {
+        console.log(s);
+    }
 }
