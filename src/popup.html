@@ -3,6 +3,8 @@
 <head>
     <title>-glish</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@1,600&display=swap');
+
         .boxdiv {
             border: 1px groove WhiteSmoke;
             padding: 7px;
@@ -25,104 +27,102 @@
 
     </style>
 </head>
-<body style="background-color: #fff4eb; min-width: 300px;">
-<div class="myPadding">
-    <div class="boxdiv" style="text-align:center">
-        <br>
-        <div style="alignment:center" id="Title">-glish</div>
-        <br>
-        <div class="boxdiv" style="max-width: 129px; max-height: 129px; margin:0 auto;">
-            <img src="../images/NVicon128.png" alt="Icon of an impressionist painting with a young man smirking.">
-        </div>
+<body style="min-width: 300px; background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url('../images/bckgrnmarble.jpg'); ">
 
-        <br>
-
-        <select id="LanguageSelect">
-            <option value="" id="defaultopt" disabled="disabled" selected="selected">Please select a language</option>
-        </select>
-
-        <br><br>
-
-        <input type="checkbox" value="activated" id="Activated" /> <label for="Activated">Enable this app</label>
-        <br>
-
-
-
-
-
-    </div>
-<br>
-    <div class="boxdiv" style="text-align: center">
-        <br>
-        <div>
-            <label for="Aggression">Use up to <span id="AggressionCount">-- %</span> of Dictionary:</label>
-        </div>
-        <input type="range" id="Aggression" min="0" max="100" value="5" step="2" />
-        <br>
-        <br>
-        <div>
-            <label for="Boredom" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything.">Ignore first <span id="BoredomCount">-- %</span> of Dictionary:</label>
-        </div>
-        <input type="range" id="Boredom" min="0" max="100" value="0" step="2" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything."/>
-        <br>
-        <br>
-        <div>
-            <label for="Chance" >Translate <span id="ChanceCount">-- %</span> of found vocab:</label>
-        </div>
-        <input type="range" id="Chance" min="0" max="100" value="5" step="5" />
-        <br>
-        <br>
-    </div>
-
-    <p><a href="javascript:void(0);" id="Instructions" title="Instructions Menu">Features and Tricks</a></p>
-    <div id="Instructions_Menu" style="text-align:left; display: none;">
-        <div class="boxdiv myPadding">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>HOVER</strong> on a word</em> &nbsp;to reveal its original English word.</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>CLICK</strong> on a word</em> &nbsp;to rotate through matching translated words.</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>CLICK+HOLD</strong> on a word</em> &nbsp;to access its detailed information page through Wiktionary.</p>
-        </div>
-        <br>
-        <div class="boxdiv myPadding">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>If it bugs out</strong></em>, refresh the page or jiggle some menu options. Sorry!</p>
-
-        </div>
-    </div>
-    <p><a href="javascript:void(0);" id="Support" title="Support Menu">Donate</a></p>
-    <div id="Support_Menu" style="text-align:left; display: none;">
-        <div class="boxdiv myPadding">
-            <p >&nbsp;&nbsp;&nbsp;&nbsp;Enjoying?</p>
-            <div style="text-align: center">
-                <script type='text/javascript' src='../external/KoFi.js'></script>
-                <script type='text/javascript' src="../external/runKoFi.js"></script>
-            </div>
+    <div class="myPadding">
+        <div class="boxdiv" style="text-align:center">
+            <br>
+            <div style="transform: rotate(-1deg); alignment:center; font-size: 66px; font-family: 'Gelasio', serif;"  id="Title">-glish</div>
             <br>
 
-        </div>
-        <br>
-        <div class="boxdiv myPadding">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;Though unaffiliated with me, this project depends heavily on the work of <i>Wikimedia Foundation's</i> excellent <i>Wiktionary</i> project.</p>
-            <div style="text-align: center"><img src="../images/wikimedia_foundation.svg" title="Wikimedia Foundation" alt="Wikimedia Foundation" style="width:100px;"></div>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;Please consider donating to them as well.</p>
-            <div style="text-align: center">
-                <script type='text/javascript' src='../external/Wiki.js'></script>
-                <script type='text/javascript' src="../external/runWiki.js"></script>
-            </div>
-            <br>
-        </div>
-    </div>
-    <p><a href="javascript:void(0);" id="About" title="About Menu">About</a></p>
-    <div class="boxdiv" id="About_Menu" style="text-align:left; display: none;">
-        <div class="myPadding">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;This version uses a unigram langauge model for greedy translations. </p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;Future versions could include n-gram models or in browser neural models if the performance is good enough.</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;Thank you for your interest in this early stage :)</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;Made by Julian Vanecek 2022. Merry X-mas, mom!</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;Kindly email me at [bitsintheskygmailcom]</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;Code on <a href="github.com/jsvan/Nosey-Vocab">github</a>.</p>
+
+            <select id="LanguageSelect">
+                <option value="" id="defaultopt" disabled="disabled" selected="selected">Please select a language</option>
+            </select>
+
             <br><br>
+
+            <input type="checkbox" value="activated" id="Activated" /> <label for="Activated">Enable this app</label>
+            <br>
+
+
+
+
+
+        </div>
+    <br>
+        <div class="boxdiv" style="text-align: center">
+            <br>
+            <div>
+                <label for="Aggression">Use up to <span id="AggressionCount">-- %</span> of Dictionary:</label>
+            </div>
+            <input type="range" id="Aggression" min="0" max="100" value="5" step="2" />
+            <br>
+            <br>
+            <div>
+                <label for="Boredom" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything.">Ignore first <span id="BoredomCount">-- %</span> of Dictionary:</label>
+            </div>
+            <input type="range" id="Boredom" min="0" max="100" value="0" step="2" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything."/>
+            <br>
+            <br>
+            <div>
+                <label for="Chance" >Translate <span id="ChanceCount">-- %</span> of found vocab:</label>
+            </div>
+            <input type="range" id="Chance" min="0" max="100" value="5" step="5" />
+            <br>
+            <br>
+        </div>
+
+        <p><a href="javascript:void(0);" id="Instructions" title="Instructions Menu">Features and Tricks</a></p>
+        <div id="Instructions_Menu" style="text-align:left; display: none;">
+            <div class="boxdiv myPadding">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>HOVER</strong> on a word</em> &nbsp;to reveal its original English word.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>CLICK</strong> on a word</em> &nbsp;to rotate through matching translated words.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>CLICK+HOLD</strong> on a word</em> &nbsp;to access its detailed information page through Wiktionary.</p>
+            </div>
+            <br>
+            <div class="boxdiv myPadding">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>If it bugs out</strong></em>, refresh the page or jiggle some menu options. Sorry!</p>
+
+            </div>
+        </div>
+        <p><a href="javascript:void(0);" id="Support" title="Support Menu">Donate</a></p>
+        <div id="Support_Menu" style="text-align:left; display: none;">
+            <div class="boxdiv myPadding">
+                <p >&nbsp;&nbsp;&nbsp;&nbsp;Enjoying?</p>
+                <div style="text-align: center">
+                    <script type='text/javascript' src='../external/KoFi.js'></script>
+                    <script type='text/javascript' src="../external/runKoFi.js"></script>
+                </div>
+                <br>
+
+            </div>
+            <br>
+            <div class="boxdiv myPadding">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Though unaffiliated with me, this project depends heavily on the work of <i>Wikimedia Foundation's</i> excellent <i>Wiktionary</i> project.</p>
+                <div style="text-align: center"><img src="../images/wikimedia_foundation.svg" title="Wikimedia Foundation" alt="Wikimedia Foundation" style="width:100px;"></div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Please consider donating to them as well.</p>
+                <div style="text-align: center">
+                    <script type='text/javascript' src='../external/Wiki.js'></script>
+                    <script type='text/javascript' src="../external/runWiki.js"></script>
+                </div>
+                <br>
+            </div>
+        </div>
+        <p><a href="javascript:void(0);" id="About" title="About Menu">About</a></p>
+        <div class="boxdiv" id="About_Menu" style="text-align:left; display: none;">
+            <div class="myPadding">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;This version uses a unigram langauge model for greedy translations. </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Future versions could include n-gram models or in browser neural models if the performance is good enough.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Thank you for your interest in this early stage :)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Made by Julian Vanecek 2022. Merry X-mas, mom!</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Kindly email me at [bitsintheskygmailcom]</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Code on <a href="github.com/jsvan/Nosey-Vocab">github</a>.</p>
+                <br><br>
+            </div>
         </div>
     </div>
-</div>
+
 <script src="popup.js">
 </script>
 </body>

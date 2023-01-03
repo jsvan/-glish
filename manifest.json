@@ -15,10 +15,10 @@
     "default_popup": "src/popup.html",
     "default_title": "-glish",
     "default_icon": { 
-      "16": "images/NVicon16.png",
-      "32": "images/NVicon32.png",
-      "48": "images/NVicon48.png",
-      "128": "images/NVicon128.png"
+      "16": "images/-g16.png",
+      "32": "images/-g32.png",
+      "48": "images/-g48.png",
+      "128": "images/-g128.png"
     }
   },
   "background": {
@@ -26,10 +26,10 @@
   },
 
   "icons": {
-    "16": "images/NVicon16.png",
-    "32": "images/NVicon32.png",
-    "48": "images/NVicon48.png",
-    "128": "images/NVicon128.png"
+    "16": "images/-g16.png",
+    "32": "images/-g32.png",
+    "48": "images/-g48.png",
+    "128": "images/-g128.png"
   },
   "web_accessible_resources": [
     {"resources" :[
