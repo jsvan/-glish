@@ -39,13 +39,16 @@ const LANG_STORAGE_TAG = 'LANG_STORAGE_TAG';
 const SEEN = new Set();
 
 
-chrome.runtime.onInstalled.addListener(function () {
+chrome.runtime.onInstalled.addListener(function (rsn) {
 	ACTIVATED = true;
 	chrome.storage.sync.set({ACTIVE_STORAGE_TAG:ACTIVATED}, () => {});
 	chrome.storage.sync.set({AGGRO_STORAGE_TAG:5},   () => {});
 	chrome.storage.sync.set({CHANCE_STORAGE_TAG:20}, () => {});
 	chrome.storage.sync.set({BOREDOM_STORAGE_TAG:2}, () => {});
 	chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
+	if (chrome.runtime.OnInstalledReason.INSTALL === rsn.reason) {
+		chrome.tabs.create({'url':"src/popup.html", 'active':true}, ()=>{})
+	}
 })
 
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {

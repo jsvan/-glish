@@ -90,7 +90,7 @@ function grab_and_go() {
 
 function just_go() {
 	print("GOT THIS MANY TEXT SECTIONS: " + OG_TEXT_NODES.length)
-	if (COUNT_TEXT_SECTIONS < 5){
+	if (COUNT_TEXT_SECTIONS < 8){
 		return
 	}
 	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT}, function(response){

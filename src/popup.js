@@ -26,10 +26,12 @@ function hideshow(id) {
     const menustyle = document.getElementById(id+"_Menu").style;
     if (menustyle.display === 'none'){
         menustyle.display = 'block';
-        link.innerText = "Hide " + link.innerText
+        link.innerText = "Hide " + link.innerText;
+        link.setAttribute('href', '#'+id);
     } else {
         menustyle.display = 'none';
         link.innerText = link.innerText.substring(5);
+        link.setAttribute('href', '#');
     }
 }
 
