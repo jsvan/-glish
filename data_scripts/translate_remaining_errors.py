@@ -15,7 +15,7 @@ from wiki_scraper import Scraper
 
 
 """
-
+TODO:
 Could be in the translation table, it gives you a link to SEE SOMEOTHER PAGE, and we should try that out.
 <div class="pseudo NavFrame">
 	<div class="NavHead" style="text-align: left;">
@@ -32,6 +32,8 @@ Could be in the translation table, it gives you a link to SEE SOMEOTHER PAGE, an
 	</div>
 </div>
 
+ALSO:
+seperate words by a comma, not a space.
 """
 def main():
 

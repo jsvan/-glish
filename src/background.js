@@ -68,11 +68,16 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 										return 0;
 									}
 									const chunks_to_translate = request.payload;
+									print("chunks")
+									print(chunks_to_translate)
 									const translated_chunks = [];
 									let idint = 0;
 									let newstring = null;
 									for (let i = 0; i < chunks_to_translate.length; i++) {
+										print("chunks");
+										print(chunks_to_translate[i]);
 										[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
+
 										translated_chunks.push(newstring);
 									}
 									print("BACKGROUND sending translated response")
@@ -329,7 +334,7 @@ function loadForeign(){
 		return Promise.resolve(null);
 	}
 	print("In loadforeign, getting "+lang);
-	let fileloc = chrome.runtime.getURL("../updated_language_packs/" + capitalize(lang) + ".txt");
+	let fileloc = chrome.runtime.getURL("../updated_language_packs/" + capitalize(lang) + "_test.txt");
 	return fetch(fileloc)
 		.then((response) => response.text())
 		.then((text) => prepareVocab(text))
@@ -340,6 +345,7 @@ function loadForeign(){
 		.then((vlist) => {
 			FOREIGN = vlist;
 			print("This is foreign")
+			print(FOREIGN)
 			return vlist;
 		})
 }
@@ -396,21 +402,33 @@ function replaceNodeVocab(node, idint){
 	if (!node.trim()){
 		return [node, idint]
 	}
-	const words = node.split('$');
+	const words = node.split(' ');
 	const newwords = [];
 	let word = null;
 	for (let i=0; i< words.length; i++){
 		word = words[i].toString();
+
 		if (word.length > 40) { // || (word.length > 1 && word === word.toUpperCase())
 			continue
 		}
+
 		let replacementword = word;
 		if (Math.random() < SCALED_CHANCE) {
+
 			const upper = word.charAt(0) === word.charAt(0).toUpperCase();
-			let cleanword = word.toLowerCase(); //.replace(/[^a-z]/gi, '');
+			let cleanword = word.toLowerCase();
+			let finalchar = cleanword.charAt(cleanword.length - 1);
+			if (['.',',',':','!','?'].indexOf(finalchar) >= 0) {
+				cleanword = cleanword.substring(0, cleanword.length - 1);
+			} else {
+				finalchar = '';
+			}
 			if (cleanword.length > 0 && in_working(cleanword) && !SEEN.has(cleanword)) {
 				replacementword = formatTranslateWord(cleanword, idint, upper);
 				SEEN.add(cleanword);
+				if (finalchar) {
+					replacementword = replacementword + finalchar;
+				}
 				idint += 1;
 			}
 		}
@@ -427,6 +445,9 @@ function in_working(word) {
 
 function subpar_word(fwordlst) {
 	fwordlst = fwordlst.split('$')
+	if (fwordlst.length === 1) {
+		return fwordlst[0]
+	}
 	fwordlst.push('')
 	const r = Math.floor(Math.random() * fwordlst.length)
 	if (!fwordlst[r]){
