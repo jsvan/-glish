@@ -1079,7 +1079,7 @@ teilnehmen#beachten besuchen kümmern teilnehmen
 Teilnehmer#Teilnehmerin Teilnehmer
 Argument#Argumentation Argument Streitgespräch Streit Thema Diskussion
 Gegenstand#Gegenstand dagegen sein Sache einwenden Ergänzung Ziel Objekt
-gefallen#gefallen bitte gerne
+bitte#gefallen bitte gerne
 nuklear#Kern nuklear
 Himmel#Luft Himmel
 Nachmittag#Nachmittag
