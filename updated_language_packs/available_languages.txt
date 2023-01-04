@@ -11,3 +11,4 @@ portuguese	pt
 russian	ru
 spanish	es
 turkish	tr
+ukrainian	uk

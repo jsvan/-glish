@@ -334,7 +334,7 @@ function loadForeign(){
 		return Promise.resolve(null);
 	}
 	print("In loadforeign, getting "+lang);
-	let fileloc = chrome.runtime.getURL("../updated_language_packs/" + capitalize(lang) + "_test.txt");
+	let fileloc = chrome.runtime.getURL("../updated_language_packs/" + capitalize(lang) + ".txt");
 	return fetch(fileloc)
 		.then((response) => response.text())
 		.then((text) => prepareVocab(text))
@@ -362,7 +362,12 @@ function prepareVocab(filetxt){
 		if (x.length < 2) {
 			return [null, null]
 		}
-		return [x[0], x[1]]
+		[bestword, wordlist] = x;
+
+		if (bestword === '--' && !wordlist.includes('$')) {
+			bestword = wordlist;
+		}
+		return [bestword, x[1]]
 	})
 	return ret;
 }
@@ -445,9 +450,6 @@ function in_working(word) {
 
 function subpar_word(fwordlst) {
 	fwordlst = fwordlst.split('$')
-	if (fwordlst.length === 1) {
-		return fwordlst[0]
-	}
 	fwordlst.push('')
 	const r = Math.floor(Math.random() * fwordlst.length)
 	if (!fwordlst[r]){

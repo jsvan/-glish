@@ -1,1295 +1,1295 @@
 --
-být#mít být
+být#mít$být
 a#a
-z#z ze
+z#ze$z
 --
-v#ve za z ze do dovnitř v
---#ku k do ke -t
+v#ze$dovnitř$z$za$do$ve$v
+-t#ke$k$do$ku$-t
 mít#mít
-to#toho on ono to tomu ona
+to#ono$ona$on$tomu$toho$to
 já#já
-že#aby jenž to který že
-pro#k pro neboť za
-vás#vykat ty člověk tebe vás tě vám vy
+že#jenž$který$aby$to$že
+neboť#pro$za$k$neboť
+vás#vykat$tebe$ty$člověk$tě$vy$vám$vás
 on#on
-s#na s se proti
-na#na dne o
-dělat#dělat stačit jít udělat
-říct#povědět říct
-oni#oni ony
-tento#tento toto tato
-ale#jenže ale kromě
-u#při u na do v
+s#na$se$proti$s
+na#o$dne$na
+dělat#stačit$udělat$jít$dělat
+říct#povědět$říct
+oni#ony$oni
+tento#tato$toto$tento
+ale#jenže$kromě$ale
+u#na$do$při$v$u
 my#my
-jeho#jeho svůj
-z#od ze před proti z
-ne-#nikoliv ne ne-
-u#za pomocí podle o prostřednictvím u po od do
+jeho#svůj$jeho
+z#od$ze$před$proti$z
+ne-#ne$nikoliv$ne-
+u#od$prostřednictvím$pomocí$o$po$podle$za$do$u
 nebo#nebo
 ona#ona
-tak#protože neb zatímco jak neboť tak jelikož poněvadž
-jaký#jaký co cože
-chodit#go šlapat jít chodit jet odejít fungovat jezdit
+tak#jak$jelikož$neboť$poněvadž$zatímco$neb$protože$tak
+jaký#cože$co$jaký
+chodit#odejít$go$jet$jezdit$šlapat$fungovat$jít$chodit
 jejich#jejich
 vůle#vůle
-kdo#kdo který kteří
-moci#konev moci konzervovat plechovka konvička konzerva umět konvice smět
-dostat#dostat dostávat
-jestliže#zda pokud jestliže
-všichni#všichni všechno celý
+kdo#který$kteří$kdo
+moci#konzervovat$plechovka$konzerva$konvice$smět$konev$konvička$umět$moci
+dostat#dostávat$dostat
+jestliže#zda$pokud$jestliže
+všichni#celý$všechno$všichni
 --#být
-její#ní ji jí její
-stavět#značka přinutit přimět udělat vyrábět vytvářet dělat tvořit stavět činit donutit
-kolem#kolem asi o přibližně okolo
+její#jí$ní$ji$její
+stavět#tvořit$donutit$činit$přimět$vyrábět$přinutit$vytvářet$dělat$udělat$značka$stavět
+kolem#přibližně$okolo$o$asi$kolem
 můj#můj
-vědět#znát vědět poznat
+vědět#poznat$znát$vědět
 tam#tam
-jeden#jeden jedna jednička jedno
-nahoru#nahoře nahoru vzhůru zvýšit
+jeden#jedno$jednička$jedna$jeden
+nahoru#vzhůru$zvýšit$nahoře$nahoru
 čas#čas
-rok#ročník rok
-aby#aby tak takto takhle
-přemýšlet#přemýšlet myslet
+rok#ročník$rok
+aby#takto$tak$takhle$aby
+přemýšlet#myslet$přemýšlet
 vidět#vidět
-který#který jenž jaký
-kdy#až kdy když
-nějaký#několik trochu nějaký některý
-jich#jim jich jimi nimi ně nich je nim
-lid#lid národ lidé
-brát#vzít dobýt unést zisk brát vydržet názor vzetí
-mě#mně já mě si mi mnou mne
-venku#venku otevřený
-do#v do
-správný#správný těsně pouze právě přesně spravedlivý
-mu#jeho ho mu jemu
-přicházet#přijet udělat přijít přicházet předejít
-tvůj#tvůj váš
-teď#teď nyní
+který#jaký$jenž$který
+kdy#když$až$kdy
+nějaký#trochu$některý$několik$nějaký
+jich#jim$nimi$nich$je$ně$nim$jimi$jich
+lid#lidé$národ$lid
+brát#názor$vzetí$zisk$unést$vydržet$dobýt$vzít$brát
+mě#mi$mně$já$mnou$mne$si$mě
+venku#otevřený$venku
+do#v$do
+správný#spravedlivý$pouze$právě$těsně$přesně$správný
+mu#jeho$jemu$ho$mu
+přicházet#přijet$přijít$udělat$předejít$přicházet
+tvůj#váš$tvůj
+teď#nyní$teď
 ERROR
 než#než
-mít rád#jako mít rád jak lajkovat lajknout
-druhý#druhý jiný ostatní
-tehdy#potom pak tehdy
+mít rád#lajkovat$jak$jako$lajknout$mít rád
+druhý#jiný$ostatní$druhý
+tehdy#potom$pak$tehdy
 jak#jak
 jeho#jeho
-dva#dvoje dva dvě dvojka
+dva#dvě$dvojka$dvoje$dva
 náš#náš
-víc#víc více
-tito#tyto tito tato
+víc#více$víc
+tito#tato$tyto$tito
 chtít#chtít
-cesta#způsob cesta
-žádný#proti zakázáno žádný ne
-vypadat#vzhled vypadat pohled
+cesta#způsob$cesta
+žádný#ne$zakázáno$proti$žádný
+vypadat#vzhled$pohled$vypadat
 první#první
 také#také
 nový#nový
-kvůli#protože proto kvůli
+kvůli#proto$protože$kvůli
 den#den
-použití#použít používat použití
-muž#pán muž člověk
-tady#tady sem tato tento moment místo doba zde toto tu chvíle
-nalézat#najít objevit nalézat nacházet nalézt
-dávat#dát dávat darovat
+použití#používat$použít$použití
+muž#pán$člověk$muž
+tady#tento$moment$toto$doba$chvíle$tu$tato$zde$sem$místo$tady
+nalézat#objevit$nalézt$nacházet$najít$nalézat
+dávat#darovat$dát$dávat
 věc#věc
-dobře#dobře pramen zdravý studna no vrt studánka
+dobře#pramen$zdravý$no$studánka$vrt$studna$dobře
 mnoho#mnoho
-jediný#teprve jenže až jenom jen pouze jediný jedině jedináček
+jediný#pouze$jenom$teprve$až$jenže$jedině$jedináček$jen$jediný
 ty#ty
-říci#říci říkat hovořit
-velmi#skutečně tentýž týž velmi
-rovný#dokonce sudý večer i rovný ještě vyrovnat vůbec
-zadní#couvat zadní zpátky dozadu zadek obránce starý rub hřbet část vzadu útočník zpět podporovat záda káď odlehlý
-kterýkoliv#kdokoliv kterýkoliv cokoliv
-dobrý#dobro dobrý
-nás#nás nám
+říci#hovořit$říkat$říci
+velmi#týž$tentýž$skutečně$velmi
+rovný#večer$sudý$i$vyrovnat$dokonce$vůbec$ještě$rovný
+zadní#káď$couvat$odlehlý$starý$podporovat$obránce$zpátky$rub$hřbet$zpět$dozadu$část$zadek$útočník$záda$vzadu$zadní
+kterýkoliv#cokoliv$kdokoliv$kterýkoliv
+dobrý#dobro$dobrý
+nás#nám$nás
 skrz#skrz
 žena#žena
-život#životnost život
-dítě#dcera dítě
-dolů#dole ven dolů
-práce#práce dílo zaměstnání fungovat pracovat
-potom#za podle po potom na
-hovor#zavolat volání křičet křik říkat navštívit telefonovat hovor volat
-smět#smět moci
-svět#svět vesmír
-nad#přes nad
+život#životnost$život
+dítě#dcera$dítě
+dolů#ven$dole$dolů
+práce#dílo$fungovat$pracovat$zaměstnání$práce
+potom#po$podle$za$na$potom
+hovor#volat$telefonovat$říkat$křik$volání$zavolat$křičet$navštívit$hovor
+smět#moci$smět
+svět#vesmír$svět
+nad#přes$nad
 --
-stálý#stálý ještě stále i tak
-zkoušet#pětka zkusit zkoušet pokusit se
-škola#hejno škola
-poslední#trvat nakonec minulý vydržet poslední
-zeptat se#žádat zeptat se
-také#příliš též také
-potřeba#potřebovat potřeba
-tři#troje tři
+stálý#stále$i tak$ještě$stálý
+zkoušet#pokusit se$zkusit$pětka$zkoušet
+škola#hejno$škola
+poslední#vydržet$trvat$minulý$nakonec$poslední
+zeptat se#žádat$zeptat se
+také#příliš$též$také
+potřeba#potřebovat$potřeba
+tři#troje$tři
 cítit#cítit
 stát#stát
-stát#stav stát
+stát#stav$stát
 nikdy#nikdy
 mezi#mezi
-vysoký#vysoký vysoko
+vysoký#vysoko$vysoký
 něco#něco
-skutečně#opravdu skutečně
-nejvíce#většina nejvíce
-jiný#druhý jiný další odlišný
-mnoho#moc mnoho mnohem
-vlastní#mít vlastní vlastnit
-rodina#rodina čeleď rodinný
-dům#dům sněmovna
-nechat#zanechat nechávat dovolená opustit nechat zbýt
-dát#dát postavit vrhnout umístit
+skutečně#opravdu$skutečně
+nejvíce#většina$nejvíce
+jiný#další$druhý$odlišný$jiný
+mnoho#mnohem$moc$mnoho
+vlastní#vlastnit$mít$vlastní
+rodina#čeleď$rodinný$rodina
+dům#sněmovna$dům
+nechat#opustit$zanechat$dovolená$nechávat$zbýt$nechat
+dát#umístit$vrhnout$postavit$dát
 starý#starý
-chvíle#byť zatímco chvíle
-chtít#chtít střední znamenat prostředek plánovat
-nechat#dovolit nechat ať nechť
+chvíle#byť$zatímco$chvíle
+chtít#střední$znamenat$plánovat$prostředek$chtít
+nechat#dovolit$nechť$ať$nechat
 proč#proč
-prezident#prezident prezidentka
+prezident#prezidentka$prezident
 pokračovat#pokračovat
-tentýž#stejný tentýž totožný
-veliký#skvělý veliký
-začínat#začít začínat
+tentýž#stejný$totožný$tentýž
+veliký#skvělý$veliký
+začínat#začít$začínat
 --
 --
-skupina#grupa skupina kapela
-země#země venkov stát
-mluvit#hovořit mluvit rozhovor konverzace
+skupina#grupa$kapela$skupina
+země#stát$venkov$země
+mluvit#rozhovor$konverzace$hovořit$mluvit
 problém#problém
-kde#kde kam odkud
-točit#točit otočit obrat zahnout
-student#student studentka
+kde#kam$odkud$kde
+točit#zahnout$otočit$obrat$točit
+student#studentka$student
 každý#každý
-ruka#ručička ruka
-pomoc#pomocník pomocnice pomoci pomoct pomoc pomáhat
-proti#proti o
-začátek#začít začínat start začátek
+ruka#ručička$ruka
+pomoc#pomoci$pomoct$pomáhat$pomocnice$pomocník$pomoc
+proti#o$proti
+začátek#začínat$start$začít$začátek
 --
-část#rozdělit role část
-ukazovat#šou ukázka ukazovat ukázat pořad
-moc#moc síla
+část#rozdělit$role$část
+ukazovat#ukázka$ukázat$šou$pořad$ukazovat
+moc#síla$moc
 takový#takový
-místo#náměstí zařadit místo umístit
-zase#zase opět znova
-město#velkoměsto město
-případ#bedna případ vitrina pouzdro
-málo#několik trochu málo
-systém#soustava systém
+místo#zařadit$umístit$náměstí$místo
+zase#znova$opět$zase
+město#velkoměsto$město
+případ#pouzdro$bedna$vitrina$případ
+málo#trochu$několik$málo
+systém#soustava$systém
 týden#týden
-společnost#společnost rota podnik
+společnost#rota$podnik$společnost
 každý#každý
 procento#procento
 slyšet#slyšet
 během#během
-otázka#otázka téma
-přímý#dobře přímý viď správný správně právo zcela pravý kolmý pravicový dobrá vpravo hodně velmi úplně přesně že pravice
-program#vysílání relace program pořad
-běhat#trvat řídit prchat běh zabírat běžet fungovat běhat téci téct utíkat
-číslo#číslovka počítat číslo číslice množství
-malý#malý mladý
+otázka#téma$otázka
+přímý#viď$kolmý$že$dobře$hodně$právo$správný$úplně$zcela$velmi$správně$přesně$vpravo$pravicový$dobrá$pravice$pravý$přímý
+program#vysílání$pořad$relace$program
+běhat#řídit$běh$téct$téci$trvat$utíkat$běžet$zabírat$fungovat$prchat$běhat
+číslo#počítat$množství$číslice$číslovka$číslo
+malý#mladý$malý
 vláda#vláda
-hrát#pustit hrát hra
---#pryč vypnout
-hýbat#dojmout dojímat tah stěhování hýbat pohnout pohybovat podat
-vždy#vždy pořád
-noc#noc večer
-věřit#věřit myslet
-dnes#dnes dnešek
-držet#zdržet zadržet držet podpalubí
-místo#moment čárka tečka místo špička okamžik ukazovat ukázat bod
-žít#živě bydlet živý žít
-stát#dít se stát
-přinášet#přinášet přivést přinést přivézt
-příští#následující další vedle příští budoucí
-bez#beze bez
-před#než před
-ERROR
-muset#mošt muset
-válka#vojna válka boj
-domov#doma domov domů
+hrát#hra$pustit$hrát
+--#pryč
+hýbat#pohybovat$tah$dojmout$stěhování$podat$pohnout$dojímat$hýbat
+vždy#pořád$vždy
+noc#večer$noc
+věřit#myslet$věřit
+dnes#dnešek$dnes
+držet#zdržet$podpalubí$zadržet$držet
+místo#moment$okamžik$ukázat$špička$tečka$čárka$ukazovat$bod$místo
+žít#živý$bydlet$živě$žít
+stát#dít se$stát
+přinášet#přivézt$přinést$přivést$přinášet
+příští#budoucí$další$následující$vedle$příští
+bez#beze$bez
+před#než$před
+--
+muset#mošt$muset
+válka#vojna$boj$válka
+domov#domů$doma$domov
 pod#pod
-pokoj#prostor místo místnost pokoj
-fakt#fakt skutečnost
-plocha#oblast plocha
-národní#státní národní
-psát#zapisovat napsat psát
+prostor#pokoj$místnost$místo$prostor
+fakt#skutečnost$fakt
+plocha#oblast$plocha
+národní#státní$národní
+psát#zapisovat$napsat$psát
 peníze#peníze
 příběh#příběh
 --
 matka#matka
-odlišný#jiný odlišný
+odlišný#jiný$odlišný
 mladý#mladý
 měsíc#měsíc
 --
-kniha#album kniha rezervovat libreto
-oko#oko ucho ouško
-studovat#studovat pracovna studie učení učit studium
-práce#úloha úkol práce
+kniha#libreto$rezervovat$album$kniha
+oko#ouško$ucho$oko
+studovat#učit$studie$studium$učení$pracovna$studovat
+práce#úkol$úloha$práce
 laskavý#laskavý
-slovo#slovo slib
+slovo#slib$slovo
 --
 strana#strana
 čtyři#čtyři
-podnik#věc obchod byznys záležitost podnik
-nicméně#ačkoli nicméně
+podnik#věc$obchod$byznys$záležitost$podnik
+nicméně#ačkoli$nicméně
 hlava#hlava
 daleký#daleký
-dlouhý#dlouho daleko dlouhý toužit
-černý#černý čerň
+dlouhý#toužit$dlouho$daleko$dlouhý
+černý#čerň$černý
 milión#milión
 oba#oba
-malý#malý mladý málo
-ano#ano jo
-od#protože od jelikož od té doby
-kolem#okolo kolem
+malý#málo$mladý$malý
+ano#jo$ano
+od#od té doby$protože$jelikož$od
+kolem#okolo$kolem
 poskytnout#poskytnout
-práce#bohoslužba podání služba práce
+práce#bohoslužba$služba$podání$práce
 důležitý#důležitý
 sedět#sedět
 pryč#pryč
-přítel#kamarádka opora přítelkyně příznivec příznivkyně známý kámo kluk holka přítel kamarád
-nicméně#však nicméně
-moc#mocnina výkon síla moc pohánět elektřina proud
-ještě#ještě dosud
-otec#fotr otec tatínek táta taťka
+přítel#kluk$kamarádka$příznivkyně$kamarád$přítelkyně$opora$kámo$známý$příznivec$holka$přítel
+nicméně#však$nicméně
+moc#pohánět$elektřina$síla$mocnina$proud$výkon$moc
+ještě#dosud$ještě
+otec#tatínek$taťka$fotr$táta$otec
 hodina#hodina
 často#často
 do#do
 politický#politický
-čára#lajna úsečka čára řádek přímka vedení
-konec#smrt končit dokončit konec
-stát#stojan zastávka stát pozice postavit vstávat stánek vstát
+čára#lajna$vedení$řádek$úsečka$přímka$čára
+konec#smrt$končit$dokončit$konec
+stát#zastávka$vstát$postavit$pozice$stojan$stánek$vstávat$stát
 mezi#mezi
-hra#hra zvěř
+hra#zvěř$hra
 někdy#někdy
-ztrácet#prohrát zhubnout prohrávat ztrácet ztratit
-špatný#špatný zlý nepříjemný podlý vadný
-člen#člen končetina pohlavní úd úd členka
-potkat#splnit potkat
-platit#vyplatit platit
-právo#právo zákon
-skoro#skoro téměř
-auto#automobil auto kabina
+ztrácet#prohrát$ztratit$zhubnout$prohrávat$ztrácet
+špatný#nepříjemný$vadný$zlý$podlý$špatný
+člen#končetina$pohlavní úd$členka$úd$člen
+potkat#splnit$potkat
+platit#vyplatit$platit
+právo#zákon$právo
+skoro#téměř$skoro
+auto#kabina$automobil$auto
 --
-jméno#pojmenovat označit název jméno jmenovat
+jméno#jmenovat$pojmenovat$název$označit$jméno
 --
 pět#pět
-střed#centr středisko centrum střed
-kdysi#kdysi jednou
-univerzita#univerzita vysoká škola
+střed#centr$středisko$centrum$střed
+kdysi#jednou$kdysi
+univerzita#vysoká škola$univerzita
 pokračovat#pokračovat
 --#nejméně
-skutečný#reálný skutečný
-bílý#bílý bělošský
-měnit#změnit měnit vyměnit změna vyměňovat drobné náhrada přestoupit proměnit
-sada#množina sada skupina série
+skutečný#reálný$skutečný
+bílý#bělošský$bílý
+měnit#drobné$změnit$vyměňovat$změna$náhrada$přestoupit$vyměnit$proměnit$měnit
+sada#množina$série$skupina$sada
 několik#několik
 před#před
 informace#informace
 nic#nic
-společenství#komunita společenství
+společenství#komunita$společenství
 porazit#porazit
-nápad#nápad myšlenka idea
-olovo#olovo vést vodit
-tělo#tělo organizace body skupina těleso orgán
-učit#zjistit studovat učit poučit zdokonalovat
+nápad#idea$myšlenka$nápad
+olovo#vodit$vést$olovo
+tělo#orgán$skupina$těleso$body$organizace$tělo
+učit#poučit$studovat$zdokonalovat$zjistit$učit
 kůzle#kůzle
-minuta#vteřina podrobný drobný chvilka zápis minuta zapisovat nepatrný minutka
-stůl#tabulka stůl
-zda#zda zdali ať
-rozumět#chápat pochopit rozumět
+minuta#drobný$chvilka$vteřina$nepatrný$minutka$zapisovat$podrobný$zápis$minuta
+stůl#tabulka$stůl
+zda#zdali$ať$zda
+rozumět#chápat$pochopit$rozumět
 tým#tým
-hodinky#dávat pozor hodinky hlídat hlídka sledovat dívat se
-společně#společně spolu dohromady
-sledovat#vyplývat následovat dodržet sledovat plynout
-zastavit#zastávka zůstat zastavit pobývat skončit ukončit
-tvář#strana tvář obličej
+hodinky#sledovat$zhlížet$hlídka$hlídat$dívat se$dávat pozor$zhlédnout$hodinky
+společně#dohromady$spolu$společně
+sledovat#dodržet$vyplývat$plynout$následovat$sledovat
+zastavit#zůstat$zastávka$ukončit$pobývat$skončit$zastavit
+tvář#obličej$strana$tvář
 cokoliv#cokoliv
-veřejný#veřejnost veřejný
-společenský#společenský sociální
-už#už již
-rodič#zdroj rodič
-mluvit#hovořit mluvit umět
-tvořit#vytvořit tvořit udělat
-funkce#kancelář úřad funkce
-dovolit#dovolit povolit
-vodorovný#úroveň vodováha libela vodorovný zamířit srovnat podlaží postoupit level
+veřejnost#veřejný$veřejnost
+společenský#sociální$společenský
+už#již$už
+rodič#zdroj$rodič
+mluvit#umět$hovořit$mluvit
+tvořit#udělat$vytvořit$tvořit
+funkce#úřad$kancelář$funkce
+dovolit#povolit$dovolit
+vodorovný#podlaží$srovnat$úroveň$vodováha$level$libela$postoupit$zamířit$vodorovný
 číst#číst
-utratit#utratit trávit
-osoba#osoba člověk
+utratit#trávit$utratit
+osoba#člověk$osoba
 dveře#dveře
 jistý#jistý
-dodat#doplnit sečíst přidat dodat
+dodat#doplnit$přidat$sečíst$dodat
 ulice#ulice
-dějiny#dějiny dějepis historie
-večírek#oslava mecheche večírek mejdan strana kalba
-růst#pěstovat růst
-příčina#rozum důvod příčina
-ráno#ráno dopoledne
-otevřený#otevřít otevírat veřejný otevřený
---#pod uvnitř během do v
-ač#ačkoliv ač
-jít#procházka chodit jít
+dějiny#historie$dějepis$dějiny
+večírek#strana$mecheche$kalba$mejdan$oslava$večírek
+růst#pěstovat$růst
+příčina#důvod$rozum$příčina
+ráno#dopoledne$ráno
+otevřený#veřejný$otevírat$otevřít$otevřený
+--#během$pod$uvnitř$do$v
+ač#ačkoliv$ač
+jít#procházka$chodit$jít
 noviny#noviny
 zdraví#zdraví
-dvůr#kurt dvorec stání dvůr soud
-síla#přinutit nutit síla moc donutit
-raný#brzy časný časně raný
-se#se sám sebe
-vzduch#vzduch popěvek
+dvůr#dvorec$stání$kurt$soud$dvůr
+síla#moc$donutit$nutit$přinutit$síla
+raný#brzy$časný$časně$raný
+se#sám$sebe$se
+vzduch#popěvek$vzduch
 nízký#nízký
 umění#umění
-výsledek#vyplývat závěr důsledek výsledek
-okamžik#moment chvilka okamžik
-nabídka#návrh nabízet nabídka nabídnout
+výsledek#vyplývat$závěr$důsledek$výsledek
+okamžik#moment$chvilka$okamžik
+nabídka#nabídnout$návrh$nabízet$nabídka
 pamatovat#pamatovat
 výzkum#výzkum
-dost#stačilo dost
-holka#holka dívka děvče holčička
-chlapec#kluk hoch chlapec
-vítězit#výhra vyhrát zvítězit vítězit
-potrava#potrava jídlo
+dost#stačilo$dost
+holka#děvče$dívka$holčička$holka
+chlapec#kluk$hoch$chlapec
+vítězit#vyhrát$zvítězit$výhra$vítězit
+potrava#jídlo$potrava
 přes#přes
-chlap#chlápek chlap typ děcka maník lidi
-druhý#vteřina chvilka sekunda okamžik druhý druhák
+chlap#maník$typ$chlápek$lidi$děcka$chlap
+druhý#chvilka$okamžik$druhák$vteřina$sekunda$druhý
 schopný#schopný
-k#vůči k na poblíž blízko
-asi#možná asi
-proces#děj proces zpracovat
-všechno#všechen všechno
-objevovat#objevit vypadat objevovat
-věk#věk stáří stárnout doba
-politika#politika pojistka
-zvažovat#zvažovat uvažovat
+k#poblíž$blízko$vůči$na$k
+asi#možná$asi
+proces#zpracovat$děj$proces
+všechno#všechen$všechno
+objevovat#objevit$vypadat$objevovat
+věk#stárnout$doba$stáří$věk
+politika#pojistka$politika
+zvažovat#uvažovat$zvažovat
 včetně#včetně
-pravděpodobně#spíše pravděpodobně spíš asi
-vzdělávání#vzdělání vzdělávání
-láska#mít rád láska milovat
-skutečně#opravdu skutečně
-kupovat#koupit baštit skočit žrát kupovat
+pravděpodobně#spíš$spíše$asi$pravděpodobně
+vzdělávání#vzdělání$vzdělávání
+láska#milovat$mít rád$láska
+skutečně#opravdu$skutečně
+kupovat#baštit$žrát$skočit$koupit$kupovat
 čekat#čekat
-umírat#kostka umřít umírat
+umírat#umřít$kostka$umírat
 lidský#lidský
-poslat#posílat poslat
+poslat#posílat$poslat
 poplatek#poplatek
 očekávat#očekávat
-sloužit#sloužit podávat podat
-smysl#pocit význam smysl
-učitel#učitelka učitel
-tržnice#tržnice nabízet tržní trh
-zůstat#odklad pobyt zůstat odložit pobýt
-stavět#postavit vybudovat stavět
-národ#národ stát
-padat#padnout padat pád
-ach#aha ach ó
-smrt#smrt smrtka
-plán#plán plánovat
-úrok#zájem úrok zajímat
+sloužit#podat$podávat$sloužit
+smysl#pocit$význam$smysl
+učitel#učitelka$učitel
+tržnice#tržní$trh$nabízet$tržnice
+zůstat#odklad$pobyt$odložit$pobýt$zůstat
+stavět#postavit$vybudovat$stavět
+národ#stát$národ
+padat#padnout$pád$padat
+ach#aha$ó$ach
+smrt#smrtka$smrt
+plán#plánovat$plán
+úrok#zajímat$zájem$úrok
 někdo#někdo
-zkušenost#zážitek pociťovat pocítit zkušenost
-řezat#řez rozdělit řezat oddělit
-zabít#zabít zabití
-za#za vzadu zpátky
-dorazit#dojet dorazit sáhnout
+zkušenost#zážitek$pocítit$pociťovat$zkušenost
+řezat#oddělit$rozdělit$řez$řezat
+zabít#zabití$zabít
+za#zpátky$vzadu$za
+dorazit#sáhnout$dojet$dorazit
 šest#šest
-místní#místní lokální
-zůstat#zbýt zůstat
-účinek#efekt účinek
-navrhnout#navrhnout navrhovat
-řídit#řídit správa nadvláda kontrola ovládat
-možná#snad možná
-zvednout#zvedat zdvihnout zdvihat vzkřísit zvednout
+místní#lokální$místní
+zůstat#zbýt$zůstat
+účinek#efekt$účinek
+navrhnout#navrhovat$navrhnout
+řídit#kontrola$ovládat$nadvláda$správa$řídit
+možná#snad$možná
+zvednout#vzkřísit$zvedat$zdvihnout$zdvihat$zvednout
 třída#třída
-pozdní#pozdní pozdě
-major#durový major dur
-jo#no jo
-jiný#jiný ostatní
-podávat#minout podávat podat
+pozdní#pozdě$pozdní
+major#dur$durový$major
+jo#no$jo
+jiný#ostatní$jiný
+podávat#podat$minout$podávat
 --
-prodávat#prodávat prodat
+prodávat#prodat$prodávat
 --#sama
-pole#pole pastvina hřiště
+pole#hřiště$pastvina$pole
 --
 někdy#někdy
 bývalý#bývalý
 vývoj#vývoj
-žádat#žádat požadovat vyžadovat
+žádat#požadovat$vyžadovat$žádat
 --#podél
-rozhodovat#rozhodovat rozhodnout
-bezpečí#zajištění cenný papír jistota bezpečnost záruka bezpečí
+rozhodovat#rozhodnout$rozhodovat
+bezpečí#zajištění$záruka$jistota$cenný papír$bezpečnost$bezpečí
 možný#možný
-úsilí#snaha úsilí
+úsilí#snaha$úsilí
 role#role
-lepší#lepší
-poměr#sazba poměr
+--#lepší
+poměr#sazba$poměr
 silný#silný
-hudba#muzika hudba
-zpráva#zpráva výbuch hlášení výstřel
-vedoucí#šéf velitel vůdce vedoucí
+hudba#muzika$hudba
+zpráva#výstřel$výbuch$hlášení$zpráva
+vedoucí#vůdce$šéf$velitel$vedoucí
 světlo#světlo
-celý#úplný celý celek
-hlas#vyjádřit hlas rod
-barva#odstín barva vlajka
+celý#celek$úplný$celý
+hlas#vyjádřit$rod$hlas
+barva#odstín$vlajka$barva
 srdce#srdce
-péče#starat se péče pečovat
+péče#starat se$pečovat$péče
 policie#policie
-hospodářský#hospodářský ekonomický
-manželka#manželka žena choť
-mysl#rozum mysl
-konečně#nakonec konečně
-droga#fetovat droga
+hospodářský#ekonomický$hospodářský
+manželka#žena$choť$manželka
+mysl#rozum$mysl
+konečně#nakonec$konečně
+droga#fetovat$droga
 méně#méně
-vrátit se#návrat vrátit návratnost vrátit se
+vrátit se#vrátit$návrat$návratnost$vrátit se
 ERROR
-táhnout#tahat tah táhnout
-rozhodnutí#rozhodnutí skóre
-vysvětlovat#vysvětlovat vysvětlit
-nosit#vozit nést nosit vézt
-vyvíjet#vyvíjet vyvolat
-výhled#pohled dohled názor vize výhled
-svobodný#prostý volný svobodný zadarmo osvobodit
-doufat#naděje doufat
-pud#hnát řídit jednotka pud náhon mechanika cesta
+táhnout#tah$tahat$táhnout
+rozhodnutí#skóre$rozhodnutí
+vysvětlovat#vysvětlit$vysvětlovat
+nosit#vézt$vozit$nést$nosit
+vyvíjet#vyvolat$vyvíjet
+výhled#názor$dohled$vize$pohled$výhled
+svobodný#prostý$volný$osvobodit$zadarmo$svobodný
+doufat#naděje$doufat
+mechanika#náhon$řídit$pud$hnát$cesta$jednotka$mechanika
 syn#syn
-paže#paže ruka
+paže#ruka$paže
 oddělení#oddělení
-pravdivý#pravý pravdivý přesně
-cena#ocenit cena
-vojenský#válečný ozbrojené síly vojsko vojenský armádní
-svazový#federální svazový spolkový
-rozbít#rozbít pauza zlomit přestávka
-čin#čin akce
-hodnota#vážit si považovat ocenit jas hodnota
-děkovat#poděkovat děkovat
+pravdivý#přesně$pravý$pravdivý
+cena#ocenit$cena
+vojenský#ozbrojené síly$armádní$vojsko$válečný$vojenský
+svazový#spolkový$federální$svazový
+rozbít#přestávka$pauza$zlomit$rozbít
+čin#akce$čin
+hodnota#ocenit$považovat$jas$vážit si$hodnota
+děkovat#poděkovat$děkovat
 vztah#vztah
 město#město
-stavba#stavba výstavba budova dům
-obdržet#obdržet dostat přijmout
-společnost#společnost spolek
+stavba#budova$výstavba$dům$stavba
+obdržet#dostat$přijmout$obdržet
+společnost#spolek$společnost
 rozdíl#rozdíl
-kostel#kostel bohoslužba církev mše chrám
-plný#úplný kompletní celý plný sytý
-spojovat#spojit spojovat vstoupit vstupovat připojit
-cesta#cesta silnice
+kostel#bohoslužba$církev$mše$chrám$kostel
+plný#celý$úplný$kompletní$sytý$plný
+spojovat#vstoupit$spojit$vstupovat$připojit$spojovat
+cesta#silnice$cesta
 mezinárodní#mezinárodní
-model#model modelka manekýnka vzor
-pozice#stanovisko pozice postavení umístění
+model#manekýnka$modelka$vzor$model
+pozice#umístění$stanovisko$postavení$pozice
 daň#daň
 --
-souhlasit#dohodnout souhlasit
-hmota#hmota záležet důvod látka
+souhlasit#dohodnout$souhlasit
+hmota#důvod$látka$záležet$hmota
 --
 formulář#formulář
-záznam#nahrávat zaznamenat nahrát deska záznam rekord
-zvláštní#sleva speciální zvláštní jedinečný
-země#základ země mletý dno
-čí#čí jejichž jejíž jehož
-tvrdý#tvrdý krušný obtížný těžký
+záznam#nahrávat$deska$nahrát$rekord$zaznamenat$záznam
+zvláštní#jedinečný$speciální$sleva$zvláštní
+země#mletý$dno$základ$země
+čí#jehož$jejíž$jejichž$čí
+tvrdý#obtížný$krušný$těžký$tvrdý
 krumpáč#krumpáč
-papír#papír článek papírový
-oficiální#oficiální úředník funkcionář
-roční období#roční období období sezóna okořenit
-mít na sobě#mít na sobě mít nosit
-událost#událost jev
-podporovat#podpěra podpořit podpora podporovat
-prostor#prostor mezera místo vesmír
-hráč#hráčka herec hráč
-všichni#všichni každý
+papír#článek$papírový$papír
+oficiální#úředník$funkcionář$oficiální
+roční období#sezóna$okořenit$období$roční období
+mít na sobě#nosit$mít$mít na sobě
+událost#jev$událost
+podporovat#podpěra$podpora$podpořit$podporovat
+prostor#vesmír$mezera$místo$prostor
+hráč#hráčka$herec$hráč
+všichni#každý$všichni
 pár#pár
-kořen#báze kořen základ meta základna zásada pikola
-projekt#plán projekt
-produkovat#vyrábět produkovat vyrobit
+kořen#báze$pikola$základ$meta$zásada$základna$kořen
+projekt#plán$projekt
+produkovat#vyrábět$vyrobit$produkovat
 --
-situace#poloha místo situace
-úder#hit úder zásah rána
-píle#píle průmysl
-polovina#půl půlka polovina trimestr
-aktivita#činnost aktivita
+situace#místo$poloha$situace
+úder#zásah$hit$rána$úder
+píle#průmysl$píle
+polovina#půl$půlka$trimestr$polovina
+aktivita#činnost$aktivita
 jíst#jíst
-sám#samotný se sám sebe
-postava#postava ilustrace obrázek vyřešit
-stát#náklad cena stát
-snadný#snadný lehký ochotný jednoduchý
-dost#naprosto zcela úplně dost docela
-obraz#fotografie fotka snímek obraz kino film představovat
-čirý#čirý mimo jasný čistý vyčistit
-víko#krýt víko
-popisovat#popisovat popsat
-obraz#image představa obraz
+sám#se$sebe$samotný$sám
+postava#ilustrace$vyřešit$obrázek$postava
+stát#cena$náklad$stát
+snadný#ochotný$jednoduchý$lehký$snadný
+dost#docela$zcela$úplně$naprosto$dost
+obraz#kino$fotografie$snímek$fotka$představovat$film$obraz
+čirý#vyčistit$jasný$mimo$čistý$čirý
+víko#krýt$víko
+popisovat#popsat$popisovat
+obraz#představa$image$obraz
 učit#učit
-hradba#múr zazdít bariéra hradba val zeď stěna
+hradba#múr$stěna$val$zazdít$bariéra$zeď$hradba
 doktor#doktor
 --
-výrobek#součin výrobek zboží
+výrobek#součin$zboží$výrobek
 data#data
-cvičení#zvyk praxe obyčej cvičení
-telefonovat#telefonovat volat hláska zavolat
-kus#figura kus kámen
-jistý#určitý nějaký jistý
+cvičení#praxe$zvyk$obyčej$cvičení
+telefonovat#hláska$volat$zavolat$telefonovat
+kus#kámen$figura$kus
+jistý#určitý$nějaký$jistý
 --#buď
-olej#naolejovat olej ropa nafta
+olej#ropa$naolejovat$nafta$olej
 --
-test#test zkoušet testovat vyzkoušet zkouška
+test#zkouška$testovat$zkoušet$vyzkoušet$test
 osobní#osobní
-hvězda#hvězda hvězdička
-země#země přistát vlast
-třetí osoba#tercie třetina třetí osoba
-všeobecný#všeobecný obecný generál
+hvězda#hvězdička$hvězda
+země#přistát$vlast$země
+--#třetina$tercie$třetí osoba
+všeobecný#generál$obecný$všeobecný
 počítač#počítač
-film#kino film
-dělník#dělník dělnice
-chytat#zachytit chytat chytit chytnout
-typ#typ psát na stroji
-sever#půlnoc severní sever
-krok#příčka krok kráčet schod pokládat
-pozornost#pozor pozornost
-technologie#technika technologie
-uspořádání#organizace uspořádání
-děťátko#miminko kojenec děťátko nemluvně
+film#kino$film
+dělník#dělnice$dělník
+chytat#zachytit$chytnout$chytit$chytat
+typ#psát na stroji$typ
+sever#půlnoc$severní$sever
+krok#pokládat$příčka$schod$kráčet$krok
+pozornost#pozor$pozornost
+technologie#technika$technologie
+uspořádání#organizace$uspořádání
+děťátko#kojenec$miminko$nemluvně$děťátko
 zdroj#zdroj
-kreslit#natáhnout sejmout remíza spotřebovat přitahovat vytáhnout natahovat táhnout využít využívat kreslit snímat
-příčina#způsobit způsobovat důvod příčina
+kreslit#vytáhnout$natahovat$snímat$využívat$natáhnout$remíza$spotřebovat$využít$sejmout$přitahovat$táhnout$kreslit
+příčina#způsobit$důvod$způsobovat$příčina
 strom#strom
 film#film
-volit#rozhodnout se volit vybrat zvolit vybírat
+volit#rozhodnout se$vybírat$zvolit$vybrat$volit
 důkaz#důkaz
 republikán#republikán
-obtížný#těžký obtížný
+obtížný#těžký$obtížný
 století#století
-málem#málem skoro téměř
-červený#ryšavý rudý rusý červený zrzavý
+málem#skoro$téměř$málem
+červený#zrzavý$rusý$rudý$ryšavý$červený
 okno#okno
 park#park
-období#perioda období tečka
+období#perioda$tečka$období
 kultura#kultura
-vlas#srst vlasy vlas chlup
-poslouchat#poslouchat slyšet poslechnout naslouchat
-šance#pravděpodobnost narazit náhoda šance příležitost
-dostupný#platný dostupný
+vlas#srst$chlup$vlasy$vlas
+poslouchat#slyšet$poslechnout$naslouchat$poslouchat
+šance#pravděpodobnost$narazit$příležitost$náhoda$šance
+dostupný#platný$dostupný
 bratr#bratr
 léto#léto
 uskutečnit#uskutečnit
-soukromý#soukromý samostatný uzavřený vojín tajný
+soukromý#uzavřený$samostatný$tajný$vojín$soukromý
 věda#věda
-písmeno#písmeno dopis
-kongres#kongres sjezd
-podmínka#stav podmínka kondice
-krátký#malý krátký zkrácený
+písmeno#dopis$písmeno
+kongres#sjezd$kongres
+podmínka#kondice$stav$podmínka
+krátký#zkrácený$malý$krátký
 --
-příležitost#šance příležitost
-pravidlo#vládnout pravidlo
-volba#možnost volba výběr
-samotný#samotný jednotlivý svobodný single
-trpělivý#trpělivý pacientka pacient nemocný
+příležitost#šance$příležitost
+pravidlo#vládnout$pravidlo
+volba#výběr$možnost$volba
+samotný#single$svobodný$jednotlivý$samotný
+trpělivý#pacient$nemocný$pacientka$trpělivý
 podlaha#podlaha
-podmínka#podmínka termín
-materiál#materiál hmotný materiální
+podmínka#termín$podmínka
+materiál#materiální$hmotný$materiál
 míle#míle
 správa#správa
-kurz#chod kurz
-obrana#zákaz obrana
-rostlina#sázet rostlina
+kurz#chod$kurz
+obrana#zákaz$obrana
+rostlina#sázet$rostlina
 energie#energie
 kampaň#kampaň
-obyvatelstvo#populace obyvatelstvo
-oheň#požár oheň hoření kamna
-zavírat#zavřít blízký zavírat
+obyvatelstvo#populace$obyvatelstvo
+oheň#požár$kamna$hoření$oheň
+zavírat#blízký$zavřít$zavírat
 dcera#dcera
---#zkomplikovat zapojit zamíchat zahrnout
-manžel#muž choť manžel
-chybný#špatný křivdit špatně chybný nesprávný
-určitě#nepochybně určitě samozřejmě zajisté jistě
-stoupat#zvětšit zvýšení zvýšit stoupat
-budoucnost#budoucnost budoucí
-jih#jižní jih poledne
+--#zkomplikovat$zapojit$zahrnout$zamíchat
+manžel#muž$choť$manžel
+chybný#špatně$špatný$nesprávný$křivdit$chybný
+určitě#samozřejmě$nepochybně$jistě$zajisté$určitě
+stoupat#zvýšení$zvětšit$zvýšit$stoupat
+budoucnost#budoucí$budoucnost
+jih#poledne$jižní$jih
 lékařský#lékařský
-prkno#tabule komise výbor deska rada prkno
+prkno#výbor$tabule$rada$deska$komise$prkno
 kdokoliv#kdokoliv
-rozdělit#prodávat rozdělit obchodovat jednat
-nemocnice#nemocnice špitál
-odpočinek#odpočívat odpočinek spočívat zůstat klid pauza zbytek podpěra
+jednat#obchodovat$rozdělit$prodávat$jednat
+nemocnice#špitál$nemocnice
+odpočinek#pauza$zůstat$podpěra$spočívat$odpočívat$klid$zbytek$odpočinek
 hledat#hledat
-se#se sebe
+se#sebe$se
 okres#okres
-bojovat#boj rvačka bojovat bitva bít zápas
-podmět#téma předmět poddaný podmět
+bojovat#bít$rvačka$boj$zápas$bitva$bojovat
+podmět#předmět$poddaný$téma$podmět
 riziko#riziko
-pořadí#řád rozkazovat uspořádání objednávka pořádek uspořádat pořadí rozkaz objednat
-západ#západní západ
-ekonomika#hospodářství ekonomika
-rychle#rychle honem
-vrhat#vrhat vrhnout
-postel#postel řečiště lůžko záhon ložisko dno
-funkcionář#důstojník funkcionář
-reprezentovat#zastupovat reprezentovat
-brzy#zanedlouho brzy
+pořadí#uspořádat$řád$objednávka$uspořádání$rozkazovat$objednat$rozkaz$pořádek$pořadí
+západ#západní$západ
+ekonomika#hospodářství$ekonomika
+rychle#honem$rychle
+vrhat#vrhnout$vrhat
+postel#dno$záhon$lůžko$řečiště$ložisko$postel
+funkcionář#důstojník$funkcionář
+reprezentovat#zastupovat$reprezentovat
+brzy#zanedlouho$brzy
 --
 --
-autor#autor autorka
-minulost#minulost minulý
---#na
-cíl#brána gól branka cíl
-chování#jednání chování
-kapka#upustit kapka
-příroda#příroda povaha
-agentura#agentura kancelář
+autor#autorka$autor
+minulost#minulý$minulost
+na#na
+cíl#branka$brána$gól$cíl
+chování#jednání$chování
+kapka#upustit$kapka
+příroda#povaha$příroda
+agentura#kancelář$agentura
 nedávno#nedávno
 sklad#sklad
-cizí#cizí zahraniční
-proud#aktuální současný proud
+cizí#zahraniční$cizí
+proud#současný$aktuální$proud
 představení#představení
-banka#pokladnička břeh banka bankéř bank
-zdravý#zdravý znít zvuk solidní
-tlačit#pohánět tlačit
+banka#břeh$bankéř$pokladnička$bank$banka
+zdravý#zvuk$solidní$znít$zdravý
+tlačit#pohánět$tlačit
 ohnisko#ohnisko
 --
-zápis#zaznamenat poznámka všimnout si zápis tón zprávička nota poznamenat nóta
+zápis#poznámka$nota$tón$všimnout si$zprávička$poznamenat$nóta$zaznamenat$zápis
 pokuta#pokuta
-blízký#u blízko blízký
-pohyb#pohyb věta hnutí
-společný#obvyklý běžný společný obyčejný
-miliarda#miliarda bilión
+blízký#blízko$u$blízký
+pohyb#hnutí$věta$pohyb
+společný#běžný$obyčejný$obvyklý$společný
+miliarda#bilión$miliarda
 krev#krev
-strana#strana páže stránka vyvolat
-trápit#trápit podnik
-chudý#nevalný nebohý chudý
-vstupovat#zadat vstoupit vstupovat
-podíl#akcie podíl část sdílet
-série#seriál řada série
+strana#páže$vyvolat$stránka$strana
+trápit#podnik$trápit
+chudý#nebohý$nevalný$chudý
+vstupovat#vstoupit$zadat$vstupovat
+podíl#část$akcie$sdílet$podíl
+série#seriál$řada$série
 obvykle#obvykle
-přírodní#přirozený přírodní
-horký#horký ostrý
-závod#závod rasa soutěž
-jazyk#řeč jazyk
-řeka#řeka potok
+přírodní#přirozený$přírodní
+horký#ostrý$horký
+závod#rasa$soutěž$závod
+jazyk#řeč$jazyk
+řeka#potok$řeka
 mrtvý#mrtvý
-čin#skutek hrát působit čin konat postupovat dělat chovat zákon
-významný#důležitý významný
-odpověď#odpověď reakce
-stoupat#vyjít stoupat
-desetiletí#desetiletí desítka
-článek#člen článek
-tak#tedy tak takto
+čin#skutek$postupovat$konat$zákon$dělat$působit$chovat$hrát$čin
+významný#důležitý$významný
+odpověď#reakce$odpověď
+stoupat#vyjít$stoupat
+desetiletí#desítka$desetiletí
+článek#člen$článek
+tak#takto$tedy$tak
 sedm#sedm
-střílet#výhonek střílet zastřelit
-východ#východ východně východní
-živočich#zvíře živočich
+střílet#zastřelit$výhonek$střílet
+východ#východní$východně$východ
+živočich#zvíře$živočich
 podobný#podobný
-zachránit#spořit uložit zachránit
+zachránit#spořit$uložit$zachránit
 faktor#faktor
-ústřední#ústřední centrální
-nastat#napadnout dít se nastat stát
-výbor#výbor komise
+ústřední#centrální$ústřední
+nastat#stát$napadnout$dít se$nastat
+výbor#komise$výbor
 vážný#vážný
-sport#sport ukazovat
-ležet#lež ležet lhát
+sport#ukazovat$sport
+ležet#lež$lhát$ležet
 --#za
 přesně#přesně
 ERROR
-šťastný#spokojený radostný šťastný
+šťastný#radostný$spokojený$šťastný
 osm#osm
 chránit#chránit
 seznam#seznam
-velikost#velikost rozměr
-kvalita#kvalitní vlastnost jakost kvalita
+velikost#rozměr$velikost
+kvalita#vlastnost$jakost$kvalitní$kvalita
 tlak#tlak
-přijmout#přijímat akceptovat přijmout
-připravený#hotový připravený
-přibližovat#přiblížit přístup přibližovat
-znamení#znak pokyn podepsat podepisovat znamení
-útok#útok útočit
-jedinec#jedinec jednotlivý jednotlivec individuální
+přijmout#přijímat$akceptovat$přijmout
+připravený#hotový$připravený
+přibližovat#přístup$přiblížit$přibližovat
+znamení#znak$pokyn$podepisovat$podepsat$znamení
+útok#útočit$útok
+jedinec#individuální$jednotlivý$jednotlivec$jedinec
 kariéra#kariéra
-odpověď#odpověď odpovídat odpovědět
-pes#fena pes
+odpověď#odpovědět$odpovídat$odpověď
+pes#fena$pes
 média#média
-myšlenka#myšlení myšlenka
+myšlenka#myšlení$myšlenka
 --
 určit#určit
-televize#televize televizor
-schůze#schůze shromáždění účastník zasedání setkání
+televize#televizor$televize
+schůze#setkání$účastník$shromáždění$zasedání$schůze
 scéna#scéna
-úspěch#úspěch zdar
-připravit#připravit chystat
+úspěch#zdar$úspěch
+připravit#chystat$připravit
 identifikovat#identifikovat
-lis#tisk lis tisknout
+lis#tisknout$tisk$lis
 --
 zdroj#zdroj
 množství#množství
-diskutovat#diskutovat argumentovat hádat se
-poznat#poznat uznat
+diskutovat#hádat se$argumentovat$diskutovat
+poznat#uznat$poznat
 léčba#léčba
-levý#vlevo levý zbývající levé levicový doleva levice
+levý#levicový$levice$zbývající$vlevo$doleva$levé$levý
 stupeň#stupeň
-zásoba#akcie zásoba
+zásoba#akcie$zásoba
 --
-růst#porost vzrůst růst nárůst
-jednoduchý#prostý lehký jednoduchý
+růst#porost$nárůst$vzrůst$růst
+jednoduchý#prostý$lehký$jednoduchý
 schopnost#schopnost
 dolar#dolar
-unie#svazek sjednocení unie svaz
-nemoc#nemoc choroba
-všichni#všichni každý
-div#div zázrak uvažovat
+unie#svaz$svazek$sjednocení$unie
+nemoc#choroba$nemoc
+všichni#každý$všichni
+div#zázrak$uvažovat$div
 volby#volby
 ztráta#ztráta
-schránka#box krabice bedna pouzdro uhodit lóže schránka úder
+schránka#krabice$lóže$pouzdro$bedna$uhodit$úder$box$schránka
 --#jí
-fond#fond platit
-minout#slečna postrádat chybět přehlédnout minout
+fond#platit$fond
+minout#postrádat$přehlédnout$chybět$slečna$minout
 hezký#hezký
-kraj#kraj oblast okres
-pocit#cit city pocit
-snést#snášet laický snést amatérský
-vzdělávání#školení vzdělávání trénink
+kraj#oblast$okres$kraj
+pocit#city$cit$pocit
+snést#snášet$laický$amatérský$snést
+vzdělávání#školení$trénink$vzdělávání
 zpráva#zpráva
-dorazit#dojet přijet přijít dojíždět docházet přicházet dojít dorazit
-standardní#standardní spisovný standard
-venku#zvenku venku ven vně
-propadnout#selhat přestat nechat propadnout fungovat
-obchod#obchod číslo řemeslo mistrovství pasát
-hůl#hůl štáb personál osnova tyč
+dorazit#dojít$dojíždět$přicházet$přijet$docházet$přijít$dojet$dorazit
+standard#spisovný$standardní$standard
+venku#vně$ven$zvenku$venku
+propadnout#selhat$přestat$nechat$fungovat$propadnout
+obchod#číslo$mistrovství$pasát$řemeslo$obchod
+hůl#osnova$personál$tyč$štáb$hůl
 výhoda#výhoda
-postava#postava znak
-armáda#armáda vojsko
-sdružení#spolek sdružení asociace
-provoz#postup operace provoz
-přítomný#uvést přítomnost přítomný současný
-zločin#trestný čin zločin
-šálek#šálek košíček kalich kalich hořkosti pohár hrnek
+postava#znak$postava
+armáda#vojsko$armáda
+sdružení#asociace$spolek$sdružení
+provoz#operace$postup$provoz
+přítomný#současný$uvést$přítomnost$přítomný
+zločin#trestný čin$zločin
+šálek#kalich hořkosti$košíček$hrnek$kalich$pohár$šálek
 ostrov#ostrov
-analýza#analýza rozbor
-šach#šach zkontrolovat křížek kontrolovat kontrola ovládat účet zkouška
-fotografie#fotografie fotografovat fotka
-sklo#sklenice sklo
-přední#vpřed dopředu útočník přední
+analýza#rozbor$analýza
+šach#zkouška$kontrola$ovládat$zkontrolovat$křížek$kontrolovat$účet$šach
+fotografie#fotka$fotografovat$fotografie
+sklo#sklenice$sklo
+přední#útočník$vpřed$dopředu$přední
 autorita#autorita
-země#pochovat země hlína
-etapa#jeviště etapa
-typ#řadit typ třídit
-nádraží#stanice zastávka nádraží
+země#pochovat$hlína$země
+etapa#jeviště$etapa
+typ#řadit$třídit$typ
+nádraží#stanice$zastávka$nádraží
 --#jasně
-srovnat#srovnat být
+srovnat#být$srovnat
 vskutku#vskutku
-znalost#znalost vědomí
+znalost#vědomí$znalost
 modř#modř
 příklad#příklad
 strategie#strategie
-hora#hora kopa
-odhad#předpokládat odhad
+hora#kopa$hora
+odhad#předpokládat$odhad
 sestra#sestra
-pistole#puška pistole dělo
-rozdílný#rozdílný rozmanitý různý
+pistole#dělo$puška$pistole
+rozdílný#rozmanitý$různý$rozdílný
 smích#smích
-prostředí#životní prostředí prostředí okolí
-návrh#návrh design
+prostředí#okolí$životní prostředí$prostředí
+návrh#design$návrh
 slunce#slunce
-právník#advokát právník právnička advokátka
-soulož#styk sex pohlaví pohlavní styk soulož
-raději#spíše raději spíš
-umělec#umělkyně malíř umělec malířka
-klub#kříž hůl kyj klacek klub spolek
-dokázat#prokázat dokázat ukázat
-řez#oddíl řez paragraf
+právník#právnička$advokát$advokátka$právník
+soulož#styk$pohlavní styk$sex$pohlaví$soulož
+raději#spíš$spíše$raději
+umělec#malířka$malíř$umělkyně$umělec
+klub#hůl$spolek$klacek$kříž$kyj$klub
+dokázat#prokázat$ukázat$dokázat
+řez#oddíl$paragraf$řez
 schopnost#schopnost
-pravda#pravda skutečnost
+pravda#skutečnost$pravda
 ERROR
-manažer#správce ředitelka manažer ředitel správkyně
-výkonný#výkonný
-čtvrť#kraj oblast čtvrť okres
-nárok#tvrzení nárok tvrdit
-zapomínat#zapomínat zapomenout
+manažer#ředitelka$správkyně$ředitel$správce$manažer
+--#výkonný
+čtvrť#oblast$okres$kraj$čtvrť
+nárok#tvrdit$tvrzení$nárok
+zapomínat#zapomenout$zapomínat
 viset#viset
 celý#celý
 noha#noha
 --
 --
 demokratický#demokratický
-odebrat#odebrat odstranit
+odebrat#odstranit$odebrat
 hlavní#hlavní
 profesor#profesor
 finanční#finanční
-bavit#bavit těšit
+bavit#těšit$bavit
 síť#síť
 diskutovat#diskutovat
-finále#konečný poslední finále
-zkouška#zkušební trojí zkouška
-právní#legální právní zákonný
-studený#zima chlad studený nepřátelský nachlazení chladný
-nad#výše nad vyšší
-skála#rock kámen skála kolébání balvan útes drahokam
-místo#sedadlo místo
+finále#konečný$poslední$finále
+zkouška#trojí$zkušební$zkouška
+právní#legální$zákonný$právní
+studený#chladný$chlad$nachlazení$zima$nepřátelský$studený
+nad#výše$vyšší$nad
+skála#útes$kolébání$balvan$drahokam$kámen$rock$skála
+místo#sedadlo$místo
 zbraň#zbraň
-píseň#píseň písnička
-zkušený#odborný zkušený odborník znalec expert
-rádio#rozhlas rádio
-hezký#krásný pěkný pěkně milý příjemný hezký hezky
+píseň#písnička$píseň
+zkušený#expert$odborník$odborný$znalec$zkušený
+rádio#rozhlas$rádio
+hezký#pěkný$hezky$krásný$příjemný$pěkně$milý$hezký
 --
-paměť#vzpomínka paměť
-řízení#řízení management
-obvinění#nabít obvinit obviňovat nabíjet obvinění náboj
-jaro#vesna pramen zřídlo jaro pružina
+paměť#vzpomínka$paměť
+řízení#management$řízení
+obvinění#náboj$nabít$obviňovat$nabíjet$obvinit$obvinění
+jaro#pramen$vesna$pružina$zřídlo$jaro
 karta#karta
 udržovat#udržovat
 teorie#teorie
-navštěvovat#navštěvovat navštívit návštěva
-představovat#představit představovat
-konec#dokončit konec skončit
-výrok#tvrzení výrok výpis
---#tvrdý pevný
+navštěvovat#návštěva$navštívit$navštěvovat
+představovat#představit$představovat
+konec#skončit$dokončit$konec
+výrok#výpis$tvrzení$výrok
+--#tvrdý$pevný
 ohromný#ohromný
 --
-oblíbený#populární oblíbený lidový
-tělesný#fyzikální tělesný
+oblíbený#populární$lidový$oblíbený
+tělesný#fyzikální$tělesný
 tradiční#tradiční
 obsahovat#obsahovat
-pokoj#klid mír pokoj
-zelený#zelený zelená
+pokoj#klid$mír$pokoj
+zelený#zelená$zelený
 díky#díky
 --
 dopad#dopad
 struktura#struktura
 --
-směr#řízení režie směr
-moucha#létat letět moucha
+směr#řízení$režie$směr
+moucha#létat$letět$moucha
 --
-král#král dáma
+král#dáma$král
 odhalit#odhalit
-cela#článek buňka cela
-náboženský#náboženský religiózní
-koule#vejce koule míč ples
+cela#článek$buňka$cela
+náboženský#religiózní$náboženský
+koule#vejce$míč$ples$koule
 --
-zaměstnanec#zaměstnankyně zaměstnanec
+zaměstnanec#zaměstnankyně$zaměstnanec
 náhle#náhle
 přihlásit#přihlásit
 --
 kulturní#kulturní
 židle#židle
-ERROR
+--
 spravedlnost#spravedlnost
-objevovat#objevit objevovat
-opatření#změřit měřit opatření takt míra
+objevovat#objevit$objevovat
+opatření#měřit$takt$míra$změřit$opatření
 politika#politika
-spravovat#řídit spravovat dosáhnout zvládnout ovládat uspět
+spravovat#řídit$zvládnout$uspět$ovládat$dosáhnout$spravovat
 léčit#léčit
-se#samotný se sám sebe
-bolest#otrava bolest trest
-večer#soumrak večer
+se#sám$sebe$samotný$se
+bolest#otrava$trest$bolest
+večer#soumrak$večer
 jednotka#jednotka
-ovlivnit#ovlivnit postihnout
-výroba#produkce výroba
-udidlo#flastr kousek bit chvilka fréza udidlo okamžik vrták dílek
-vnitřek#vnitřní dovnitř vnitřek uvnitř
-střelnice#střelnice
+ovlivnit#postihnout$ovlivnit
+výroba#produkce$výroba
+udidlo#chvilka$flastr$okamžik$fréza$kousek$bit$dílek$vrták$udidlo
+vnitřek#dovnitř$vnitřní$uvnitř$vnitřek
+--#střelnice
 starost#starost
 provést#provést
-nutný#nutný potřebný
-konference#konference sjezd
-kandidát#kandidát kandidátka
+nutný#potřebný$nutný
+konference#sjezd$konference
+kandidát#kandidátka$kandidát
 muzeum#muzeum
-konkrétní#konkrétní relativní specifický
+--#konkrétní$relativní$specifický
 --
-chodba#chodba ulička
+chodba#ulička$chodba
 ryba#ryba
-výlet#výlet kiks faux pas trapas
+výlet#faux pas$trapas$kiks$výlet
 zmínit#zmínit
-hrana#hrana ostří
+hrana#ostří$hrana
 potíž#potíž
 interview#interview
-styl#oslovení styl čnělka
-střed#prostřední střed
+styl#oslovení$čnělka$styl
+střed#prostřední$střed
 deset#deset
-tíha#váha tíha závaží
-dospělý#dospělák dospělý
-sen#sen doufat zdát se vysnít si přát snít
-strach#bázeň obava strach
-tmavý#temný tma temnota tmavý
-metoda#metoda způsob
+tíha#závaží$váha$tíha
+dospělý#dospělák$dospělý
+sen#doufat$zdát se$přát$snít$vysnít si$sen
+strach#bázeň$obava$strach
+tmavý#temnota$temný$tma$tmavý
+metoda#způsob$metoda
 někdo#někdo
-časopis#časák časopis zásobník
-odrážet#odrážet odrazit
+časopis#zásobník$časák$časopis
+odrážet#odrazit$odrážet
 těžký#těžký
 voják#voják
-majetek#nemovitost vlastnictví vlastnost majetek
-krásný#krásný pěkný sličný
-spisovatel#autor autorka spisovatel spisovatelka
+majetek#vlastnictví$vlastnost$nemovitost$majetek
+krásný#pěkný$sličný$krásný
+spisovatel#autor$autorka$spisovatelka$spisovatel
 --
-fotoaparát#kamera foťák fotoaparát
-zlepšit#vylepšit zlepšit
+fotoaparát#kamera$foťák$fotoaparát
+zlepšit#vylepšit$zlepšit
 rameno#rameno
-tyč#hostinec zákaz hospoda krčma tyč bar laťka prut
+tyč#prut$hospoda$zákaz$bar$krčma$hostinec$laťka$tyč
 hotel#hotel
 namísto#namísto
-kopec#pahorek vrch kopec
-být#být existovat
+kopec#vrch$pahorek$kopec
+být#existovat$být
 moře#moře
 instituce#instituce
-účel#účel úmysl záměr cíl
+účel#cíl$záměr$úmysl$účel
 vzor#vzor
-podrobnost#podrobnost detail
-stroj#stroj mašina
-výzva#vyzvat výzva
-majitel#majitel majitelka vlastník
-agent#agent zástupce
+podrobnost#detail$podrobnost
+stroj#mašina$stroj
+výzva#vyzvat$výzva
+majitel#vlastník$majitelka$majitel
+agent#zástupce$agent
 --
 --
-generování#pokolení generování generace produkce
-reklama#komerční obchodní reklama
-koho#jemuž komu jehož koho kterému kterého
-povrch#plocha povrch
+generování#produkce$generace$pokolení$generování
+reklama#komerční$obchodní$reklama
+koho#komu$jehož$kterému$kterého$jemuž$koho
+povrch#plocha$povrch
 rozpočet#rozpočet
 senátor#senátor
-taška#sáček pytel taška ježibaba
+taška#ježibaba$sáček$pytel$taška
 skutečnost#skutečnost
-redaktor#editor redaktor
+redaktor#editor$redaktor
 --#pást
-proslov#proslov adresa
-civilní#civilní slušný kulturní
-diskuse#diskuse diskuze
-ERROR
+proslov#adresa$proslov
+civilní#slušný$kulturní$civilní
+diskuse#diskuze$diskuse
+máma#maminka$máma
 násilí#násilí
-součet#naprostý součet celý totální
+součet#naprostý$totální$celý$součet
 kůže#kůže
-teplo#žár horko vedro teplo říje
+teplo#vedro$horko$žár$říje$teplo
 rada#rada
-oznámení#výpověď oznámení
-bít#mlátit bušit bít
+oznámení#výpověď$oznámení
+bít#bušit$mlátit$bít
 --#ani
-moderní#současný moderní
-hlas#hlas hlasovat
+moderní#současný$moderní
+hlas#hlasovat$hlas
 zpívat#zpívat
 rakovina#rakovina
 prst#prst
 jezero#jezero
-přání#přát přání
-sňatek#vztah svatba manželství sňatek
+přání#přát$přání
+sňatek#ženitba$manželství$svatba$vztah$sňatek
 oběť#oběť
-úkol#úloha úkol
-dvůr#dvůr yard dvorek
+úkol#úloha$úkol
+dvůr#yard$dvorek$dvůr
 kuchyně#kuchyně
-předmět#předmět bod položka
-odpovědnost#zodpovědnost odpovědnost
-ústa#pusa ústí ústa tlama
-souhlas#souhlas smlouva soulad dohoda shoda
-právník#advokát právník právnička advokátka
-kapitál#hlavice kapitál
-hrozba#ohrožení výhrůžka hrozba
+předmět#bod$položka$předmět
+odpovědnost#zodpovědnost$odpovědnost
+ústa#pusa$ústí$tlama$ústa
+souhlas#shoda$soulad$smlouva$dohoda$souhlas
+právník#právnička$advokát$advokátka$právník
+kapitál#hlavice$kapitál
+hrozba#ohrožení$výhrůžka$hrozba
 úsměv#úsměv
-plyn#benzín plyn
---#pozitivní pozitiv kladný
-stopa#najít objevit stopa kolej dráha sledovat vypátrat stopovat cesta
+plyn#benzín$plyn
+--#pozitiv$kladný$pozitivní
+stopa#objevit$stopovat$sledovat$kolej$vypátrat$cesta$najít$dráha$stopa
 investice#investice
-účet#konto účet
+účet#konto$účet
 bohatý#bohatý
-občan#občanka občan obyvatelka obyvatel
+občan#obyvatelka$občanka$obyvatel$občan
 obecenstvo#obecenstvo
-dáma#dáma paní
-oběd#večeře šlichta oběd žrádlo
-západní#západní western
+dáma#paní$dáma
+oběd#šlichta$žrádlo$večeře$oběd
+západní#western$západní
 debata#debata
-spotřebitel#spotřebitel spotřebitelka
+spotřebitel#spotřebitelka$spotřebitel
 většina#většina
 zajímavý#zajímavý
-ERROR
-cestovat#cestování cestovat jezdit
+--
+cestovat#cestování$jezdit$cestovat
 rozený#rozený
 --
-předpokládat#domnívat se předpokládat zaujmout
+předpokládat#zaujmout$domnívat se$předpokládat
 žádný#žádný
 připustit#připustit
-předek#přední fronta předek fasáda front
-vagón#vagón trenérka trenér trénovat kouč
+předek#fronta$front$přední$fasáda$předek
+vagón#trénovat$kouč$trenérka$trenér$vagón
 partner#partner
-výstřel#panák koule výstřel
-vědec#vědec vědkyně
+výstřel#panák$koule$výstřel
+vědec#vědkyně$vědec
 --#starší
 trpět#trpět
 sám#sám
-sbírka#sběr sbírka
+sbírka#sběr$sbírka
 úspěšný#úspěšný
-řeč#projev řeč
-konečně#nakonec konečně
-klíč#klíč tónina klíčový klávesa
+řeč#projev$řeč
+konečně#nakonec$konečně
+klíč#klávesa$tónina$klíčový$klíč
 mise#mise
-skóre#skóre bodovat
+skóre#bodovat$skóre
 noviny#noviny
-vítr#ovinout vítr
+vítr#ovinout$vítr
 reforma#reforma
 --
-profesionál#profesionální profesionál
-vztah#vztah relace příbuzný
+profesionál#profesionální$profesionál
+příbuzný#vztah$relace$příbuzný
 --
 zahrada#zahrada
-přístup#přístup
-vydávat#vydávat vydat publikovat
+--#přístup
+vydávat#publikovat$vydat$vydávat
 --
 sovětský#sovětský
 jižní#jižní
 senát#senát
-názor#posudek stanovisko názor
-možnost#opce možnost
-soudce#soudce soudit znalec sudí soudkyně
-původní#originál původní
-klient#klient zákazník
+názor#stanovisko$posudek$názor
+možnost#opce$možnost
+soudce#soudkyně$znalec$sudí$soudit$soudce
+původní#originál$původní
+klient#zákazník$klient
 --#kritický
-kout#roh kout
-základní#základ nezbytný elementární základní jednoduchý
+kout#roh$kout
+základní#jednoduchý$nezbytný$základ$elementární$základní
 příjem#příjem
 přímo#přímo
-vydání#uvolnit vydání
+vydání#uvolnit$vydání
 restaurace#restaurace
-sousedství#sousedství okolí
+sousedství#okolí$sousedství
 --
 ERROR
 nýmand#nýmand
 zírat#zírat
-ihned#hned ihned okamžitě
-dosahovat#dosahovat dosáhnout
+ihned#okamžitě$hned$ihned
+dosahovat#dosáhnout$dosahovat
 les#les
 tatínek#tatínek
 bolet#bolet
-pořad#video pořad
-připadnout#připadnout stávka
-bezpečí#bezpečí bezpečnost pojistka
+pořad#video$pořad
+připadnout#stávka$připadnout
+bezpečí#pojistka$bezpečnost$bezpečí
 naprosto#naprosto
-proto#tudíž proto
-svoboda#volnost svoboda
-provedení#provedení varianta verze
-plochý#letadlo hoblík rovinný plochý rovina letoun platan plocha
-přístup#postoj přístup
-pohlavní#pohlavní sexuální
+proto#tudíž$proto
+svoboda#volnost$svoboda
+provedení#verze$varianta$provedení
+plochý#rovinný$platan$letadlo$plocha$letoun$hoblík$rovina$plochý
+přístup#postoj$přístup
+--#pohlavní$sexuální
 --
 čerstvý#čerstvý
 --
-mocný#mocný účinný
+mocný#účinný$mocný
 pták#pták
-dotyk#dotyk aut dotek
+dotyk#dotek$aut$dotyk
 --#odrůda
 hluboký#hluboký
-text#esemeska text SMS
+text#esemeska$SMS$text
 široký#široký
-kredit#kredit úvěr připsat
+kredit#úvěr$připsat$kredit
 devět#devět
-spát#spát spánek
+spát#spánek$spát
 vyšetřování#vyšetřování
 oznámit#oznámit
-zcela#zcela úplně do mrtě
---#řízení provádění chování správa vést děj vedení
-střet#konflikt střet
+zcela#úplně$do mrtě$zcela
+--#vést$správa$vedení$provádění$řízení$chování$děj
+střet#konflikt$střet
 nahradit#nahradit
-zúčastnit se#účastnit se zabývat se zúčastnit se
+zúčastnit se#účastnit se$zúčastnit se
 účastník#účastník
-argument#hádka argument
-předmět#předmět namítnout objekt
-uspokojit#uspokojit prosím
-jaderný#nukleární jaderný
-nebe#nebe obloha
+argument#hádka$argument
+předmět#namítnout$objekt$předmět
+uspokojit#prosím$uspokojit
+jaderný#nukleární$jaderný
+nebe#obloha$nebe
 odpoledne#odpoledne
 sto#sto
 povzbudit#povzbudit
-dokonalý#dokonalý čistý
+dokonalý#čistý$dokonalý
 možnost#možnost
-Britové#Britové britský
-zkoušet#vyšetřovat zkoušet vyzkoušet
-konverzace#rozhovor konverzace
+Britové#britský$Britové
+--#vyšetřovat$vyzkoušet$zkoušet
+konverzace#rozhovor$konverzace
 --
-začátek#počátek začátek
-sekretář#sekretář ministr sekretářka tajemník
+začátek#počátek$začátek
+sekretář#sekretářka$tajemník$ministr$sekretář
 pláž#pláž
 bezpečný#bezpečný
-duše#nadšení verva duše líh zápal duch
+duše#zápal$nadšení$líh$verva$duch$duše
 víkend#víkend
-datle#rande stárnout chodit datum partner trvání schůzka termín doba datle
+datle#stárnout$doba$partner$termín$datum$rande$chodit$trvání$schůzka$datle
 --#definovat
-rys#zdůraznit rys uvádět funkce podtrhnout obsahovat
-globální#kulovitý globální světový
-prvek#prvek živel element
-zkusit#zkusit atentát pokus
+rys#obsahovat$podtrhnout$funkce$zdůraznit$uvádět$rys
+globální#kulovitý$světový$globální
+prvek#element$živel$prvek
+zkusit#atentát$pokus$zkusit
 pomalu#pomalu
 guvernér#guvernér
 pojem#pojem
-pardon#prosím pardon
-lehce#lehce jednoduše snadno
-bitva#boj bojovat bitva zápas
-liga#liga svaz třída
-tábor#tábořit kýč teatrální přehnaný stanovat tábor
-představit#představit
-postavení#stav postavení
-pojištění#pojišťovna pojištění pojistka
-dokončit#úplný plný dokončit
-klacek#palice hůl tyčinka klacek váleček hokejka tyč kostka
-roztok#řešení roztok
+pardon#prosím$pardon
+lehce#snadno$jednoduše$lehce
+bitva#boj$bojovat$zápas$bitva
+liga#třída$svaz$liga
+tábor#teatrální$stanovat$tábořit$kýč$přehnaný$tábor
+--#představit
+postavení#stav$postavení
+pojištění#pojistka$pojišťovna$pojištění
+dokončit#plný$úplný$dokončit
+klacek#váleček$kostka$palice$hůl$hokejka$tyčinka$tyč$klacek
+roztok#řešení$roztok
 --
-zrak#vidina vidění zrak vize
-kámen#pecka kámen ukamenovat kamenný drahokam
-nedostatek#nedostatek postrádat
-řidič#šofér řidič ovladač řidička
+zrak#vize$vidění$vidina$zrak
+kámen#drahokam$pecka$kamenný$ukamenovat$kámen
+nedostatek#postrádat$nedostatek
+řidič#ovladač$šofér$řidička$řidič
 normální#normální
-kamión#náklaďák kamion kamión dodávka
+kamión#náklaďák$kamion$dodávka$kamión
 ministr#ministr
-rukojeť#držadlo rukojeť klika
-díra#díra jamka slabina kaz
-vějíř#milovník větrák fanoušek příznivec příznivkyně fanynka vějíř
-skvrna#skvrna uvidět
-krize#krize rozhodující okamžik
+rukojeť#držadlo$klika$rukojeť
+díra#jamka$kaz$slabina$díra
+vějíř#příznivkyně$fanynka$větrák$příznivec$milovník$fanoušek$vějíř
+skvrna#uvidět$skvrna
+krize#rozhodující$okamžik$krize
 --
-odpad#odpad odmítnout
+odpad#odmítnout$odpad
 pít#pít
 badatel#badatel
 tradice#tradice
-dorozumívání#komunikace zpráva dorozumívání
+dorozumívání#komunikace$zpráva$dorozumívání
 vzdálenost#vzdálenost
 loď#loď
 zisk#zisk
-vyjadřovat#vyjádřit vyjadřovat
+vyjadřovat#vyjádřit$vyjadřovat
 nezávislý#nezávislý
-led#zmrzlina led
-stupnice#škála okuj stupnice šupina měřítko
+led#zmrzlina$led
+stupnice#měřítko$okuj$šupina$škála$stupnice
 mozek#mozek
 zima#zima
 komise#komise
-dřevo#les dřeva dříví dřevo
-dělení#oddělení divize díl dělení
+dřevo#dřeva$dříví$les$dřevo
+dělení#díl$oddělení$divize$dělení
 druh#druh
-ERROR
-valit#stočit smotat valit kutálet svinout válet svitek válcovat
-schovávat#useň ukrýt skrýt kůže schovávat schovat skrývat
-klient#klient zákazník
-obyvatel#obyvatel obyvatelka
-smlouva#získat nakazit se kontrakt smlouva onemocnět zkrátit
-zlato#zlato střed zlatá
-potenciální#potenciální potencionální
+dopoledne#dopoledne
+valit#svinout$svitek$stočit$smotat$válet$kutálet$válcovat$valit
+schovávat#skrýt$useň$ukrýt$skrývat$kůže$schovat$schovávat
+klient#zákazník$klient
+obyvatel#obyvatelka$obyvatel
+smlouva#nakazit se$kontrakt$onemocnět$získat$zkrátit$smlouva
+zlato#zlatá$střed$zlato
+potenciální#potencionální$potenciální
 přítomnost#přítomnost
 ústav#ústav
-zástěna#síto obrazovka zástěna
-čínský#čínský Číňanka Číňan čínština
+zástěna#síto$obrazovka$zástěna
+čínský#Číňanka$čínština$Číňan$čínský
 kůň#kůň
-evropský#Evropanka evropský Evropan
-terč#terč cíl
+evropský#Evropan$Evropanka$evropský
+terč#cíl$terč
 ochotný#ochotný
-zaměření#zaměření dotazník průzkum inspekce anketa zjištění
+zaměření#dotazník$průzkum$inspekce$zjištění$anketa$zaměření
 --
-náčelník#náčelník hlavní šéf
+náčelník#šéf$hlavní$náčelník
 dav#dav
-vězení#žalář věznice vězení
+vězení#žalář$věznice$vězení
 ERROR
-zjevně#zjevně samozřejmě
+zjevně#samozřejmě$zjevně
 --
 byt#byt
-farma#farma statek
-let#hejno úprk let podlaží letka rameno útěk patro
-stav#stav tvar forma
-poptávka#žádat poptávka urgence požadovat
-síla#moc síla
-vesnice#vesnice ves dědina
+farma#statek$farma
+let#podlaží$rameno$útěk$letka$patro$úprk$hejno$let
+stav#tvar$forma$stav
+poptávka#požadovat$urgence$žádat$poptávka
+síla#moc$síla
+vesnice#dědina$ves$vesnice
 --
-zpravodaj#reportér zpravodaj
+zpravodaj#reportér$zpravodaj
 stráž#stráž
-dodržovat#podotknout dodržovat poznamenat
-doručit#doručit porodit osvobodit
-počítat#hrabě počítat počet
+dodržovat#podotknout$poznamenat$dodržovat
+doručit#osvobodit$porodit$doručit
+počítat#počet$hrabě$počítat
 výhoda#výhoda
 divoký#divoký
 předchozí#předchozí
-průměr#průměr průměrný
+průměr#průměrný$průměr
 --
-přispět#přispět
+--#přispět
 --
-člun#loď člun
-zařízení#zařízení vybavení
-vydělat#vydělat vydělávat
+člun#loď$člun
+zařízení#vybavení$zařízení
+vydělat#vydělávat$vydělat
 --#vysoko
 vozidlo#vozidlo
-libra#bušit libra
+libra#bušit$libra
 --
-porozumění#pochopení porozumění dohoda
+porozumění#pochopení$dohoda$porozumění
 usadit#usadit
 --
-zítra#zítra zítřek
-založení#nadace základy založení
+zítra#zítřek$zítra
+založení#nadace$základy$založení
 rychlý#rychlý
 blok#blok
-čtenář#čtenář čtečka
-sbírat#sebrat sbírat shromažďovat vybírat
-host#hostka host
+čtenář#čtečka$čtenář
+sbírat#vybírat$shromažďovat$sebrat$sbírat
+host#hostka$host
 --
-nástroj#nástroj nádobíčko
+nástroj#nádobíčko$nástroj
 ochrana#ochrana
-fér#spravedlivý fér jarmark
+fér#spravedlivý$jarmark$fér
 --#dodatečný
 --#propagovat
 vybavení#vybavení
-převážně#vesměs převážně většinou
+převážně#vesměs$většinou$převážně
 obraz#obraz
-krmit#krmit zdroj krmivo
-zásada#zásada princip
-mísa#mísa miska
+krmit#zdroj$krmivo$krmit
+zásada#princip$zásada
+mísa#miska$mísa
 technika#technika
-mez#omezit limit mez omezovat
+mez#omezovat$limit$omezit$mez
 identita#identita
-titul#název titul
+titul#název$titul
 --#kritik
 přežít#přežít
-plakat#brečet křičet pláč plakat
-hranice#okraj lem záhon hraničit hranice
-zvednout#zvedat ukrást zdvihnout uvolnit vybrat krást zdvihat výtah zvednout
-stezka#cesta stezka pěšina
-stránka#vid stránka
-ženit#brát vdát ženit
-obchod#nakupovat prodejna obchod
-neúspěch#selhání neúspěch porucha
-jet#jet jízda
+plakat#pláč$křičet$brečet$plakat
+hranice#okraj$hraničit$záhon$lem$hranice
+zvednout#uvolnit$vybrat$zvedat$zdvihnout$ukrást$výtah$zdvihat$krást$zvednout
+stezka#pěšina$cesta$stezka
+stránka#vid$stránka
+ženit#brát$vdát$ženit
+obchod#nakupovat$prodejna$obchod
+neúspěch#selhání$porucha$neúspěch
+jet#jízda$jet
 odpovědný#odpovědný
-sbírat#sebrat sbírat shromažďovat
-skočit#skákat skok skočit
+sbírat#shromažďovat$sebrat$sbírat
+skočit#skákat$skok$skočit
 vzorek#vzorek
-poměr#poměr záležitost
-cena#cena stojící hodnota
-vhodný#vhodný padnout sedět
+poměr#záležitost$poměr
+cena#stojící$hodnota$cena
+vhodný#sedět$padnout$vhodný
 předseda#předseda
 lekce#lekce
 Vánoce#Vánoce
 --
 --
 --
-kapela#kapela soubor
+kapela#soubor$kapela
 ucho#ucho
-postup#postup procedura úkony
+postup#procedura$úkony$postup
 --
-palec#kousek coul palec
-teplý#ohřát vřelý teplý
-africký#Afričan Afričanka africký
-francouzština#francouzština francouzský
+palec#coul$kousek$palec
+teplý#vřelý$ohřát$teplý
+africký#Afričan$Afričanka$africký
+francouzština#francouzský$francouzština
 baseball#baseball
 --
-noha#spodek noha stopa kopnout
-křesťan#křesťan křesťanský Kristián křesťanka
-konkurence#konkurence soutěž
+noha#spodek$kopnout$stopa$noha
+křesťan#Kristián$křesťanský$křesťanka$křesťan
+konkurence#soutěž$konkurence
 bázlivý#bázlivý
-šířit#rozšířit šířit
+šířit#rozšířit$šířit
 ignorovat#ignorovat
 měkký#měkký
-výroční#každoroční výroční roční
-skvělý#skvělý báječný
-hrozit#vyhrožovat hrozit
+výroční#každoroční$roční$výroční
+skvělý#báječný$skvělý
+hrozit#vyhrožovat$hrozit
 --#zapsat
 popřít#popřít
-inteligence#rozum inteligence intelekt
-pravidelný#štamgast pravidelný normální obyčejný
-vliv#vliv ovlivnit ovlivňovat
+inteligence#intelekt$rozum$inteligence
+pravidelný#normální$štamgast$obyčejný$pravidelný
+vliv#ovlivnit$ovlivňovat$vliv
 reakce#reakce
-kříž#kříž přecházet přejet kříženec
-pán#pán mistr mistryně
-oblek#barva oblek výzbroj kombinéza pořadí
-vát#vát foukat vanout
-ničit#ničit zničit
-dar#dárek dar darovat
-káva#kávovník káva
+kříž#přecházet$přejet$kříženec$kříž
+pán#mistr$mistryně$pán
+oblek#pořadí$barva$kombinéza$výzbroj$oblek
+vát#vanout$foukat$vát
+ničit#zničit$ničit
+dar#dárek$darovat$dar
+káva#kávovník$káva
 --
-víra#víra přesvědčení
-komentář#komentovat komentář
-zjevně#zjevně zřejmě patrně
+víra#přesvědčení$víra
+komentář#komentovat$komentář
+zjevně#patrně$zřejmě$zjevně
 dvakrát#dvakrát
 pozadí#pozadí
-čtvrt#kvartál čtvrť čtvrt čtvrtletí
+čtvrt#kvartál$čtvrť$čtvrtletí$čtvrt
 recenze#recenze
 víra#víra
 rychlost#rychlost
@@ -1298,518 +1298,518 @@ rychlost#rychlost
 --
 --
 --
-funkce#účel fungovat funkce
-stavba#stavba konstrukce
+funkce#účel$fungovat$funkce
+stavba#konstrukce$stavba
 vejce#vejce
-mávat#mávat vlna
-samičí#samice žena ženský samičí
-vražda#zabít hejno zavraždit zničit vražda porod
+mávat#vlna$mávat
+samičí#ženský$žena$samice$samičí
+vražda#porod$hejno$zničit$zavraždit$zabít$vražda
 páska#páska
-pálení#spálit hořet pálení pálit vypálit
+pálení#vypálit$pálit$spálit$hořet$pálení
 --#prostředky
-vědom#bdělý vědom
-chyba#omyl chyba
-tichý#klidný tichý ticho
+vědom#bdělý$vědom
+chyba#omyl$chyba
+tichý#klidný$ticho$tichý
 spojení#spojení
 bota#bota
-oblečení#oblečení šaty
-slib#slib slibovat slíbit
+oblečení#šaty$oblečení
+slib#slíbit$slibovat$slib
 náboženství#náboženství
 spojený#spojený
 kontext#kontext
-aktivní#aktivní činný
-mládí#mládí mládež mladistvý mladík
-poloha#poloha místo umístění
+aktivní#činný$aktivní
+mládí#mladík$mladistvý$mládež$mládí
+poloha#umístění$místo$poloha
 ERROR
-šaty#oblečení šaty
+šaty#oblečení$šaty
 Internet#Internet
 kategorie#kategorie
 nebezpečný#nebezpečný
-rozšířit#prodloužit rozšířit
+prodloužit#rozšířit$prodloužit
 --#kombinát
-pobřeží#pobřeží břeh
-poměrně#relativně poměrně
+pobřeží#břeh$pobřeží
+poměrně#relativně$poměrně
 autobus#autobus
-hele#hele hej
+hele#hej$hele
 následující#následující
-záviset#záležet záviset
+záviset#záležet$záviset
 peklo#peklo
 kost#kost
-kuchař#vařit kuchař kuchařka
+kuchař#kuchařka$vařit$kuchař
 přímý#přímý
-domorodec#domorodec rodný
-chladný#chladný ok skvělý
-připomínat#připomínat připomenout
+domorodec#rodný$domorodec
+chladný#ok$skvělý$chladný
+připomínat#připomenout$připomínat
 historický#historický
 morální#morální
 volič#volič
-odpovídající#příhodný náležitý vhodný odpovídající určit patřičný příslušný přisvojit si určovat přiměřený
-slavný#slavný proslulý
+odpovídající#vhodný$přisvojit si$příhodný$určit$náležitý$určovat$příslušný$patřičný$přiměřený$odpovídající
+slavný#proslulý$slavný
 --
 vítězství#vítězství
-kontakt#spojení dotek kontakt
+kontakt#dotek$spojení$kontakt
 --
-negativní#negativ negativní záporný
-lék#lék léčba lékařství
+negativní#negativ$záporný$negativní
+lék#léčba$lékařství$lék
 --
-známka#stupeň známka třída
+známka#stupeň$třída$známka
 východní#východní
-poskytovat#poskytovat zásoba nabídka poskytnout
-včerejšek#včera včerejšek
-známý#známý
+poskytovat#poskytnout$zásoba$nabídka$poskytovat
+včerejšek#včera$včerejšek
+--#známý
 demokracie#demokracie
-pár#pár dvojice
-zdravý#zdravý statný
+pár#dvojice$pár
+zdravý#statný$zdravý
 remíza#remíza
-porod#původ porodit narození zrod porod
+porod#původ$zrod$porodit$narození$porod
 pokrok#pokrok
-poškození#poškození poškodit škoda cena
-výměna#výměna vyměnit burza
-dno#spodek dno
-denní#denní deník denně
+poškození#cena$poškodit$škoda$poškození
+výměna#burza$vyměnit$výměna
+dno#spodek$dno
+denní#denně$deník$denní
 dokument#dokument
---#litr tác
+--#tác$litr
 deník#deník
 koleno#koleno
-primární#primárky primární
+primární#primárky$primární
 jinak#jinak
-vlak#trénovat vlak cvičit
+vlak#cvičit$trénovat$vlak
 chytit#chytit
-kruh#kruh kružnice
+kruh#kružnice$kruh
 opřít#opřít
 víno#víno
 menšina#menšina
-květ#květina květ kvést
+květ#květina$kvést$květ
 zařízení#zařízení
-Iráčan#irácký Iráčan
-talíř#naložit talíř chod štoček
-čistý#uklízet uklidit čistit čistý vyčistit
+Iráčan#irácký$Iráčan
+talíř#chod$naložit$štoček$talíř
+čistý#vyčistit$uklízet$čistit$uklidit$čistý
 živý#živý
 --
 nenávidět#nenávidět
-výraz#vyjádření výraz
+výraz#vyjádření$výraz
 pod#pod
 --
 --
 --#zjištění
-cvičení#cvičit cvičení
-plast#plast plastový tvárný
+cvičení#cvičit$cvičení
+plast#plastový$tvárný$plast
 nebezpečí#nebezpečí
-krk#krk hrdlo šíje
-údolí#údolí dolina
+krk#šíje$hrdlo$krk
+údolí#dolina$údolí
 akademický#akademický
-aplikace#aplikace přihláška žádost
-hodlat#plánovat hodlat
-mužský#samčí mužský muž samec
+aplikace#přihláška$žádost$aplikace
+hodlat#plánovat$hodlat
+mužský#muž$samčí$samec$mužský
 vysoký#vysoký
 zavřít#zavřít
-ERROR
-indický#indián indický indiánský Ind Indka
-respekt#respektovat úcta respekt ohled
-kolega#kolegyně kolega
-písmo#psaní písmo spis
-déšť#sypat dštít déšť pršet
-rychlý#rychlý hluboký rychle
-fotbal#fotbal míč kopaná
-vítaný#vítaný vítat
-tuzemský#domácí tuzemský
-tůň#kaluž tůň louže
+spousta#moc$fůra$hodně$často$mnoho$spousta
+indický#Indka$indiánský$indián$Ind$indický
+respekt#ohled$úcta$respektovat$respekt
+kolega#kolegyně$kolega
+písmo#spis$psaní$písmo
+déšť#pršet$dštít$sypat$déšť
+rychlý#rychle$hluboký$rychlý
+fotbal#kopaná$míč$fotbal
+vítaný#vítat$vítaný
+tuzemský#domácí$tuzemský
+tůň#kaluž$louže$tůň
 literatura#literatura
 navíc#navíc
 severní#severní
-toužit#touha toužit přání
+toužit#přání$touha$toužit
 --#podnikový
-sezení#sezení zasedání
+sezení#zasedání$sezení
 --
-studio#studio
-ruský#Rus ruský Ruska ruština
+--#studio
+ruský#Rus$Ruska$ruština$ruský
 přikývnout#přikývnout
 učení#učení
-růst#lézt růst
+růst#lézt$růst
 důležitost#důležitost
---#někde někam
+--#někam$někde
 --
 --#kvarta
 suchý#suchý
-mizet#zmizet mizet
-urážka#zneužití urážka
-slepice#kur kuře posera slepice zbabělec
+mizet#zmizet$mizet
+urážka#zneužití$urážka
+slepice#posera$kuře$kur$zbabělec$slepice
 --
 mapa#mapa
 opatrně#opatrně
 --
 ERROR
-komplikovaný#komplikovaný komplex komplexní
-kov#kov metal
+komplikovaný#komplex$komplexní$komplikovaný
+kov#metal$kov
 porota#porota
-sladký#milý ochotný čerstvý melodický příjemný voňavý slazený sladký
-návrh#návrh nabídka
+sladký#čerstvý$slazený$melodický$příjemný$ochotný$voňavý$milý$sladký
+návrh#nabídka$návrh
 nemožný#nemožný
 vědecký#vědecký
-lístek#vstupenka lístek
+lístek#vstupenka$lístek
 list#list
-třída#učebna třída
+třída#učebna$třída
 obklopit#obklopit
-oběd#obědvat oběd
-význam#smysl význam
-urážka#zranění úraz urážka
+oběd#obědvat$oběd
+význam#smysl$význam
+urážka#zranění$úraz$urážka
 pozvat#pozvat
-nepřítel#nepřítel nepřátelský
-opakovat#zopakovat opakovat
+nepřítel#nepřátelský$nepřítel
+opakovat#zopakovat$opakovat
 medvěd#medvěd
-ret#okraj ret
+ret#okraj$ret
 starosta#starosta
-cena#odměna cena
+cena#odměna$cena
 --
-důsledek#následek důsledek
+důsledek#následek$důsledek
 --#instrukce
-překvapení#překvapení překvapit
-anketa#anketa
+překvapení#překvapit$překvapení
+--
 ERROR
 zkoumat#zkoumat
-předpovídat#předvídat předpovídat
+předpovídat#předvídat$předpovídat
 adoptovat#adoptovat
-pohled#spatřit pamětihodnost zahlédnout pohled
-bouře#bouřka bouře
+pohled#zahlédnout$spatřit$pamětihodnost$pohled
+bouře#bouřka$bouře
 hodnocení#hodnocení
 počasí#počasí
-kapsa#kapesní kapsa
-pomoc#asistovat pomůcka pomáhat pomoc
+kapsa#kapesní$kapsa
+pomoc#asistovat$pomáhat$pomůcka$pomoc
 čtení#čtení
-tenký#hubený řídký tenký
-duše#duše soul
-zvláštní#podivný cizí neznámý zvláštní divný
+tenký#řídký$hubený$tenký
+duše#soul$duše
+zvláštní#neznámý$podivný$cizí$divný$zvláštní
 --#ženatý
-uspořádat#roztřídit uspořádat srovnat
+uspořádat#roztřídit$srovnat$uspořádat
 závěr#závěr
 palivo#palivo
 městský#městský
 patřit#patřit
 sůl#sůl
-rolník#rolník farmář zemědělec sedlák
-přímý#rovinka čistý přímý přímo
+rolník#farmář$zemědělec$sedlák$rolník
+přímý#přímo$rovinka$čistý$přímý
 rada#rada
 --
 teplota#teplota
 prázdný#prázdný
 --
---#nějak
+nějak#nějak
 --#prezidentský
---#prvočíslo prima
-prs#prs hruď ňadro
+--#prvočíslo$prima
+prs#hruď$ňadro$prs
 psací stůl#psací stůl
-dech#dýchání dech nádech
+dech#nádech$dýchání$dech
 divadlo#divadlo
 připustit#připustit
 téma#téma
-tlustý#tuk tlustý
+tlustý#tuk$tlustý
 software#software
 cukr#cukr
-vzdělávací#výchovný vzdělávací
+vzdělávací#výchovný$vzdělávací
 tisíc#tisíc
-zákoník#kód zákoník
-spojit#spojit připojit
-žlutý#žlutá žloutnout žlutý
-nástroj#přístroj nástroj
-japonský#japonský Japonka Japonec japonština
+zákoník#kód$zákoník
+spojit#připojit$spojit
+žlutý#žloutnout$žlutá$žlutý
+nástroj#přístroj$nástroj
+japonský#japonština$Japonka$Japonec$japonský
 panel#panel
 knihovna#knihovna
-drahý#nákladný drahý
+drahý#nákladný$drahý
 citový#citový
 motor#motor
 navrhnout#navrhnout
 duševní#duševní
-obtíž#obtíž potíž
+obtíž#potíž$obtíž
 hnědý#hnědý
 --
-kroužek#kroužek ring prstenec zavolat prsten telefonovat okruh zvonit volat
-značka#značka známka marka označit
+kroužek#volat$prsten$telefonovat$okruh$zvonit$ring$prstenec$zavolat$kroužek
+značka#marka$známka$označit$značka
 --
-hledání#hledání hledat
+hledání#hledat$hledání
 --
 --
 ERROR
 --
---#regionální oblastní
-zřejmý#samozřejmý zřejmý
-naštvaný#rozzlobený rozhněvaný naštvaný
+--#oblastní$regionální
+zřejmý#samozřejmý$zřejmý
+naštvaný#rozzlobený$rozhněvaný$naštvaný
 analytik#analytik
 nehoda#nehoda
-tendence#tendence trend
+tendence#trend$tendence
 vzhled#vzhled
 momentálně#momentálně
-stín#sledovat stín
-bytost#stvoření bytost tvor bytí život existence
+stín#sledovat$stín
+bytost#stvoření$bytí$tvor$život$existence$bytost
 měsíc#měsíc
-most#kobylka hřbet most můstek
-doporučovat#doporučovat doporučit
+most#hřbet$kobylka$můstek$most
+doporučovat#doporučit$doporučovat
 sluch#sluch
-ovoce#plod ovoce
-tanec#plesati tanec tančit tancovat
+ovoce#plod$ovoce
+tanec#tancovat$tančit$plesati$tanec
 směna#směna
-pohodlný#pohodlí v pohodlný
-zápas#boj bitva zápas
+pohodlný#pohodlí$v$pohodlný
+zápas#boj$bitva$zápas
 --#výnos
-pojem#představa pojem
+pojem#představa$pojem
 ERROR
-balík#balík balíček
+balík#balíček$balík
 --
-doprava#provoz doprava
---#vnitřní domácí
+doprava#provoz$doprava
+--#vnitřní$domácí
 preferovat#preferovat
-obsluha#člen pracovní posádka skupina obsluha banda
-zisk#prospěch zisk
+obsluha#posádka$pracovní$skupina$banda$člen$obsluha
+zisk#prospěch$zisk
 nařízení#nařízení
-spojení#spojení článek
+spojení#článek$spojení
 --#myšlení
-sotva#stěží sotva
+sotva#stěží$sotva
 letiště#letiště
 extrémně#extrémně
 --
-zachytit#zachytit vzít
-jedinečný#unikátní jedinečný
+vzít#zachytit$vzít
+jedinečný#unikátní$jedinečný
 skutečný#skutečný
-truhla#truhla hruď
-jídlo#šrot jídlo
-krása#krása kráska krasavice
-rozměr#rozměr rozsah
+truhla#hruď$truhla
+jídlo#šrot$jídlo
+krása#krasavice$kráska$krása
+rozměr#rozsah$rozměr
 bránit#bránit
 návštěvník#návštěvník
 tucet#tucet
 deklarovat#deklarovat
 nouze#nouze
-ERROR
-opravdu#opravdu vážně doopravdy
+reklama#reklama
+opravdu#doopravdy$vážně$opravdu
 planeta#planeta
 vybrat#vybrat
-etnický#etnický
+--#etnický
 nos#nos
-půjčka#kredit úvěr půjčit půjčka
-hotovost#peníze hotovost
+půjčka#úvěr$kredit$půjčit$půjčka
+hotovost#peníze$hotovost
 příspěvek#příspěvek
 pomalý#pomalý
 --#protiklad
-láhev#láhev flaška
+láhev#flaška$láhev
 hodit#hodit
-originální#román originální
-povinnost#povinnost služba clo
-kořen#root kořínek kořen odmocnina
-spokojený#spokojený podstata obsah
+originální#román$originální
+povinnost#služba$clo$povinnost
+kořen#root$kořínek$odmocnina$kořen
+spokojený#podstata$obsah$spokojený
 součástka#součástka
-cenit#cenit vážit si
+cenit#vážit si$cenit
 okolnost#okolnost
 učení#učení
-barva#barva malovat
-tlustý#hustý tlustý
-kočka#kocour kočka
+barva#malovat$barva
+tlustý#hustý$tlustý
+kočka#kocour$kočka
 --#žádný
 --
-správný#správný opravit slušný
+správný#slušný$opravit$správný
 varovat#varovat
 --
-sjezd#konvence sjezd
-politik#politička politik
+sjezd#konvence$sjezd
+politik#politička$politik
 --
-nastavení#lůžko nastavení
-zóna#brankoviště zóna třetina cíl
-pilot#lodivod pilot letec letkyně
+nastavení#lůžko$nastavení
+zóna#třetina$cíl$brankoviště$zóna
+pilot#lodivod$letec$letkyně$pilot
 zajistit#zajistit
 nakonec#nakonec
-vzbudit#probudit vzbudit
+vzbudit#probudit$vzbudit
 košile#košile
-průvodce#průvodkyně provést průvodce
+průvodce#provést$průvodkyně$průvodce
 ERROR
-míchat#míchat mísit
---#spodnička relaps zhoršit
-krást#krást ukrást
+míchat#mísit$míchat
+--#zhoršit$spodnička$relaps
+krást#ukrást$krást
 --
-vinit#obviňovat vinit
-list#arch tabule list plech plát
-odhad#odhadnout odhad
-úleva#úleva reliéf zástup
+vinit#obviňovat$vinit
+list#plát$tabule$arch$plech$list
+odhad#odhadnout$odhad
+úleva#reliéf$zástup$úleva
 --#kombinace
 investor#investor
---#náležitý rovnou očekávaný plánovaný příslušný přímo
-ticho#utišit ticho
-způsob#styl způsob
+--#náležitý$příslušný$přímo$plánovaný$očekávaný$rovnou
+ticho#utišit$ticho
+způsob#styl$způsob
 sval#sval
-větev#obor větev pobočka
-řetěz#řetěz řetězec
-telefon#telefon telefonovat volat zavolat
-zkoumat#vyšetřovat zkoumat pátrat
-Němec#Němec německý Germán němčina Němka
+větev#obor$pobočka$větev
+řetěz#řetězec$řetěz
+telefon#telefonovat$volat$zavolat$telefon
+zkoumat#vyšetřovat$pátrat$zkoumat
+Němec#Němka$němčina$Germán$německý$Němec
 procento#procento
 výsledek#výsledek
-majetek#pozemek majetek
+majetek#pozemek$majetek
 --
-stres#zdůraznit stres
-stejný#stejný rovný
-anglický#anglický Angličan angličtina Angličanka
-blaho#blahobyt blaho
-typický#typický
-šílený#bláznivý šílený
-vyloučit#vyloučit mimo kromě namítat
-legrační#legrační zábavný
+stres#zdůraznit$stres
+stejný#rovný$stejný
+anglický#angličtina$Angličan$Angličanka$anglický
+blaho#blahobyt$blaho
+--#typický
+šílený#bláznivý$šílený
+vyloučit#namítat$kromě$mimo$vyloučit
+legrační#zábavný$legrační
 maso#maso
-odvolání#odvolat odvolání
+odvolání#odvolat$odvolání
 dlouhodobý#dlouhodobý
-odstranit#odstranit eliminovat
+odstranit#eliminovat$odstranit
 použitý#použitý
 pohyb#pohyb
-podat#stížnost podat
-řada#řada řádek veslovat
+podat#stížnost$podat
+řada#veslovat$řádek$řada
 židovský#židovský
-kopat#kopnout kopat kop
-sníh#sněžit sníh
-výrobce#producent producentka výrobce
-řešit#vyřešit řešit
+kopat#kopnout$kop$kopat
+sníh#sněžit$sníh
+výrobce#producentka$producent$výrobce
+řešit#vyřešit$řešit
 opozice#opozice
 basketbal#basketbal
 --
 --#konzervativní
-důvěra#důvěra důvěřovat
-zrcadlo#zrcátko zrcadlo
-nádrž#tank nádrž
-významně#významně značně
+důvěra#důvěřovat$důvěra
+zrcadlo#zrcátko$zrcadlo
+nádrž#tank$nádrž
+významně#značně$významně
 poněkud#poněkud
 přitahovat#přitahovat
-kdekoliv#kdekoliv
+--#kdekoliv
 režim#režim
-opravit#opravit spravit
+opravit#spravit$opravit
 --#zcela
 dovolit#dovolit
 délka#délka
-tajemství#tajemství tajný
-potěšení#uspokojit potěšení slast rozkoš
-archiv#zástup soubor složka pilovat pilník archiv archivovat uložit požádat šanon založit podat
+tajemství#tajný$tajemství
+potěšení#uspokojit$slast$rozkoš$potěšení
+archiv#šanon$zástup$archivovat$soubor$pilovat$složka$založit$požádat$uložit$podat$pilník$archiv
 zub#zub
-potvrzovat#biřmovat potvrzovat potvrdit
-samostatný#oddělit samostatný oddělovat oddělený
+potvrzovat#potvrdit$biřmovat$potvrzovat
+samostatný#oddělit$oddělovat$oddělený$samostatný
 zlatý#zlatý
 mezitím#mezitím
 kanál#kanál
 ložnice#ložnice
-podmínka#podmínka požadavek
-starobylý#starověký starobylý prastarý antický dávný
+podmínka#požadavek$podmínka
+starobylý#starověký$prastarý$dávný$antický$starobylý
 --
-stopa#stopa stezka cestička
+stopa#stezka$cestička$stopa
 hostitel#hostitel
-operace#lékařský operace zákrok chirurgický chirurgie
-vnímání#vjem vnímání
-vzácný#řídký krvavý vzácný
-éra#období éra
-poskytnout#schválit udělit připustit uznat poskytnout grant
+operace#chirurgie$zákrok$lékařský$chirurgický$operace
+vnímání#vjem$vnímání
+vzácný#řídký$krvavý$vzácný
+éra#období$éra
+poskytnout#schválit$připustit$grant$uznat$udělit$poskytnout
 oceán#oceán
 vážně#vážně
-sebevědomí#sebevědomí tajemství jistota důvěra
+sebevědomí#důvěra$tajemství$jistota$sebevědomí
 --
-roztrhnout#prasklina rvát roztrhnout slza utrhnout odtrhnout
+roztrhnout#prasklina$slza$utrhnout$rvát$odtrhnout$roztrhnout
 rozsudek#rozsudek
 průmyslový#průmyslový
 očekávání#očekávání
 --
-kopie#kopie kopírovat
-křídlo#křídlo blatník
-pochybovat#pochybovat pochybnost pochyba
-zábava#zábava legrace
+kopie#kopírovat$kopie
+křídlo#blatník$křídlo
+pochybovat#pochybnost$pochyba$pochybovat
+zábava#legrace$zábava
 --
-lít#lít sypat
-rod#rod gender
+lít#sypat$lít
+rod#gender$rod
 překvapený#překvapený
 pivo#pivo
 --#vazba
 plus#plus
 dluh#dluh
-bystrý#chytrý inteligentní bystrý
-hrozný#hrozný hrozivý strašný
-svědectví#svědectví svědek
-zdroj#pramen reference zdroj
+bystrý#inteligentní$chytrý$bystrý
+hrozný#strašný$hrozivý$hrozný
+svědectví#svědek$svědectví
+zdroj#pramen$reference$zdroj
 neřest#neřest
-hrdina#hrdina hrdinka vzor
-bomba#bomba bombardovat
+hrdina#hrdinka$vzor$hrdina
+bomba#bombardovat$bomba
 --#hodnocení
-zaměstnaný#rušný zaměstnaný
-ERROR
+zaměstnaný#rušný$zaměstnaný
+citát#citovat$uvozovka$citát
 --
-zástupce#poslankyně poslanec zástupce
-všude#všude
-půda#země půda
+zástupce#poslankyně$poslanec$zástupce
+--#všude
+půda#země$půda
 dálnice#dálnice
-rám#rám
+--#rám
 natáhnout#natáhnout
 --
-katolík#katolička katolík katolický
-mrak#oblak mrak
+katolík#katolička$katolický$katolík
+mrak#oblak$mrak
 počáteční#počáteční
-proměnlivý#proměnlivý faktor
-nezbytný#nevyhnutelný hlavní podstata nezbytný zásadní jádro nejdůležitější
+proměnlivý#faktor$proměnlivý
+nezbytný#zásadní$podstata$hlavní$jádro$nejdůležitější$nevyhnutelný$nezbytný
 zlepšení#zlepšení
-otvor#otvor
+--#otvor
 --
-kojná#ošetřovat kojit kojná zdravotní sestra ošetřovatelka sestra
-událost#událost incident
-interrupce#interrupce potrat
+kojná#zdravotní sestra$sestra$ošetřovat$ošetřovatelka$kojit$kojná
+událost#incident$událost
+interrupce#potrat$interrupce
 dělit#dělit
-terč#terč mířit zamířit cíl
+terč#cíl$mířit$zamířit$terč
 unavený#unavený
-opatrný#pečlivý opatrný
+opatrný#pečlivý$opatrný
 levný#levný
 vedle#vedle
 --
-zločinec#zločinec trestný
+zločinec#trestný$zločinec
 --#využít
 spěch#spěch
-spotřebitel#spotřebitel uživatelka spotřebitelka uživatel
-horní#horní vrchní
-vítěz#vítěz vítězka
+spotřebitel#uživatel$spotřebitelka$uživatelka$spotřebitel
+horní#vrchní$horní
+vítěz#vítězka$vítěz
 móda#móda
-spropitné#dýško spropitné
+spropitné#dýško$spropitné
 jablko#jablko
 rozlehlý#rozlehlý
 --
 omezený#omezený
-obrovský#ohromný obrovský
-svátek#dovolená svátek prázdniny
-ERROR
-zdůrazňovat#zdůraznit zdůrazňovat
+obrovský#ohromný$obrovský
+svátek#dovolená$prázdniny$svátek
+e-mail#email$e-mail
+zdůrazňovat#zdůraznit$zdůrazňovat
 pouze#pouze
-ohryzek#jádro podstata ohryzek
-zápas#odpovídat sirka zápalka zápas
+ohryzek#podstata$jádro$ohryzek
+zápas#odpovídat$zápalka$sirka$zápas
 krajina#krajina
 celkový#celkový
 golf#golf
 --
-trasa#trasa cesta
-tok#téct příliv tok proudit
+trasa#cesta$trasa
+tok#příliv$proudit$téct$tok
 --
-lano#kabel lano telegram
-brána#brána vrata
-hrdý#slavný hrdý pyšný
-mísa#talíř nádobí miska pokrm mísa
+lano#kabel$telegram$lano
+brána#vrata$brána
+hrdý#pyšný$slavný$hrdý
+mísa#nádobí$miska$talíř$pokrm$mísa
 --#pod
 ERROR
-uspět#uspět
+--#uspět
 sotva#sotva
 úzký#úzký
-tuhý#solidní pevný dohromady stabilní tuhý
-současný#současník současný moderní
-obviňovat#obvinit obviňovat
+tuhý#pevný$dohromady$stabilní$solidní$tuhý
+současný#moderní$současník$současný
+obviňovat#obvinit$obviňovat
 bohužel#bohužel
 užitečný#užitečný
-hluk#šum hluk
-vystavit#odhalit vystavit
-hmota#většina hmota váha mše hmotnost spousta
-násobek#násobek
+hluk#šum$hluk
+vystavit#odhalit$vystavit
+hmota#hmotnost$mše$váha$spousta$většina$hmota
+--#násobek
 zelenina#zelenina
 semeno#semeno
-odmítnout#zamítnout odmítnout
-odmítnout#klesat pokles skloňovat odmítnout
-pokus#experimentovat experiment pokus
+odmítnout#zamítnout$odmítnout
+odmítnout#pokles$skloňovat$klesat$odmítnout
+pokus#experimentovat$experiment$pokus
 --
 klobouk#klobouk
-masivní#masivní
-tráva#trávník tráva
-rozhodně#určitě rozhodně
+--#masivní
+tráva#trávník$tráva
+rozhodně#určitě$rozhodně
 --
 --#liberál
 míchat#míchat
@@ -1817,269 +1817,269 @@ kapitán#kapitán
 revoluce#revoluce
 --
 --#sektor
-schvalovat#schválit schvalovat
-strýc#strýček strýc
-objem#objem svazek
+schvalovat#schválit$schvalovat
+strýc#strýček$strýc
+objem#svazek$objem
 vysvětlení#vysvětlení
-věta#odsouzení odsoudit sentence věta odsuzovat
-uniknout#útěk únik uniknout
+věta#sentence$odsoudit$odsouzení$odsuzovat$věta
+uniknout#únik$útěk$uniknout
 neobvyklý#neobvyklý
 distribuce#distribuce
-venkovský#selský venkovský
-lít#lít sádra obsazovat obsadit
+venkovský#selský$venkovský
+lít#obsazovat$sádra$obsadit$lít
 domácnost#domácnost
 slavit#slavit
-chuť#chuť chutnat
-charakteristický#charakteristický vlastnost charakteristika
-sčítání#přídavek sčítání
-získávat#získávat získat
+chuť#chutnat$chuť
+charakteristický#vlastnost$charakteristika$charakteristický
+sčítání#přídavek$sčítání
+získávat#získat$získávat
 --
-správný#pořádný správný pravý slušný vlastní
+správný#pořádný$slušný$vlastní$pravý$správný
 tón#tón
-téma#téma předmět
-ERROR
+téma#předmět$téma
+k#poblíž$blízko$vůči$na$k
 odpad#odpad
 kolo#kolo
-atlet#atletka sportovec atlet sportovkyně
+atlet#atletka$sportovkyně$sportovec$atlet
 přesvědčit#přesvědčit
 --#alternativní
 pepř#pepř
-smetana#krém krémový smetana smetánka
+smetana#smetánka$krémový$krém$smetana
 technický#technický
-čtverec#férový čestný pole čtverec křížek buňka kolmý kvadrát čtvereční poctivý vydatný náměstí nudný čtvercový
-množství#množství dost
+čtverec#čtvercový$kolmý$pole$férový$náměstí$nudný$křížek$čestný$poctivý$kvadrát$vydatný$buňka$čtvereční$čtverec
+množství#dost$množství
 investovat#investovat
 --#ohled
-zásah#zásah intervence
-ilegální#ilegální nezákonný
-spodní#snížit dolní spustit spodní
+zásah#intervence$zásah
+ilegální#nezákonný$ilegální
+spodní#spustit$snížit$dolní$spodní
 soutěžit#soutěžit
-talent#talent nadání
-vinen#vinen vinný
+talent#nadání$talent
+vinen#vinný$vinen
 mléko#mléko
-výška#výška růst
+výška#růst$výška
 pomoc#pomoc
 osobnost#osobnost
-Izraelec#Izraelka Izraelec izraelský
+Izraelec#Izraelka$izraelský$Izraelec
 veselý#veselý
 navždy#navždy
 ocenit#ocenit
 slabý#slabý
 cigareta#cigareta
-dovolit#dovolit povolení povolit
+dovolit#povolit$povolení$dovolit
 cestující#cestující
 kritika#kritika
 dvacet#dvacet
-čest#čest ctít
+čest#ctít$čest
 --
 --#uhodit
 displej#displej
-kampus#kampus areál
+kampus#areál$kampus
 definice#definice
-šedý#šedý šedá gray
-znamení#znamení signál
+šedý#gray$šedá$šedý
+znamení#signál$znamení
 varování#varování
-lékař#doktorka lékařka doktor lékař
-sloup#sloupek sloup
-interakce#komunikace interakce
+lékař#doktorka$lékařka$doktor$lékař
+sloup#sloupek$sloup
+interakce#komunikace$interakce
 --#dramatický
 republika#republika
 --
 --#priorita
 --
-žádat#prosba žádost žádat požadavek požádat
-plášť#plášť
+žádat#žádost$požádat$prosba$požadavek$žádat
+--#plášť
 inženýr#inženýr
 rýže#rýže
 učenec#učenec
-aerolinie#aerolinie aerolinka
-výdej#výdaj výdej náklad vydání
+aerolinie#aerolinka$aerolinie
+výdej#náklad$vydání$výdaj$výdej
 pozorování#pozorování
-otvor#otvor
+díra#průsmyk$otvor$mezera$proluka$sedlo$díra
 agenda#agenda
-vytvoření#stvoření vytvoření vytváření
-táhnout#vléct táhnout
-podezřívat#podezřelý podezřívat podezírat
+vytvoření#vytváření$stvoření$vytvoření
+táhnout#vléct$táhnout
+podezřívat#podezírat$podezřelý$podezřívat
 --
-chléb#chleba chléb
-ahoj#čau nazdar čus zdar ahoj
+chléb#chleba$chléb
+ahoj#zdar$čau$čus$nazdar$ahoj
 --#neschopný
-výkřik#křičet ječet výkřik vykřiknout
-novinář#novinářka novinář žurnalistka žurnalista
+výkřik#křičet$vykřiknout$ječet$výkřik
+novinář#žurnalista$žurnalistka$novinářka$novinář
 ústava#ústava
 šťastný#šťastný
 vynikající#vynikající
 platba#platba
 výběr#výběr
 --
-vazba#zatknout vazba zadržet
+vazba#zadržet$zatknout$vazba
 --
 smutný#smutný
 dětství#dětství
-předpokládat#domnívat se předpokládat
+předpokládat#domnívat se$předpokládat
 --#správně
 prokurátor#prokurátor
-prudký#výrazný prudký násilný
+prudký#násilný$výrazný$prudký
 --
 střecha#střecha
 --
 emoce#emoce
 existující#existující
 absolvent#absolvent
-továrna#závod továrna fabrika
-rozvrh#fronta plánovat zařadit rozvrh
+továrna#závod$fabrika$továrna
+rozvrh#fronta$zařadit$plánovat$rozvrh
 třída#třída
 duchovní#duchovní
-mýt#mýt prát
+mýt#prát$mýt
 --#plánování
 --
-křik#volání křičet křik výkřik
-tichý#tichý mlčet
+křik#křičet$volání$výkřik$křik
+tichý#mlčet$tichý
 --
-chyba#omyl chyba
-široce#daleko široce
+chyba#omyl$chyba
+široce#daleko$široce
 popis#popis
-okamžitý#bezprostřední okamžitý
-nákup#koupit získat sehnat nákup koupě
+okamžitý#bezprostřední$okamžitý
+nákup#sehnat$získat$koupě$koupit$nákup
 --
 --
 osada#osada
-modlitba#prosba modlení modlitba
+modlitba#prosba$modlení$modlitba
 --#iniciativa
 koalice#koalice
-porovnání#porovnání stupňování
+porovnání#stupňování$porovnání
 --
-odpůrce#odpůrce odpůrkyně
+odpůrce#odpůrkyně$odpůrce
 napětí#napětí
-kapitola#hlava kapitola
+kapitola#hlava$kapitola
 vadit#vadit
 --
-skládat#souprava skládat
-přistěhovalkyně#přistěhovalkyně imigrant
-zapnout#umožnit zapnout aktivovat
+skládat#souprava$skládat
+přistěhovalkyně#imigrant$přistěhovalkyně
+zapnout#umožnit$aktivovat$zapnout
 fakulta#fakulta
-ocel#ocel ocelový
-poušť#opustit poušť dezertovat
+ocel#ocelový$ocel
+poušť#opustit$dezertovat$poušť
 aktivum#aktivum
 --
 proměnit#proměnit
 ohledně#ohledně
 vnímat#vnímat
-proláklina#deprese proláklina
+proláklina#deprese$proláklina
 informovat#informovat
 formální#formální
-vzdát se#opustit vzdát se
+vzdát se#opustit$vzdát se
 --
-dvojitý#dvojitý dvojník zdvojnásobit
+dvojitý#zdvojnásobit$dvojník$dvojitý
 --#zbývající
-existence#existence bytí
-sýr#prachy love chechtáky sýr
-společný#kloub společný
+existence#bytí$existence
+sýr#prachy$chechtáky$love$sýr
+společný#kloub$společný
 ERROR
 chránit#chránit
-strava#strava dieta
-území#teritorium území
-čaj#šálek čaj
-ohnout#ohnout ohyb
+strava#dieta$strava
+území#teritorium$území
+čaj#šálek$čaj
+ohnout#ohyb$ohnout
 uspořádat#uspořádat
 vyřešit#vyřešit
 pasáž#pasáž
-zámek#zámek zamykat zamknout kadeř lokna
-odpor#odboj odpor
-potok#tok potok proud
-skluzavka#snímek skluzavka diák klouzačka sesuv
-ostrý#bystrý křížek ostrý přesně přesný -is
+zámek#zamykat$kadeř$zamknout$lokna$zámek
+odpor#odboj$odpor
+potok#proud$tok$potok
+skluzavka#klouzačka$sesuv$snímek$diák$skluzavka
+ostrý#křížek$přesný$bystrý$-is$přesně$ostrý
 --#cyklus
 --
 fáze#fáze
 přechod#přechod
-snížení#redukce snížení
+snížení#redukce$snížení
 --
 výrobce#výrobce
-citát#uvozovka citovat citát
+citát#citovat$uvozovka$citát
 --
-prodej#výprodej prodej
+prodej#výprodej$prodej
 vrstva#vrstva
 svatba#svatba
-objev#vyšetřování průzkum objev
-můj#můj mina důl
+objev#vyšetřování$průzkum$objev
+můj#důl$mina$můj
 akademie#akademie
-písek#pláž písek
+písek#pláž$písek
 střela#střela
 volit#volit
-podnebí#podnebí klima
+podnebí#klima$podnebí
 účast#účast
 nůž#nůž
-atmosféra#ovzduší atmosféra
-vtip#šašek vtípek žertovat žert vtip
+atmosféra#ovzduší$atmosféra
+vtip#vtípek$žert$šašek$žertovat$vtip
 --
 obyčejný#obyčejný
 --#zrakový
-četný#početný četný
+četný#početný$četný
 příležitost#příležitost
-filozofie#filozofie filosofie
-sebevražda#sebevrah sebevražedkyně sebevražda
+filozofie#filosofie$filozofie
+sebevražda#sebevrah$sebevražedkyně$sebevražda
 --
-rád#rád radostný šťastný
+rád#radostný$šťastný$rád
 zboží#zboží
 nadto#nadto
-kabát#kabát plášť
+kabát#plášť$kabát
 --#konzistentní
 alkohol#alkohol
-druhý#naproti opačný proti protiklad druhý opak
-polda#sebrat polda bachař policajt
+druhý#opačný$opak$protiklad$naproti$proti$druhý
+polda#policajt$bachař$sebrat$polda
 vesmír#vesmír
 dýchat#dýchat
 --#praktický
-léčba#léčba terapie
+léčba#terapie$léčba
 --#rasový
 ERROR
 zřídka#zřídka
 --
-kázeň#kázeň obor disciplína
-odpovědět#odpověď odpovědět
-Mexičan#Mexičan Mexičanka mexický
-vášeň#pašije vášeň
+kázeň#disciplína$obor$kázeň
+odpovědět#odpověď$odpovědět
+Mexičan#Mexičanka$mexický$Mexičan
+vášeň#pašije$vášeň
 příběh#příběh
 prach#prach
-líbat#pusa líbat polibek políbit
+líbat#polibek$pusa$políbit$líbat
 železo#železo
-nezávislost#nezávislost samostatnost
-španělský#španělština španělský
+nezávislost#samostatnost$nezávislost
+španělský#španělština$španělský
 záloha#záloha
-hrnec#tráva marihuana hrnec cejcha pupek
-brambor#brambora brambor
+hrnec#cejcha$marihuana$pupek$tráva$hrnec
+brambor#brambora$brambor
 motor#motor
-smečka#smečka balit balíček
+smečka#balíček$balit$smečka
 --
 marketing#marketing
-pohroma#neštěstí pohroma katastrofa
+pohroma#katastrofa$neštěstí$pohroma
 --#expozice
-stížnost#nemoc stížnost symptom
+stížnost#symptom$nemoc$stížnost
 čepice#čepice
 --
-bunda#bunda sako
-intenzivní#silný vášnivý intenzivní
+bunda#sako$bunda
+intenzivní#silný$vášnivý$intenzivní
 --
 elektrický#elektrický
-uskutečnit#uskutečnit implementovat
+uskutečnit#implementovat$uskutečnit
 --
 ERROR
 --
 deficit#deficit
-důraz#důraz
+--#důraz
 soustředit#soustředit
 --
-dříve#dříve předtím
+dříve#předtím$dříve
 symbol#symbol
-kancelář#kancelář úřad
+kancelář#úřad$kancelář
 laboratoř#laboratoř
-připojit#připojit přiložit
-zásadní#základní podstatný zásadní
+připojit#přiložit$připojit
+základní#zásadní$podstatný$základní
 --#kdykoliv
 --
 --
-náraz#náraz šok
+náraz#šok$náraz
 upravit#upravit
 zaměstnavatel#zaměstnavatel
 viditelný#viditelný
@@ -2087,37 +2087,37 @@ kněz#kněz
 dobrovolník#dobrovolník
 --
 zábava#zábava
-návyk#zvyk návyk
+návyk#zvyk$návyk
 ilustrovat#ilustrovat
 stejně#stejně
 --#vyhlídka
 --
 --
 monitor#monitor
-úžasný#úžasný ohromující
-chudoba#nedostatek chudoba
+úžasný#ohromující$úžasný
+chudoba#nedostatek$chudoba
 --
-šéf#šéf šéfka
+šéf#šéfka$šéf
 --
-vztek#hněv vztek
+vztek#hněv$vztek
 --#těžce
 parkoviště#parkoviště
 tisknout#tisknout
 --
 --
-královna#královna dáma
+královna#dáma$královna
 gen#gen
 --
-přibližně#přibližně zhruba
+přibližně#zhruba$přibližně
 galerie#galerie
 --
-převézt#přenos přepsat převod převézt
+převézt#přenos$přepsat$převod$převézt
 obvyklý#obvyklý
 záhada#záhada
-vstup#heslo položka vstup
+vstup#položka$heslo$vstup
 nálada#nálada
 fazole#fazole
-objektivní#objektiv cíl objektivní záměr
+objektivní#cíl$záměr$objektiv$objektivní
 schopný#schopný
 --
 podstata#podstata
@@ -2125,65 +2125,65 @@ podstata#podstata
 výjimka#výjimka
 velitel#velitel
 ERROR
-rozhodující#rozhodující kritický
+rozhodující#kritický$rozhodující
 akr#akr
 drát#drát
-příkaz#ovládat rozkaz nařídit příkaz
+příkaz#nařídit$ovládat$rozkaz$příkaz
 --#nervový
 takzvaný#takzvaný
---#soutěžní konkurenční
-Asijec#Asijka asijský Asijec
+--#soutěžní$konkurenční
+Asijec#asijský$Asijka$Asijec
 věž#věž
 veterán#veterán
-tvor#stvoření tvor
-dým#cígo dým kouř
-arabský#arabský Arab
-kníže#kníže princ
-unie#aliance unie svaz
+tvor#stvoření$tvor
+dým#kouř$cígo$dým
+arabský#Arab$arabský
+kníže#princ$kníže
+unie#svaz$aliance$unie
 přeprava#přeprava
-štěstí#úspěch štěstí
+štěstí#úspěch$štěstí
 příznak#příznak
-pohřbívat#pohřbívat pohřbít
+pohřbívat#pohřbít$pohřbívat
 klinika#klinika
 nemoc#nemoc
 mistrovství#mistrovství
-vězeň#zajatec vězeň
-pověst#pověst renomé
+vězeň#zajatec$vězeň
+pověst#renomé$pověst
 vydání#vydání
-šťáva#džus šťáva
+šťáva#džus$šťáva
 omáčka#omáčka
-vrchol#kulminovat maximum špička vrchol
+vrchol#kulminovat$maximum$špička$vrchol
 --
-snídaně#snídat snídaně
+snídaně#snídat$snídaně
 --
-vůně#pach zápach vůně páchnout cítit vonět čich
+vůně#pach$zápach$cítit$čich$vonět$páchnout$vůně
 spojenec#spojenec
 čistý#čistý
-hračka#zvažovat hrát si hračka
-plat#mzda plat
-elektronický#internetový elektronický
+hračka#hrát si$zvažovat$hračka
+plat#mzda$plat
+elektronický#internetový$elektronický
 koupelna#koupelna
 --
 --#psychologický
---
+hodnocení#hodnocení
 rozměr#rozměr
 --
-pásek#opasek pás řemen pásek
+pásek#pás$opasek$řemen$pásek
 --
 --
 album#album
 dokonale#dokonale
 --
-ahoj#nazdar haló dobrý den ahoj servus
-relativní#příbuzná relativní příbuzný
-turista#turistika turista
-úkaz#úkaz fenomén jev
+ahoj#dobrý den$servus$haló$nazdar$ahoj
+příbuzný#příbuzná$relativní$příbuzný
+turista#turistika$turista
+úkaz#jev$fenomén$úkaz
 --
 --
-publikace#oznámení publikace titul
+publikace#oznámení$titul$publikace
 blízko#blízko
-úvaha#úvaha
-svatý#posvátný svatý
+--#úvaha
+svatý#posvátný$svatý
 podnik#podnik
 --#vnitřní
 --
@@ -2191,238 +2191,238 @@ potok#potok
 bota#bota
 šeptat#šeptat
 odolat#odolat
-cesta#výlet cesta
-vlajka#dláždit označit kosatec vlajka prapor
+cesta#výlet$cesta
+vlajka#kosatec$dláždit$označit$prapor$vlajka
 porucha#porucha
 --
 doslova#doslova
-zjevný#očividný viditelný zjevný zdánlivý
+zjevný#očividný$zdánlivý$viditelný$zjevný
 trvalý#trvalý
 úhel#úhel
 hladký#hladký
---#na rozdíl od odlišný různý
+--#různý$na rozdíl od$odlišný
 lžíce#lžíce
-konzultant#konzultant poradce poradkyně
+konzultant#poradce$poradkyně$konzultant
 dvojče#dvojče
-laskavost#pomoc pozornost laskavost
-hrdlo#krk hrdlo
+laskavost#pomoc$pozornost$laskavost
+hrdlo#krk$hrdlo
 --
 narozeniny#narozeniny
-houpačka#swing houpačka viset švih
+houpačka#swing$švih$viset$houpačka
 --
 --
 rozumný#rozumný
 pošta#pošta
-stříbro#stříbro stříbrný stříbrná
+stříbro#stříbrný$stříbrná$stříbro
 výslužba#výslužba
-citlivý#citlivý senzitivní
-pan#pan pán
+citlivý#senzitivní$citlivý
+pan#pán$pan
 námořnictvo#námořnictvo
 terorismus#terorismus
 občas#občas
-mrknout#škrtnout mrknout pohled
+mrknout#škrtnout$pohled$mrknout
 pozorovatel#pozorovatel
 --
-vázat#spojit svázat vázat
-mokrý#mokrý vlhký
-kopat#brát žrát kopat
-opustit#opustit přestat skončit
-digitální#digitální počítačový diskrétní
+vázat#spojit$svázat$vázat
+mokrý#vlhký$mokrý
+kopat#žrát$brát$kopat
+opustit#přestat$skončit$opustit
+digitální#diskrétní$počítačový$digitální
 ERROR
-pomáhat#asistovat pomáhat
+pomáhat#asistovat$pomáhat
 zaměstnání#zaměstnání
 návrh#návrh
 --
 --
 --#mladší
 žaludek#žaludek
-extrémní#extrémní krajní
+extrémní#krajní$extrémní
 --
 --#vyjednat
 dojem#dojem
 mzda#mzda
 --#pětina
-falešný#umělý falešný
+falešný#umělý$falešný
 růžový#růžový
-nepřítomnost#absence nepřítomnost
-útočný#útočný agresivní
+nepřítomnost#absence$nepřítomnost
+útočný#agresivní$útočný
 kuří oko#kuří oko
 směs#směs
-podstatný#podstatný hmotný opravdový
+podstatný#opravdový$hmotný$podstatný
 babička#babička
 tiše#tiše
 vězení#vězení
 specialista#specialista
-prodejce#obchodník bankéř prodejce
+prodejce#obchodník$bankéř$prodejce
 báseň#báseň
 máslo#máslo
 --
-krok#tempo krok
-úmysl#účel úmysl záměr
-hledět#vrstevník zírat civět hledět vrstevnice
-opravovat#opravit opravovat
+krok#tempo$krok
+úmysl#účel$záměr$úmysl
+hledět#vrstevník$civět$vrstevnice$zírat$hledět
+opravovat#opravit$opravovat
 dřevěný#dřevěný
 kritizovat#kritizovat
 nicméně#nicméně
 souhlas#souhlas
 --
---#zajistit jistit
+--#zajistit$jistit
 příprava#příprava
-latinský#latina Říman latinský
+latinský#latina$Říman$latinský
 pán#pán
 --
-hudební#hudební muzikál
-vážit#zvážit vážit
+hudební#muzikál$hudební
+vážit#zvážit$vážit
 --
 --
 divák#divák
 vzniknout#vzniknout
-správce#administrátor správce
+správce#administrátor$správkyně$správce
 --
 poctivý#poctivý
-vznik#původ pramen počátek vznik
-obr#obří obr gigant obrovský
+vznik#pramen$původ$počátek$vznik
+obr#obří$obrovský$gigant$obr
 rozmanitost#rozmanitost
 rajče#rajče
-radit#radit poradit informovat
+radit#poradit$informovat$radit
 biologický#biologický
-ulita#mušle lastura válec kostra krovka slupka stín skořápka lusk krunýř patrona opláštění ulita
+ulita#stín$lusk$opláštění$slupka$patrona$kostra$válec$krunýř$krovka$mušle$skořápka$lastura$ulita
 esej#esej
-historik#historik historička
-zástupce#náměstek zástupce
+historik#historička$historik
+zástupce#náměstek$zástupce
 --
-jelen#beran jelen kozel
-roura#roura trubka
-uprchlík#uprchlík běženec uprchlice
+jelen#beran$kozel$jelen
+roura#trubka$roura
+uprchlík#běženec$uprchlice$uprchlík
 hloubka#hloubka
-plochý#prasklý rovný plochý
+plochý#rovný$prasklý$plochý
 --
 šílený#šílený
---#postižení invalidita
-destrukce#zkáza destrukce
-předpoklad#předpoklad
+--#invalidita$postižení
+destrukce#zkáza$destrukce
+--#předpoklad
 --
 anděl#anděl
 --
 ERROR
-vedlejší#malý vedlejší moll mollový
+vedlejší#malý$mollový$moll$vedlejší
 vole#vole
 bariéra#bariéra
 --
 --
 hodnotný#hodnotný
 svědectví#svědectví
-kůl#kůl podíl kolík tyčka
+kůl#podíl$kolík$tyčka$kůl
 koncert#koncert
-etiketa#etiketa označit značka nálepka
---#všední rutina běžný
+etiketa#nálepka$značka$označit$etiketa
+--#běžný$všední$rutina
 bohatství#bohatství
-banda#banda parta gang
+banda#gang$parta$banda
 --
 značka#značka
 recept#recept
-prázdniny#dovolená prázdniny
+prázdniny#dovolená$prázdniny
 --#užitek
-družice#družice satelit
-neobyčejný#neobyčejný mimořádný
+družice#satelit$družice
+neobyčejný#mimořádný$neobyčejný
 --
-chemický#chemikálie chemický
-advokát#advokát právník právnička
-ERROR
-dort#dort deska blok
-fráze#sousloví slovní spojení fráze
-řvát#řvát ječet
+chemický#chemikálie$chemický
+advokát#právnička$právník$advokát
+učitel#učitelka$učitel
+dort#deska$blok$dort
+fráze#sousloví$slovní spojení$fráze
+řvát#ječet$řvát
 --
 --
-Palestinec#palestinský Palestinec Palestinka
+Palestinec#palestinský$Palestinka$Palestinec
 --#klasický
 --
-přes#přes pomocí
+přes#pomocí$přes
 proces#proces
 instalovat#instalovat
 --
-festival#svátek festival
-hlt#návrh hlt ponor lok odvod
-nebe#ráj nebe obloha
-vypínač#vyměnit výhybka vypínač
+festival#svátek$festival
+hlt#lok$odvod$ponor$návrh$hlt
+nebe#ráj$obloha$nebe
+vypínač#výhybka$vyměnit$vypínač
 aktivistka#aktivistka
 strop#strop
 hodiny#hodiny
 teta#teta
-tma#temnota tma
+tma#temnota$tma
 tatínek#tatínek
 královský#královský
 reklama#reklama
-hrubý#surový nepříjemný hrubý neomalený
-těhotný#těhotný březí
+hrubý#surový$neomalený$nepříjemný$hrubý
+těhotný#březí$těhotný
 --
-vzdálený#vzdálený daleký
+vzdálený#daleký$vzdálený
 --#rozvojový
 výnos#výnos
 ozbrojený#ozbrojený
 mechanismus#mechanismus
-odporný#hnusný odporný hodnost řada
+odporný#hnusný$hodnost$řada$odporný
 vrah#vrah
-plot#plot ohrada šermovat
-všestranný#univerzální všestranný
+plot#ohrada$šermovat$plot
+všestranný#univerzální$všestranný
 hrůza#hrůza
 vlk#vlk
-úzkost#úzkost starost
+úzkost#starost$úzkost
 založit#založit
-bílkovina#protein bílkovina
+bílkovina#protein$bílkovina
 --
 oblečení#oblečení
 --
-ERROR
+vlákno#vlákno
 --
 příst#příst
 --#hrubě
 drama#drama
 svoboda#svoboda
 ingredience#ingredience
-kyčel#kyčel šípek
+kyčel#šípek$kyčel
 --
-břemeno#břímě břemeno náklad
+břemeno#břímě$náklad$břemeno
 --
 --
 --
-italský#italský italština Ital Italka
+italský#Ital$italština$Italka$italský
 komora#komora
 --
 komunikovat#komunikovat
 hloupý#hloupý
 sázka#sázka
-muslim#muslim muslimský
-zvon#zvoneček zvonek zvon
+muslim#muslimský$muslim
+zvon#zvoneček$zvonek$zvon
 cibule#cibule
 --
-potkat#objevit narazit setkání potkat
+potkat#objevit$narazit$setkání$potkat
 --#ústavní
 kabinet#kabinet
 pozoruhodný#pozoruhodný
 rozbitý#rozbitý
 --
-překonat#zvládnout překonat
+překonat#zvládnout$překonat
 virus#virus
-neznámý#neznámý cizinec
+neznámý#cizinec$neznámý
 ponechat#ponechat
 cena#cena
-šňůra#šňůra struna řetězec
+šňůra#struna$řetězec$šňůra
 výstava#výstava
 rozšíření#rozšíření
 --
 hrozen#hrozen
-asistent#pomocnice pomocník asistentka asistent
+asistent#pomocnice$asistentka$pomocník$asistent
 --
 přesný#přesný
 půlka#půlka
-rejstřík#rejstřík index
+rejstřík#index$rejstřík
 obsadit#obsadit
-vybavení#vybavení rychlost převod soukolí
-záruka#garance záruka zajistit
-čokoláda#čokoláda čokoládový
+vybavení#soukolí$převod$rychlost$vybavení
+záruka#zajistit$garance$záruka
+čokoláda#čokoládový$čokoláda
 obřad#obřad
-knoflík#pupen placka tlačítko knoflík
+knoflík#placka$pupen$tlačítko$knoflík
 nákup#nákup
 spor#spor
 nábytek#nábytek
@@ -2433,20 +2433,20 @@ statistika#statistika
 mluvčí#mluvčí
 --
 islámský#islámský
-překládat#přeložit překládat
+překládat#přeložit$překládat
 vyložit#vyložit
 svědčit#svědčit
 spolupráce#spolupráce
-přívětivý#přátelský laskavý přívětivý
-profil#profil
-kalhoty#kalhotky kalhoty gatě
-zatímco#zatímco přičemž poněvadž kdežto ježto
+přívětivý#laskavý$přátelský$přívětivý
+--#profil
+kalhoty#kalhotky$gatě$kalhoty
+zatímco#ježto$poněvadž$přičemž$kdežto$zatímco
 elita#elita
 přístav#přístav
 komplikovaný#komplikovaný
-bratranec#bratranec sestřenice
+bratranec#sestřenice$bratranec
 --#strategický
-terorista#teroristický terorista
+terorista#teroristický$terorista
 graf#graf
 kresba#kresba
 --
@@ -2457,11 +2457,11 @@ naznačit#naznačit
 stadión#stadión
 --
 střelba#střelba
-slepý#slepý oslnit
-shromáždění#montáž shromáždění
+slepý#oslnit$slepý
+shromáždění#montáž$shromáždění
 stáhnout#stáhnout
-pruh#dres pruh bulvár třída
-milenec#milovník milenec milenka
+pruh#třída$bulvár$dres$pruh
+milenec#milovník$milenka$milenec
 --
 letadlo#letadlo
 --
@@ -2479,44 +2479,44 @@ doporučení#doporučení
 podobně#podobně
 ospravedlnit#ospravedlnit
 --
-lavička#lavička lavice
+lavička#lavice$lavička
 kulka#kulka
---#režim modus
-mistr#mistryně mistr
+--#režim$modus
+mistr#mistryně$mistr
 propustit#propustit
-sada#sada paluba
+sada#paluba$sada
 životnost#životnost
 rozsáhlý#rozsáhlý
-přitažlivý#atraktivní přitažlivý
+přitažlivý#atraktivní$přitažlivý
 --#politicky
 --#pravidelně
-syrový#syrový surový
-chyba#vina zlom chyba
+syrový#surový$syrový
+chyba#zlom$vina$chyba
 --
-odhalit#odhalit objevit najít detekovat
+odhalit#objevit$detekovat$najít$odhalit
 značný#značný
 --
 --#částečně
-nástupiště#nástupiště platforma
-daleký#vzdálený daleký
-osud#bohatství štěstí osud
-otrok#otrok rob otrokyně otročit
-porod#zásilka porod podání
-odraz#úvaha reflexe odraz
+nástupiště#platforma$nástupiště
+daleký#vzdálený$daleký
+osud#bohatství$štěstí$osud
+otrok#otrokyně$otročit$rob$otrok
+porod#zásilka$podání$porod
+odraz#reflexe$úvaha$odraz
 relevantní#relevantní
 neznámý#neznámý
-přestávka#pauza přestávka
+přestávka#pauza$přestávka
 tkáň#tkáň
-potopit#potopit dřez
+potopit#dřez$potopit
 --
 Bible#Bible
 licence#licence
 tragédie#tragédie
-dialog#dialog rozhovor konverzace
+dialog#rozhovor$konverzace$dialog
 vzájemný#vzájemný
-volný#volný uvolněný
-externí#vnější externí
-pýcha#pýcha smečka
+volný#uvolněný$volný
+externí#vnější$externí
+pýcha#smečka$pýcha
 vědomí#vědomí
 elektřina#elektřina
 rozmanitý#rozmanitý
@@ -2529,13 +2529,13 @@ finance#finance
 původně#původně
 zakladatel#zakladatel
 --#charakterizovat
-protestovat#protestovat protest
-kůl#kůl pól tyč prut
+protestovat#protest$protestovat
+kůl#prut$pól$tyč$kůl
 --#intelektuální
-komunistický#komunistický komunista komunistka
-infekce#infekce nákaza
+komunistický#komunista$komunistka$komunistický
+infekce#nákaza$infekce
 --
-zmrznout#mráz zmrznout
+zmrznout#mráz$zmrznout
 portrét#portrét
 důkaz#důkaz
 --
@@ -2545,25 +2545,25 @@ schodiště#schodiště
 --
 tvořit#tvořit
 třicet#třicet
-měnit#změnit měnit proměnit
+měnit#změnit$proměnit$měnit
 náhlý#náhlý
 --
-špinavý#sprostý zašpinit špinavý špinit ušpinit
+špinavý#špinit$ušpinit$zašpinit$sprostý$špinavý
 --#vyvinout
 náctiletý#náctiletý
 --
 radost#radost
 vlastnit#vlastnit
-hurikán#uragán hurikán orkán
+hurikán#orkán$uragán$hurikán
 --
 uvolnit#uvolnit
 --#připojit
-smlouva#smlouva dohoda
+smlouva#dohoda$smlouva
 --#převor
-památník#památník pomník
+památník#pomník$památník
 --
-kohout#pípa kohoutek kohout závitník
-plavat#plavat plavání plout
+kohout#kohoutek$pípa$závitník$kohout
+plavat#plavání$plout$plavat
 --
 záliv#záliv
 jazyk#jazyk
@@ -2575,21 +2575,21 @@ pohřeb#pohřeb
 literární#literární
 --#převést
 --
-třít#mnout třít
+třít#mnout$třít
 vchod#vchod
 epizoda#epizoda
 turnaj#turnaj
-životní#životní
-stáj#maštal stabilní stáj
+--#životní
+stáj#maštal$stabilní$stáj
 rozdělit#rozdělit
---#představení reprezentace
+--#představení$reprezentace
 beletrie#beletrie
-ulička#trasa dráha pruh ulička
+ulička#pruh$trasa$dráha$ulička
 rozdíl#rozdíl
 --
-obsáhlý#komplexní obsáhlý
+obsáhlý#komplexní$obsáhlý
 jistý#jistý
---#nápadný vynikající
+--#vynikající$nápadný
 prezentace#prezentace
 síť#síť
 --
@@ -2600,83 +2600,83 @@ předstírat#předstírat
 --
 --
 klidný#klidný
---#nikde nikam
+--#nikde$nikam
 --
-radikál#radikální radikál
+radikál#radikální$radikál
 dobrodružství#dobrodružství
-povolání#profese povolání
+povolání#profese$povolání
 vzrušující#vzrušující
-osud#úděl osud
+osud#úděl$osud
 --
-náklad#naložit náklad
-zpěvák#zpěvačka zpěvák
+náklad#naložit$náklad
+zpěvák#zpěvačka$zpěvák
 --
 tuna#tuna
 --#instance
-vztah#vztah spolek sdružení svaz
+vztah#svaz$spolek$sdružení$vztah
 lov#lov
-bledý#bledý světlý kůl
-básník#básnířka básník poetka poeta
+bledý#kůl$světlý$bledý
+básník#básnířka$poeta$poetka$básník
 postupně#postupně
 partnerství#partnerství
 --
-kanadský#kanadský Kanaďanka Kanaďan
+kanadský#Kanaďanka$Kanaďan$kanadský
 ERROR
 obchod#obchod
-děda#děda děd
-péci#péci péct
+děda#děd$děda
+péci#péct$péci
 police#police
 med#med
-kulatý#zahnout kolo vrhnout kulatý runda
-utéct#utéci zdrhnout utéct zmizet utíkat
+kulatý#kolo$runda$vrhnout$zahnout$kulatý
+utéct#utéci$zmizet$utíkat$zdrhnout$utéct
 upravit#upravit
-kupec#kupec zákazník
-rozvod#rozvést rozvod
+kupec#zákazník$kupec
+rozvod#rozvést$rozvod
 --#obranný
 --
 --
 gesto#gesto
 poezie#poezie
-zásoba#zásoba rezervace
+zásoba#rezervace$zásoba
 uspokojit#uspokojit
 --
 trávník#trávník
 ERROR
 moudrost#moudrost
 pohodlí#pohodlí
-obsah#parcela spiknutí děj obsah
+obsah#parcela$děj$spiknutí$obsah
 --
 výbuch#výbuch
-ocas#chvost rub sledovat ohon ocas
+ocas#ohon$sledovat$rub$chvost$ocas
 --
 udržovat#udržovat
 stabilita#stabilita
-fantazie#fantazie fantasy
+fantazie#fantasy$fantazie
 --#závazek
-Bůh#bůh Bůh
-kolo#motorka kolo
+Bůh#bůh$Bůh
+kolo#motorka$kolo
 ERROR
-obyčej#uživatelský zvyk obyčej clo
+obyčej#uživatelský$zvyk$clo$obyčej
 nemocný#nemocný
 --
-kůže#kůže kožený
---#vzhledem k daný postulát fakt axiom
-kostra#soustava systém kostra konstrukce
+kůže#kožený$kůže
+--#axiom$daný$postulát$vzhledem k$fakt
+kostra#systém$soustava$konstrukce$kostra
 --
 nepatrný#nepatrný
-sklon#tendence sklon
-prasklina#prasklina vtípek štěrbina vtip škvíra
+sklon#tendence$sklon
+prasklina#škvíra$vtípek$vtip$štěrbina$prasklina
 --
 --#získat
-mluvčí#reproduktor mluvčí
-skandál#skandál hamba
+mluvčí#reproduktor$mluvčí
+skandál#hamba$skandál
 patnáct#patnáct
-plán#plán schéma
-džez#super jazz džez
+plán#schéma$plán
+džez#super$jazz$džez
 starý#starý
 oslava#oslava
-evoluce#evoluce vývoj
-bojovník#válečník stíhačka bojovník
+evoluce#vývoj$evoluce
+bojovník#stíhačka$válečník$bojovník
 ERROR
 stopa#stopa
 --
@@ -2684,29 +2684,29 @@ detektiv#detektiv
 --
 kromě#kromě
 polévka#polévka
-trouba#trouba pec
-rychlý#rychlý peřej
-honit#hnát honit
+trouba#pec$trouba
+rychlý#peřej$rychlý
+honit#hnát$honit
 sofistikovaný#sofistikovaný
-kmen#rod kmen
-píšťala#píšťala pipa roura trubka
-jelen#laň jelen
+kmen#rod$kmen
+píšťala#trubka$pipa$roura$píšťala
+jelen#laň$jelen
 ilustrace#ilustrace
 ERROR
-jednotvárný#uniforma stejnokroj jednotvárný
-přenos#přenos převodovka vysílání
+jednotvárný#uniforma$stejnokroj$jednotvárný
+přenos#převodovka$vysílání$přenos
 --
-hromada#klín hromada
+hromada#klín$hromada
 --
 připomínat#připomínat
 neuvěřitelný#neuvěřitelný
 --
 ekonom#ekonom
-efektivní#efektivní účinný
+--#účinný$efektivní
 padesát#padesát
-stín#odstín upravit stín
+stín#upravit$odstín$stín
 opera#opera
-počítat#vypočítat počítat spočítat
+počítat#spočítat$vypočítat$počítat
 --
 --
 spotřebovat#spotřebovat
@@ -2717,24 +2717,24 @@ stipendium#stipendium
 --
 poměr#poměr
 schůzka#schůzka
---#odsouzení přesvědčení
+--#odsouzení$přesvědčení
 mýtus#mýtus
-solární#sluneční solární
-loď#nádoba céva plavidlo loď
+solární#sluneční$solární
+loď#céva$plavidlo$nádoba$loď
 --
 přátelství#přátelství
 členství#členství
-řemeslo#plavidlo řemeslo
+řemeslo#plavidlo$řemeslo
 --
 výdělek#výdělek
 --
 --
-kontroverzní#sporný kontroverzní
-bolestivý#bolestný bolestivý
+kontroverzní#sporný$kontroverzní
+bolestivý#bolestný$bolestivý
 --
-ERROR
-kojenec#kojenec nemluvně
-kráva#kráva skot tur
+--
+kojenec#nemluvně$kojenec
+kráva#tur$skot$kráva
 ERROR
 --
 dub#dub
@@ -2743,33 +2743,33 @@ trest#trest
 --
 --
 --
-frekvence#kmitočet frekvence
+frekvence#kmitočet$frekvence
 poměr#poměr
 zpoždění#zpoždění
 soukromí#soukromí
 kouzlo#kouzlo
 ERROR
 --
-hudebník#hudebník muzikant
+hudebník#muzikant$hudebník
 žalovat#žalovat
-ERROR
+asistent#pomocnice$asistentka$pomocník$asistent
 skromný#skromný
-vrtulník#vrtulník helikoptéra
-říše#říše císařství impérium
+vrtulník#helikoptéra$vrtulník
+říše#císařství$impérium$říše
 podrobný#podrobný
-účinnost#účinnost
+--#účinnost
 ERROR
 ERROR
 špatně#špatně
 tenis#tenis
 --#emise
-zoufalý#zoufalý
+--#zoufalý
 česnek#česnek
 --
 posílit#posílit
-demonstrace#důkaz demonstrace
+demonstrace#důkaz$demonstrace
 --#omezení
-irština#irský Ir Irka irština
+irština#irský$Ir$Irka$irština
 lovec#lovec
 --
 hrst#hrst
@@ -2778,139 +2778,139 @@ vybuchnout#vybuchnout
 absorbovat#absorbovat
 --
 dočasný#dočasný
-komisař#komisař
-diamant#káry diamantový kule diamant
-zvláštní#podivný zvláštní
+--#komisař
+diamant#diamantový$káry$kule$diamant
+zvláštní#podivný$zvláštní
 --
-rezervace#rezervace výhrada
+rezervace#výhrada$rezervace
 --
-přizpůsobení#přizpůsobení úprava
-skladba#skladba složení
+přizpůsobení#úprava$přizpůsobení
+skladba#složení$skladba
 tygr#tygr
 tkanina#tkanina
 tvrdit#tvrdit
 diskriminace#diskriminace
-plavat#plavat plout
+plavat#plout$plavat
 --#matika
-vyhlídka#přehlédnout vyhlídka
+vyhlídka#přehlédnout$vyhlídka
 sbor#sbor
-řada#sled řada
-pata#pata podpatek
+řada#sled$řada
+pata#podpatek$pata
 --#úspěšně
-vyšetření#vyšetření zkouška
-obzor#obzor horizont
-absolutní#čistý absolutní jistý
+vyšetření#zkouška$vyšetření
+obzor#horizont$obzor
+absolutní#jistý$čistý$absolutní
 --
 --
 --#dominantní
-býk#býk bula
+býk#bula$býk
 --
-metr#měřič metr
-legitimní#legitimní zákonný legální
+metr#měřič$metr
+legitimní#zákonný$legální$legitimní
 maska#maska
 kousat#kousat
-tah#tah úder hladit bití
+tah#hladit$bití$úder$tah
 --
 lev#lev
-puška#puška ručnice
-zářivý#skvělý zářivý
+puška#ručnice$puška
+zářivý#skvělý$zářivý
 --
 --
 nahý#nahý
 hladový#hladový
 těsný#těsný
-plamen#milenec plamen milenka
+plamen#milenec$milenka$plamen
 ekonomie#ekonomie
-srub#kajuta chatrč srub chata chaloupka salaš
-pomerančovník#oranžový pomerančovník pomeranč
+srub#chatrč$kajuta$chaloupka$chata$salaš$srub
+pomerančovník#pomeranč$oranžový$pomerančovník
 --#zahnout
 --
 romantický#romantický
 --
 inflace#inflace
 --
-borovice#borovice sosna
+borovice#sosna$borovice
 zemědělství#zemědělství
 dědictví#dědictví
 --#přípona
-sud#bečka barel hlaveň sud
-příchod#příchod příjezd
-zaregistrovat#soutisk pasovat zaregistrovat rejstřík záznam
+sud#hlaveň$bečka$barel$sud
+příchod#příjezd$příchod
+zaregistrovat#pasovat$rejstřík$soutisk$záznam$zaregistrovat
 příchuť#příchuť
-versus#versus oproti
-maso#tělo maso dužina
+versus#oproti$versus
+maso#dužina$tělo$maso
 --
-garáž#opravna servis garáž
-bavlník#bavlněný bavlník bavlna
-operátor#operátor
-ořech#matice matka koule ořech
-čepel#čepel lopatka
-přítelkyně#holka přítelkyně
+garáž#servis$opravna$garáž
+bavlník#bavlna$bavlněný$bavlník
+--#operátor
+ořech#matice$koule$matka$ořech
+čepel#lopatka$čepel
+přítelkyně#holka$přítelkyně
 závislý#závislý
-uhlík#uhlí uhlík
+uhlík#uhlí$uhlík
 dědictví#dědictví
-organický#organický ekologický
-velvyslanec#velvyslanec velvyslankyně
+organický#ekologický$organický
+velvyslanec#velvyslankyně$velvyslanec
 invaze#invaze
-vrchol#summit vrchol
+vrchol#summit$vrchol
 --
 zemědělský#zemědělský
 --
-porada#poradit porada rada záměr doporučit advokát radit doporučovat advokátka
+porada#poradit$záměr$rada$advokátka$radit$doporučit$doporučovat$advokát$porada
 --
-nabídka#nabídka menu
-děsný#děsný strašný
-rána#zranit rána
+nabídka#menu$nabídka
+děsný#strašný$děsný
+rána#zranit$rána
 --
-spotřeba#úbytě spotřeba
+spotřeba#úbytě$spotřeba
 povolení#povolení
 dvanáct#dvanáct
-urážlivý#urážlivý útok
-přeháňka#sprcha přeháňka
+urážlivý#útok$urážlivý
+přeháňka#sprcha$přeháňka
 spadnout#spadnout
 podstoupit#podstoupit
 vědomí#vědomí
 --
 ERROR
 --
---#dopravce bacilonosič nosič
-rozsah#prohlédnout shlédnout rozsah
-zrno#obilí zrnko zrno zrní
+--#dopravce$nosič$bacilonosič
+rozsah#shlédnout$prohlédnout$rozsah
+zrno#zrní$obilí$zrnko$zrno
 zřetelný#zřetelný
 --#ranč
 dílna#dílna
 ERROR
 ERROR
 vypravěč#vypravěč
-štětec#štětec štětka
-zakazovat#zákaz zakazovat zakázat
+štětec#štětka$štětec
+zakazovat#zákaz$zakázat$zakazovat
 --
 --
-půjčovat#půjčit půjčovat
-lapit#lapit zabavit
+půjčovat#půjčit$půjčovat
+lapit#zabavit$lapit
 psychologie#psychologie
 následující#následující
 překročit#překročit
 --
 termín#termín
 --
-moudrý#moudrý rozumný
+moudrý#rozumný$moudrý
 léky#léky
 opakovaně#opakovaně
 častý#častý
 raketa#raketa
 sláva#sláva
 plíce#plíce
-ERROR
+popisovat#popsat$popisovat
 přesvědčit#přesvědčit
 stan#stan
 --
 --
---#kurs šance
+--#kurs$šance
 --
-hlavní#rektor majitel půjčka hlavní ředitel
-ošklivý#ošklivý škaredý
-přiměřený#adekvátní přiměřený odpovídající
+hlavní#majitel$rektor$ředitel$půjčka$hlavní
+ošklivý#škaredý$ošklivý
+přiměřený#adekvátní$odpovídající$přiměřený
 nicméně#nicméně
 --
 proměna#proměna
@@ -2918,7 +2918,7 @@ proměna#proměna
 poskytovatel#poskytovatel
 --
 --
-zázrak#zázrak div
+zázrak#div$zázrak
 --
 bezdomovec#bezdomovec
 --
@@ -2926,64 +2926,64 @@ bezdomovec#bezdomovec
 --
 měření#měření
 --
-provincie#kraj oblast provincie
+provincie#oblast$kraj$provincie
 mírný#mírný
-shoda#konsenzus souhlas shoda
+shoda#konsenzus$souhlas$shoda
 líbezný#líbezný
-komedie#komedie veselohra
+komedie#veselohra$komedie
 břeh#břeh
-fotograf#fotograf fotografka
+fotograf#fotografka$fotograf
 --
 závodník#závodník
 --
 zmatek#zmatek
-vlastnost#přívlastek vlastnost atribut
-hrůza#hrůza horor
+vlastnost#atribut$přívlastek$vlastnost
+hrůza#horor$hrůza
 --
-týdeník#týdně týdeník
+týdeník#týdně$týdeník
 --
-koš#košík koš
+koš#košík$koš
 --
 deka#deka
 orel#orel
 ERROR
-myš#myšák myš
+myš#myšák$myš
 etika#etika
-duch#artefakt vidina zjevení duch
+duch#artefakt$zjevení$vidina$duch
 --
 lano#lano
-formule#vzorec formule
+formule#vzorec$formule
 --#výstava
 nerv#nerv
 --
 běh#běh
-psycholog#psycholožka psycholog
-kyselý#kyselina kyselý
+psycholog#psycholožka$psycholog
+kyselý#kyselina$kyselý
 --
-smůla#úroveň smola smůla tón hod stupeň
-zaměstnání#okupace zaměstnání
+smůla#úroveň$tón$stupeň$smola$hod$smůla
+zaměstnání#okupace$zaměstnání
 odvaha#odvaha
-porážet#porážka porazit vítězství porážet zvítězit anulovat vítězit
+porážet#vítězit$porážka$vítězství$zvítězit$anulovat$porazit$porážet
 těhotenství#těhotenství
-ERROR
+--
 --#náplast
 okraj#okraj
 --
 --
-cihla#cihlový cihla zdít
+cihla#zdít$cihlový$cihla
 scénář#scénář
-vaření#kuchyně vaření
+vaření#kuchyně$vaření
 tunel#tunel
-beton#konkrétní betonový beton
+beton#betonový$konkrétní$beton
 branec#branec
-potraviny#hokynářství potraviny
-citrón#citroník citron citrón
-vyzvat#vyzvat riskovat
+potraviny#hokynářství$potraviny
+citrón#citroník$citron$citrón
+vyzvat#riskovat$vyzvat
 --
-baterie#baterie sestava baterka
+baterie#sestava$baterka$baterie
 --
 --#umělecký
-hovno#srát sráč kurva pičovina kravina do prdele sračka hovno
+hovno#pičovina$srát$do prdele$kurva$kravina$sráč$sračka$hovno
 --
 --
 intenzita#intenzita
@@ -2992,166 +2992,166 @@ klavír#klavír
 --
 --#kolo
 --
-řeč#projev řeč přednáška
+řeč#přednáška$projev$řeč
 smích#smích
 výročí#výročí
-dalekohled#teleskop dalekohled
+dalekohled#teleskop$dalekohled
 klít#klít
 --#charita
-klíč#klíč vodítko
-hrob#závažný hrob vážný
-vyprávění#vyprávění narativní narace
-hypotéza#hypotéza domněnka
+klíč#vodítko$klíč
+hrob#závažný$vážný$hrob
+vyprávění#narativní$narace$vyprávění
+hypotéza#domněnka$hypotéza
 --
 přijatelný#přijatelný
-pohovka#pohovka gauč
-obžalovaný#obžalovaný obviněný odpůrce obžalovaná obviněná
-obsahovat#vytvořit obsahovat složit
+pohovka#gauč$pohovka
+obžalovaný#odpůrce$obžalovaná$obviněná$obviněný$obžalovaný
+obsahovat#složit$vytvořit$obsahovat
 hlasování#hlasování
-související#příbuzný související
---#hrozen kupa
+související#příbuzný$související
+--#kupa$hrozen
 koláč#koláč
-záznam#záznam nahrávka
-kolejnice#kolej kolejnice
+záznam#nahrávka$záznam
+kolejnice#kolej$kolejnice
 snížit#snížit
-znásilnění#znásilnění znásilnit
-přerušit#přerušení přerušit
+znásilnění#znásilnit$znásilnění
+přerušit#přerušení$přerušit
 architekt#architekt
 --
-poznámka#poznámka poznamenat
+poznámka#poznamenat$poznámka
 --
 předpis#předpis
 odměna#odměna
-svatý#posvátný svatý
-orgán#varhany orgán
+svatý#posvátný$svatý
+orgán#varhany$orgán
 zahraničí#zahraničí
-satan#satan čert ďábel
-drahý#milý drahý
+satan#čert$ďábel$satan
+drahý#milý$drahý
 vyšší#vyšší
 --
-letoun#letadlo letoun
+letoun#letadlo$letoun
 --
 uhlí#uhlí
-fotbal#fotbal kopaná
+fotbal#kopaná$fotbal
 --
 --
---#integrita celistvost
-svítit#svítit blýskat
+--#celistvost$integrita
+svítit#blýskat$svítit
 --
 norma#norma
 tvrzení#tvrzení
 tableta#tableta
 --
-prostý#rovina prostý pláň obyčejný
+prostý#obyčejný$rovina$pláň$prostý
 --#inspektor
 fórum#fórum
-prach#prášek prach
+prach#prášek$prach
 hřích#hřích
 --#zjevný
-sponzor#sponzorovat sponzor
+sponzor#sponzorovat$sponzor
 --#přijetí
 --
 --#kognitivní
 --
-magie#magie kouzelný
+magie#kouzelný$magie
 severozápad#severozápad
 --
 --
 --
-nájemné#nájem nájemné
-civilista#civilní civilista
+nájemné#nájem$nájemné
+civilista#civilní$civilista
 přístav#přístav
 ERROR
-rytmus#rytmus takt tempo
+rytmus#tempo$takt$rytmus
 --
 --
 --#zvýraznit
 palác#palác
 ERROR
-složený#složený sloučenina
+složený#sloučenina$složený
 --
 ozvěna#ozvěna
 --
-krajíc#plátek krajíc
-boj#boj bojovat
-médium#médium střední
-kmen#poleno kmen kláda
+krajíc#plátek$krajíc
+boj#bojovat$boj
+--#médium$střední
+kmen#kláda$poleno$kmen
 chirurg#chirurg
-omlouvat#omlouvat omluva omluvit záminka
-rituální#obřad rituál rituální
+omlouvat#omluva$omluvit$záminka$omlouvat
+rituál#rituální$obřad$rituál
 --
 vzrušený#vzrušený
 --#lehce
-zlý#zlo zlý
+zlý#zlo$zlý
 hořký#hořký
-vývoz#export vývoz
-jíl#jíl hlína
+vývoz#export$vývoz
+jíl#hlína$jíl
 logika#logika
 ctnost#ctnost
 kontejner#kontejner
 --
-žebrat#žebrat prosit
-losos#losos lososová
+žebrat#prosit$žebrat
+losos#lososová$losos
 zdravit#zdravit
-ohyb#ohyb křivka
-mlýn#mlýn promile továrna mlít
+ohyb#křivka$ohyb
+mlýn#promile$mlít$továrna$mlýn
 skříň#skříň
 vnitřní#vnitřní
-tyč#tyčinka tyč prut
-sladkost#sladkost bonbón
-omezovat#omezit omezovat
+tyč#prut$tyčinka$tyč
+sladkost#bonbón$sladkost
+omezovat#omezit$omezovat
 --#iniciovat
 --#rub
 etický#etický
 --
---#správní administrativní
+--#administrativní$správní
 --
-smrtelný#smrtelný smrtící
-prase#čuně prase svině vepř fízl
+smrtelný#smrtící$smrtelný
+prase#čuně$fízl$svině$vepř$prase
 --
 medaile#medaile
-příjemce#sluchátko adresát přijímač příjemkyně příjemce adresátka
+příjemce#příjemkyně$sluchátko$adresát$přijímač$adresátka$příjemce
 --
 had#had
-pochod#pochod pochodovat marka
+pochod#pochodovat$marka$pochod
 --
 civilizace#civilizace
 klasický#klasický
 přeložit#přeložit
-slabost#slabost slabina
+slabost#slabina$slabost
 chodba#chodba
 hrubý#hrubý
 --
 hypotéka#hypotéka
 ERROR
-vývojář#vývojář vývojka developer
-pověst#pověst legenda
+vývojář#vývojka$developer$vývojář
+pověst#legenda$pověst
 --
---#přinutit zesílit udržovat posílit potvrzovat potvrdit
+--#udržovat$posílit$potvrzovat$potvrdit$přinutit$zesílit
 občasný#občasný
 --
-minimum#minimální minimum
+minimum#minimální$minimum
 --#prozvonit
 spolehlivý#spolehlivý
 předměstí#předměstí
-tavit#tát tavit roztát
-bojovat#tvrdit snažit se bojovat
-prohlásit#prohlásit žádat prosit
+tavit#roztát$tát$tavit
+bojovat#snažit se$tvrdit$bojovat
+prohlásit#žádat$prosit$prohlásit
 psaný#psaný
-povodeň#záplava potopa nával povodeň
-kmen#pocházet kmen
-nevyhnutelný#nevyhnutelný předvídatelný očekávatelný
+povodeň#potopa$nával$záplava$povodeň
+kmen#pocházet$kmen
+nevyhnutelný#očekávatelný$předvídatelný$nevyhnutelný
 --
 džbán#džbán
 --
 --
 nezaměstnanost#nezaměstnanost
-kmen#skříň bedna chobot kufr kmen
+kmen#kufr$skříň$chobot$bedna$kmen
 privilegium#privilegium
 prasknout#prasknout
 architektura#architektura
-měsíční#měsíčník měsíčky měsíční měsíčně
-způsobit#způsobovat překládat poskytovat přeložit vynášet způsobit procházet poskytnout
+měsíční#měsíčník$měsíčně$měsíčky$měsíční
+způsobit#přeložit$poskytnout$poskytovat$způsobovat$překládat$procházet$vynášet$způsobit
 mainstreamový#mainstreamový
 --
 překážka#překážka
@@ -3159,154 +3159,154 @@ překážka#překážka
 past#past
 --
 loket#loket
-drb#drb fáma
-polykat#polykat lok hlt spolknout polknout vlaštovka
+drb#fáma$drb
+polykat#hlt$lok$polknout$vlaštovka$spolknout$polykat
 --#zákonodárný
-přednáška#přednášet poučovat přednáška
+přednáška#poučovat$přednášet$přednáška
 džíny#džíny
-kachna#dvojka kachna kačena kačka kachní
-svah#svah sklon
+kachna#kačka$dvojka$kachní$kačena$kachna
+svah#sklon$svah
 ERROR
-prohlídka#kontrola prohlídka inspekce
+prohlídka#inspekce$kontrola$prohlídka
 přísný#přísný
 --
 --
 --
-ERROR
+zjevně#patrně$zřejmě$zjevně
 podvod#podvod
 implementace#implementace
-lovit#lovecký lov hon lovit spolek hledat
-přítel#kluk milenec kamarád přítel
+lovit#hon$hledat$spolek$lov$lovecký$lovit
+přítel#kluk$milenec$kamarád$přítel
 integrace#integrace
-krysa#krysa potkan
-vysílání#relace program vysílání vysílat pořad
-korejský#Korejka korejský korejština Korejec
-nehet#nehet hřebík
+krysa#potkan$krysa
+vysílání#vysílat$relace$program$pořad$vysílání
+korejský#Korejka$korejština$Korejec$korejský
+nehet#hřebík$nehet
 pero#pero
 --
 společník#společník
-příšera#příšera potvora
+příšera#potvora$příšera
 noční můra#noční můra
 hovězí#hovězí
 --#porce
-zeměkoule#zeměkoule glóbus
+zeměkoule#glóbus$zeměkoule
 --
 parlament#parlament
 --
 ERROR
-tudíž#tudíž odtud proto
-půjčovat#půjčit půjčovat
---#šestina sexta
+tudíž#odtud$proto$tudíž
+půjčovat#půjčit$půjčovat
+--#sexta$šestina
 bláto#bláto
-čerpadlo#čerpat čerpadlo pumpa
+čerpadlo#čerpat$pumpa$čerpadlo
 mouka#mouka
 rukojmí#rukojmí
 vlastnictví#vlastnictví
 usnadnit#usnadnit
-suterén#sklep suterén
+suterén#sklep$suterén
 --
-spěch#spěchat spěch
+spěch#spěchat$spěch
 hmyz#hmyz
 --
 --#závěj
-doména#doména
+--#doména
 jeskyně#jeskyně
---#afroamerický Afroameričan
+--#afroamerický$Afroameričan
 --
 --
 --
 maximum#maximum
 pole#pole
 nečekaný#nečekaný
-závěs#závěs opona záclona
+závěs#záclona$opona$závěs
 sendvič#sendvič
-pokojný#klidný mírumilovný pokojný
+pokojný#klidný$mírumilovný$pokojný
 --
 předpověď#předpověď
-římský#římský Říman Římanka
+římský#Říman$Římanka$římský
 ideologie#ideologie
 --
-majetek#majetek vlastnictví
-roh#klakson roh
+majetek#vlastnictví$majetek
+roh#klakson$roh
 náhrada#náhrada
 oznámení#oznámení
 rybník#rybník
 odpouštět#odpouštět
-biskup#střelec biskup
+biskup#střelec$biskup
 --
 roztrhnout#roztrhnout
-náhodný#průměrný náhodný
+náhodný#průměrný$náhodný
 bylina#bylina
 --
-smetiště#skládka smetiště
+smetiště#skládka$smetiště
 vina#vina
-skot#skot dobytek
+skot#dobytek$skot
 kmen#kmen
 --
 chovat#chovat
-krystal#krystal křišťál
-popravit#vykonat konat popravit provádět vykonávat
+krystal#křišťál$krystal
+popravit#konat$provádět$vykonat$vykonávat$popravit
 zápěstí#zápěstí
-motiv#pohnutka motiv
-malíř#malíř malířka
-odsuzovat#mukl odsoudit odsouzený usvědčit odsuzovat
+motiv#pohnutka$motiv
+malíř#malířka$malíř
+odsuzovat#usvědčit$mukl$odsoudit$odsouzený$odsuzovat
 --#zároveň
 --
-očekávat#čekat očekávat
-ERROR
+očekávat#čekat$očekávat
+chodba#chodba
 dávka#dávka
 snášet#snášet
 --
-sát#být na dvě věci sát být na houby
+sát#být na houby$být na dvě věci$sát
 --
 --
 --
 --
 --
-zavřený#zavřený uzavřený
-něžný#zdvořilý laskavý přívětivý něžný
+zavřený#uzavřený$zavřený
+něžný#laskavý$přívětivý$zdvořilý$něžný
 separace#separace
-bojovník#válečník bojovník
+bojovník#válečník$bojovník
 --#přesvědčený
 jihozápad#jihozápad
-opilý#piják pijan opilý opilec
-venkovní#venkovní
-melodie#ladit melodie
+opilý#opilec$pijan$piják$opilý
+--#venkovní
+melodie#ladit$melodie
 poškození#poškození
-látka#tkanina látka plátno
-kdekoli#kamkoli kdekoli
-podat#spravovat podat
-dozorce#inspektor dozorce
+látka#tkanina$plátno$látka
+--#kamkoli$kdekoli
+podat#spravovat$podat
+dozorce#inspektor$dozorce
 kompromis#kompromis
 vděčný#vděčný
 --
 --
 --
-plavba#plavba
+--#plavba
 zranit#zranit
-sochařství#socha sochařství
+sochařství#socha$sochařství
 --
 spánek#spánek
-tanečník#tanečník tanečnice
+tanečník#tanečnice$tanečník
 ručník#ručník
 islám#islám
 nepřetržitý#nepřetržitý
-vládnout#vládnout řídit ovládat
-koruna#koruna temeno korunovat korunka
+vládnout#řídit$ovládat$vládnout
+koruna#temeno$korunovat$korunka$koruna
 --
 adolescent#adolescent
-sukně#sukně ženská
-ERROR
+sukně#ženská$sukně
+bakterie#bakterie
 --
 inteligentní#inteligentní
-chvála#chvála chválit
+chvála#chválit$chvála
 vnější#vnější
---#držadlo rukojeť
-hluboký#hluboký
-spoušť#spoušť spustit
+--#rukojeť$držadlo
+--#hluboký
+spoušť#spustit$spoušť
 --
 --
-nadšení#entuziasmus nadšení
+nadšení#entuziasmus$nadšení
 složitost#složitost
 --
 virtuální#virtuální
@@ -3317,19 +3317,19 @@ běžně#běžně
 nekonečný#nekonečný
 rétorika#rétorika
 rys#rys
-důchod#důchod penze penzion
+důchod#penze$penzion$důchod
 pravý#pravý
 pot#pot
 inovace#inovace
-měna#valuta měna
+měna#valuta$měna
 čtyřicet#čtyřicet
-předsíň#foyer předsíň lobby
+předsíň#foyer$lobby$předsíň
 teoretický#teoretický
-netopýr#netopýr letoun pálka
+netopýr#pálka$letoun$netopýr
 --
 příjemný#příjemný
 --
-hrozný#hrozný strašný
+hrozný#strašný$hrozný
 --
 --
 --#ulevit
@@ -3339,23 +3339,23 @@ hrozný#hrozný strašný
 --
 galaxie#galaxie
 --
-omlouvat#omlouvat omluvit
+omlouvat#omluvit$omlouvat
 --
 --
 palec#palec
 dotazník#dotazník
 chodník#chodník
-obchodník#obchodník podnikatel
-divný#zvláštní divný
+obchodník#podnikatel$obchodník
+divný#zvláštní$divný
 záření#záření
-formát#formát
-polekat#vylekat vyděsit polekat
+--#formát
+polekat#vyděsit$vylekat$polekat
 --#odrazit se
-panenka#panna panenka
+panenka#panna$panenka
 --
-jehla#jehlice jehla
+jehla#jehlice$jehla
 --
-přepravit#převést přepravit sdělit
+přepravit#převést$sdělit$přepravit
 --
 --
 --#twist
@@ -3367,83 +3367,83 @@ chůze#chůze
 --
 rebel#rebel
 dodávka#dodávka
-shodný#shodný totožný jednovaječný
-stud#hanba škoda ostuda stud
-choulostivý#jemný choulostivý
-ERROR
+shodný#totožný$jednovaječný$shodný
+stud#škoda$hanba$ostuda$stud
+--#choulostivý$jemný
+--
 ERROR
 poškození#poškození
-hák#připojit hák
+hák#připojit$hák
 poručík#poručík
-tvrdě#tvrdě pevně
+tvrdě#pevně$tvrdě
 --
 --
 čelo#čelo
-ERROR
+cestovatel#cestovatel
 smysluplný#smysluplný
 --
 kolonie#kolonie
 podpis#podpis
 --
 úředník#úředník
-věnovat se#představit věnovat otevírat otevřít věnovat se
+věnovat se#otevřít$představit$věnovat$otevírat$věnovat se
 --#určení
 --
-součet#částka součet suma
+součet#suma$částka$součet
 zmrzlý#zmrzlý
 --
 --
 trestat#trestat
 lézt#lézt
-při#vědomí při vědomý
+při#vědomí$vědomý$při
 plukovník#plukovník
 --
-přistání#přistání přístaviště
-doktrína#učení doktrína víra
+přistání#přístaviště$přistání
+doktrína#víra$učení$doktrína
 --
-papež#papež pop
+papež#pop$papež
 --
 --#historicky
 --
 plakát#plakát
 --#akvizice
 zachránit#zachránit
-odchod#odchod odjezd
-stručný#resumé stručný souhrn
+odchod#odjezd$odchod
+stručný#souhrn$resumé$stručný
 chronický#chronický
-pohledný#pohledný pěkný hezký
-objetí#objetí obejmout
+pohledný#pěkný$hezký$pohledný
+objetí#obejmout$objetí
 --
-snaha#snaha záliba úsilí zájmy
---#pobyt sídlo
-hlasitý#hlučný hlasitý
-slibný#nadějný slibný
-disk#deska disk
+snaha#zájmy$záliba$úsilí$snaha
+--#pobyt$sídlo
+hlasitý#hlučný$hlasitý
+slibný#nadějný$slibný
+disk#deska$disk
 --
 diagnóza#diagnóza
-průzkumník#průzkumník skaut
-škrtnout#vyrušit stornovat krátit zrušit škrtnout
+průzkumník#skaut$průzkumník
+zrušit#stornovat$škrtnout$krátit$vyrušit$zrušit
 --
 obálka#obálka
-ERROR
-břevno#paprsek břevno trám
+raději#spíš$spíše$raději
+břevno#paprsek$trám$břevno
 --
-choť#muž manželka žena choť manžel
-kapalina#tekutý tekutina proměnlivý kapalina
-východ#východ výjezd výstup
+choť#muž$žena$manželka$manžel$choť
+kapalina#tekutina$tekutý$proměnlivý$kapalina
+východ#výstup$výjezd$východ
 mírný#mírný
-ERROR
-vana#vana koupelna koupel koupání
+elektrický#elektrický
+vana#koupel$koupání$koupelna$vana
 slušný#slušný
 kotník#kotník
 transakce#transakce
 --
-jáma#box pecka depo jáma
+jáma#box$depo$pecka$jáma
 --
 kyslík#kyslík
-rasismus#rasizmus rasismus
+rasismus#rasizmus$rasismus
 pěst#pěst
-odpad#smetí odpad
+odpad#smetí$odpad
 kytara#kytara
 --
 --
@@ -3456,36 +3456,36 @@ příjemce#příjemce
 --
 lampa#lampa
 dárce#dárce
-spravit#opravit oprava spravit
+spravit#opravit$oprava$spravit
 --#ostře
 --#její
 --
 --#diplomatický
-purpurový#nachový purpurový fialový
-princezna#princezna kněžna
-svíce#svíčka svíce
-šlechetný#šlechetný štědrý
-nutnost#nouze nutnost
+purpurový#fialový$nachový$purpurový
+princezna#kněžna$princezna
+svíce#svíčka$svíce
+šlechetný#štědrý$šlechetný
+nutnost#nouze$nutnost
 --
 socha#socha
 --
 --
-blinkr#ukazatel blinkr
+blinkr#ukazatel$blinkr
 entita#entita
-končetina#větev úd končetina
-odvážný#odvážný smělý tučný
-váhat#zaváhat váhat
+končetina#úd$větev$končetina
+odvážný#smělý$tučný$odvážný
+váhat#zaváhat$váhat
 ERROR
 zmenšit#zmenšit
 --
 --
 --
-běs#výkřik móda běs hit
+běs#hit$móda$výkřik$běs
 destinace#destinace
 realistický#realistický
-záměr#úmysl cíl záměr
+záměr#cíl$úmysl$záměr
 metafora#metafora
-automobil#automobil auto
+automobil#auto$automobil
 produktivní#produktivní
 --
 --
@@ -3495,36 +3495,36 @@ divočina#divočina
 --
 štěstí#štěstí
 --
-vodítko#klíč narážka vodítko
+vodítko#narážka$klíč$vodítko
 --#jídlo
 výtah#výtah
 revoluční#revoluční
-posilovna#posilovna tělocvična
+posilovna#tělocvična$posilovna
 zklamaný#zklamaný
 částice#částice
 --#dynamický
 --#automaticky
-východ#zora úsvit východ svítání
+východ#úsvit$svítání$zora$východ
 --
 --#mechanický
 vitamín#vitamín
-hloupý#praštěný pošetilý bláhový pitomý hloupý
+hloupý#praštěný$pitomý$pošetilý$bláhový$hloupý
 umělý#umělý
 --
 loupat#loupat
-ústní#orální ústní
+ústní#orální$ústní
 --
 --
 osamělý#osamělý
-sluha#služka sluha služebník
+sluha#služka$služebník$sluha
 --
---#občanský městský
+--#městský$občanský
 --
 spolupracovat#spolupracovat
-náhodný#občasný brigádník náhodný
+náhodný#brigádník$občasný$náhodný
 --
 --
-přijetí#příjem recepce přijetí
+přijetí#příjem$recepce$přijetí
 --#oběť
 --
 --
@@ -3533,40 +3533,40 @@ fyzika#fyzika
 zmizet#zmizet
 --
 poledne#poledne
-drahocenný#drahocenný vzácný drahý
+drahocenný#drahý$vzácný$drahocenný
 --
 --
 pizza#pizza
 --
 hedvábí#hedvábí
-nabídka#žádat nabídka
-shromáždění#shromáždění schůze
+nabídka#žádat$nabídka
+shromáždění#schůze$shromáždění
 --
 --
-utrpení#muka utrpení
+utrpení#muka$utrpení
 přesnost#přesnost
 makléř#makléř
 --
 --
-příliv#příliv odliv
+příliv#odliv$příliv
 --
-ústní#ústní slovesný slovní
-sběratel#výběrčí sběratel
+--#slovesný$slovní$ústní
+sběratel#výběrčí$sběratel
 soudní#soudní
 --#pálivý
---#inventura inventář
-hlupák#šašek blboun hlupák blbec pošetilec blb pitomec ňouma blázen
+--#inventura$inventář
+hlupák#pitomec$ňouma$blázen$pošetilec$šašek$blboun$blbec$blb$hlupák
 --
-ERROR
+--
 --#dres
 --
 množství#množství
 --#údajný
-terapeut#terapeut
+--#terapeut
 ERROR
 --
 sodík#sodík
-lachtan#lachtan pečeť tuleň
+lachtan#tuleň$pečeť$lachtan
 přívěs#přívěs
 --
 spravedlnost#spravedlnost
@@ -3576,92 +3576,92 @@ směšný#směšný
 dilema#dilema
 výprava#výprava
 polštář#polštář
-ERROR
+nedávno#nedávno
 laser#laser
-tuhý#rigidní tuhý
+tuhý#rigidní$tuhý
 náš#náš
-zakazovat#zakazovat zakázat
+zakazovat#zakázat$zakazovat
 génius#génius
-startér#startér předkrm
+--#startér$předkrm
 --
-Kubánec#kubánský Kubánec
+Kubánec#kubánský$Kubánec
 --
 oběť#oběť
 --#oficiálně
 facka#facka
-tajemný#tajemný záhadný
+tajemný#záhadný$tajemný
 --
 vidlička#vidlička
 pozvání#pozvání
-plachta#plavba lopatka plout plachta věž plavit
+plachta#lopatka$plavba$věž$plavit$plout$plachta
 --
 --#karikatura
-ztuhlý#ztuhlý
+--#ztuhlý
 --
-dovoz#dovoz import
+dovoz#import$dovoz
 --#těsně
 rovnice#rovnice
 poklad#poklad
 čelist#čelist
 skenovat#skenovat
-proklít#proklít proklínat
+proklít#proklínat$proklít
 --
 --
 důstojnost#důstojnost
-nádech#inspirace nádech
-automatický#samočinný automatický
-kupec#obchodník kupec
-řecký#řečtina řecký Řek Řekyně
-nepřátelský#nepřátelský
---#delší rozlehlý rozšířený
+nádech#inspirace$nádech
+automatický#samočinný$automatický
+kupec#obchodník$kupec
+řecký#řečtina$Řek$Řekyně$řecký
+--#nepřátelský
+--#delší$rozlehlý$rozšířený
 vlast#vlast
 benzín#benzín
 gravitace#gravitace
 důkladně#důkladně
-luk#luk ohyb smyčec ohnout příď
+luk#smyčec$ohnout$ohyb$příď$luk
 sláva#sláva
 optimistický#optimistický
 četař#četař
 oběť#oběť
-udělit#udělit připustit přiznat připouštět uznat dostat inkasovat poskytnout
+udělit#inkasovat$poskytnout$připustit$přiznat$připouštět$uznat$dostat$udělit
 krvavý#krvavý
 stodola#stodola
-věnovat#darovat věnovat
+věnovat#darovat$věnovat
 spojit#spojit
-profík#profík pro klad
+profík#klad$pro$profík
 --
-žal#žal smutek
+žal#smutek$žal
 --
-prudký#strmý prudký příkrý
+prudký#strmý$příkrý$prudký
 --
-vymyslet#chápat otěhotnět počít pochopit vymyslet
-citlivý#platidlo něžný citlivý měkký
-kontinent#pevnina kontinent světadíl
-hardware#hardware zbraň
+vymyslet#chápat$počít$otěhotnět$pochopit$vymyslet
+citlivý#platidlo$něžný$měkký$citlivý
+kontinent#světadíl$pevnina$kontinent
+hardware#zbraň$hardware
 --#vybavit
 --
-výstup#výstup produkce
+výstup#produkce$výstup
 --
-starší#bezinka stařešina bez starší
+starší#bez$stařešina$bezinka$starší
 klec#klec
 --
 trpělivost#trpělivost
-mělký#povrchní mělčina mělký
+mělký#mělčina$povrchní$mělký
 zemětřesení#zemětřesení
 hlasování#hlasování
-vstup#vložit vstup
+vstup#vložit$vstup
 plátno#plátno
-klik#klepnout dojít klik sednout
+klik#dojít$sednout$klepnout$klik
 meč#meč
 --
 --
-štěnice#chyba štěnice brouk
-lednice#lednička chladnička lednice
+štěnice#chyba$brouk$štěnice
+lednice#lednička$chladnička$lednice
 severovýchod#severovýchod
 --#sedmina
-sloup#pošta sloup
+sloup#pošta$sloup
 --
-cizinec#ufoun cizinec mimozemšťan
+cizinec#ufoun$mimozemšťan$cizinec
 --#ochota
 skrytý#skrytý
 účetnictví#účetnictví
@@ -3669,41 +3669,41 @@ skrytý#skrytý
 --
 --
 --
-zřícenina#ruina zruinovat zřícenina
-buben#buben barel
+zřícenina#zruinovat$ruina$zřícenina
+buben#barel$buben
 --
 --
 --#ideologický
 odradit#odradit
-kanál#průplav kanál
+kanál#průplav$kanál
 --
 --#ochranný
 spiknutí#spiknutí
-pára#pára dusit
+pára#dusit$pára
 velvyslanectví#velvyslanectví
---#skládka složit
+--#skládka$složit
 tropický#tropický
-okamžitě#ihned okamžitě
+okamžitě#ihned$okamžitě
 bublina#bublina
-klidný#klidný uklidnit klid
-ovce#ovce ovčan
+klidný#klid$uklidnit$klidný
+ovce#ovčan$ovce
 přízvuk#přízvuk
-pochopit#pochopit porozumění
+pochopit#porozumění$pochopit
 --
 --
 toxický#toxický
 smíšený#smíšený
 --
-ERROR
+později#poté$později
 --
 --
 vakcína#vakcína
-památník#památník pomník monument
-výrok#rozsudek výrok
+památník#monument$pomník$památník
+výrok#rozsudek$výrok
 ohebný#ohebný
-prohlášení#prohlášení deklarace
-kostým#oblek kostým
-zásuvka#zásuvka kreslířka šuplík
+prohlášení#deklarace$prohlášení
+kostým#oblek$kostým
+zásuvka#kreslířka$šuplík$zásuvka
 žehnat#žehnat
 --#skřipec
 ERROR
@@ -3712,21 +3712,21 @@ okouzlující#okouzlující
 --
 empatie#empatie
 --
-unce#unce
+--#unce
 zadní#zadní
-hostinec#hostinec ubytovna
-spolupráce#spolupráce kolaborace
+hostinec#ubytovna$hostinec
+spolupráce#kolaborace$spolupráce
 --#stříhat
 --
-fusekle#ponožka fusekle
+fusekle#ponožka$fusekle
 --
 zjevení#zjevení
 --
 --
-kouzlo#kouzlo tvořit
+kouzlo#tvořit$kouzlo
 evangelium#evangelium
 velryba#velryba
-ERROR
+divadlo#divadlo
 --
 talentovaný#talentovaný
 --
@@ -3734,86 +3734,86 @@ talentovaný#talentovaný
 izolace#izolace
 --
 tragický#tragický
-instinkt#pud instinkt
+instinkt#pud$instinkt
 --
 --#základní
 --#vlivný
 --
 --
---#hopsat přeskočit
+--#přeskočit$hopsat
 jedenáct#jedenáct
 --
 --
 předek#předek
 --
 --
---#exotický exot
+--#exot$exotický
 --#minimální
 --
-perština#perský Peršanka perština Peršan
+perština#Peršanka$perský$Peršan$perština
 --#rodičovský
 orchestr#orchestr
 pokladna#pokladna
 tolerovat#tolerovat
 --#galon
 stehno#stehno
---#naštěstí
+naštěstí#naštěstí
 --
 --#aktivně
 --
-sklenice#nádoba sklenice
+sklenice#nádoba$sklenice
 kokain#kokain
 --
-následně#následně potažmo
---#dokument dokumentární
+následně#potažmo$následně
+--#dokumentární$dokument
 --
-ctižádost#ambice ctižádost
-funkční#funkční funkcionální
-úpadek#bankrot úpadek
+ctižádost#ambice$ctižádost
+funkční#funkcionální$funkční
+úpadek#bankrot$úpadek
 --#běhoun
-provedení#poprava provedení
-drtit#rozbít drtit rozdrtit
+provedení#poprava$provedení
+drtit#rozdrtit$rozbít$drtit
 --
 pracoviště#pracoviště
 lebka#lebka
-provaz#šňůra provaz
+provaz#šňůra$provaz
 --
 --
 --
 --#spolehlivost
 --#očekávaný
-nežit#nežit beďar uvařit vařit var bod varu
-bič#bičovat bič
-božský#boží božský
-návrh#návrh věta nabídka výrok
+nežit#bod varu$beďar$vařit$var$uvařit$nežit
+bič#bičovat$bič
+božský#boží$božský
+návrh#nabídka$věta$výrok$návrh
 --
 oprava#oprava
 deník#deník
-hnízdo#hnízdo útočiště
+hnízdo#útočiště$hnízdo
 --
 ERROR
 --
 výživa#výživa
-vánek#vánek brnkačka hračka
+vánek#brnkačka$hračka$vánek
 iluze#iluze
-bezejmenný#anonymní bezejmenný
+bezejmenný#anonymní$bezejmenný
 --
 --
 --
 zkušený#zkušený
-hrad#zámek hrad
+hrad#zámek$hrad
 využít#využít
 ERROR
 cukrovka#cukrovka
-překlad#překlad převod
-holandský#holandština Holanďanka Nizozemec Holanďan Nizozemka holandský nizozemština nizozemský
+překlad#převod$překlad
+holandský#holandština$nizozemština$Holanďan$Holanďanka$nizozemský$Nizozemec$Nizozemka$holandský
 ironie#ironie
 --
-ERROR
-králík#králík žvanit
+--
+králík#žvanit$králík
 mýdlo#mýdlo
-stánek#box prodejní výstavní stánek budka
---#imunní imunitní
+stánek#výstavní$budka$prodejní$box$stánek
+--#imunitní$imunní
 --
 --
 --#lézt
@@ -3821,15 +3821,15 @@ stánek#box prodejní výstavní stánek budka
 --#děrovačka
 --#veletucet
 pasivum#pasivum
-dostupný#přístupný dostupný
+dostupný#přístupný$dostupný
 mechanik#mechanik
-debil#idiot prdel debil
+debil#idiot$prdel$debil
 estetický#estetický
 --
 pas#pas
 --
-odvážný#statečný odvážný
-smyčka#smyčka cyklus
+odvážný#statečný$odvážný
+smyčka#cyklus$smyčka
 --
 částečně#částečně
 --#statistický
@@ -3840,7 +3840,7 @@ smyčka#smyčka cyklus
 syndrom#syndrom
 --
 --
-odpad#smetí odpad
+odpad#smetí$odpad
 --
 sebeúcta#sebeúcta
 předběžný#předběžný
@@ -3850,27 +3850,27 @@ předběžný#předběžný
 horečka#horečka
 panika#panika
 charta#charta
---#vyhlídka výhled
+--#vyhlídka$výhled
 pečovat#pečovat
---#obsahovat tvořit zahrnovat
+--#tvořit$obsahovat$zahrnovat
 --#známý
 --
---#krátkodobý provizorní
+--#krátkodobý$provizorní
 kůlna#kůlna
 --#družstvo
-ulička#alej ulička
-subvence#subvence podpora
+ulička#alej$ulička
+subvence#podpora$subvence
 světský#světský
-ERROR
+hliník#hliník
 útes#útes
 gram#gram
 --
 --
-vtrhnout#napadnout napadat vtrhnout
+vtrhnout#napadat$napadnout$vtrhnout
 --
 --
-plachý#plachý bázlivý opatrný odměřený
-mince#razit mince
+plachý#opatrný$bázlivý$odměřený$plachý
+mince#razit$mince
 --
 --
 vazba#vazba
@@ -3879,18 +3879,18 @@ lžíce#lžíce
 včela#včela
 --
 --#interagovat
-proklínat#proklít sakra proklínat
-hráz#hráz přehrada
+sakra#sakra
+hráz#přehrada$hráz
 --
 --
-kapalina#tekutý tekutina kapalný kapalina
+kapalina#tekutina$tekutý$kapalný$kapalina
 --
-houba#hřib houba
+houba#hřib$houba
 postižený#postižený
 ERROR
 --
-nutit#přinutit nutit donutit
-skončit#ukončit zastavit přestat skončit
+nutit#přinutit$donutit$nutit
+skončit#zastavit$ukončit$přestat$skončit
 zdobit#zdobit
 --
 --
@@ -3905,16 +3905,16 @@ pověstný#pověstný
 dar#dar
 --#zoufale
 ERROR
---
+--#podvést
 --
 senzace#senzace
 podnikatel#podnikatel
-oznámit#oznámit oznamovat vykládat
+oznámit#vykládat$oznamovat$oznámit
 dodavatel#dodavatel
-soupeř#rivalka sokyně sok rival soupeř
-připomínka#urgence připomínka
-léčit#vyléčit léčit
-zvíře#zvíře živočich
+soupeř#sok$rivalka$rival$sokyně$soupeř
+připomínka#urgence$připomínka
+léčit#vyléčit$léčit
+zvíře#živočich$zvíře
 --
 --#zásluha
 --
@@ -3925,30 +3925,30 @@ průkopník#průkopník
 biologie#biologie
 fotografie#fotografie
 --
-peněženka#kabelka peněženka
+peněženka#kabelka$peněženka
 --
-souhlasit#souhlasit souhlas
+souhlasit#souhlas$souhlasit
 --
 předvečer#předvečer
 --
 --
-rybář#rybářka rybář
+rybář#rybářka$rybář
 --#citlivost
 --
-stoh#stoh zásobník kupa
+stoh#kupa$zásobník$stoh
 vepřové#vepřové
 --
-okamžik#moment okamžik
+okamžik#moment$okamžik
 tep#tep
 outsider#outsider
 helma#helma
 žebřík#žebřík
 --
-krutý#krutý naprostý divoký zlý
+krutý#naprostý$divoký$zlý$krutý
 ERROR
 zmenšit#zmenšit
 roztomilý#roztomilý
-tečka#bod tečka bodka
+tečka#bodka$bod$tečka
 --
 filtr#filtr
 --
@@ -3956,11 +3956,11 @@ filtr#filtr
 videokazeta#videokazeta
 částečný#částečný
 patent#patent
-tác#podnos tác
+tác#podnos$tác
 džungle#džungle
 klasifikovat#klasifikovat
 specialita#specialita
-špinavý#špinavý sprostý odporný protivný
+špinavý#protivný$sprostý$odporný$špinavý
 ulička#ulička
 graf#graf
 --
@@ -3970,32 +3970,32 @@ bankéř#bankéř
 --
 plavání#plavání
 --
-účast#docházka účast
+účast#docházka$účast
 neformální#neformální
 pytel#pytel
 --
---#předpoklad premisa
+--#předpoklad$premisa
 --#mřížka
 --
-barevný#pestrý barevný
+barevný#pestrý$barevný
 hokej#hokej
 --
-límec#chomout obojek límec
+límec#obojek$chomout$límec
 dýchání#dýchání
 --#logický
 blesk#blesk
 --#sušený
 sleva#sleva
-jediný#jediný podrážka chodidlo
+jediný#podrážka$chodidlo$jediný
 chválit#chválit
-etiketa#honěná značka označit etiketa cedulka
+etiketa#označit$honěná$cedulka$značka$etiketa
 sourozenec#sourozenec
-kamna#pec kamna
-trenér#trenér trenérka
-svislý#vertikální svislý
+kamna#pec$kamna
+trenér#trenérka$trenér
+svislý#vertikální$svislý
 ERROR
 --
-léčba#lék vyléčit léčba léčit
+léčba#vyléčit$lék$léčit$léčba
 --
 --#organizační
 kreveta#kreveta
@@ -4005,13 +4005,13 @@ kreveta#kreveta
 --#diář
 --#údajně
 podobně#podobně
-opičák#opičák opice
-mýtné#zvonit mýto mýtné
+opičák#opice$opičák
+mýtné#zvonit$mýto$mýtné
 --
 --
-kolo#bicykl kolo
-postoj#postoj názor pohled
-oběžná dráha#orbita oběžná dráha vyslat
+kolo#bicykl$kolo
+postoj#názor$pohled$postoj
+oběžná dráha#vyslat$orbita$oběžná dráha
 hormon#hormon
 --
 organismus#organismus
@@ -4020,52 +4020,52 @@ nasadit#nasadit
 --
 --
 --
-záhada#záhada hádanka hlavolam
+záhada#hádanka$hlavolam$záhada
 ikona#ikona
 --
 ERROR
 --
-flota#flota loďstvo
+flota#loďstvo$flota
 --
 --
 --
 --
-výrazný#výrazný nápadný
+výrazný#nápadný$výrazný
 křesťanství#křesťanství
 --
 zklamání#zklamání
 rukáv#rukáv
 --
 pšenice#pšenice
-kus#kousek kus
+kus#kousek$kus
 --
 útočiště#útočiště
 --#mezera
 --
 značně#značně
-pohraničí#hranice pohraničí
+pohraničí#hranice$pohraničí
 podezřelý#podezřelý
 početí#početí
 péro#péro
-slon#slonice slon
-učebnice#učebnicový učebnice
-zahlédnout#zahlédnout
+slon#slonice$slon
+učebnice#učebnicový$učebnice
+--#zahlédnout
 --
 --
 --
-sféra#sféra koule
-hlad#hlad hladovět
+sféra#koule$sféra
+hlad#hladovět$hlad
 hustota#hustota
 --
 --#vyvážený
 protokol#protokol
 zákonodárkyně#zákonodárkyně
-aukce#dražba aukce
+aukce#dražba$aukce
 rovnost#rovnost
-nebezpečný#nebezpečný riskantní
-ERROR
+nebezpečný#riskantní$nebezpečný
+hřbitov#krchov$hřbitov
 stavitel#stavitel
-vzhůru#vzhůru vzbudit
+vzhůru#vzbudit$vzhůru
 --
 --
 --
@@ -4080,79 +4080,79 @@ podobnost#podobnost
 tužka#tužka
 výpočet#výpočet
 tolerance#tolerance
-hvězdář#hvězdář astronomka astronom
+hvězdář#astronom$astronomka$hvězdář
 --
 interval#interval
-zápisník#zápisník notebook notes sešit blok
+zápisník#sešit$blok$notes$notebook$zápisník
 žánr#žánr
 --
 --
 žebro#žebro
 vůně#vůně
 --
-řídit#hnát vykastrovat řídit směřovat kastrovat vůl
+řídit#vykastrovat$kastrovat$směřovat$vůl$hnát$řídit
 --
-žralok#šejdíř žralok
+žralok#šejdíř$žralok
 --
 --
-debilní#debilní blbý
-dříve#kdysi dříve
+debilní#blbý$debilní
+dříve#kdysi$dříve
 --
 --
 trosky#trosky
-rolník#rolník sedlák
+rolník#sedlák$rolník
 --
-čistý#úhledný bezvadný čistý
-platný#platný
-království#říše království
-jedině#jedině pouze
+čistý#úhledný$bezvadný$čistý
+--#platný
+království#říše$království
+jedině#pouze$jedině
 --
-litovat#lítost litovat
+litovat#lítost$litovat
 městský#městský
 vložit#vložit
-doprava#transportér doprava
+--#doprava$transportér
 těsto#těsto
-víko#víčko poklička víko
+víko#víčko$poklička$víko
 --#dobrovolný
 --
 --
 ERROR
 námitka#námitka
-prospívat#dařit se prospívat růst
+prospívat#růst$dařit se$prospívat
 --
 --
 --
 nešťastný#nešťastný
-rallye#výměna rally rallye
+--#rallye$rally$výměna
 škrábanec#škrábanec
 robot#robot
 --
 supermarket#supermarket
-mrkat#mrknout blikat mrkat
---#rozumový filozofický
-šťastně#blaze šťastně
-nit#vlákno nit
-údajně#prý údajně prej
+mrkat#mrknout$blikat$mrkat
+--#filozofický$rozumový
+šťastně#blaze$šťastně
+nit#vlákno$nit
+údajně#prej$prý$údajně
 popel#popel
 dynamika#dynamika
 odmítnutí#odmítnutí
-nepokoj#vřava nepokoj
+nepokoj#vřava$nepokoj
 --
 --
-brada#brada vous
-vdova#vdova slaměná vdova
+brada#vous$brada
+vdova#slaměná vdova$vdova
 zločinec#zločinec
 --
 --
-zadek#prdel hýždě zadek oharek vajgl špaček pažba
-zakazovat#zakazovat zakázat
+zadek#špaček$oharek$vajgl$prdel$hýždě$pažba$zadek
+zakazovat#zakázat$zakazovat
 migrace#migrace
-mrkev#mrkev cukr
-soulad#harmonie soulad
+mrkev#cukr$mrkev
+soulad#harmonie$soulad
 --
 --
-plevel#plevel tráva
---#vyčerpat výfuk
+plevel#tráva$plevel
+--#výfuk$vyčerpat
 těstoviny#těstoviny
 ERROR
 zlomek#zlomek
@@ -4160,9 +4160,9 @@ zlomek#zlomek
 --
 --
 --
-vhodný#vhodný vyhovující
+vhodný#vyhovující$vhodný
 --
-otrokářství#otrokářství otroctví
+otrokářství#otroctví$otrokářství
 balón#balón
 --
 nabitý#nabitý
@@ -4170,45 +4170,45 @@ játra#játra
 posluchač#posluchač
 --
 --
-zboží#produkt zboží
-srst#srst kožešina
+zboží#produkt$zboží
+srst#kožešina$srst
 --
 odstranění#odstranění
-koza#koza kozel
+koza#kozel$koza
 akcionář#akcionář
 expedice#expedice
 věrný#věrný
 svědomí#svědomí
 křehký#křehký
 kalendář#kalendář
-minerál#nerost minerál minerální
+minerál#nerost$minerální$minerál
 příchod#příchod
-jízdné#jíst cestovat cestující vyjít dopadnout jízdné vycházet jít
-požehnání#požehnání žehnání
+jízdné#cestující$dopadnout$jíst$cestovat$vyjít$vycházet$jít$jízdné
+požehnání#žehnání$požehnání
 osvobození#osvobození
-biftek#biftek steak
+biftek#steak$biftek
 ekologický#ekologický
-banán#banánový banánovník banán
+banán#banánový$banánovník$banán
 ERROR
 --
 --
-mobilní#pohyblivý mobilní
-sláma#sláma slaměný
+mobilní#pohyblivý$mobilní
+sláma#slaměný$sláma
 --#prognóza
-guma#pryž guma
+guma#pryž$guma
 --
 sousední#sousední
 --
-ERROR
+--#příznivý
 --
 --
-terén#terén reliéf
-explicitní#explicitní vulgární otevřený
+terén#reliéf$terén
+explicitní#otevřený$vulgární$explicitní
 integrovaný#integrovaný
 --
-pohovka#pohovka gauč sofa divan
-vrut#šroub vrut šoustat
-štít#chránit štít kryt
+pohovka#gauč$divan$sofa$pohovka
+vrut#šroub$šoustat$vrut
+štít#kryt$chránit$štít
 vynález#vynález
 ERROR
 krutý#krutý
@@ -4216,59 +4216,59 @@ bombardér#bombardér
 dráždit#dráždit
 autonomie#autonomie
 --
-ústup#stáhnout ústup útočiště
+ústup#stáhnout$útočiště$ústup
 teologie#teologie
 --
 --
 --
 ERROR
---#vysílat šířit
+--#vysílat$šířit
 --
 --
 matematika#matematika
 staromódní#staromódní
-ERROR
+zákonodárkyně#zákonodárkyně
 práh#práh
 radar#radar
 zřídka#zřídka
 --
 --
 špión#špión
-zákazník#příznivec zákazník
+zákazník#příznivec$zákazník
 --
-do#orat do kasa
+do#orat$kasa$do
 ochromit#ochromit
 souřadnice#souřadnice
 prodejce#prodejce
-úlomek#fragment zlomek úlomek střep
-kladivo#kladívko kladivo
-seminář#seminář
+úlomek#střep$zlomek$fragment$úlomek
+kladivo#kladívko$kladivo
+--#seminář
 --
 arašíd#arašíd
 fantastický#fantastický
-vyrazit#odjet odejít vyrazit
+vyrazit#odejít$odjet$vyrazit
 --
---#upřesnit určit
+--#určit$upřesnit
 --
 --
 artefakt#artefakt
 povodí#povodí
 --
 hrozen#hrozen
---#já ego
+--#ego$já
 někdy#někdy
 --#organizovaný
 půvab#půvab
 svetr#svetr
 --
 --#spekulovat
-rozkoš#potěšení rozkoš požitek
+rozkoš#požitek$potěšení$rozkoš
 únava#únava
 --
 --
 --
 turistika#turistika
-teplo#teplo
+--#teplo
 --
 aktualizovat#aktualizovat
 obvinění#obvinění
@@ -4282,7 +4282,7 @@ pohodlí#pohodlí
 --
 --#diktovat
 --
-obránce#obránkyně obránce
+obránce#obránkyně$obránce
 --
 --
 taška#taška
@@ -4290,22 +4290,22 @@ cizinec#cizinec
 --
 občanství#občanství
 náměstí#náměstí
-navrhnout#navrhnout vymyslet
+navrhnout#vymyslet$navrhnout
 --
 chemie#chemie
 --
 vrozený#vrozený
-nebezpečí#překážka riziko nebezpečí
-zduřet#opuchnout zduřet
+nebezpečí#riziko$překážka$nebezpečí
+zduřet#opuchnout$zduřet
 nevěsta#nevěsta
-procesor#procesor
+--#procesor
 --#lopata
 --
-feministický#feministický feminista feministka
+feminista#feministka$feministický$feminista
 nádor#nádor
 omluva#omluva
 --
-šíp#šipka střela šíp
+šíp#střela$šipka$šíp
 --
 slunečný#slunečný
 technik#technik
@@ -4314,48 +4314,48 @@ mlha#mlha
 --
 mortalita#mortalita
 --
-odpovědnost#odpovědnost
+--#odpovědnost
 --
 --
 --
-podnět#narážka podnět kvé tágo signál
+podnět#signál$kvé$tágo$narážka$podnět
 epidemie#epidemie
 --
 --
 diplomat#diplomat
-stuha#páska stuha
+stuha#páska$stuha
 přechod#přechod
 --
-kleknout#pokleknout klečet kleknout
-prodavač#prodejce prodavač prodávající prodavačka
+kleknout#pokleknout$klečet$kleknout
+prodavač#prodavačka$prodávající$prodejce$prodavač
 --#osudový
 --
 blahobyt#blahobyt
-praní#praní prádelna prádlo
-přiznání#zpověď přiznání
+praní#prádlo$prádelna$praní
+přiznání#zpověď$přiznání
 --
 hustý#hustý
-zrychlit#zrychlit urychlit
-hold#hold úcta daň
+zrychlit#urychlit$zrychlit
+hold#daň$úcta$hold
 kouření#kouření
 --
-mramor#kulička mramor
+mramor#kulička$mramor
 bavit#bavit
 nudný#nudný
 --
 bizarní#bizarní
 --
-utopit#utopit topit potopit
+utopit#topit$potopit$utopit
 životopis#životopis
 --
 --
 --
 --
 čočka#čočka
-rožeň#rožeň slina
+rožeň#slina$rožeň
 --
-sklad#sklad skladiště
-ráj#nebesa ráj
+sklad#skladiště$sklad
+ráj#nebesa$ráj
 --
 --
 --#nešťastník
@@ -4364,7 +4364,7 @@ vnouče#vnouče
 --#kázat
 --
 stereotyp#stereotyp
-bulva#bulva hlíza
+bulva#hlíza$bulva
 tkát#tkát
 fúze#fúze
 --
