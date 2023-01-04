@@ -26,3 +26,5 @@ Total callback hell. Yuck.
 If you rewrite document.innerHTML, you erase all eventlisteners, thereby ruining some websites.
 Also if some webpages use <script> tags, sometimes if you try to rewrite those, Chrome will see your extension tryijng to
 insert arbitrary javascript into the page and shut your extension down. So, will use TreeWalker to comb the pages.
+
+The final 20% of the work really does take 80% of the time.

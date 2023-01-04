@@ -55,7 +55,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		ACTIVATE = false;
 		print("Deactivating")
 		if (OG_TEXT_NODES){
-			weave_nodes(OG_TEXT)
+			weave_nodes(OG_TEXT, false)
 		}
 		sendResponse();
 
@@ -108,10 +108,15 @@ function just_go() {
 }
 
 
-function weave_nodes(node_list){
+function weave_nodes(node_list, safe=true){
 	print("weaving nodes")
+	print(node_list)
 	let newnode = null;
 	for (let i = 0; i < node_list.length; i++){
+		// fix to not break my donation page. Only change text items that have been edited.
+		if (safe && !node_list[i].includes("<span class=\"a\"")) {
+			continue
+		}
 		try {
 			newnode = document.createElement("span");
 			newnode.innerHTML = node_list[i];
@@ -219,7 +224,7 @@ function getTextNodes(parent = document.body){
     let all = [];
 
     for (parent = parent.firstChild; parent; parent = parent.nextSibling) {
-        if (['SCRIPT','STYLE', 'A', 'CODE', "BUTTON"].indexOf(parent.tagName) >= 0) {
+        if (['SCRIPT','STYLE', 'A', 'CODE', 'BUTTON'].indexOf(parent.tagName) >= 0) {
 			continue;
 		}
         if (parent.nodeType === Node.TEXT_NODE && parent.data.trim()) {

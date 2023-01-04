@@ -27,31 +27,25 @@
 
     </style>
 </head>
-<body style="align-items: center; margin: auto; min-width: 300px; background: linear-gradient(rgba(255,255,255,.94), rgba(255,255,255,.94)), url('../images/bckgrnmarble.jpg'); max-width: 1000px;">
+<body style="align-items: center; margin: auto; min-width: 300px; background: linear-gradient(rgba(255,255,255,.91), rgba(255,255,255,.91)), url('../images/bckgrnmarble.jpg'); max-width: 1000px;">
 
     <div class="myPadding">
+
         <div class="boxdiv" style="text-align:center">
             <br>
 
             <select id="LanguageSelect">
-                <option value="" id="defaultopt" disabled="disabled" selected="selected">Please select a language</option>
+                <option value="" id="defaultopt" disabled="disabled" selected="selected">Select a Language to Start</option>
             </select>
-            <br>
+
             <br>
 
             <div style="transform: rotate(-1deg); alignment:center; font-size: 66px; font-family: 'Gelasio', serif;"  id="Title">-glish</div>
-
             <br>
-
-            <input type="checkbox" value="activated" id="Activated" /> <label for="Activated">Enable this app</label>
-            <br>
-
-
-
-
+            <input type="checkbox" value="activated" id="Activated" /> <label for="Activated">Enable app</label>
 
         </div>
-    <br>
+        <br>
         <div class="boxdiv" style="text-align: center">
             <br>
             <div>
@@ -71,8 +65,7 @@
             </div>
             <input type="range" id="Chance" min="0" max="100" value="5" step="5" title="Raise or lower the number of words translated per page. 0% means no vocabulary words will be translated and 100% means every found vocabulary word will be converted."/>
             <br>
-            <br>
-            <p style="text-align: left"><em>&nbsp;&nbsp;&nbsp;&nbsp;You selected a <strong><span id="Chance2">5</span>%</strong> chance to translate words from a vocabulary list with <strong><span id="size2">0</span></strong> unique words in it.</em></p>
+            <p style="text-align: left"><em>&nbsp;&nbsp;&nbsp;&nbsp;There is a <strong><span id="Chance2">5</span>%</strong> chance to translate words from a vocabulary list with <strong><span id="size2">0</span></strong> unique words in it.</em></p>
             <p style="color:red; text-align: left; transform: rotate(-7deg);" id="warning"></p>
 
         </div>
@@ -97,6 +90,13 @@
             <div class="myPadding">
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Thank you for downloading! While you browse as normal, random words will be automatically translated into your target language.
                     To begin, all you need to do is select a language. I recommend pinning the extension's icon to your browser.
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Use this app as an accompaniment to other language lessons. It is nothing more than a flashcard app integrated into your web browser.
+                    You will be shown foreign words in the context of an English sentence, enabling you to use the sentence's meaning to familiarize yourself with the meaning of the foreign word.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;While I've tried my best, there will still be many words translated incorrectly given the sentence. It is up to you to differentiate good from poor translations.
+                    The quality of this app is not gauranteed, as the translations for the dozen+ languages were algorithmically prepared, and not necessarily checked by hand.
+                    Do not attempt to use this app to learn grammar.
                 </p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;The translated words come from a dictionary which uses the first 4000 most common words ordered by frequency.
                     As you progress through the dictionary, rarer words are encountered.</p>
