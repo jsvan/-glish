@@ -15,7 +15,7 @@ Available languages in version 1.0 are:
 * japanese
 * korean
 * portuguese
-* (Ukrainian sometime later)
+* ukrainian
 * russian
 * spanish
 * turkish
@@ -49,10 +49,5 @@ Here are examples of what it does to your page. Words are replaced with foreign 
 
 Hovering your mouse over translated words will reveal the original text in English. Clicking (& holding) on a word will open that word's foreign language page in wikipedia.
 
-Still in alpha mode so let me know what you think
+Alpha version
 
-
-
-
-TODO:
-* Look into stemmijng words etc. to find translations
