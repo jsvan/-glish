@@ -29,7 +29,7 @@ def main():
 			scraper.html_to_filled_vocab_dict(word, force=True)
 		except Exception as e:
 			print('\rRetrying: ', i, '/', len(listofenglishwords), end='. Waiting 10 seconds. ')
-			time.sleep(10) # wait 10 seconds before trying again
+			time.sleep(4) # wait 4 seconds before trying again
 			scraper.html_to_filled_vocab_dict(word, force=True)
 
 	print("\nsaving to disk")

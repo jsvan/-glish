@@ -396,7 +396,7 @@ function replaceNodeVocab(node, idint){
 	if (!node.trim()){
 		return [node, idint]
 	}
-	const words = node.split(' ');
+	const words = node.split('$');
 	const newwords = [];
 	let word = null;
 	for (let i=0; i< words.length; i++){
@@ -426,7 +426,7 @@ function in_working(word) {
 }
 
 function subpar_word(fwordlst) {
-	fwordlst = fwordlst.split(' ')
+	fwordlst = fwordlst.split('$')
 	fwordlst.push('')
 	const r = Math.floor(Math.random() * fwordlst.length)
 	if (!fwordlst[r]){

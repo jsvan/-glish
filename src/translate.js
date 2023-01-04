@@ -10,7 +10,7 @@ let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
 const TIMEOUT = 250;
-const DEBUG = false;
+const DEBUG = true;
 
 /*
 
@@ -117,7 +117,7 @@ function weave_nodes(node_list){
 	for (let i = 0; i < node_list.length; i++){
 
 		// fix to not break my donation page. Only change text items that have been edited. Or change back to normal those that have been
-		if (WEB_PAGE_NODES[i].innerHTML && !node_list[i].includes("<span class=\"a\"") && !WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"a\"")) {
+		if (!node_list[i].includes("<span class=\"a\"") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"a\"")) ){
 			continue
 		}
 		try {
@@ -161,7 +161,7 @@ function rotateWord(e){
 	if (!t || !t.classList.contains('a')) {
 		return;
 	}
-	const otherwords = t.dataset.nvoc.split(' ');
+	const otherwords = t.dataset.nvoc.split('$');
 	if (otherwords.length === 1) {
 		//flash word red
 		const og_color = t.style.color;

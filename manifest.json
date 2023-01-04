@@ -7,6 +7,7 @@
     {
       "matches": ["https://*/*", "http://*/*"],
       "js": ["src/translate.js"],
+      "exclude_globs": ["*://*mail*.*/*"],
       "css": ["src/hoverover.css"]
     }
   ],

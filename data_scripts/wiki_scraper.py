@@ -11,9 +11,6 @@ class Scraper:
 			self.short_2_langname = {x.split('\t')[1]:self.uppercase(x.split('\t')[0]) for x in F.read().split('\n')}
 			self.cpl_language_dict = {x:dict() for x in self.short_2_langname.values()}
 
-		# re.compile("^([a-z][a-z]:)")
-				# f = [soup.find_all("a", {'title': myreg}) for x in frames]
-				# (ab|cd|ef):
 		self.myreg = re.compile("^(" + '|'.join(list(self.short_2_langname.keys())) + "):")
 
 	def html_to_filled_vocab_dict(self, engword, force=False):
@@ -32,23 +29,57 @@ class Scraper:
 			# urllib3.exceptions.ProtocolError, requests.exceptions.ConnectionError, http.client.RemoteDisconnected, requests.exceptions.ReadTimeout, urllib3.exceptions.ReadTimeoutError, TimeoutError
 
 
+	"""
+	<div class="pseudo NavFrame">
+		<div class="NavHead" style="text-align: left;">
+			a place where the dead are buried
+			<span style="font-weight: normal">
+				—
+				<i>
+					see
+				</i>
+			</span>
+			<a href="/wiki/graveyard" title="graveyard">
+				graveyard
+			</a>
+		</div>
+	</div>
+
+	"""
+
 	def _getWordsFromTables(self, url, word):
 		shortlang_translation_tuple = []
-		# print(url, word)
-		try:
+
+		def _get_soup(url):
 			time.sleep(0.3)
 			r = requests.get(url, timeout=10)
 			html = r.content
-			soup = BeautifulSoup(html, parser='lxml')
-			frames = [frame for frame in soup.find_all('div', { 'class' : 'NavFrame' }) if "id" in frame.attrs and frame["id"].startswith("Translation") ]
+			return BeautifulSoup(html, parser='lxml')
+
+
+
+		try:
+
+			htmlpage = _get_soup(url)
+			frames = [frame for frame in htmlpage.find_all('div', { 'class' : 'NavFrame' }) if "id" in frame.attrs and frame["id"].startswith("Translation") ]
+
+			if not frames:
+				frame = htmlpage.find('div', { 'class' : 'NavHead' })
+				newlink = frame.find("a").get("href")
+				newurl = "https://en.wiktionary.org" + newlink
+				print("redicrecting to:", newurl)
+				htmlpage = _get_soup(newurl)
+				frames = [frame for frame in htmlpage.find_all('div', { 'class' : 'NavFrame' }) if "id" in frame.attrs and frame["id"].startswith("Translation") ]
+
 			groupoflinkedwords = [x.find_all("a", {'title': self.myreg}) for x in frames]
+
 			for linkedwords in groupoflinkedwords:
 				shortlang_translation_tuple.append([])
 				for linkedword in linkedwords:
 					shortlang_translation_tuple[-1].append(linkedword['title'].split(':'))
 
 		except Exception as e:
-			print(e, e.__doc__)
+			pass
 
 		return shortlang_translation_tuple
 
@@ -98,13 +129,20 @@ class Scraper:
 	This will save a full dictionary into memory, overwriting prev files
 	"""
 	def save_dict_overwrite(self, listofenglishwords):
+		wl = None
 		dr = "../updated_language_packs/"
 		for lang in self.cpl_language_dict.keys():
-			with open(dr + lang + ".txt", "w") as F:
+			with open(dr + lang + "_test.txt", "w") as F:
 				for engword in listofenglishwords:
 					if engword in self.cpl_language_dict[lang]:
 						if self.cpl_language_dict[lang][engword]:
-							F.write(self.cpl_language_dict[lang][engword][0]+'#'+' '.join(self.cpl_language_dict[lang][engword][1])+'\n')
+							wl = self.cpl_language_dict[lang][engword][1]
+							bestword = self.cpl_language_dict[lang][engword][0]
+							if bestword in wl:
+								wl.remove(bestword)
+								wl = list(wl)
+								wl.append(bestword)
+							F.write(bestword + '#' + '$'.join(wl) + '\n')
 						else:
 							F.write('ERROR\n')
 					else:
@@ -131,7 +169,7 @@ class Scraper:
 				newline = None
 				if engword in self.cpl_language_dict[lang]:
 					if self.cpl_language_dict[lang][engword]:
-						newline = self.cpl_language_dict[lang][engword][0]+'#'+' '.join(self.cpl_language_dict[lang][engword][1])
+						newline = self.cpl_language_dict[lang][engword][0]+'#'+'$'.join(self.cpl_language_dict[lang][engword][1])
 					else:
 						newline = 'ERROR'
 				else:
