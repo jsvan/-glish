@@ -10,7 +10,7 @@ let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
 const TIMEOUT = 250;
-const DEBUG = true;
+const DEBUG = false;
 
 /*
 
@@ -55,7 +55,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		ACTIVATE = false;
 		print("Deactivating")
 		if (OG_TEXT_NODES){
-			weave_nodes(OG_TEXT, false)
+			weave_nodes(OG_TEXT)
 		}
 		sendResponse();
 
@@ -108,13 +108,16 @@ function just_go() {
 }
 
 
-function weave_nodes(node_list, safe=true){
+function weave_nodes(node_list){
 	print("weaving nodes")
 	print(node_list)
+	print("webpagenodes")
+	print(WEB_PAGE_NODES)
 	let newnode = null;
 	for (let i = 0; i < node_list.length; i++){
-		// fix to not break my donation page. Only change text items that have been edited.
-		if (safe && !node_list[i].includes("<span class=\"a\"")) {
+
+		// fix to not break my donation page. Only change text items that have been edited. Or change back to normal those that have been
+		if (WEB_PAGE_NODES[i].innerHTML && !node_list[i].includes("<span class=\"a\"") && !WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"a\"")) {
 			continue
 		}
 		try {

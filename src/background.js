@@ -19,7 +19,7 @@
  * Also instead of pinging wiktionary a billion times for iframe info on verbs, there are only 208 verbs * 13 languages, and a single table from wikpedia
  * is 4.5KB. 2704 * 4.5 = 12,168 KB or 12 MB. I think this is an acceptable size because they look very nice.
  */
-const DEBUG = true;
+const DEBUG = false;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
 let CHANCE = null;
