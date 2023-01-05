@@ -1,7 +1,6 @@
 const DEBUG = false;
 let AGR = 0, BRD = 0;
 
-document.getElementById("Title").addEventListener("click", forcerun);
 document.getElementById("Aggression").addEventListener("mouseup", sendAggression);
 document.getElementById("Aggression").addEventListener("input", function(){changeRange("Aggression")});
 document.getElementById("Chance").addEventListener("mouseup", sendChance);
@@ -35,15 +34,10 @@ function hideshow(id) {
     }
 }
 
-function forcerun(){
-    print("sending force run command")
-    chrome.runtime.sendMessage({message:"frc_run"}, function(response){
-        print("sent force");
-    });
-}
-
 function set_fgn() {
-    let langname = lowerize(document.getElementById("LanguageSelect").value);
+    const selectmenu = document.getElementById("LanguageSelect");
+    selectmenu.style.borderWidth = "0px";
+    let langname = lowerize(selectmenu.value);
     print("Sending forieng langauge, ["+langname+"]");
     chrome.runtime.sendMessage({message: "set_lng", payload: langname}, function(response) {
         print("Got response for set_lng, ["+response+"]")
@@ -152,6 +146,7 @@ function setChosenLang() {
         if (langname) {
             print("Because there is a langname ("+langname+"), we are setting it to selected...")
             document.getElementById("defaultopt").removeAttribute("selected")
+            document.getElementById("LanguageSelect").style.borderWidth = "0px";
             document.getElementById(langname).setAttribute("selected", "selected")
         }
         print("Selected language is now: " + langname + ".");
@@ -198,7 +193,7 @@ function print(s) {
 function set_vocab_size(){
     const v_size = Math.floor(Math.max(0, aggressionToIdx(AGR) - aggressionToIdx(BRD)));
     if (v_size === 0) {
-        document.getElementById("warning").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Warning: Not translating any words. Make sure you are using more of the dictionary than you are ignoring."
+        document.getElementById("warning").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Warning: Not translating any <br>words. Make sure you are using <br>more of the dictionary than you are <br>ignoring."
     } else {
         document.getElementById("warning").innerHTML = "";
     }

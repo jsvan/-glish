@@ -213,11 +213,6 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		sendResponse({payload:BOREDOM});
 		return true;
 
-	} else if (request.message === "frc_run") {
-		print("Sending force run")
-		sendmessage({message:"changed"})
-		return true;
-
 	}
 
 });
