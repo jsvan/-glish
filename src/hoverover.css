@@ -12,20 +12,38 @@ iframe::selection {
 .b:hover {
     display:block;
 }
+.glishmsg {
+    color:#BA0000;
+    font-size:small;
+    font-family:sans-serif;
+    text-align:center;
+    display:inline-block;
+    cursor:pointer;
+    border:0;
+    padding:9px;
+    outline:none;
+}
+
+.glishdialog { width:65%;
+    height:65%;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    background-color: whitesmoke;
+    text-align: center;
+}
 
 table {
     background:#fafafa;
 }
 
+
+
 iframe {
     background: #fafafa;
     width:100%;
-    height:550px;
+    height:100%;
     padding: 5px;
-    border: 1px solid #ccc;
 }
 
-.b iframe {
-    border:3px;
-    z-index:1000;
-}

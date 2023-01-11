@@ -6,12 +6,18 @@ document.getElementById("Aggression").addEventListener("input", function(){chang
 document.getElementById("Chance").addEventListener("mouseup", sendChance);
 document.getElementById("Chance").addEventListener("input", function(){changeRange("Chance")});
 document.getElementById("Boredom").addEventListener("mouseup", sendBoredom);
-document.getElementById("Boredom").addEventListener("input", function(){changeRange("Boredom", "Aggression")});
+document.getElementById("Boredom").addEventListener("input", function(){changeRange("Boredom")});
 document.getElementById("Activated").addEventListener('change', activate);
+document.getElementById("Bold").addEventListener('change', bold);
+document.getElementById("Italic").addEventListener('change', italic);
 document.getElementById("LanguageSelect").addEventListener("change", set_fgn)
 document.getElementById("Support").addEventListener("mouseup", function(){hideshow("Support")});
 document.getElementById("About").addEventListener("mouseup", function(){hideshow("About")});
 document.getElementById("Instructions").addEventListener("mouseup", function(){hideshow("Instructions")});
+document.getElementById("Settings").addEventListener("mouseup", function(){hideshow("Settings")});
+document.getElementById("Beginner").addEventListener("click", ()=>quickskill(16,0,15))
+document.getElementById("Intermediate").addEventListener("click", ()=>quickskill(50,16,25))
+document.getElementById("Advanced").addEventListener("click", ()=>quickskill(86,74,80))
 
 
 window.addEventListener('load',
@@ -19,6 +25,14 @@ window.addEventListener('load',
         load_page();
     }, false);
 
+function quickskill(aggro, bored, chanc) {
+    document.getElementById("Aggression").value = aggro;
+    document.getElementById("Boredom").value = bored;
+    document.getElementById("Chance").value = chanc;
+    sendAggression();
+    sendBoredom();
+    sendChance();
+}
 
 function hideshow(id) {
     const link = document.getElementById(id);
@@ -26,11 +40,9 @@ function hideshow(id) {
     if (menustyle.display === 'none'){
         menustyle.display = 'block';
         link.innerText = "Hide " + link.innerText;
-        link.setAttribute('href', '#'+id);
     } else {
         menustyle.display = 'none';
         link.innerText = link.innerText.substring(5);
-        link.setAttribute('href', '#');
     }
 }
 
@@ -48,6 +60,19 @@ function activate() {
     document.getElementById('Activated').toggleAttribute("checked", true); //setAttribute("checked")
     chrome.runtime.sendMessage({message: "set_act"}, function(response){
         print("sent activate");
+    });
+}
+
+function bold() {
+    document.getElementById('Bold').toggleAttribute("checked", true); //setAttribute("checked")
+    chrome.runtime.sendMessage({message: "set_bld"}, function(response){
+        print("sent bold");
+    });
+}
+function italic() {
+    document.getElementById('Italic').toggleAttribute("checked", true); //setAttribute("checked")
+    chrome.runtime.sendMessage({message: "set_itl"}, function(response){
+        print("sent italic");
     });
 }
 
@@ -81,15 +106,6 @@ function changeRange(id){
     document.getElementById(id+"Count").innerHTML = document.getElementById(id).value + "%";
 }
 
-function changeBoredomRange() {
-    const aggroval = document.getElementById("Aggression").value;
-    const rangebar = document.getElementById("Boredom");
-    rangebar.max = ""+aggroval;
-    if (rangebar.value > aggroval){
-        rangebar.value = aggroval;
-        changeRange("Boredom");
-    }
-}
 
 function load_page() {
     // Populate language options
@@ -109,6 +125,16 @@ function load_page() {
             document.getElementById('Activated').toggleAttribute("checked", true);
         }
     });
+
+    chrome.runtime.sendMessage({message: "get_sty"}, function(response){
+        if (response.bold) {
+            document.getElementById('Bold').toggleAttribute("checked", true);
+        }
+        if (response.italic) {
+            document.getElementById('Italic').toggleAttribute("checked", true);
+        }
+    });
+
     chrome.runtime.sendMessage({message: "get_agr"}, function(response){
         const newagr = response.payload;
         AGR = newagr;
@@ -122,12 +148,9 @@ function load_page() {
             print("Boredom is now: " + newbrd);
             BRD = newbrd;
             set_vocab_size();
-
-
-
-
         });
     });
+
     chrome.runtime.sendMessage({message: "get_chn"}, function(response){
         const newchn = response.payload;
         document.getElementById("Chance").value = newchn;
@@ -155,14 +178,9 @@ function setChosenLang() {
 }
 
 function langs2menu(text) {
-    print(text);
-    print(typeof text);
     text = text.split('\n');
-    print(text);
-    print(typeof text);
-
-    const langname2option = function (langname)
-        { let x = document.createElement("option" );
+    const langname2option = function (langname) {
+        let x = document.createElement("option" );
         x.textContent = capitalize(langname);
         x.setAttribute("id", langname);
         return x;
@@ -171,7 +189,8 @@ function langs2menu(text) {
     for (let i = 0; i < text.length; i++) {
         let line = text[i];
         let lang = line.toString().split("\t")[0];
-        document.getElementById("LanguageSelect").appendChild(langname2option(lang));
+        if (lang)
+            document.getElementById("LanguageSelect").appendChild(langname2option(lang));
     }
 
 }
@@ -193,7 +212,7 @@ function print(s) {
 function set_vocab_size(){
     const v_size = Math.floor(Math.max(0, aggressionToIdx(AGR) - aggressionToIdx(BRD)));
     if (v_size === 0) {
-        document.getElementById("warning").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Warning: Not translating any <br>words. Make sure you are using <br>more of the dictionary than you are <br>ignoring."
+        document.getElementById("warning").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Warning: Not translating any <br>words. Make sure you are using <br>more of the dictionary than you are <br>ignoring.<br><br>"
     } else {
         document.getElementById("warning").innerHTML = "";
     }

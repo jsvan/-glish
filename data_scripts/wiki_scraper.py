@@ -142,6 +142,8 @@ class Scraper:
 								wl.remove(bestword)
 								wl = list(wl)
 								wl.append(bestword)
+							elif bestword == '--' and len(wl) == 1:
+								bestword, *_ = wl
 							F.write(bestword + '#' + '$'.join(wl) + '\n')
 						else:
 							F.write('ERROR\n')

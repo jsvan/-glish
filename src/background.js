@@ -31,21 +31,28 @@ let ENGLISH = null;
 let ACTIVATED = null;
 let LANG = null;
 let FOREIGN = null;
+let BOLD = true;
+let ITALIC = true;
 const AGGRO_STORAGE_TAG = "AGGRO_STORAGE_TAG";
 const CHANCE_STORAGE_TAG = "CHANCE_STORAGE_TAG";
 const BOREDOM_STORAGE_TAG = "BOREDOM_STORAGE_TAG";
 const ACTIVE_STORAGE_TAG = 'ACTIVE_STORAGE_TAG';
 const LANG_STORAGE_TAG = 'LANG_STORAGE_TAG';
+const BOLD_STORAGE = "BOLD_STORAGE";
+const ITALIC_STORAGE = "ITALIC_STORAGE";
 const SEEN = new Set();
 
 
 chrome.runtime.onInstalled.addListener(function (rsn) {
 	ACTIVATED = true;
 	chrome.storage.sync.set({ACTIVE_STORAGE_TAG:ACTIVATED}, () => {});
-	chrome.storage.sync.set({AGGRO_STORAGE_TAG:5},   () => {});
+	chrome.storage.sync.set({AGGRO_STORAGE_TAG:24},   () => {});
 	chrome.storage.sync.set({CHANCE_STORAGE_TAG:20}, () => {});
-	chrome.storage.sync.set({BOREDOM_STORAGE_TAG:2}, () => {});
+	chrome.storage.sync.set({BOREDOM_STORAGE_TAG:6}, () => {});
 	chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
+	chrome.storage.sync.set({BOLD_STORAGE:true}, () => {});
+	chrome.storage.sync.set({ITALIC_STORAGE:true}, () => {});
+
 	if (chrome.runtime.OnInstalledReason.INSTALL === rsn.reason) {
 		chrome.tabs.create({'url':"src/popup.html", 'active':true}, ()=>{})
 	}
@@ -61,31 +68,38 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 					getBoredom().then(() =>
 						getEnglish().then(() =>
 							getLangData().then(() =>
-								getAggression().then(()=> {
-									print("Aggression is: " + AGGRESSION)
-									print("preparing translation: Got Lang data")
-									if (!FOREIGN) {
-										return 0;
-									}
-									const chunks_to_translate = request.payload;
-									print("chunks")
-									print(chunks_to_translate)
-									const translated_chunks = [];
-									let idint = 0;
-									let newstring = null;
-									for (let i = 0; i < chunks_to_translate.length; i++) {
-										print("chunks");
-										print(chunks_to_translate[i]);
-										[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
+								getAggression().then(()=>
+									getStyle().then(() => {
+										print("Aggression is: " + AGGRESSION)
+										print("preparing translation: Got Lang data")
+										if (!FOREIGN) {
+											return 0;
+										}
+										const chunks_to_translate = request.payload;
+										print("chunks")
+										print(chunks_to_translate)
+										const translated_chunks = [];
+										let idint = 0;
+										let newstring = null;
+										for (let i = 0; i < chunks_to_translate.length; i++) {
+											print("chunks");
+											print(chunks_to_translate[i]);
+											[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
 
-										translated_chunks.push(newstring);
-									}
-									print("BACKGROUND sending translated response")
-									//print(translated_chunks)
-									print("Lang Data is: "+LANG_DATA[0])
-									sendResponse({payload: translated_chunks, language: capitalize(LANG_DATA[0])}, ()=>{});
-									return 1;
-								})
+											translated_chunks.push(newstring);
+										}
+										print("BACKGROUND sending translated response")
+										//print(translated_chunks)
+										print("Lang Data is: "+LANG_DATA[0])
+										sendResponse({
+											payload: translated_chunks,
+											language: capitalize(LANG_DATA[0]),
+											glishbold: BOLD,
+											glishitalic: ITALIC
+										}, ()=>{});
+										return 1;
+									})
+								)
 							)
 						)
 					)
@@ -128,6 +142,16 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			sendResponse({
 				message: "hellow",
 				payload: val
+			}, ()=>{})
+		)
+		return true;
+
+	} else if (request.message === "get_sty") {
+		print("Getting sty")
+		getStyle().then(() =>
+			sendResponse({
+				bold: BOLD,
+				italic: ITALIC
 			}, ()=>{})
 		)
 		return true;
@@ -214,6 +238,24 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 
 	}
+	else if (request.message === "set_bld") {
+		BOLD = !BOLD;
+		chrome.storage.sync.set({BOLD_STORAGE:BOLD}, ()=>{
+			sendmessage({message:"style", glishbold:BOLD, glishitalic: ITALIC})
+			sendResponse({payload:"200"});
+		} )
+		return true;
+
+	}
+	else if (request.message === "set_itl") {
+		ITALIC = !ITALIC;
+		chrome.storage.sync.set({ITALIC_STORAGE:ITALIC}, ()=>{
+			sendmessage({message:"style", glishbold:BOLD, glishitalic: ITALIC})
+			sendResponse({payload:"200"});
+		} )
+		return true;
+
+	}
 
 });
 
@@ -281,10 +323,6 @@ function getBoredom() {
 	}
 }
 
-/*
-Gets from mem or chrome storage a promise of an array with language data
-[LANG, VOCAB, TABLES], respectively.
- */
 function getLangData() {
 	if (LANG_DATA === null) {
 		return loadLangData();
@@ -358,10 +396,11 @@ function prepareVocab(filetxt){
 			return [null, null]
 		}
 		[bestword, wordlist] = x;
-
+		//wordlist is a string, with $ separated words. So if $ is not in it, it is just one word.
 		if (bestword === '--' && !wordlist.includes('$')) {
 			bestword = wordlist;
 		}
+
 		return [bestword, x[1]]
 	})
 	return ret;
@@ -381,7 +420,7 @@ function loadEnglish(){
 				if (!line) {
 					continue
 				}
-				ENGLISH.set(line, i);
+				ENGLISH.set(line.toLowerCase(), i);
 			}
 			print("English set");
 		});
@@ -446,11 +485,20 @@ function in_working(word) {
 function subpar_word(fwordlst) {
 	fwordlst = fwordlst.split('$')
 	fwordlst.push('')
-	const r = Math.floor(Math.random() * fwordlst.length)
+	let r = Math.floor(Math.random() * fwordlst.length)
 	if (!fwordlst[r]){
 		return ''
 	}
-	return fwordlst[r] + "<sub style=\"font-weight:normal\">(?)</sub>"
+	// if randomly chosen word also starts with '-' (ie, it sucks,
+	if (fwordlst[r].startsWith('-')) {
+		for (r = 0; r < fwordlst.length - 1; r++){
+			if (! fwordlst[r].startsWith('-')) {
+				break;
+			}
+		}
+
+	}
+	return fwordlst[r];// + "<sub style=\"font-weight:normal\">(?)</sub>"
 }
 
 function formatTranslateWord(englishword, idint, upper){
@@ -459,7 +507,10 @@ function formatTranslateWord(englishword, idint, upper){
 	if (!fwordlst[1]){
 		return englishword
 	}
-	let foreignword = fwordlst[0] === "--" ? subpar_word(fwordlst[1], englishword) : fwordlst[0];
+	let foreignword = fwordlst[0].startsWith("-") ? subpar_word(fwordlst[1], englishword) : fwordlst[0];
+	if (!foreignword){
+		return englishword
+	}
 	let foreignlist = fwordlst[1];
 	if (upper){
 		foreignword = capitalize(foreignword);
@@ -473,8 +524,8 @@ const word_html_replacement = function (translated, original, idnum, datadict={}
 		return ("data-" + name + "=\"" + value + "\"");
 	}).join(' ');
 
-	const toret = "<em><strong>" + "<span class=\"a\" "+mydata+" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>" +
-		"<span class=\"b\" id='Nos"+idnum+"VocW'>" + "</span></strong></em>";
+	const toret = "<span class=\"glishword\" "+mydata+" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>" +
+		"<span class=\"b\" id='Nos"+idnum+"VocW'>" + "</span>";
 	return toret;
 };
 
@@ -494,6 +545,30 @@ function getActivated() {
 	}
 	return Promise.resolve(ACTIVATED);
 }
+
+function getStyle() {
+	function getBold(){
+		if (BOLD === null) {
+			return chrome.storage.sync.get([BOLD_STORAGE]).then((response) => {
+				BOLD = response.BOLD_STORAGE;
+				return BOLD;
+			});
+		}
+		return Promise.resolve(BOLD);
+	}
+	function getItalic(){
+		if (ITALIC === null) {
+			return chrome.storage.sync.get([ITALIC_STORAGE]).then((response) => {
+				ITALIC = response.ITALIC_STORAGE;
+				return ITALIC;
+			});
+		}
+		return Promise.resolve(ITALIC);
+	}
+
+	return getBold().then(()=>{return getItalic()});
+}
+
 
 
 function capitalize(word){

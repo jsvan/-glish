@@ -1,14 +1,32 @@
 arabic	ar
 chinese	zh
 czech	cs
+esperanto	eo
+estonian	et
 french	fr
 german	de
+hebrew	he
 hindi	hi
 italian	it
 japanese	ja
 korean	ko
+low_German	nds
+		maori	mi
+		navajo	nv
+old_English	ang
+		ojibwe	oj
+pashto	ps
+persian	fa
+polish	pl
 portuguese	pt
 russian	ru
+sanskrit	sa
 spanish	es
+swahili	sw
+swedish	sv
+thai	th
 turkish	tr
 ukrainian	uk
+vietnamese	vi
+welsh	cy
+		yiddish	yi

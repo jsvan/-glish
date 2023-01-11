@@ -2,7 +2,6 @@ let OG_TEXT_NODES = null;
 let WEB_PAGE_NODES = null;
 let COUNT_TEXT_SECTIONS = 0;
 let OG_TEXT = null;
-
 let ACTIVATE = true;
 let LANGUAGE = null;
 let PREV_WIKI_IFRAME = null;
@@ -10,45 +9,31 @@ let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
 const TIMEOUT = 250;
-const DEBUG = true;
+const DEBUG = false;
 
 /*
-
-on load:
-	message background for lang, aggression, langpack, tables, and english
-	save og HTML to var, and a separate editedHTML var for visualization/editing
-
-Listener:
-	for lang changed
-		set lang, langpack and tables new
-		recalculate html page
-	for aggression changed
-		set aggression
-		recalculate html page
-	for activate change:
-		1) Off:
-			1a) replace html with og
-			1b) turn off further html changes (set var off)
-		2) On:
-			2a) build new html
-			2b) set var on
+This page is improperly named. All translation happens in Background.js. On load or a setting change, translate.js sends
+the textnodes to background.js. Background.js translates the nodes and returns the updated version. Translate.js then
+weaves that text back into the main page.
  */
 
 window.addEventListener('load',
 	function () {
+		prepareglishcss();
 		grab_and_go();
+		attachDialog();
 	}, false);
 
 
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
-	print("received message, ["+request.message+"] " + request)
+	console.log("received message, ["+request.message+"] " + request)
+	//page no longer valid, send page back to get translated.
 	if (request.message === "changed") {
 		if (OG_TEXT_NODES) {
 			just_go()
 		} else {
 			grab_and_go();
 		}
-		//page no longer valid, send page back to get translated.
 		sendResponse();
 
 	} else if (request.message === "deactivate") {
@@ -70,8 +55,48 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			grab_and_go();
 		}
 		sendResponse();
+
+	} else if (request.message === "style") {
+		editglishcss(request.glishbold, request.glishitalic)
 	}
 })
+
+function editglishcss(bold, italic) {
+	const b = bold ? "bold" : "none";
+	const i = italic ? "italic" : "none";
+	document.getElementById("glishcss").innerHTML = ".glishword {font-weight:" + b + "; font-style:" + i + ";}";
+}
+
+function prepareglishcss(){
+	let sheet = document.createElement("style");
+	sheet.innerHTML = ".glishword {}";
+	sheet.id = "glishcss";
+	document.getElementsByTagName("head")[0].appendChild(sheet);
+}
+
+function attachDialog(){
+	const dialog = document.createElement("dialog");
+	const msg = document.createElement('div');
+	const dummyiframe = document.createElement("iframe");
+	dialog.classList.add("glishdialog");
+	msg.classList.add("glishmsg")
+	dialog.id = "glishdlg";
+	msg.id = "glishclickoff"
+	msg.innerHTML = "Click off window to close.<br>";
+	dialog.appendChild(msg);
+	dialog.appendChild(dummyiframe);
+	document.body.appendChild(dialog);
+	PREV_WIKI_IFRAME = dummyiframe;
+}
+function refreshIframe(url) {
+	const iframe = document.createElement("iframe");
+	iframe.id = "glishiframe";
+	iframe.src = url;
+	iframe.style.border = '0';
+	iframe.style.borderColor = "whitesmoke"
+	document.getElementById('glishdlg').replaceChild(iframe, PREV_WIKI_IFRAME)
+	PREV_WIKI_IFRAME = iframe;
+}
 
 function grab_and_go() {
 	print("grabbing and going");
@@ -80,8 +105,6 @@ function grab_and_go() {
 		return;
 	}
 	WEB_PAGE_NODES = getTextNodes(document.body);
-	print("WEB NODES")
-	print(WEB_PAGE_NODES)
 	OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML)
 	OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent)
 	just_go();
@@ -90,24 +113,28 @@ function grab_and_go() {
 
 function just_go() {
 	print("GOT THIS MANY TEXT SECTIONS: " + OG_TEXT_NODES.length)
-	if (COUNT_TEXT_SECTIONS < 8){
-		return
-	}
+	//if (COUNT_TEXT_SECTIONS < 8){
+	//	return
+	//}
 	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT}, function(response){
 		print("Received lang data:")
 		if (!response) {
 			return;
 		}
 		LANGUAGE = response.language;
+
+		editglishcss(response.glishbold, response.glishitalic);
 		const translated_info = response.payload;
 		weave_nodes(translated_info);
 		// translate_page(HTML_BLOCKS, TEXT_SECTIONS, response.payload);
 		print("setting inner HTML")
-		document.body.style.overflow = 'auto'
+
 	})
 }
 
+function set_look(bold, italic) {
 
+}
 function weave_nodes(node_list){
 	print("weaving nodes")
 	print(node_list)
@@ -117,7 +144,7 @@ function weave_nodes(node_list){
 	for (let i = 0; i < node_list.length; i++){
 
 		// fix to not break my donation page. Only change text items that have been edited. Or change back to normal those that have been
-		if (!node_list[i].includes("<span class=\"a\"") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"a\"")) ){
+		if (!node_list[i].includes("<span class=\"glishword\"") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"glishword\"")) ){
 			continue
 		}
 		try {
@@ -138,27 +165,37 @@ document.body.addEventListener("mousedown", function(e) {
 	setTimeout(()=>{
 		// click & hold
 		if (UP <= DOWN) {
-
 			iframe(e);
 		}
 	}, 200)
 });
 document.body.addEventListener("mouseup", function(e) {
 	UP = new Date();
+
 	// click
-	if (PREV_WIKI_IFRAME){
-		if (PREV_WIKI_IFRAME.parentNode.previousSibling.classList.contains('act')){
-			PREV_WIKI_IFRAME.parentNode.previousSibling.classList.remove('act')
-		}
-	}
 	if ((UP - DOWN) < TIMEOUT) {
 		rotateWord(e);
+
+		//check to see if iframe window should be closed:
+		if (document.getElementById('glishdlg').open ){
+			const rectA = document.getElementById("glishdlg").getBoundingClientRect();
+			const rectB = document.getElementById("glishclickoff").getBoundingClientRect();
+			function clickedInDialog (rect) {
+				return 	rect.top <= e.clientY &&
+					e.clientY <= rect.top + rect.height &&
+					rect.left <= e.clientX &&
+					e.clientX <= rect.left + rect.width;
+			}
+			if (!clickedInDialog(rectA) || clickedInDialog(rectB))
+				document.getElementById("glishdlg").close();
+		}
+
 	}
 });
 
 function rotateWord(e){
 	const t = e.target;
-	if (!t || !t.classList.contains('a')) {
+	if (!t || !t.classList.contains('glishword')) {
 		return;
 	}
 	const otherwords = t.dataset.nvoc.split('$');
@@ -178,7 +215,8 @@ function rotateWord(e){
 	}
 	t.dataset.nvi = "" + (i + 1);
 	if (t.dataset.cpt === 'y'){
-		t.firstChild.textContent = capitalize(otherwords[i]);
+		t.firstChild.textContent = capitalize(otherwords[i]);	print("WEB NODES")
+	print(WEB_PAGE_NODES)
 	} else {
 		t.firstChild.textContent = otherwords[i];
 	}
@@ -186,35 +224,19 @@ function rotateWord(e){
 
 function iframe(e) {
 	const t = e.target;
-	if (!t || !t.attributes || !t.attributes.class || t.attributes.class.value !== "a") {
+	if (!t || !t.attributes || !t.attributes.class || t.attributes.class.value !== "glishword") {
 		return;
 	}
-	const parent_node = document.getElementById(t.attributes.id.value + "W");
 	let foreign_word = t.firstChild.textContent;
-
-	if (PREV_WIKI_IFRAME && PREV_WIKI_IFRAME.parentNode === parent_node && foreign_word === PREV_IFRAME_WORD) {
-		t.classList.add("act");
-		print("The parents are the same. Building nothing");
-	} else {
-		if (PREV_WIKI_IFRAME)  {
-			try {
-				//PREV_WIKI_IFRAME.classList.remove("act");
-				PREV_WIKI_IFRAME.parentNode.removeChild(PREV_WIKI_IFRAME);
-			} catch (e) {
-				print(e);
-			}
-		}
-		PREV_IFRAME_WORD = foreign_word;
-		t.classList.add("act");
-		if (t.dataset.cpt === 'y') {
-			foreign_word = foreign_word.toLowerCase();
-		}
-		const baby_iframe = document.createElement("iframe");
-		baby_iframe.setAttribute("src", "https://en.wiktionary.org/wiki/" + foreign_word + "#" + LANGUAGE);
-		parent_node.appendChild(baby_iframe);
-		print("Appended iframe " + baby_iframe)
-		PREV_WIKI_IFRAME = baby_iframe;
+	if (t.dataset.cpt === 'y') {
+		foreign_word = foreign_word.toLowerCase();
 	}
+
+	if (!PREV_IFRAME_WORD || foreign_word !== PREV_IFRAME_WORD) {
+		refreshIframe("https://en.wiktionary.org/wiki/" + foreign_word + "#" + LANGUAGE);
+	}
+	document.getElementById('glishdlg').showModal();
+	PREV_IFRAME_WORD = foreign_word;
 }
 
 function capitalize(word){
@@ -247,9 +269,3 @@ function print(s) {
 		console.log(s);
 	}
 }
-
-/*
-for (let i = 0; i < t.length; i++) {
-    t[i].textContent = t[i].parentNode.textContent.replace("Russia ", "the Russia ")
-}
- */
