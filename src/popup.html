@@ -15,14 +15,24 @@
         body {
             font-size: 1em;
         }
-        button button {
-            width: 100%;
+        button {
+            outline: none;
+            border-width: 1px;
+            box-shadow: transparent;
         }
         select {
-            border-width: 0px;
+            border-width: 0;
         }
         select:hover {
             border-width:1px;
+        }
+        textarea {
+            width: 98%;
+            height: 120px;
+            border-width: 1px;
+        }
+        textarea:focus {
+            outline: none !important;
         }
 
 
@@ -81,12 +91,13 @@
         <p style="text-align: left"><a href="#void" id="Settings" title="Settings Menu">More Settings</a></p>
         <div id="Settings_Menu" style="text-align:left; display: none;">
             <div class="boxdiv myPadding">
-                <p><label for="Quickstarts">Quick settings:</label></p>
+                <p><label for="Quickstarts">Quick difficulty settings:</label></p>
                 <div id = "Quickstarts" style="text-align: center">
                     <button id="Beginner" >Beginner</button>&nbsp;&nbsp;
                     <button id="Intermediate">Intermediate</button>&nbsp;&nbsp;
                     <button id="Advanced">Advanced</button>
                 </div>
+                <br>
                 <br>
                 <table>
                     <tr>
@@ -104,19 +115,32 @@
                         <td><label for="Italic" style="text-align: right">Translated words in <em>italic</em></label></td>
                     </tr>
                 </table>
+                <br>
                 <div>
-                    <p><label for="Nogozones">Do not run on these pages:</label></p>
-                    <textarea id="Nogozones" style="width: 98%; height:75px;">https://www.gmail.com</textarea>
+                    <p><label title="If the line is found within a url, the app is not run." for="Nogozones">
+                        Do not run on these pages:</label></p>
+                    <textarea title="If the line is found within a url, the app is not run." id="Nogozones" placeholder="Paste one website url per line:
+gmail.com
+twitter.com
+
+If the line is found within a url, the app is not run.
+(These two sites are excluded anyways, because they aren't standard text sites.)" ></textarea>
                     <br>
-                    <button>Save</button>
+                    <button id="Nogozones_save">Saved</button>
                 </div>
                 <br>
                 <div>
                     <p><label for="Nonowords">Never translate these words:</label></p>
-                    <textarea id="Nonowords" style="width: 98%; height:75px;">to
-in</textarea>
+                    <textarea id="Nonowords" placeholder="(...
+one
+English
+word
+to
+a
+line
+...)"></textarea>
                     <br>
-                    <button>Save</button>
+                    <button id="Nonowords_save">Saved</button>
                 </div>
                 <br>
             </div>

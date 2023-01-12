@@ -1,24 +1,18 @@
 /**
- * if session storage isn't set,
- * 	then load vocab and set into session memory and save to workinglang and workingtables
- * if options are changed in popup menu
- * 	reload session storage stuff
+ *
+ * The background maintains the state of the application.
+ *
+ * translate.js is the content script which sends requests to background for display information,
+ * mainly, translate.js sends an array of english text, which background will appropriately translate and send back.
+ *
+ * If a setting is toggled within popup.html/js, popup.js sends that information to background, where background will save it,
+ * and alert translate.js if their state is no longer valid.
+ *
+ * All roads lead to Rome.
  *
  *
- *
- * in translate.js, poll wiki sites and grab all <div class="NavFrame">'s, to display in a popup div. Save them in session storage. Preprocess? Maybe yes!
- * https://stackoverflow.com/questions/6508393/web-scraping-in-a-google-chrome-extension-javascript-chrome-apis
- * write python script
  */
-/**
- *
- * This has been rewritten to rebuild an HTML page as a string, instead of parsing the DOM tree. I originally implemented my best attempt
- * at the DOM tree, but the performance was very bad. I think I can do an O(N) rundown of the HTML string, grabbing, translating, and
- * placing the mapped text into a new document, which I can set the webpage to point to a single time.
- *
- * Also instead of pinging wiktionary a billion times for iframe info on verbs, there are only 208 verbs * 13 languages, and a single table from wikpedia
- * is 4.5KB. 2704 * 4.5 = 12,168 KB or 12 MB. I think this is an acceptable size because they look very nice.
- */
+
 const DEBUG = false;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
@@ -31,6 +25,9 @@ let ENGLISH = null;
 let ACTIVATED = null;
 let LANG = null;
 let FOREIGN = null;
+let NOGOZONES = null;
+let NONOWORDS = null;
+let WORKING_URL = null;
 let BOLD = true;
 let ITALIC = true;
 const AGGRO_STORAGE_TAG = "AGGRO_STORAGE_TAG";
@@ -40,7 +37,10 @@ const ACTIVE_STORAGE_TAG = 'ACTIVE_STORAGE_TAG';
 const LANG_STORAGE_TAG = 'LANG_STORAGE_TAG';
 const BOLD_STORAGE = "BOLD_STORAGE";
 const ITALIC_STORAGE = "ITALIC_STORAGE";
+const NONOWORDS_STORAGE = "NONOWORDS_STORAGE";
+const NOGOZONES_STORAGE = "NOGOZONES_STORAGE";
 const SEEN = new Set();
+
 
 
 chrome.runtime.onInstalled.addListener(function (rsn) {
@@ -52,6 +52,8 @@ chrome.runtime.onInstalled.addListener(function (rsn) {
 	chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
 	chrome.storage.sync.set({BOLD_STORAGE:true}, () => {});
 	chrome.storage.sync.set({ITALIC_STORAGE:true}, () => {});
+	chrome.storage.sync.set({NOGOZONES_STORAGE:[]}, () => {});
+	chrome.storage.sync.set({NONOWORDS_STORAGE:[]}, () => {});
 
 	if (chrome.runtime.OnInstalledReason.INSTALL === rsn.reason) {
 		chrome.tabs.create({'url':"src/popup.html", 'active':true}, ()=>{})
@@ -61,44 +63,47 @@ chrome.runtime.onInstalled.addListener(function (rsn) {
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	print("Background received message, "+request + ", "+ request.message)
 	if (request.message === "translate") {
+		WORKING_URL = request.glishurl;
 		print("Preparing translation:")
 		getActivated().then(()=>{
 			if (ACTIVATED) {
-				getChance().then(() =>
-					getBoredom().then(() =>
-						getEnglish().then(() =>
-							getLangData().then(() =>
-								getAggression().then(()=>
-									getStyle().then(() => {
-										print("Aggression is: " + AGGRESSION)
-										print("preparing translation: Got Lang data")
-										if (!FOREIGN) {
-											return 0;
-										}
-										const chunks_to_translate = request.payload;
-										print("chunks")
-										print(chunks_to_translate)
-										const translated_chunks = [];
-										let idint = 0;
-										let newstring = null;
-										for (let i = 0; i < chunks_to_translate.length; i++) {
-											print("chunks");
-											print(chunks_to_translate[i]);
-											[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
+				getNonowords().then(() =>
+					getChance().then(() =>
+						getBoredom().then(() =>
+							getEnglish().then(() =>
+								getLangData().then(() =>
+									getAggression().then(()=>
+										getStyle().then(() => {
+											print("Aggression is: " + AGGRESSION)
+											print("preparing translation: Got Lang data")
+											if (!FOREIGN) {
+												return 0;
+											}
+											const chunks_to_translate = request.payload;
+											print("chunks")
+											print(chunks_to_translate)
+											const translated_chunks = [];
+											let idint = 0;
+											let newstring = null;
+											for (let i = 0; i < chunks_to_translate.length; i++) {
+												print("chunks");
+												print(chunks_to_translate[i]);
+												[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
 
-											translated_chunks.push(newstring);
-										}
-										print("BACKGROUND sending translated response")
-										//print(translated_chunks)
-										print("Lang Data is: "+LANG_DATA[0])
-										sendResponse({
-											payload: translated_chunks,
-											language: capitalize(LANG_DATA[0]),
-											glishbold: BOLD,
-											glishitalic: ITALIC
-										}, ()=>{});
-										return 1;
-									})
+												translated_chunks.push(newstring);
+											}
+											print("BACKGROUND sending translated response")
+											//print(translated_chunks)
+											print("Lang Data is: "+LANG_DATA[0])
+											sendResponse({
+												payload: translated_chunks,
+												language: capitalize(LANG_DATA[0]),
+												glishbold: BOLD,
+												glishitalic: ITALIC
+											}, ()=>{});
+											return 1;
+										})
+									)
 								)
 							)
 						)
@@ -106,6 +111,19 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 				)
 			}
 			return 0;
+		})
+		return true;
+
+	} else if (request.message === "valid_website") {
+		console.log(request)
+		WORKING_URL = request.glishurl;
+		getNogozones().then(() => {
+			console.log(WORKING_URL + ", Nogozones: " + typeof NOGOZONES)
+			console.log(NOGOZONES)
+			const access = NOGOZONES.some(suburl=>WORKING_URL.includes(suburl)) ? "stop" : "go";
+			sendResponse({
+					payload: access},
+				()=>{});
 		})
 		return true;
 
@@ -156,6 +174,17 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		)
 		return true;
 
+	} else if (request.message === "get_txs") {
+		getNogozones().then(() =>
+			getNonowords().then(() =>
+				sendResponse({
+					nonowords: Array.from(NONOWORDS),
+					nogozones: NOGOZONES
+				}, ()=>{})
+			)
+		)
+		return true;
+
 	} else if (request.message === "get_lng") {
 		if (LANG_DATA !== null) {
 			print("sending langname")
@@ -189,7 +218,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		} )
 		return true;
 
-	} else if (request.message === "set_lng") {
+	}  else if (request.message === "set_lng") {
 		LANG_DATA = [];
 		LANG_DATA.push(request.payload);
 		LANG = request.payload;
@@ -236,7 +265,6 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		});
 		sendResponse({payload:BOREDOM});
 		return true;
-
 	}
 	else if (request.message === "set_bld") {
 		BOLD = !BOLD;
@@ -254,7 +282,30 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			sendResponse({payload:"200"});
 		} )
 		return true;
-
+	}
+	else if (request.message === "set_nonowords") {
+		let nonowords_list = request.payload;
+		NONOWORDS = new Set(nonowords_list);
+		chrome.storage.sync.set({NONOWORDS_STORAGE: nonowords_list}, ()=>{
+			sendmessage({message:"changed"});
+			sendResponse({payload:"200"});
+		} )
+		return true;
+	}
+	else if (request.message === "set_nogozones") {
+		NOGOZONES = request.payload;
+		console.log("Has working url of "+WORKING_URL)
+		chrome.storage.sync.set({NOGOZONES_STORAGE: NOGOZONES}, ()=>{
+			if (WORKING_URL !== null) {
+				if (NOGOZONES.some(suburl => WORKING_URL.includes(suburl))) {
+					sendmessage({message: "deactivate"})
+				} else {
+					sendmessage({message: "activate"})
+				}
+			}
+			sendResponse({payload:"200"});
+		} )
+		return true;
 	}
 
 });
@@ -322,6 +373,32 @@ function getBoredom() {
 		return Promise.resolve(BOREDOM);
 	}
 }
+
+function getNonowords() {
+	if (NONOWORDS === null) {
+		return chrome.storage.sync.get([NONOWORDS_STORAGE]).then((result) => {
+			NONOWORDS = new Set(result.NONOWORDS_STORAGE);
+			return NONOWORDS;
+		})
+	} else{
+		return Promise.resolve(NONOWORDS);
+	}
+}
+
+function getNogozones() {
+	if (NOGOZONES === null) {
+		return chrome.storage.sync.get([NOGOZONES_STORAGE]).then((result) => {
+			NOGOZONES = result.NOGOZONES_STORAGE;
+			if (!NOGOZONES) {
+				NOGOZONES = [];
+			}
+			return NOGOZONES;
+		})
+	} else{
+		return Promise.resolve(NOGOZONES);
+	}
+}
+
 
 function getLangData() {
 	if (LANG_DATA === null) {
@@ -462,7 +539,7 @@ function replaceNodeVocab(node, idint){
 			} else {
 				finalchar = '';
 			}
-			if (cleanword.length > 0 && in_working(cleanword) && !SEEN.has(cleanword)) {
+			if (cleanword.length > 0 && !NONOWORDS.has(cleanword) && in_working(cleanword) && !SEEN.has(cleanword)) {
 				replacementword = formatTranslateWord(cleanword, idint, upper);
 				SEEN.add(cleanword);
 				if (finalchar) {

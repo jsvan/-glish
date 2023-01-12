@@ -12,6 +12,7 @@ iframe::selection {
 .b:hover {
     display:block;
 }
+
 .glishmsg {
     color:#BA0000;
     font-size:small;

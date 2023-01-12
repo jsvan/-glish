@@ -18,12 +18,56 @@ document.getElementById("Settings").addEventListener("mouseup", function(){hides
 document.getElementById("Beginner").addEventListener("click", ()=>quickskill(16,0,15))
 document.getElementById("Intermediate").addEventListener("click", ()=>quickskill(50,16,25))
 document.getElementById("Advanced").addEventListener("click", ()=>quickskill(86,74,80))
-
+document.getElementById("Nogozones").addEventListener("input", () =>textareaChanged("Nogozones"))
+document.getElementById("Nonowords").addEventListener("input", () => textareaChanged("Nonowords"))
+document.getElementById("Nonowords_save").addEventListener("click", ()=> saveTextarea("Nonowords"))
+document.getElementById("Nogozones_save").addEventListener("click", ()=> saveTextarea("Nogozones"))
 
 window.addEventListener('load',
     function() {
         load_page();
     }, false);
+
+function textareaChanged(id) {
+    outlinecolor(id, "red")
+    const btn = document.getElementById(id + "_save");
+    btn.innerText = "Save";
+    btn.backgroundColor = "";
+    btn.style.borderWidth = '2px';
+    btn.style.color = "";
+    btn.style.borderColor = "";
+}
+
+function buttonSaveState(id) {
+    const btn = document.getElementById(id);
+    btn.innerText = "Saved"
+    btn.style.color = '#707070'
+    btn.style.borderWidth = '1px';
+    btn.style.backgroundColor = 'whitesmoke'
+    outlinecolor(id, "lightgray")
+}
+
+function saveTextarea(id){
+    const textarea = document.getElementById(id);
+    buttonSaveState(id + "_save")
+    outlinecolor(id, "")
+    const text = textarea.value;
+    let items = text.split('\n').map(ii => ii.trim());
+    items = items.filter(ii => ii);
+    if (id === "Nonowords"){
+        items.forEach((x) => x.toLowerCase());
+    }
+    chrome.runtime.sendMessage({message: "set_" + id.toLowerCase(), payload: items}, function(response) {
+        print("Got response for set_lng, ["+response+"]")
+    });
+    textarea.value = items.join('\n');
+    setTimeout(()=>outlinecolor(id, "#00ba5d"), 75)
+    setTimeout(()=>outlinecolor(id, ""), 800)
+}
+
+function outlinecolor(id, color){
+    document.getElementById(id).style.borderColor = color;
+}
 
 function quickskill(aggro, bored, chanc) {
     document.getElementById("Aggression").value = aggro;
@@ -159,6 +203,14 @@ function load_page() {
         print("Chance is now: " + newchn);
     });
 
+    chrome.runtime.sendMessage({message: "get_txs"}, function(response){
+        document.getElementById("Nonowords").value = response.nonowords.join('\n');
+        document.getElementById("Nogozones").value = response.nogozones.join('\n');
+    });
+
+
+    buttonSaveState("Nonowords_save");
+    buttonSaveState("Nogozones_save");
 
 }
 

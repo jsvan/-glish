@@ -37,22 +37,27 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		sendResponse();
 
 	} else if (request.message === "deactivate") {
-		ACTIVATE = false;
-		print("Deactivating")
-		if (OG_TEXT_NODES){
-			weave_nodes(OG_TEXT)
+		if (ACTIVATE) {
+			ACTIVATE = false;
+			print("Deactivating")
+			if (OG_TEXT_NODES){
+				weave_nodes(OG_TEXT)
+			}
 		}
 		sendResponse();
 
 	} else if (request.message === "activate") {
-		print("Activating")
-		ACTIVATE = true;
-		if (OG_TEXT_NODES) {
-			print("Foreign HTML already exists, setting...")
-			just_go();
-		} else {
-			print("No foreign HTML, grabbing and going...")
-			grab_and_go();
+		if (!ACTIVATE) {
+			print("Activating")
+
+			ACTIVATE = true;
+			if (OG_TEXT_NODES) {
+				print("Foreign HTML already exists, setting...")
+				just_go();
+			} else {
+				print("No foreign HTML, grabbing and going...")
+				grab_and_go();
+			}
 		}
 		sendResponse();
 
@@ -104,19 +109,27 @@ function grab_and_go() {
 		print("not activated")
 		return;
 	}
-	WEB_PAGE_NODES = getTextNodes(document.body);
-	OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML)
-	OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent)
-	just_go();
+	chrome.runtime.sendMessage({message:"valid_website", glishurl:document.location.href}, function(response){
+		if (!response || response.payload === "stop") {
+			console.log("Not allowed!!!")
+			return;
+		}
+		console.log("Allowed!!!")
+		WEB_PAGE_NODES = getTextNodes(document.body);
+		OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML)
+		OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent)
+		just_go();
+	})
+
 }
 
 
 function just_go() {
 	print("GOT THIS MANY TEXT SECTIONS: " + OG_TEXT_NODES.length)
-	//if (COUNT_TEXT_SECTIONS < 8){
-	//	return
-	//}
-	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT}, function(response){
+	if (COUNT_TEXT_SECTIONS < 8 || !ACTIVATE){
+		return
+	}
+	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT, glishurl:document.location.href}, function(response){
 		print("Received lang data:")
 		if (!response) {
 			return;
@@ -128,13 +141,10 @@ function just_go() {
 		weave_nodes(translated_info);
 		// translate_page(HTML_BLOCKS, TEXT_SECTIONS, response.payload);
 		print("setting inner HTML")
-
 	})
 }
 
-function set_look(bold, italic) {
 
-}
 function weave_nodes(node_list){
 	print("weaving nodes")
 	print(node_list)
@@ -143,7 +153,7 @@ function weave_nodes(node_list){
 	let newnode = null;
 	for (let i = 0; i < node_list.length; i++){
 
-		// fix to not break my donation page. Only change text items that have been edited. Or change back to normal those that have been
+		// Only change text items that have been edited. Or change back to normal those that have been
 		if (!node_list[i].includes("<span class=\"glishword\"") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"glishword\"")) ){
 			continue
 		}
