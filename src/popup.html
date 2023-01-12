@@ -27,14 +27,17 @@
             border-width:1px;
         }
         textarea {
-            width: 98%;
-            height: 120px;
+            width: 81%;
+            height: 125px;
             border-width: 1px;
         }
         textarea:focus {
             outline: none !important;
         }
-
+        .bigbr {
+            margin-top: 20px;
+            content: "";
+        }
 
     </style>
 </head>
@@ -123,21 +126,20 @@
                 </table>
                 <br>
                 <div>
-                    <p><label title="If the line is found within a url, the app is not run." for="Nogozones">
+                    <p><label title="If the line is found within a url, the app doesn't run." for="Nogozones">
                         Do not run on these pages:</label></p>
-                    <textarea title="If the line is found within a url, the app is not run." id="Nogozones" placeholder="Paste one website url per line:
+                    <div style="text-align: center;"><textarea title="If the line is found within a url, the app doesn't run." id="Nogozones" placeholder="Paste one url per line:
 gmail.com
 twitter.com
 
-If the line is found within a url, the app is not run.
-(These two sites are excluded anyways, because they aren't standard text sites.)" ></textarea>
-                    <br>
-                    <button id="Nogozones_save">Saved</button>
+If the line is found within a url, the app doesn't run." ></textarea>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="Nogozones_save">Saved</button>
                 </div>
                 <br>
                 <div>
                     <p><label for="Nonowords">Never translate these words:</label></p>
-                    <textarea id="Nonowords" placeholder="(...
+                    <div style="text-align: center;"><textarea id="Nonowords" placeholder="(...
 one
 English
 word
@@ -145,8 +147,8 @@ to
 a
 line
 ...)"></textarea>
-                    <br>
-                    <button id="Nonowords_save">Saved</button>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="Nonowords_save">Saved</button>
                 </div>
                 <br>
             </div>
@@ -159,10 +161,18 @@ line
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>HOVER</strong> on a word</em> &nbsp;to reveal its original English word.</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>CLICK</strong> on a word</em> &nbsp;to rotate through matching translated words. There may be false translations, so click through to find a translation you like.</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>CLICK+HOLD</strong> on a word</em> &nbsp;to access its detailed information page through Wiktionary.</p>
-                <br>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>The 1st slider</strong> (<em>"Use up to 6% of dictionary"</em>), changes the range of vocabulary you want to translate. 100% means to use all 4,000 words in the vocab list. I recommend starting low and working your way up. </p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>The 2nd slider</strong> (<em>"Ignore the first 2% of dictionary"</em>), allows you to ignore earlier words that you're comfortable with already. 0% means use entire dictionary, 25% means ignoring the first quarter of the vocab words, and 100% means ignore everything.</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>The 3rd slider</strong> (<em>"See fewer/more words on page (20% max)"</em>), affects how often you see translated words without altering the set of words you want translated. 0% means no word will be translated. 100% means every found vocabulary word will be translated. I recommend setting it so that only a few words per paragraph are changed. </p>
+                <br><hr><br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1st slider</strong> (<em>"Use up to 6% of dictionary"</em>): <br>&nbsp;&nbsp;&nbsp;&nbsp;Changes the range of vocabulary you want to translate.
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;100% means to use all 4,000 words in the vocab list.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;I recommend starting low and working up.
+                </p>
+                <p><strong>2nd slider</strong> (<em>"Ignore the first 2% of dictionary"</em>): <br>&nbsp;&nbsp;&nbsp;&nbsp;Allows you to ignore earlier words that you're comfortable with already.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;100% means ignore every vocabulary word, 25% means ignoring the first quarter of words, and 0% means to not ignore any.
+                </p>
+                <p><strong>3rd slider</strong> (<em>"See fewer/more words on page"</em>): <br>&nbsp;&nbsp;&nbsp;&nbsp;Affects how often you see translated words without altering the set of words you want translated.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;0% means no word on the site will be translated. 100% means every vocabulary word found on the site will be translated.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;I recommend setting it so that only a few words per paragraph are changed.
+                </p>
             </div>
 
         </div>
@@ -200,6 +210,8 @@ line
                 <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;Use this app as an accompaniment to other language lessons. It is nothing more than a flashcard app integrated into your web browser.
                     You will be shown foreign words in the context of an English sentence, enabling you to use the sentence's meaning to familiarize yourself with the meaning of the foreign word.
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Some languages are better supported than others, based on the community on wiktionary.org. The most popular a language, the more vocabulary words are available. Most languages on here do not actually have 4,300 vocab words. Old English, for example, has only 93 (but I still provide it because it's silly).
                 </p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;While I've tried my best, there will still be many words translated incorrectly given the sentence. It is up to you to differentiate good from poor translations.
                     The quality of this app is not gauranteed, as the translations for the dozen+ languages were algorithmically prepared, and not necessarily checked by hand.
