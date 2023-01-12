@@ -2,12 +2,11 @@
   "name": "-glish",
   "version": "1.00",
   "description": "Vocab learner with common foreign words injected into your english websites.",
-  "permissions": ["storage"],
+  "permissions": ["storage", "tabs"],
   "content_scripts": [
     {
       "matches": ["https://*/*", "http://*/*"],
       "js": ["src/translate.js"],
-      "exclude_globs": ["*://*mail*.*/*"],
       "css": ["src/hoverover.css"]
     }
   ],
@@ -42,5 +41,5 @@
     }
   ],
   "manifest_version": 3,
-  "minimum_chrome_version": "6"
+  "minimum_chrome_version": "88"
 }

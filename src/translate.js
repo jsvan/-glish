@@ -9,7 +9,7 @@ let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
 const TIMEOUT = 250;
-const DEBUG = false;
+const DEBUG = true;
 
 /*
 This page is improperly named. All translation happens in Background.js. On load or a setting change, translate.js sends
@@ -26,7 +26,7 @@ window.addEventListener('load',
 
 
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
-	console.log("received message, ["+request.message+"] " + request)
+	print("received message, ["+request.message+"] " + request)
 	//page no longer valid, send page back to get translated.
 	if (request.message === "changed") {
 		if (OG_TEXT_NODES) {
@@ -109,12 +109,13 @@ function grab_and_go() {
 		print("not activated")
 		return;
 	}
-	chrome.runtime.sendMessage({message:"valid_website", glishurl:document.location.href}, function(response){
+	chrome.runtime.sendMessage({message:"valid_website"}, function(response){
 		if (!response || response.payload === "stop") {
-			console.log("Not allowed!!!")
+			print("Not allowed!!!")
+			ACTIVATE = false;
 			return;
 		}
-		console.log("Allowed!!!")
+		print("Allowed!!!")
 		WEB_PAGE_NODES = getTextNodes(document.body);
 		OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML)
 		OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent)
@@ -127,9 +128,10 @@ function grab_and_go() {
 function just_go() {
 	print("GOT THIS MANY TEXT SECTIONS: " + OG_TEXT_NODES.length)
 	if (COUNT_TEXT_SECTIONS < 8 || !ACTIVATE){
-		return
+		print("Ending because activated is : "+ACTIVATE+", or COUNT is "+COUNT_TEXT_SECTIONS)
+		return;
 	}
-	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT, glishurl:document.location.href}, function(response){
+	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT}, function(response){
 		print("Received lang data:")
 		if (!response) {
 			return;

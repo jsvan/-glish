@@ -8,12 +8,14 @@
  * If a setting is toggled within popup.html/js, popup.js sends that information to background, where background will save it,
  * and alert translate.js if their state is no longer valid.
  *
- * All roads lead to Rome.
+ * All roads lead through Rome.
  *
- *
+ * Unrelated:
+ * If chrome extension page Error page is blank, insert this into console:
+ * URL=class extends URL { constructor(href, ...rest) { super(href || 'dummy://', ...rest) } }
  */
 
-const DEBUG = false;
+const DEBUG = true;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
 let CHANCE = null;
@@ -63,7 +65,6 @@ chrome.runtime.onInstalled.addListener(function (rsn) {
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	print("Background received message, "+request + ", "+ request.message)
 	if (request.message === "translate") {
-		WORKING_URL = request.glishurl;
 		print("Preparing translation:")
 		getActivated().then(()=>{
 			if (ACTIVATED) {
@@ -115,16 +116,20 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 
 	} else if (request.message === "valid_website") {
-		console.log(request)
-		WORKING_URL = request.glishurl;
-		getNogozones().then(() => {
-			console.log(WORKING_URL + ", Nogozones: " + typeof NOGOZONES)
-			console.log(NOGOZONES)
-			const access = NOGOZONES.some(suburl=>WORKING_URL.includes(suburl)) ? "stop" : "go";
-			sendResponse({
-					payload: access},
-				()=>{});
-		})
+		chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs)=> {
+			print("Callback!")
+			WORKING_URL = tabs[0].url;
+			getNogozones().then(() => {
+				print(WORKING_URL + ", Nogozones: " + typeof NOGOZONES)
+				print(NOGOZONES)
+				const access = NOGOZONES.some(suburl=>WORKING_URL.includes(suburl)) ? "stop" : "go";
+				sendResponse({
+						payload: access},
+					()=>{});
+			})
+
+		});
+
 		return true;
 
 	} else if (request.message === "get_agr") {
@@ -294,17 +299,20 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	}
 	else if (request.message === "set_nogozones") {
 		NOGOZONES = request.payload;
-		console.log("Has working url of "+WORKING_URL)
-		chrome.storage.sync.set({NOGOZONES_STORAGE: NOGOZONES}, ()=>{
-			if (WORKING_URL !== null) {
-				if (NOGOZONES.some(suburl => WORKING_URL.includes(suburl))) {
-					sendmessage({message: "deactivate"})
-				} else {
-					sendmessage({message: "activate"})
+		chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs)=> {
+			WORKING_URL = tabs[0].url;
+			print("Has working url of "+WORKING_URL)
+			chrome.storage.sync.set({NOGOZONES_STORAGE: NOGOZONES}, ()=>{
+				if (WORKING_URL !== null) {
+					if (NOGOZONES.some(suburl => WORKING_URL.includes(suburl))) {
+						sendmessage({message: "deactivate"})
+					} else {
+						sendmessage({message: "activate"})
+					}
 				}
-			}
-			sendResponse({payload:"200"});
-		} )
+				sendResponse({payload:"200"});
+			} )
+		});
 		return true;
 	}
 
