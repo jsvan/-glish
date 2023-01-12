@@ -9,7 +9,7 @@ let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
 const TIMEOUT = 250;
-const DEBUG = true;
+const DEBUG = false;
 
 /*
 This page is improperly named. All translation happens in Background.js. On load or a setting change, translate.js sends
@@ -181,14 +181,17 @@ document.body.addEventListener("mousedown", function(e) {
 		}
 	}, 200)
 });
+
 document.body.addEventListener("mouseup", function(e) {
 	UP = new Date();
-
 	// click
 	if ((UP - DOWN) < TIMEOUT) {
 		rotateWord(e);
 
 		//check to see if iframe window should be closed:
+		if (!document.getElementById("glishdlg")) {
+			attachDialog();
+		}
 		if (document.getElementById('glishdlg').open ){
 			const rectA = document.getElementById("glishdlg").getBoundingClientRect();
 			const rectB = document.getElementById("glishclickoff").getBoundingClientRect();

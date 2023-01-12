@@ -1,27 +1,32 @@
 const DEBUG = false;
 let AGR = 0, BRD = 0;
 
+document.getElementById("About").addEventListener("mouseup", function(){hideshow("About")});
 document.getElementById("Aggression").addEventListener("mouseup", sendAggression);
-document.getElementById("Aggression").addEventListener("input", function(){changeRange("Aggression")});
-document.getElementById("Chance").addEventListener("mouseup", sendChance);
-document.getElementById("Chance").addEventListener("input", function(){changeRange("Chance")});
 document.getElementById("Boredom").addEventListener("mouseup", sendBoredom);
-document.getElementById("Boredom").addEventListener("input", function(){changeRange("Boredom")});
+document.getElementById("Chance").addEventListener("mouseup", sendChance);
+document.getElementById("Instructions").addEventListener("mouseup", function(){hideshow("Instructions")});
+document.getElementById("Settings").addEventListener("mouseup", function(){hideshow("Settings")});
+document.getElementById("Support").addEventListener("mouseup", function(){hideshow("Support")});
+
+document.getElementById("Aggression").addEventListener("input", changeAggression);
+document.getElementById("Boredom").addEventListener("input", changeBoredom);
+document.getElementById("Chance").addEventListener("input", function(){changeRange("Chance")});
+document.getElementById("Nogozones").addEventListener("input", () => textareaChanged("Nogozones"))
+document.getElementById("Nonowords").addEventListener("input", () => textareaChanged("Nonowords"))
+
 document.getElementById("Activated").addEventListener('change', activate);
 document.getElementById("Bold").addEventListener('change', bold);
 document.getElementById("Italic").addEventListener('change', italic);
 document.getElementById("LanguageSelect").addEventListener("change", set_fgn)
-document.getElementById("Support").addEventListener("mouseup", function(){hideshow("Support")});
-document.getElementById("About").addEventListener("mouseup", function(){hideshow("About")});
-document.getElementById("Instructions").addEventListener("mouseup", function(){hideshow("Instructions")});
-document.getElementById("Settings").addEventListener("mouseup", function(){hideshow("Settings")});
+document.getElementById("Skipproper").addEventListener('change', skipproper);
+
+document.getElementById("Advanced").addEventListener("click", ()=>quickskill(86,74,80))
 document.getElementById("Beginner").addEventListener("click", ()=>quickskill(16,0,15))
 document.getElementById("Intermediate").addEventListener("click", ()=>quickskill(50,16,25))
-document.getElementById("Advanced").addEventListener("click", ()=>quickskill(86,74,80))
-document.getElementById("Nogozones").addEventListener("input", () =>textareaChanged("Nogozones"))
-document.getElementById("Nonowords").addEventListener("input", () => textareaChanged("Nonowords"))
-document.getElementById("Nonowords_save").addEventListener("click", ()=> saveTextarea("Nonowords"))
 document.getElementById("Nogozones_save").addEventListener("click", ()=> saveTextarea("Nogozones"))
+document.getElementById("Nonowords_save").addEventListener("click", ()=> saveTextarea("Nonowords"))
+
 
 window.addEventListener('load',
     function() {
@@ -55,7 +60,7 @@ function saveTextarea(id){
     let items = text.split('\n').map(ii => ii.trim());
     items = items.filter(ii => ii);
     if (id === "Nonowords"){
-        items.forEach((x) => x.toLowerCase());
+        items = items.map((x) => x.toLowerCase());
     }
     chrome.runtime.sendMessage({message: "set_" + id.toLowerCase(), payload: items}, function(response) {
         print("Got response for set_lng, ["+response+"]")
@@ -101,22 +106,28 @@ function set_fgn() {
 }
 
 function activate() {
-    document.getElementById('Activated').toggleAttribute("checked", true); //setAttribute("checked")
+    document.getElementById('Activated').toggleAttribute("checked", true);
     chrome.runtime.sendMessage({message: "set_act"}, function(response){
         print("sent activate");
     });
 }
 
 function bold() {
-    document.getElementById('Bold').toggleAttribute("checked", true); //setAttribute("checked")
+    document.getElementById('Bold').toggleAttribute("checked", true);
     chrome.runtime.sendMessage({message: "set_bld"}, function(response){
         print("sent bold");
     });
 }
 function italic() {
-    document.getElementById('Italic').toggleAttribute("checked", true); //setAttribute("checked")
+    document.getElementById('Italic').toggleAttribute("checked", true);
     chrome.runtime.sendMessage({message: "set_itl"}, function(response){
         print("sent italic");
+    });
+}
+function skipproper() {
+    document.getElementById('Skipproper').toggleAttribute("checked", true);
+    chrome.runtime.sendMessage({message: "set_prp"}, function(response){
+        print("sent proper");
     });
 }
 
@@ -145,7 +156,22 @@ function sendBoredom(){
         set_vocab_size();
     });
 }
-function changeRange(id){
+function changeBoredom() {
+    const id = "Boredom";
+    BRD = document.getElementById(id).value;
+    changeRange(id);
+    set_vocab_size();
+}
+
+function changeAggression() {
+    const id = "Aggression";
+    AGR = document.getElementById(id).value;
+    changeRange(id);
+    set_vocab_size();
+}
+
+
+function changeRange(id, change_size_too){
     document.getElementById(id+"Count").innerHTML = document.getElementById(id).value + "%";
 }
 
@@ -170,10 +196,10 @@ function load_page() {
     });
 
     chrome.runtime.sendMessage({message: "get_sty"}, function(response){
-        if (response.bold) {
+        if (response.glishbold) {
             document.getElementById('Bold').toggleAttribute("checked", true);
         }
-        if (response.italic) {
+        if (response.glishitalic) {
             document.getElementById('Italic').toggleAttribute("checked", true);
         }
     });
@@ -204,6 +230,11 @@ function load_page() {
     chrome.runtime.sendMessage({message: "get_txs"}, function(response){
         document.getElementById("Nonowords").value = response.nonowords.join('\n');
         document.getElementById("Nogozones").value = response.nogozones.join('\n');
+    });
+    chrome.runtime.sendMessage({message: "get_prp"}, function(response){
+        if (!response.skipproper){
+            document.getElementById('Skipproper').toggleAttribute("checked", true);
+        }
     });
 
 

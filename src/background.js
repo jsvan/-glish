@@ -15,9 +15,10 @@
  * URL=class extends URL { constructor(href, ...rest) { super(href || 'dummy://', ...rest) } }
  */
 
-const DEBUG = true;
+const DEBUG = false;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
+let SKIP_PROPER = null;
 let CHANCE = null;
 let SCALED_CHANCE = null
 let BOREDOM = null;
@@ -30,8 +31,8 @@ let FOREIGN = null;
 let NOGOZONES = null;
 let NONOWORDS = null;
 let WORKING_URL = null;
-let BOLD = true;
-let ITALIC = true;
+let BOLD = null;
+let ITALIC = null;
 const AGGRO_STORAGE_TAG = "AGGRO_STORAGE_TAG";
 const CHANCE_STORAGE_TAG = "CHANCE_STORAGE_TAG";
 const BOREDOM_STORAGE_TAG = "BOREDOM_STORAGE_TAG";
@@ -41,6 +42,7 @@ const BOLD_STORAGE = "BOLD_STORAGE";
 const ITALIC_STORAGE = "ITALIC_STORAGE";
 const NONOWORDS_STORAGE = "NONOWORDS_STORAGE";
 const NOGOZONES_STORAGE = "NOGOZONES_STORAGE";
+const SKIP_PROPER_STORAGE = "SKIP_PROPER_STORAGE"
 const SEEN = new Set();
 
 
@@ -56,6 +58,7 @@ chrome.runtime.onInstalled.addListener(function (rsn) {
 	chrome.storage.sync.set({ITALIC_STORAGE:true}, () => {});
 	chrome.storage.sync.set({NOGOZONES_STORAGE:[]}, () => {});
 	chrome.storage.sync.set({NONOWORDS_STORAGE:[]}, () => {});
+	chrome.storage.sync.set({SKIP_PROPER_STORAGE:false}, ()=>{})
 
 	if (chrome.runtime.OnInstalledReason.INSTALL === rsn.reason) {
 		chrome.tabs.create({'url':"src/popup.html", 'active':true}, ()=>{})
@@ -68,47 +71,33 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		print("Preparing translation:")
 		getActivated().then(()=>{
 			if (ACTIVATED) {
-				getNonowords().then(() =>
-					getChance().then(() =>
-						getBoredom().then(() =>
-							getEnglish().then(() =>
-								getLangData().then(() =>
-									getAggression().then(()=>
-										getStyle().then(() => {
-											print("Aggression is: " + AGGRESSION)
-											print("preparing translation: Got Lang data")
-											if (!FOREIGN) {
-												return 0;
-											}
-											const chunks_to_translate = request.payload;
-											print("chunks")
-											print(chunks_to_translate)
-											const translated_chunks = [];
-											let idint = 0;
-											let newstring = null;
-											for (let i = 0; i < chunks_to_translate.length; i++) {
-												print("chunks");
-												print(chunks_to_translate[i]);
-												[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
-
-												translated_chunks.push(newstring);
-											}
-											print("BACKGROUND sending translated response")
-											//print(translated_chunks)
-											print("Lang Data is: "+LANG_DATA[0])
-											sendResponse({
-												payload: translated_chunks,
-												language: capitalize(LANG_DATA[0]),
-												glishbold: BOLD,
-												glishitalic: ITALIC
-											}, ()=>{});
-											return 1;
-										})
-									)
-								)
-							)
-						)
-					)
+				getEverything().then(()=>
+					{
+						print("preparing translation: Got Lang data")
+						if (!FOREIGN) {
+							return 0;
+						}
+						const chunks_to_translate = request.payload;
+						print("chunks")
+						print(chunks_to_translate)
+						const translated_chunks = [];
+						let idint = 0;
+						let newstring = null;
+						for (let i = 0; i < chunks_to_translate.length; i++) {
+							[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
+							translated_chunks.push(newstring);
+						}
+						print("BACKGROUND sending translated response")
+						//print(translated_chunks)
+						print("Lang Data is: "+LANG_DATA[0])
+						sendResponse({
+							payload: translated_chunks,
+							language: capitalize(LANG_DATA[0]),
+							glishbold: BOLD,
+							glishitalic: ITALIC
+						}, ()=>{});
+						return 1;
+					}
 				)
 			}
 			return 0;
@@ -168,18 +157,27 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			}, ()=>{})
 		)
 		return true;
-
-	} else if (request.message === "get_sty") {
+	}
+	else if (request.message === "get_sty") {
 		print("Getting sty")
 		getStyle().then(() =>
 			sendResponse({
-				bold: BOLD,
-				italic: ITALIC
+				glishbold: BOLD,
+				glishitalic: ITALIC
 			}, ()=>{})
 		)
 		return true;
-
-	} else if (request.message === "get_txs") {
+	}
+	else if (request.message === "get_prp") {
+		print("Getting prp")
+		getProper().then(() =>
+			sendResponse({
+				skipproper:SKIP_PROPER
+			}, ()=>{})
+		)
+		return true;
+	}
+	else if (request.message === "get_txs") {
 		getNogozones().then(() =>
 			getNonowords().then(() =>
 				sendResponse({
@@ -288,6 +286,14 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		} )
 		return true;
 	}
+	else if (request.message === "set_prp") {
+		SKIP_PROPER = !SKIP_PROPER;
+		chrome.storage.sync.set({SKIP_PROPER_STORAGE:SKIP_PROPER}, ()=>{
+			sendmessage({message:"changed"});
+			sendResponse({payload:"200"});
+		} )
+		return true;
+	}
 	else if (request.message === "set_nonowords") {
 		let nonowords_list = request.payload;
 		NONOWORDS = new Set(nonowords_list);
@@ -325,6 +331,23 @@ function sendmessage(messagedict) {
 	});
 }
 
+function getEverything() {
+	return getProper().then(() =>
+		getNonowords().then(() =>
+			getChance().then(() =>
+				getBoredom().then(() =>
+					getEnglish().then(() =>
+						getLangData().then(() =>
+							getAggression().then(()=>
+								getStyle()
+							)
+						)
+					)
+				)
+			)
+		)
+	);
+}
 /*
 Gets from mem or chrome storage Aggression and Scaled aggression.
 Returns [Aggression, Scaled Aggression]
@@ -521,7 +544,6 @@ Calls:
 * Changing this to only translate a word once per node
  */
 function replaceNodeVocab(node, idint){
-	//if (node.contains("<a "))
 	SEEN.clear();
 	if (!node.trim()){
 		return [node, idint]
@@ -529,32 +551,46 @@ function replaceNodeVocab(node, idint){
 	const words = node.split(' ');
 	const newwords = [];
 	let word = null;
-	for (let i=0; i< words.length; i++){
+	let prevwassentence = true, this_finishes_sentence = false;
+	for (let i=0; i < words.length; i++){
 		word = words[i].toString();
-
-		if (word.length > 40) { // || (word.length > 1 && word === word.toUpperCase())
-			continue
-		}
-
 		let replacementword = word;
-		if (Math.random() < SCALED_CHANCE) {
 
+		if (Math.random() < SCALED_CHANCE) {
 			const upper = word.charAt(0) === word.charAt(0).toUpperCase();
 			let cleanword = word.toLowerCase();
 			let finalchar = cleanword.charAt(cleanword.length - 1);
-			if (['.',',',':','!','?'].indexOf(finalchar) >= 0) {
+
+			if ([',', ':'].indexOf(finalchar) >= 0) {
 				cleanword = cleanword.substring(0, cleanword.length - 1);
+				this_finishes_sentence = false;
+			} else if (['.', '!', '?'].indexOf(finalchar) >= 0) {
+				cleanword = cleanword.substring(0, cleanword.length - 1);
+				this_finishes_sentence = true;
 			} else {
+				this_finishes_sentence = false;
 				finalchar = '';
 			}
-			if (cleanword.length > 0 && !NONOWORDS.has(cleanword) && in_working(cleanword) && !SEEN.has(cleanword)) {
-				replacementword = formatTranslateWord(cleanword, idint, upper);
-				SEEN.add(cleanword);
-				if (finalchar) {
-					replacementword = replacementword + finalchar;
+			// shit heuristic to skip Proper Nouns. Look for Capitalized things in the middle of a sentence and skip.
+			// or if word is too long
+			// or if word is entirely uppercased
+			if (	(upper && !prevwassentence && SKIP_PROPER) ||
+					(word.length > 40) ||
+					(word.length > 1 && word === word.toUpperCase()) ) {
+
+						// do nothing, because the logic is already messy enough without NOTing it.
+
+ 			} else {
+				if (cleanword.length > 0 && !NONOWORDS.has(cleanword) && in_working(cleanword) && !SEEN.has(cleanword)) {
+					replacementword = formatTranslateWord(cleanword, idint, upper);
+					SEEN.add(cleanword);
+					if (finalchar) {
+						replacementword = replacementword + finalchar;
+					}
+					idint += 1;
 				}
-				idint += 1;
 			}
+			prevwassentence = this_finishes_sentence;
 		}
 		newwords.push(replacementword);
 	}
@@ -594,12 +630,10 @@ function formatTranslateWord(englishword, idint, upper){
 	}
 	let foreignword = fwordlst[0].startsWith("-") ? subpar_word(fwordlst[1], englishword) : fwordlst[0];
 	if (!foreignword){
-		return englishword
+		return capitalize(englishword, upper);
 	}
 	let foreignlist = fwordlst[1];
-	if (upper){
-		foreignword = capitalize(foreignword);
-	}
+	foreignword = capitalize(foreignword, upper);
 	foreignword = word_html_replacement(foreignword, englishword, idint, {"nvoc":foreignlist, "nvi":1, "cpt":(upper ? 'y': 'n')});
 	return foreignword;
 }
@@ -609,8 +643,7 @@ const word_html_replacement = function (translated, original, idnum, datadict={}
 		return ("data-" + name + "=\"" + value + "\"");
 	}).join(' ');
 
-	const toret = "<span class=\"glishword\" "+mydata+" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>" +
-		"<span class=\"b\" id='Nos"+idnum+"VocW'>" + "</span>";
+	const toret = "<span class=\"glishword\" "+mydata+" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>";
 	return toret;
 };
 
@@ -629,6 +662,15 @@ function getActivated() {
 		});
 	}
 	return Promise.resolve(ACTIVATED);
+}
+function getProper() {
+	if (SKIP_PROPER === null) {
+		return chrome.storage.sync.get([SKIP_PROPER_STORAGE]).then((response) => {
+			SKIP_PROPER = response.SKIP_PROPER_STORAGE;
+			return SKIP_PROPER;
+		});
+	}
+	return Promise.resolve(SKIP_PROPER)
 }
 
 function getStyle() {
@@ -656,9 +698,9 @@ function getStyle() {
 
 
 
-function capitalize(word){
-	if (!word){
-		return
+function capitalize(word, upper=true){
+	if (!word || !upper){
+		return word;
 	}
 	return word.charAt(0).toUpperCase() + word.slice(1);
 }

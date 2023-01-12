@@ -79,7 +79,7 @@
             <input type="range" id="Chance" min="0" max="100" value="5" step="5" title="Raise or lower the number of words translated per page. 0% means no vocabulary words will be translated and 100% means every found vocabulary word will be converted."/>
             <br>
 
-            <p style="text-align: center"><em>There is a <strong><span id="ChanceCount">-- %</span></strong> chance to translate words from a vocabulary list with <strong><span id="size2">0</span></strong> unique words in it.</em></p>
+            <p style="text-align: center"><em>There is a <strong><span id="ChanceCount">-- %</span></strong> chance to translate words from a vocabulary list with<br><strong><span id="size2">0</span></strong> unique words in it.</em></p>
             <div style="display:table; margin:auto;">
                 <div style="color:red; text-align: left; transform: rotate(-7deg);" id="warning"></div>
             </div>
@@ -104,14 +104,21 @@
                         <td style="text-align: center; display:table; margin: auto;">
                             <input style="text-align: center; display:table; margin: auto;" type="checkbox" id="Bold" />
                         </td>
-                        <td><label for="Bold" style="text-align: right">Translated words in <strong>bold</strong></label></td>
+                        <td><label for="Bold">Translated words in <strong>bold</strong></label></td>
                     </tr>
                     <tr style="text-align: center">
 
                         <td style="text-align: center; ">
                             <input style="text-align: center; " type="checkbox" id="Italic" />
                         </td>
-                        <td><label for="Italic" style="text-align: right">Translated words in <em>italic</em></label></td>
+                        <td><label for="Italic">Translated words in <em>italic</em></label></td>
+                    </tr>
+                    <tr style="text-align: left">
+
+                        <td style="text-align: center; ">
+                            <input style="text-align: center; " type="checkbox" id="Skipproper" />
+                        </td>
+                        <td><label for="Skipproper" title="Capitalized words in the middle of a sentence will be translated." >Translate Proper Nouns</label></td>
                     </tr>
                 </table>
                 <br>
