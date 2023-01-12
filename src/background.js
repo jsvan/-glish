@@ -15,7 +15,7 @@
  * URL=class extends URL { constructor(href, ...rest) { super(href || 'dummy://', ...rest) } }
  */
 
-const DEBUG = false;
+const DEBUG = true;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
 let SKIP_PROPER = null;
@@ -556,7 +556,7 @@ function replaceNodeVocab(node, idint){
 		word = words[i].toString();
 		let replacementword = word;
 
-		if (Math.random() < SCALED_CHANCE) {
+		if (word.length < 40 && Math.random() < SCALED_CHANCE) {
 			const upper = word.charAt(0) === word.charAt(0).toUpperCase();
 			let cleanword = word.toLowerCase();
 			let finalchar = cleanword.charAt(cleanword.length - 1);
@@ -575,7 +575,6 @@ function replaceNodeVocab(node, idint){
 			// or if word is too long
 			// or if word is entirely uppercased
 			if (	(upper && !prevwassentence && SKIP_PROPER) ||
-					(word.length > 40) ||
 					(word.length > 1 && word === word.toUpperCase()) ) {
 
 						// do nothing, because the logic is already messy enough without NOTing it.

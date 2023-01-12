@@ -9,7 +9,7 @@ let DOWN = null;
 let UP = null;
 let PREV_IFRAME_WORD = null;
 const TIMEOUT = 250;
-const DEBUG = false;
+const DEBUG = true;
 
 /*
 This page is improperly named. All translation happens in Background.js. On load or a setting change, translate.js sends
@@ -264,7 +264,7 @@ function getTextNodes(parent = document.body){
     let all = [];
 
     for (parent = parent.firstChild; parent; parent = parent.nextSibling) {
-        if (['SCRIPT','STYLE', 'A', 'CODE', 'BUTTON'].indexOf(parent.tagName) >= 0) {
+        if (['SCRIPT','STYLE', 'A', 'CODE', 'BUTTON', 'META', "NOSCRIPT"].indexOf(parent.tagName) >= 0) {
 			continue;
 		}
         if (parent.nodeType === Node.TEXT_NODE && parent.data.trim()) {
