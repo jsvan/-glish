@@ -131,7 +131,6 @@ function sendAggression(){
 }
 function sendChance(){
     changeRange("Chance");
-    document.getElementById("Chance2").innerText = document.getElementById("Chance").value;
     // Save value to session storage:
     chrome.runtime.sendMessage({message: "set_chn", payload: document.getElementById("Chance").value}, function(response){
         print("sent chance");
@@ -198,8 +197,7 @@ function load_page() {
     chrome.runtime.sendMessage({message: "get_chn"}, function(response){
         const newchn = response.payload;
         document.getElementById("Chance").value = newchn;
-        document.getElementById("Chance2").innerText = newchn;
-        changeRange("Chance");
+        changeRange("Chance")
         print("Chance is now: " + newchn);
     });
 

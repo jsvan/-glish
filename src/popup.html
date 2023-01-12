@@ -68,19 +68,18 @@
             <div>
                 <label for="Boredom" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything.">Ignore the first <span id="BoredomCount">-- %</span> of dictionary:</label>
             </div>
-            <input type="range" id="Boredom" min="0" max="100" value="0" step="2" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything."/>
+            <input type="range" id="Boredom" min="0" max="100" value="0" step="2" title="Choose what percentage of the early vocab to ignore. 0% means to cut no words out, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything."/>
             <br>
             <br>
             <div>
-                <label for="Chance" title="Raise or lower the number of words translated per page. 0% means no vocabulary words will be translated and 100% means every found vocabulary word will be converted.">
-                    Convert words with a
-                    <span id="ChanceCount">-- %</span>
-                    chance:
+                <label for="Chance" title="Raise or lower the number of words translated per page. 0% means no vocabulary words will be translated and 100% means every found vocabulary word will be translated.">
+                    See fewer/more words per page:
                 </label>
             </div>
             <input type="range" id="Chance" min="0" max="100" value="5" step="5" title="Raise or lower the number of words translated per page. 0% means no vocabulary words will be translated and 100% means every found vocabulary word will be converted."/>
             <br>
-            <p style="text-align: center"><em>There is a <strong><span id="Chance2">-</span>%</strong> chance to translate words from a vocabulary list with <strong><span id="size2">0</span></strong> unique words in it.</em></p>
+
+            <p style="text-align: center"><em>There is a <strong><span id="ChanceCount">-- %</span></strong> chance to translate words from a vocabulary list with <strong><span id="size2">0</span></strong> unique words in it.</em></p>
             <div style="display:table; margin:auto;">
                 <div style="color:red; text-align: left; transform: rotate(-7deg);" id="warning"></div>
             </div>
@@ -156,7 +155,7 @@ line
                 <br>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>The 1st slider</strong> (<em>"Use up to 6% of dictionary"</em>), changes the range of vocabulary you want to translate. 100% means to use all 4,000 words in the vocab list. I recommend starting low and working your way up. </p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>The 2nd slider</strong> (<em>"Ignore the first 2% of dictionary"</em>), allows you to ignore earlier words that you're comfortable with already. 0% means use entire dictionary, 25% means ignoring the first quarter of the vocab words, and 100% means ignore everything.</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>The 3rd slider</strong> (<em>"Convert words with a 20% chance"</em>), affects how often you see translated words without altering the set of words you want translated. 0% means no words will be converted. 100% means every found vocabulary word will be converted. I recommend setting it so that only a few words per paragraph are changed. </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>The 3rd slider</strong> (<em>"See fewer/more words on page (20% max)"</em>), affects how often you see translated words without altering the set of words you want translated. 0% means no word will be translated. 100% means every found vocabulary word will be translated. I recommend setting it so that only a few words per paragraph are changed. </p>
             </div>
 
         </div>
