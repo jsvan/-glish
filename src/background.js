@@ -691,7 +691,7 @@ function getStyle() {
 		return Promise.resolve(ITALIC);
 	}
 
-	return getBold().then(()=>{return getItalic()});
+	return getBold().then(()=> getItalic());
 }
 
 
