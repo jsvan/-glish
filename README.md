@@ -7,22 +7,37 @@ Translate random common words within your webpages to a language of your choice.
 This app is intended for people who'd like to expose themselves to foreign vocabulary, but aren't sufficiently knowledgable to read foreign websites.
 Do not learn grammar from this app. The words are translated directly and often incorrectly. Use this app as a type of flashcard practice to adjust to foreign words in the context of an uunderstood sentence.
 
-Available languages in version 1.0 are:
-* arabic
-* chinese
-* czech
-* french
-* german
-* hindi
-* italian
-* japanese
-* korean
-* portuguese
-* ukrainian
-* russian
-* spanish
-* turkish
+Available languages in version 1.001 are:
+01) arabic	ar
+02) chinese	zh
+03) czech	cs
+04) esperanto	eo
+05) estonian	et
+06) french	fr
+07) german	de
+08) hebrew	he
+09) hindi	hi
+10) italian	it
+11) japanese	ja
+12) korean	ko
+13) low_German	nds
+14) old_English	ang
+15) pashto	ps
+16) persian	fa
+17) polish	pl
+18) portuguese	pt
+19) russian	ru
+20) sanskrit	sa
+21) spanish	es
+22) swahili	sw
+23) swedish	sv
+24) thai	th
+25) turkish	tr
+26) ukrainian	uk
+27) vietnamese	vi
+28) welsh	cy
 
+Some languages are better supported than others, depending on the community behind wiktionary.
 
 TO INSTALL:
 1) Download/unzip code
