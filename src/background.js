@@ -605,7 +605,6 @@ function in_working(word) {
 
 function subpar_word(fwordlst) {
 	fwordlst = fwordlst.split('$')
-	fwordlst.push('')
 	let r = Math.floor(Math.random() * fwordlst.length)
 	if (!fwordlst[r]){
 		return ''

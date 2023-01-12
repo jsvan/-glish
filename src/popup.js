@@ -21,7 +21,7 @@ document.getElementById("Italic").addEventListener('change', italic);
 document.getElementById("LanguageSelect").addEventListener("change", set_fgn)
 document.getElementById("Skipproper").addEventListener('change', skipproper);
 
-document.getElementById("Advanced").addEventListener("click", ()=>quickskill(86,74,80))
+document.getElementById("Advanced").addEventListener("click", ()=>quickskill(90,76,80))
 document.getElementById("Beginner").addEventListener("click", ()=>quickskill(16,0,15))
 document.getElementById("Intermediate").addEventListener("click", ()=>quickskill(50,16,25))
 document.getElementById("Nogozones_save").addEventListener("click", ()=> saveTextarea("Nogozones"))
