@@ -286,7 +286,7 @@ před#před
 informace#informace
 nic#nic
 společenství#komunita$společenství
-porazit#porazit
+nejlepší#porazit$nejlepší
 nápad#idea$myšlenka$nápad
 vodit#vést$olovo$vodit
 tělo#organizace$skupina$těleso$orgán$body$tělo
