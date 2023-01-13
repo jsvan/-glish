@@ -39,6 +39,8 @@ Available languages in version 1.001 are:
 28) welsh	cy
 
 Some languages are better supported than others, depending on the community behind wiktionary. Some languages have most vocab words present, others have many missing.
+Written in vanilla javascript/html/css, with python for datascraping. 
+
 
 TO INSTALL:
 1) Download/unzip code
