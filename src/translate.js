@@ -186,6 +186,7 @@ document.body.addEventListener("mousedown", function(e) {
 
 document.body.addEventListener("mouseup", function(e) {
 	UP = new Date();
+
 	// click
 	if ((UP - DOWN) < TIMEOUT) {
 		rotateWord(e);
