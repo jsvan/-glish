@@ -38,7 +38,7 @@ Available languages in version 1.001 are:
 27) vietnamese	vi
 28) welsh	cy
 
-Some languages are better supported than others, depending on the community behind wiktionary.
+Some languages are better supported than others, depending on the community behind wiktionary. Some languages have most vocab words present, others have many missing.
 
 TO INSTALL:
 1) Download/unzip code
@@ -57,7 +57,9 @@ TO USE:
 
 Here are examples of what it does to your page. Words are replaced with foreign language vocabulary word.
 
-![image](https://user-images.githubusercontent.com/9337973/210815696-5644d120-713c-4f0f-8604-515a26061097.png)
+![image](https://user-images.githubusercontent.com/9337973/212365155-4a6881ff-e2a4-4e54-9712-c34f4d954780.png)
+
+![image](https://user-images.githubusercontent.com/9337973/212365395-d47fa47e-3e9d-45da-b7f0-f104daec3502.png)
 
 
 <img src="https://user-images.githubusercontent.com/9337973/208025242-c2d285ef-ce45-4960-b7f4-23ac44120d31.png" >
