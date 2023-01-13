@@ -1,5 +1,6 @@
 # -Glish 
 https://chrome.google.com/webstore/detail/glish/jfheijenmheiialipkmahkhcdmfefclb/related?hl=en&authuser=1
+* Note: app store behind by one update
 
 #### The Foreign Vocab Learner
 
