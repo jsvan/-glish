@@ -39,6 +39,7 @@ Available languages in version 1.001 are:
 28) welsh	cy
 
 Some languages are better supported than others, depending on the community behind wiktionary. Some languages have most vocab words present, others have many missing.
+
 Written in vanilla javascript/html/css, with python for datascraping. 
 
 
@@ -60,6 +61,7 @@ TO USE:
 Here are examples of what it does to your page. Words are replaced with foreign language vocabulary word.
 
 ![image](https://user-images.githubusercontent.com/9337973/212365155-4a6881ff-e2a4-4e54-9712-c34f4d954780.png)
+![image](https://user-images.githubusercontent.com/9337973/212398602-7a19ca48-9389-44d2-91c1-4feb223579ef.png)
 
 ![image](https://user-images.githubusercontent.com/9337973/212365395-d47fa47e-3e9d-45da-b7f0-f104daec3502.png)
 
