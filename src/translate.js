@@ -26,7 +26,8 @@ window.addEventListener('load',
 
 
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
-	print("received message, ["+request.message+"] " + request)
+	print("received message, ["+request.message+"] ")
+	print(request)
 	//page no longer valid, send page back to get translated.
 	if (request.message === "changed") {
 		if (OG_TEXT_NODES) {
@@ -174,9 +175,10 @@ function weave_nodes(node_list){
 
 document.body.addEventListener("mousedown", function(e) {
 	DOWN = new Date();
+	const localdown = DOWN;
 	setTimeout(()=>{
 		// click & hold
-		if (UP <= DOWN) {
+		if (UP <= localdown) {
 			iframe(e);
 		}
 	}, 200)

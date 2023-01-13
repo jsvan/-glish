@@ -293,7 +293,7 @@ function print(s) {
 function set_vocab_size(){
     const v_size = Math.floor(Math.max(0, aggressionToIdx(AGR) - aggressionToIdx(BRD)));
     if (v_size === 0) {
-        document.getElementById("warning").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Warning: Not translating any <br>words. Make sure you are using <br>more of the dictionary than you are <br>ignoring.<br><br>"
+        document.getElementById("warning").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Warning: Won't translate any <br>words. Make sure you are using <br>more of the dictionary than you are <br>ignoring.<br><br>"
     } else {
         document.getElementById("warning").innerHTML = "";
     }

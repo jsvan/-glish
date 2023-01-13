@@ -160,11 +160,13 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	}
 	else if (request.message === "get_sty") {
 		print("Getting sty")
-		getStyle().then(() =>
-			sendResponse({
-				glishbold: BOLD,
-				glishitalic: ITALIC
-			}, ()=>{})
+		getBold().then(() =>
+			getItalic().then(() =>
+				sendResponse({
+					glishbold: BOLD,
+					glishitalic: ITALIC
+				}, ()=>{})
+			)
 		)
 		return true;
 	}
@@ -270,28 +272,41 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		return true;
 	}
 	else if (request.message === "set_bld") {
-		BOLD = !BOLD;
-		chrome.storage.sync.set({BOLD_STORAGE:BOLD}, ()=>{
-			sendmessage({message:"style", glishbold:BOLD, glishitalic: ITALIC})
-			sendResponse({payload:"200"});
-		} )
-		return true;
+		getItalic().then(() =>
+			getBold().then(()=> {
+				BOLD = !BOLD
+				chrome.storage.sync.set({BOLD_STORAGE:BOLD}, ()=>{
+					sendmessage({message:"style", glishbold:BOLD, glishitalic: ITALIC})
+					sendResponse({payload:"200"});
+				} )
+				return true;
+			})
+		)
 
+		return true;
 	}
 	else if (request.message === "set_itl") {
-		ITALIC = !ITALIC;
-		chrome.storage.sync.set({ITALIC_STORAGE:ITALIC}, ()=>{
-			sendmessage({message:"style", glishbold:BOLD, glishitalic: ITALIC})
-			sendResponse({payload:"200"});
-		} )
+		getBold().then(() =>
+			getItalic().then(()=> {
+				ITALIC = !ITALIC;
+				chrome.storage.sync.set({ITALIC_STORAGE: ITALIC}, () => {
+					sendmessage({message: "style", glishbold: BOLD, glishitalic: ITALIC})
+					sendResponse({payload: "200"});
+				})
+				return true;
+			})
+		)
 		return true;
 	}
 	else if (request.message === "set_prp") {
-		SKIP_PROPER = !SKIP_PROPER;
-		chrome.storage.sync.set({SKIP_PROPER_STORAGE:SKIP_PROPER}, ()=>{
-			sendmessage({message:"changed"});
-			sendResponse({payload:"200"});
-		} )
+		getProper().then(() => {
+			SKIP_PROPER = !SKIP_PROPER;
+			chrome.storage.sync.set({SKIP_PROPER_STORAGE: SKIP_PROPER}, () => {
+				sendmessage({message: "changed"});
+				sendResponse({payload: "200"});
+			})
+			return true;
+		})
 		return true;
 	}
 	else if (request.message === "set_nonowords") {
@@ -321,7 +336,6 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		});
 		return true;
 	}
-
 });
 
 
@@ -339,7 +353,9 @@ function getEverything() {
 					getEnglish().then(() =>
 						getLangData().then(() =>
 							getAggression().then(()=>
-								getStyle()
+								getBold().then(()=>
+									getItalic()
+								)
 							)
 						)
 					)
@@ -670,30 +686,24 @@ function getProper() {
 	}
 	return Promise.resolve(SKIP_PROPER)
 }
-
-function getStyle() {
-	function getBold(){
-		if (BOLD === null) {
-			return chrome.storage.sync.get([BOLD_STORAGE]).then((response) => {
-				BOLD = response.BOLD_STORAGE;
-				return BOLD;
-			});
-		}
-		return Promise.resolve(BOLD);
+function getBold(){
+	if (BOLD === null) {
+		return chrome.storage.sync.get([BOLD_STORAGE]).then((response) => {
+			BOLD = response.BOLD_STORAGE;
+			return BOLD;
+		});
 	}
-	function getItalic(){
-		if (ITALIC === null) {
-			return chrome.storage.sync.get([ITALIC_STORAGE]).then((response) => {
-				ITALIC = response.ITALIC_STORAGE;
-				return ITALIC;
-			});
-		}
-		return Promise.resolve(ITALIC);
-	}
-
-	return getBold().then(()=> getItalic());
+	return Promise.resolve(BOLD);
 }
-
+function getItalic(){
+	if (ITALIC === null) {
+		return chrome.storage.sync.get([ITALIC_STORAGE]).then((response) => {
+			ITALIC = response.ITALIC_STORAGE;
+			return ITALIC;
+		});
+	}
+	return Promise.resolve(ITALIC);
+}
 
 
 function capitalize(word, upper=true){
