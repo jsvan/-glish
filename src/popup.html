@@ -151,6 +151,24 @@ line
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="Nonowords_save">Saved</button>
                 </div>
                 <br>
+                <div title='english-word (colon): what to translate to (separated by commas), ...'>
+                    <p><label for="Gogowords">Add your own vocab words:</label></p>
+                    <div style="text-align: center;"><textarea id="Gogowords" placeholder="(...
+cat: Katze, Kater
+blue: blaue
+indeed: in der Tat, genau
+...)"></textarea>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="Gogowords_save">Saved</button>
+                    <p>
+                        One term per line in the form of:
+                    </p>
+                    <blockquote>
+                        eng<sub>1</sub><strong>:</strong> wrd<sub>a</sub><strong>,</strong> wrd<sub>b</sub><strong>,</strong> wrd<sub>c</sub> ...
+                    </blockquote>
+
+                </div>
+                <br>
             </div>
 
         </div>
@@ -174,11 +192,11 @@ line
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;I recommend setting it so that only a few words per paragraph are changed.
                 </p>
             </div>
-
         </div>
 
         <p style="text-align: left"><a href="#void" id="Support" title="Support Menu">Donate</a></p>
         <div id="Support_Menu" style="text-align:left; display: none;">
+
             <div class="boxdiv myPadding">
                 <p >&nbsp;&nbsp;&nbsp;&nbsp;Enjoying?</p>
                 <div style="text-align: center">
@@ -186,8 +204,8 @@ line
                     <script type='text/javascript' src="../external/runKoFi.js"></script>
                 </div>
                 <br>
-
             </div>
+
             <br>
             <div class="boxdiv myPadding">
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Though unaffiliated with me, this project depends heavily on the work of <i>Wikimedia Foundation's</i> excellent <i>Wiktionary</i> project.</p>
@@ -198,6 +216,47 @@ line
                     <script type='text/javascript' src="../external/runWiki.js"></script>
                 </div>
                 <br>
+            </div>
+        </div>
+
+        <p style="text-align: left"><a href="#void" id="Game" title="Game Menu">Quiz Mode</a></p>
+        <div class="boxdiv" id="Game_Menu" style="text-align:left; display: none;">
+            <strong>Quiz Mode</strong>
+            <div class="myPadding">
+                <table style="text-align: center">
+                    <tr style="text-align: center">
+                        <p style="text-align: left"><a href="#void" id="Rules" title="Game Menu">Rules</a></p>
+                            <div id="Rules_Menu" style="text-align:left; display: none;">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Instead of showing translated words, game mode has you type in a correct translation instead. </p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;The blurred English word will follow the word input box if you need a hint. </p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;A word matching any translation will be labelled as correct. </p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;You may choose to require exact accents and umlauts etc., or you can go by a rough englishization if you'd like.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;For example, if enabled, '&auml;' must match '&auml;'. If disabled, '&auml;' may also match 'a'.</p>
+                                <p>There is actually no game, but you can </p>
+                            </div>
+                        </p>
+
+                        <td style="text-align: center; display:table; margin: auto;">
+                            <input style="text-align: center; display:table; margin: auto;" type="checkbox" id="EnableGame" />
+                        </td>
+                        <td><label for="EnableGame">Enable Quiz Mode</label></td>
+                    </tr>
+                    <br>
+                    <tr style="text-align: center">
+                        <td style="text-align: center; ">
+                            <input style="text-align: center; " type="checkbox" id="ExactLetter" />
+                        </td>
+                        <td><label for="ExactLetter">Match special letters</label></td>
+                    </tr>
+                    <tr style="text-align: center">
+                        <td style="text-align: center; ">
+                            <input style="text-align: center; " type="checkbox" id="RightToLeft" />
+                        </td>
+                        <td><label for="RightToLeft">Type right to left</label></td>
+                    </tr>
+
+
+                </table>
             </div>
         </div>
 

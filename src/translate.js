@@ -5,16 +5,19 @@ let OG_TEXT = null;
 let ACTIVATE = true;
 let LANGUAGE = null;
 let PREV_WIKI_IFRAME = null;
-let DOWN = null;
-let UP = null;
+let DOWN = null, UP = null;
 let PREV_IFRAME_WORD = null;
-const TIMEOUT = 250;
+let GAME = false;
+let XLT = false;
+let ITALIC = true;
+let RIGHTTOLEFT = null;
+const TIMEOUT = 300;
 const DEBUG = true;
 
 /*
 This page is improperly named. All translation happens in Background.js. On load or a setting change, translate.js sends
 the textnodes to background.js. Background.js translates the nodes and returns the updated version. Translate.js then
-weaves that text back into the main page.
+weaves that text back into the main page. Beware, code gets Uglier as it goes on.
  */
 
 window.addEventListener('load',
@@ -24,52 +27,74 @@ window.addEventListener('load',
 		attachDialog();
 	}, false);
 
+document.addEventListener("input", function(e) {print("INPUT"); print(e); if (GAME){wordgame_enterkey_handler(e)}});
 
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	print("received message, ["+request.message+"] ")
 	print(request)
 	//page no longer valid, send page back to get translated.
-	if (request.message === "changed") {
-		if (OG_TEXT_NODES) {
-			just_go()
-		} else {
-			grab_and_go();
-		}
-		sendResponse();
-
-	} else if (request.message === "deactivate") {
-		if (ACTIVATE) {
-			ACTIVATE = false;
-			print("Deactivating")
-			if (OG_TEXT_NODES){
-				weave_nodes(OG_TEXT)
-			}
-		}
-		sendResponse();
-
-	} else if (request.message === "activate") {
-		if (!ACTIVATE) {
-			print("Activating")
-
-			ACTIVATE = true;
+	switch(request.message) {
+		case "changed":
 			if (OG_TEXT_NODES) {
-				print("Foreign HTML already exists, setting...")
-				just_go();
+				just_go()
 			} else {
-				print("No foreign HTML, grabbing and going...")
 				grab_and_go();
 			}
-		}
-		sendResponse();
+			sendResponse();
+			break;
+		case "deactivate":
+			if (ACTIVATE) {
+				ACTIVATE = false;
+				print("Deactivating")
+				if (OG_TEXT_NODES){
+					weave_nodes(OG_TEXT)
+				}
+			}
+			sendResponse();
+			break;
+		case "activate":
+			if (!ACTIVATE) {
+				print("Activating")
 
-	} else if (request.message === "style") {
-		editglishcss(request.glishbold, request.glishitalic)
+				ACTIVATE = true;
+				if (OG_TEXT_NODES) {
+					print("Foreign HTML already exists, setting...")
+					just_go();
+				} else {
+					print("No foreign HTML, grabbing and going...")
+					grab_and_go();
+				}
+			}
+			sendResponse();
+			break;
+		case "style":
+			editglishcss(request.glishbold, request.glishitalic)
+			break;
+		case "xlt":
+			XLT = request.xlt;
+			sendResponse();
+			break;
+		case "r2l":
+			RIGHTTOLEFT = request.r2l;
+			sendResponse();
+			break;
+		case "game":
+			GAME = request.game;
+			if (OG_TEXT_NODES) {
+				just_go()
+			} else {
+				grab_and_go();
+			}
+			sendResponse();
+			break;
+
 	}
 })
 
 function editglishcss(bold, italic) {
 	const b = bold ? "bold" : "none";
 	const i = italic ? "italic" : "none";
+	ITALIC = i;
 	document.getElementById("glishcss").innerHTML = ".glishword {font-weight:" + b + "; font-style:" + i + ";}";
 }
 
@@ -94,6 +119,7 @@ function attachDialog(){
 	document.body.appendChild(dialog);
 	PREV_WIKI_IFRAME = dummyiframe;
 }
+
 function refreshIframe(url) {
 	const iframe = document.createElement("iframe");
 	iframe.id = "glishiframe";
@@ -117,10 +143,21 @@ function grab_and_go() {
 			return;
 		}
 		print("Allowed!!!")
-		WEB_PAGE_NODES = getTextNodes(document.body);
-		OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML)
-		OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent)
-		just_go();
+
+		chrome.runtime.sendMessage({message:"get_gme"}, function(gameresp) {
+			chrome.runtime.sendMessage({message: "get_xlt"}, function (xltresp) {
+				chrome.runtime.sendMessage({message: "get_r2l"}, function (r2lresp) {
+					GAME = gameresp.payload;
+					XLT = xltresp.payload;
+					RIGHTTOLEFT = r2lresp.payload;
+					WEB_PAGE_NODES = getTextNodes(document.body);
+					OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML);
+					OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent);
+					just_go();
+
+				});
+			});
+		});
 	})
 
 }
@@ -142,8 +179,7 @@ function just_go() {
 		editglishcss(response.glishbold, response.glishitalic);
 		const translated_info = response.payload;
 		weave_nodes(translated_info);
-		// translate_page(HTML_BLOCKS, TEXT_SECTIONS, response.payload);
-		print("setting inner HTML")
+		print("setting inner HTML");
 	})
 }
 
@@ -151,19 +187,22 @@ function just_go() {
 function weave_nodes(node_list){
 	print("weaving nodes")
 	print(node_list)
-	print("webpagenodes")
+	print("WEBPAGENODES")
 	print(WEB_PAGE_NODES)
 	let newnode = null;
 	for (let i = 0; i < node_list.length; i++){
 
 		// Only change text items that have been edited. Or change back to normal those that have been
-		if (!node_list[i].includes("<span class=\"glishword\"") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"glishword\"")) ){
-			continue
+		if (!node_list[i].includes("<span class=\"glishword\"") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"glishword")) ){
+			continue;
 		}
 		try {
 			newnode = document.createElement("span");
 			newnode.innerHTML = node_list[i];
+			print("webpagenode")
+			print(WEB_PAGE_NODES[i])
 			WEB_PAGE_NODES[i].parentNode.replaceChild(newnode, WEB_PAGE_NODES[i]);
+
 			WEB_PAGE_NODES[i] = newnode;
 		} catch (e) {
 			print(e);
@@ -171,10 +210,85 @@ function weave_nodes(node_list){
 		}
 
 	}
+	if(GAME && ACTIVATE) {
+		print("In game:")
+		let hintword = null;
+		let blurnbr = null;
+		[...document.querySelectorAll(".glishword")].forEach(function (item) {
+			if (!item || !item.parentNode) return;
+			let fathernode = document.createElement('span');
+			//add contenteditable='true'
+			item.setAttribute('contenteditable', 'true');
+			item.setAttribute("spellcheck","false")
+			//add border, background #E95420
+			item.classList.add('glishtextarea')
+			//word ____
+
+			item.innerText = "____"
+			//add blur word following
+			hintword = document.createElement("span");
+			hintword.title=item.title;
+			hintword.innerText = ' (' + item.title+")";
+			hintword.style.fontStyle=ITALIC;
+			hintword.classList.add("hintword")
+
+			blurnbr = document.createElement("span");
+			blurnbr.title = "Click to  reveal answers";
+			blurnbr.innerText = " [" + item.dataset.nvoc.replaceAll("$", ", ") + "]";
+			blurnbr.classList.add("blurtext");
+			blurnbr.style.fontStyle=ITALIC;
+
+			item.title = "Click and type the correct foreign word. \nWhen finished, hit the [Enter] key for judgement."
+			item.parentNode.replaceChild(fathernode, item);
+			fathernode.appendChild(item);
+			fathernode.appendChild(hintword);
+			fathernode.appendChild(blurnbr);
+			//remove glishword class
+			// catch all events
+			//wordgame_enterkey_handler
+			//
+		})
+	}
+}
+
+
+function initMO(root = document.body) {
+	console.log("In mutator")
+	SEARCHED = false;
+	let MO = window.MutationObserver || window.WebKitMutationObserver;
+	let observer = new MO(function(mutations) {
+		observer.disconnect();
+		console.log("NEW GROUP:")
+		console.log(mutations.length)
+		console.log(mutations)
+		mutations.forEach(function(mutation){
+			if (mutation === null){
+				return;
+			}
+			let node = mutation.target;
+			console.log("SEARCHING:")
+			if (node.textContent.length > 75){
+				SEARCHED = true;
+			}
+
+			search(node);
+		});
+		observe();
+	});
+	let opts = { characterData: true, childList: true, subtree: true };
+	let observe = function() {
+		observer.takeRecords();
+		//setTimeout(()=>{}, 400);
+		observer.observe(root, opts);
+	};
+	observe();
 }
 
 document.body.addEventListener("mousedown", function(e) {
-	DOWN = new Date();
+	if (e.button !== 0) { // left click for mouse
+		return;
+	}
+	DOWN = e.timeStamp;
 	const localdown = DOWN;
 	setTimeout(()=>{
 		// click & hold
@@ -185,11 +299,13 @@ document.body.addEventListener("mousedown", function(e) {
 });
 
 document.body.addEventListener("mouseup", function(e) {
-	UP = new Date();
-
+	if (e.button !== 0) { // left click for mouse
+		return;
+	}
+	UP = e.timeStamp;
 	// click
 	if ((UP - DOWN) < TIMEOUT) {
-		rotateWord(e);
+		clickhandler(e);
 
 		//check to see if iframe window should be closed:
 		if (!document.getElementById("glishdlg")) {
@@ -211,30 +327,74 @@ document.body.addEventListener("mouseup", function(e) {
 	}
 });
 
-function rotateWord(e){
+function clickhandler(e) {
 	const t = e.target;
-	if (!t || !t.classList.contains('glishword')) {
+	print(t)
+	if (!t) return;
+	if (t.classList.contains("glishanswers")) {
+		t.style.display = "none";
+		t.previousSibling.title = "Click to show answers."
 		return;
 	}
+	if (t.classList.contains("hintword")) {
+		if (t.nextSibling.style.display === "none"){
+			t.nextSibling.style.display = "";
+			t.title = "Click to hide answers."
+		} else {
+			t.nextSibling.style.display = "none";
+			t.title = "Click to show answers."
+		}
+		return;
+	}
+	if (t.classList.contains('blurtext')) {
+		t.classList.remove('blurtext');
+		t.classList.add("glishanswers")
+		t.title = "Click to hide answers."
+		t.previousSibling.title = "Click to hide answers."
+		t.previousSibling.previousSibling.style.borderWidth = '0'
+		t.previousSibling.previousSibling.setAttribute("contenteditable", 'false')
+		t.previousSibling.previousSibling.title = "Incorrect. This question is now locked."
+		setWrong(t.parentNode);
+		return;
+	}
+	if (!t.classList.contains('glishword') || t.classList.contains('glishtextarea')) {
+		return;
+	}
+
+	rotateWord(t);
+}
+
+
+
+function rotateWord(t) {
 	const otherwords = t.dataset.nvoc.split('$');
 	if (otherwords.length === 1) {
 		//flash word red
 		const og_color = t.style.color;
+		if (og_color === "red") return;
 		t.style.color = "red";
 		setTimeout(()=> t.style.color = og_color, 200)
-		return;
 	}
-	let i = Number(t.dataset.nvi)  % otherwords.length;
 
-	//instead of fixing how i hand over words, im just gonna double tick if the new word is the same as the old.
-	if (t.firstChild.textContent.toLowerCase() === otherwords[i].toLowerCase()) {
-		print("SAME WORD DOUBLE TICKING... +1")
-		i = (i + 1) % otherwords.length;
+	let i = Number(t.dataset.nvi)
+
+	if (i === 0) {
+		//first time clicking
+		// search for main word, remove it from list and postpend it. Coulda done it earlier but whatever
+		const shownword = t.firstChild.textContent.toLowerCase();
+		const copycatidx = otherwords.indexOf(shownword);
+		otherwords[copycatidx] = otherwords[0];
+		otherwords[0] = shownword;
+		t.dataset.nvoc = otherwords.join('$');
 	}
-	t.dataset.nvi = "" + (i + 1);
+
+	i = (i  + 1) % otherwords.length;
+
+	t.dataset.nvi = "" + i;
 	if (t.dataset.cpt === 'y'){
-		t.firstChild.textContent = capitalize(otherwords[i]);	print("WEB NODES")
-	print(WEB_PAGE_NODES)
+		t.firstChild.textContent = capitalize(otherwords[i]);
+		print("WEB NODES");
+		print(WEB_PAGE_NODES);
 	} else {
 		t.firstChild.textContent = otherwords[i];
 	}
@@ -272,7 +432,7 @@ function getTextNodes(parent = document.body){
 		}
         if (parent.nodeType === Node.TEXT_NODE && parent.data.trim()) {
 			all.push(parent);
-			if (parent.textContent.length > 50) {
+			if (parent.textContent.length > 25) {
 				COUNT_TEXT_SECTIONS += 1;
 			}
 		} else {
@@ -281,6 +441,91 @@ function getTextNodes(parent = document.body){
     }
     return all;
 }
+
+/*
+// if letter input, ignore it
+// if event is a new line (IE ENTER KEY) then remove new line and check for correctness
+ */
+function wordgame_enterkey_handler(ev) {
+	print("In handler wordgame")
+	const node = ev.target;
+	if (!node.classList.contains("glishtextarea")){
+		return;
+	}
+
+	node.innerText = node.innerText.replaceAll("_", "");
+	print(node.innerText.length)
+
+	print('enter hit')
+	if (ev.inputType === "insertParagraph" || ev.inputType === "insertLineBreak") {
+		print("Enter Through")
+
+		let userGuess = node.innerText.replaceAll("\n", "");
+		userGuess = userGuess.replaceAll("<br>", "");
+		node.innerText = userGuess;
+		// CORRECTION CHECK:
+		// orange color is #E95420
+		let possibleAnswers = node.dataset.nvoc.split("$");
+		if (!XLT) {
+			possibleAnswers = possibleAnswers.map((x) => {return latinise(x)});
+			userGuess = latinise(userGuess);
+		}
+		print(possibleAnswers)
+		print(userGuess)
+		if (possibleAnswers.indexOf(userGuess) >= 0){
+			node.style.borderWidth = '0'
+			node.style.textDecorationLine = "none";
+			node.style.textDecorationStyle = 'none';
+			node.style.textDecorationColor = 'none';
+			node.style.textDecorationSkipInk = 'none';
+			node.parentNode.style.borderBottomColor =  "lime";
+			node.parentNode.style.borderBottomStyle = 'solid';
+			node.parentNode.style.borderBottomWidth = '1px';
+			node.title = "Well done! You may continue guessing if you'd like.";
+			node.nextSibling.title = "Click to hide answers."
+			node.nextSibling.nextSibling.title = "Click to hide answers."
+
+			print("removing blur")
+			print(node)
+			print(node.nextSibling)
+			print(node.nextSibling.nextSibling)
+			print(node.nextSibling.nextSibling.classList)
+
+			node.nextSibling.nextSibling.classList.remove("blurtext")
+			node.nextSibling.nextSibling.classList.add("glishanswers")
+
+
+		} else {
+			//node.style.borderBottomColor ="red";
+			//node.style.borderBottomStyle = 'solid';
+			setWrong(node);
+		}
+
+	}
+	if (node.innerText.length === 0){
+		node.innerText = "____"
+	}
+	//reset cursor
+	let range = document.createRange()
+	let sel = window.getSelection()
+	range.setStart(node.firstChild, RIGHTTOLEFT ? 0 : node.firstChild.length);
+	print("writing backwards? "+RIGHTTOLEFT)
+	range.collapse(RIGHTTOLEFT);
+	sel.removeAllRanges()
+	sel.addRange(range)
+
+}
+function setWrong(node){
+	node.style.textDecorationLine = "underline";
+	node.style.textDecorationStyle = 'wavy';
+	node.style.textDecorationColor = 'red';
+	node.style.textDecorationSkipInk = 'none';
+}
+
+const latinise = function(s){
+	let latin_map={"Á":"A","Ă":"A","Ắ":"A","Ặ":"A","Ằ":"A","Ẳ":"A","Ẵ":"A","Ǎ":"A","Â":"A","Ấ":"A","Ậ":"A","Ầ":"A","Ẩ":"A","Ẫ":"A","Ä":"A","Ǟ":"A","Ȧ":"A","Ǡ":"A","Ạ":"A","Ȁ":"A","À":"A","Ả":"A","Ȃ":"A","Ā":"A","Ą":"A","Å":"A","Ǻ":"A","Ḁ":"A","Ⱥ":"A","Ã":"A","Ꜳ":"AA","Æ":"AE","Ǽ":"AE","Ǣ":"AE","Ꜵ":"AO","Ꜷ":"AU","Ꜹ":"AV","Ꜻ":"AV","Ꜽ":"AY","Ḃ":"B","Ḅ":"B","Ɓ":"B","Ḇ":"B","Ƀ":"B","Ƃ":"B","Ć":"C","Č":"C","Ç":"C","Ḉ":"C","Ĉ":"C","Ċ":"C","Ƈ":"C","Ȼ":"C","Ď":"D","Ḑ":"D","Ḓ":"D","Ḋ":"D","Ḍ":"D","Ɗ":"D","Ḏ":"D","ǲ":"D","ǅ":"D","Đ":"D","Ƌ":"D","Ǳ":"DZ","Ǆ":"DZ","É":"E","Ĕ":"E","Ě":"E","Ȩ":"E","Ḝ":"E","Ê":"E","Ế":"E","Ệ":"E","Ề":"E","Ể":"E","Ễ":"E","Ḙ":"E","Ë":"E","Ė":"E","Ẹ":"E","Ȅ":"E","È":"E","Ẻ":"E","Ȇ":"E","Ē":"E","Ḗ":"E","Ḕ":"E","Ę":"E","Ɇ":"E","Ẽ":"E","Ḛ":"E","Ꝫ":"ET","Ḟ":"F","Ƒ":"F","Ǵ":"G","Ğ":"G","Ǧ":"G","Ģ":"G","Ĝ":"G","Ġ":"G","Ɠ":"G","Ḡ":"G","Ǥ":"G","Ḫ":"H","Ȟ":"H","Ḩ":"H","Ĥ":"H","Ⱨ":"H","Ḧ":"H","Ḣ":"H","Ḥ":"H","Ħ":"H","Í":"I","Ĭ":"I","Ǐ":"I","Î":"I","Ï":"I","Ḯ":"I","İ":"I","Ị":"I","Ȉ":"I","Ì":"I","Ỉ":"I","Ȋ":"I","Ī":"I","Į":"I","Ɨ":"I","Ĩ":"I","Ḭ":"I","Ꝺ":"D","Ꝼ":"F","Ᵹ":"G","Ꞃ":"R","Ꞅ":"S","Ꞇ":"T","Ꝭ":"IS","Ĵ":"J","Ɉ":"J","Ḱ":"K","Ǩ":"K","Ķ":"K","Ⱪ":"K","Ꝃ":"K","Ḳ":"K","Ƙ":"K","Ḵ":"K","Ꝁ":"K","Ꝅ":"K","Ĺ":"L","Ƚ":"L","Ľ":"L","Ļ":"L","Ḽ":"L","Ḷ":"L","Ḹ":"L","Ⱡ":"L","Ꝉ":"L","Ḻ":"L","Ŀ":"L","Ɫ":"L","ǈ":"L","Ł":"L","Ǉ":"LJ","Ḿ":"M","Ṁ":"M","Ṃ":"M","Ɱ":"M","Ń":"N","Ň":"N","Ņ":"N","Ṋ":"N","Ṅ":"N","Ṇ":"N","Ǹ":"N","Ɲ":"N","Ṉ":"N","Ƞ":"N","ǋ":"N","Ñ":"N","Ǌ":"NJ","Ó":"O","Ŏ":"O","Ǒ":"O","Ô":"O","Ố":"O","Ộ":"O","Ồ":"O","Ổ":"O","Ỗ":"O","Ö":"O","Ȫ":"O","Ȯ":"O","Ȱ":"O","Ọ":"O","Ő":"O","Ȍ":"O","Ò":"O","Ỏ":"O","Ơ":"O","Ớ":"O","Ợ":"O","Ờ":"O","Ở":"O","Ỡ":"O","Ȏ":"O","Ꝋ":"O","Ꝍ":"O","Ō":"O","Ṓ":"O","Ṑ":"O","Ɵ":"O","Ǫ":"O","Ǭ":"O","Ø":"O","Ǿ":"O","Õ":"O","Ṍ":"O","Ṏ":"O","Ȭ":"O","Ƣ":"OI","Ꝏ":"OO","Ɛ":"E","Ɔ":"O","Ȣ":"OU","Ṕ":"P","Ṗ":"P","Ꝓ":"P","Ƥ":"P","Ꝕ":"P","Ᵽ":"P","Ꝑ":"P","Ꝙ":"Q","Ꝗ":"Q","Ŕ":"R","Ř":"R","Ŗ":"R","Ṙ":"R","Ṛ":"R","Ṝ":"R","Ȑ":"R","Ȓ":"R","Ṟ":"R","Ɍ":"R","Ɽ":"R","Ꜿ":"C","Ǝ":"E","Ś":"S","Ṥ":"S","Š":"S","Ṧ":"S","Ş":"S","Ŝ":"S","Ș":"S","Ṡ":"S","Ṣ":"S","Ṩ":"S","Ť":"T","Ţ":"T","Ṱ":"T","Ț":"T","Ⱦ":"T","Ṫ":"T","Ṭ":"T","Ƭ":"T","Ṯ":"T","Ʈ":"T","Ŧ":"T","Ɐ":"A","Ꞁ":"L","Ɯ":"M","Ʌ":"V","Ꜩ":"TZ","Ú":"U","Ŭ":"U","Ǔ":"U","Û":"U","Ṷ":"U","Ü":"U","Ǘ":"U","Ǚ":"U","Ǜ":"U","Ǖ":"U","Ṳ":"U","Ụ":"U","Ű":"U","Ȕ":"U","Ù":"U","Ủ":"U","Ư":"U","Ứ":"U","Ự":"U","Ừ":"U","Ử":"U","Ữ":"U","Ȗ":"U","Ū":"U","Ṻ":"U","Ų":"U","Ů":"U","Ũ":"U","Ṹ":"U","Ṵ":"U","Ꝟ":"V","Ṿ":"V","Ʋ":"V","Ṽ":"V","Ꝡ":"VY","Ẃ":"W","Ŵ":"W","Ẅ":"W","Ẇ":"W","Ẉ":"W","Ẁ":"W","Ⱳ":"W","Ẍ":"X","Ẋ":"X","Ý":"Y","Ŷ":"Y","Ÿ":"Y","Ẏ":"Y","Ỵ":"Y","Ỳ":"Y","Ƴ":"Y","Ỷ":"Y","Ỿ":"Y","Ȳ":"Y","Ɏ":"Y","Ỹ":"Y","Ź":"Z","Ž":"Z","Ẑ":"Z","Ⱬ":"Z","Ż":"Z","Ẓ":"Z","Ȥ":"Z","Ẕ":"Z","Ƶ":"Z","Ĳ":"IJ","Œ":"OE","ᴀ":"A","ᴁ":"AE","ʙ":"B","ᴃ":"B","ᴄ":"C","ᴅ":"D","ᴇ":"E","ꜰ":"F","ɢ":"G","ʛ":"G","ʜ":"H","ɪ":"I","ʁ":"R","ᴊ":"J","ᴋ":"K","ʟ":"L","ᴌ":"L","ᴍ":"M","ɴ":"N","ᴏ":"O","ɶ":"OE","ᴐ":"O","ᴕ":"OU","ᴘ":"P","ʀ":"R","ᴎ":"N","ᴙ":"R","ꜱ":"S","ᴛ":"T","ⱻ":"E","ᴚ":"R","ᴜ":"U","ᴠ":"V","ᴡ":"W","ʏ":"Y","ᴢ":"Z","á":"a","ă":"a","ắ":"a","ặ":"a","ằ":"a","ẳ":"a","ẵ":"a","ǎ":"a","â":"a","ấ":"a","ậ":"a","ầ":"a","ẩ":"a","ẫ":"a","ä":"a","ǟ":"a","ȧ":"a","ǡ":"a","ạ":"a","ȁ":"a","à":"a","ả":"a","ȃ":"a","ā":"a","ą":"a","ᶏ":"a","ẚ":"a","å":"a","ǻ":"a","ḁ":"a","ⱥ":"a","ã":"a","ꜳ":"aa","æ":"ae","ǽ":"ae","ǣ":"ae","ꜵ":"ao","ꜷ":"au","ꜹ":"av","ꜻ":"av","ꜽ":"ay","ḃ":"b","ḅ":"b","ɓ":"b","ḇ":"b","ᵬ":"b","ᶀ":"b","ƀ":"b","ƃ":"b","ɵ":"o","ć":"c","č":"c","ç":"c","ḉ":"c","ĉ":"c","ɕ":"c","ċ":"c","ƈ":"c","ȼ":"c","ď":"d","ḑ":"d","ḓ":"d","ȡ":"d","ḋ":"d","ḍ":"d","ɗ":"d","ᶑ":"d","ḏ":"d","ᵭ":"d","ᶁ":"d","đ":"d","ɖ":"d","ƌ":"d","ı":"i","ȷ":"j","ɟ":"j","ʄ":"j","ǳ":"dz","ǆ":"dz","é":"e","ĕ":"e","ě":"e","ȩ":"e","ḝ":"e","ê":"e","ế":"e","ệ":"e","ề":"e","ể":"e","ễ":"e","ḙ":"e","ë":"e","ė":"e","ẹ":"e","ȅ":"e","è":"e","ẻ":"e","ȇ":"e","ē":"e","ḗ":"e","ḕ":"e","ⱸ":"e","ę":"e","ᶒ":"e","ɇ":"e","ẽ":"e","ḛ":"e","ꝫ":"et","ḟ":"f","ƒ":"f","ᵮ":"f","ᶂ":"f","ǵ":"g","ğ":"g","ǧ":"g","ģ":"g","ĝ":"g","ġ":"g","ɠ":"g","ḡ":"g","ᶃ":"g","ǥ":"g","ḫ":"h","ȟ":"h","ḩ":"h","ĥ":"h","ⱨ":"h","ḧ":"h","ḣ":"h","ḥ":"h","ɦ":"h","ẖ":"h","ħ":"h","ƕ":"hv","í":"i","ĭ":"i","ǐ":"i","î":"i","ï":"i","ḯ":"i","ị":"i","ȉ":"i","ì":"i","ỉ":"i","ȋ":"i","ī":"i","į":"i","ᶖ":"i","ɨ":"i","ĩ":"i","ḭ":"i","ꝺ":"d","ꝼ":"f","ᵹ":"g","ꞃ":"r","ꞅ":"s","ꞇ":"t","ꝭ":"is","ǰ":"j","ĵ":"j","ʝ":"j","ɉ":"j","ḱ":"k","ǩ":"k","ķ":"k","ⱪ":"k","ꝃ":"k","ḳ":"k","ƙ":"k","ḵ":"k","ᶄ":"k","ꝁ":"k","ꝅ":"k","ĺ":"l","ƚ":"l","ɬ":"l","ľ":"l","ļ":"l","ḽ":"l","ȴ":"l","ḷ":"l","ḹ":"l","ⱡ":"l","ꝉ":"l","ḻ":"l","ŀ":"l","ɫ":"l","ᶅ":"l","ɭ":"l","ł":"l","ǉ":"lj","ſ":"s","ẜ":"s","ẛ":"s","ẝ":"s","ḿ":"m","ṁ":"m","ṃ":"m","ɱ":"m","ᵯ":"m","ᶆ":"m","ń":"n","ň":"n","ņ":"n","ṋ":"n","ȵ":"n","ṅ":"n","ṇ":"n","ǹ":"n","ɲ":"n","ṉ":"n","ƞ":"n","ᵰ":"n","ᶇ":"n","ɳ":"n","ñ":"n","ǌ":"nj","ó":"o","ŏ":"o","ǒ":"o","ô":"o","ố":"o","ộ":"o","ồ":"o","ổ":"o","ỗ":"o","ö":"o","ȫ":"o","ȯ":"o","ȱ":"o","ọ":"o","ő":"o","ȍ":"o","ò":"o","ỏ":"o","ơ":"o","ớ":"o","ợ":"o","ờ":"o","ở":"o","ỡ":"o","ȏ":"o","ꝋ":"o","ꝍ":"o","ⱺ":"o","ō":"o","ṓ":"o","ṑ":"o","ǫ":"o","ǭ":"o","ø":"o","ǿ":"o","õ":"o","ṍ":"o","ṏ":"o","ȭ":"o","ƣ":"oi","ꝏ":"oo","ɛ":"e","ᶓ":"e","ɔ":"o","ᶗ":"o","ȣ":"ou","ṕ":"p","ṗ":"p","ꝓ":"p","ƥ":"p","ᵱ":"p","ᶈ":"p","ꝕ":"p","ᵽ":"p","ꝑ":"p","ꝙ":"q","ʠ":"q","ɋ":"q","ꝗ":"q","ŕ":"r","ř":"r","ŗ":"r","ṙ":"r","ṛ":"r","ṝ":"r","ȑ":"r","ɾ":"r","ᵳ":"r","ȓ":"r","ṟ":"r","ɼ":"r","ᵲ":"r","ᶉ":"r","ɍ":"r","ɽ":"r","ↄ":"c","ꜿ":"c","ɘ":"e","ɿ":"r","ś":"s","ṥ":"s","š":"s","ṧ":"s","ş":"s","ŝ":"s","ș":"s","ṡ":"s","ṣ":"s","ṩ":"s","ʂ":"s","ᵴ":"s","ᶊ":"s","ȿ":"s","ɡ":"g","ᴑ":"o","ᴓ":"o","ᴝ":"u","ť":"t","ţ":"t","ṱ":"t","ț":"t","ȶ":"t","ẗ":"t","ⱦ":"t","ṫ":"t","ṭ":"t","ƭ":"t","ṯ":"t","ᵵ":"t","ƫ":"t","ʈ":"t","ŧ":"t","ᵺ":"th","ɐ":"a","ᴂ":"ae","ǝ":"e","ᵷ":"g","ɥ":"h","ʮ":"h","ʯ":"h","ᴉ":"i","ʞ":"k","ꞁ":"l","ɯ":"m","ɰ":"m","ᴔ":"oe","ɹ":"r","ɻ":"r","ɺ":"r","ⱹ":"r","ʇ":"t","ʌ":"v","ʍ":"w","ʎ":"y","ꜩ":"tz","ú":"u","ŭ":"u","ǔ":"u","û":"u","ṷ":"u","ü":"u","ǘ":"u","ǚ":"u","ǜ":"u","ǖ":"u","ṳ":"u","ụ":"u","ű":"u","ȕ":"u","ù":"u","ủ":"u","ư":"u","ứ":"u","ự":"u","ừ":"u","ử":"u","ữ":"u","ȗ":"u","ū":"u","ṻ":"u","ų":"u","ᶙ":"u","ů":"u","ũ":"u","ṹ":"u","ṵ":"u","ᵫ":"ue","ꝸ":"um","ⱴ":"v","ꝟ":"v","ṿ":"v","ʋ":"v","ᶌ":"v","ⱱ":"v","ṽ":"v","ꝡ":"vy","ẃ":"w","ŵ":"w","ẅ":"w","ẇ":"w","ẉ":"w","ẁ":"w","ⱳ":"w","ẘ":"w","ẍ":"x","ẋ":"x","ᶍ":"x","ý":"y","ŷ":"y","ÿ":"y","ẏ":"y","ỵ":"y","ỳ":"y","ƴ":"y","ỷ":"y","ỿ":"y","ȳ":"y","ẙ":"y","ɏ":"y","ỹ":"y","ź":"z","ž":"z","ẑ":"z","ʑ":"z","ⱬ":"z","ż":"z","ẓ":"z","ȥ":"z","ẕ":"z","ᵶ":"z","ᶎ":"z","ʐ":"z","ƶ":"z","ɀ":"z","ﬀ":"ff","ﬃ":"ffi","ﬄ":"ffl","ﬁ":"fi","ﬂ":"fl","ĳ":"ij","œ":"oe","ﬆ":"st","ₐ":"a","ₑ":"e","ᵢ":"i","ⱼ":"j","ₒ":"o","ᵣ":"r","ᵤ":"u","ᵥ":"v","ₓ":"x"};
+	return s.replace(/[^A-Za-z0-9\[\] ]/g,function(a){return latin_map[a]||a})
+};
 
 function print(s) {
 	if (DEBUG) {

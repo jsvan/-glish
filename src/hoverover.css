@@ -13,6 +13,16 @@ iframe::selection {
     display:block;
 }
 
+.blurtext {
+    color:transparent;
+    text-shadow:0 0 8px rgba(0,0,0,1);
+}
+.glishtextarea {
+    border: 1px lightskyblue dotted;
+}
+.glishtextarea:focus {
+    outline: 2px lightskyblue dotted;
+}
 .glishmsg {
     color:#BA0000;
     font-size:small;
