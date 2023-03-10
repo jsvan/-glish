@@ -12,7 +12,7 @@ let XLT = false;
 let ITALIC = true;
 let RIGHTTOLEFT = null;
 const TIMEOUT = 300;
-const DEBUG = true;
+const DEBUG = false;
 
 /*
 This page is improperly named. All translation happens in Background.js. On load or a setting change, translate.js sends
@@ -174,7 +174,8 @@ function just_go() {
 		if (!response) {
 			return;
 		}
-		LANGUAGE = response.language;
+		LANGUAGE = response.language.replace('2','');
+
 
 		editglishcss(response.glishbold, response.glishitalic);
 		const translated_info = response.payload;
@@ -227,18 +228,18 @@ function weave_nodes(node_list){
 			item.innerText = "____"
 			//add blur word following
 			hintword = document.createElement("span");
-			hintword.title=item.title;
+			hintword.title = "Click to reveal blurred answer (hint).";
 			hintword.innerText = ' (' + item.title+")";
 			hintword.style.fontStyle=ITALIC;
 			hintword.classList.add("hintword")
 
 			blurnbr = document.createElement("span");
 			blurnbr.title = "Click to  reveal answers";
-			blurnbr.innerText = " [" + item.dataset.nvoc.replaceAll("$", ", ") + "]";
+			blurnbr.innerText = " " + item.dataset.nvoc.split("$",1)[0];
 			blurnbr.classList.add("blurtext");
 			blurnbr.style.fontStyle=ITALIC;
 
-			item.title = "Click and type the correct foreign word. \nWhen finished, hit the [Enter] key for judgement."
+			item.title = "Click and type the correct foreign word. \nWhen finished, hit the [Enter] key for judgement.\nClick on the blurred answer if you give up."
 			item.parentNode.replaceChild(fathernode, item);
 			fathernode.appendChild(item);
 			fathernode.appendChild(hintword);
@@ -347,13 +348,15 @@ function clickhandler(e) {
 		return;
 	}
 	if (t.classList.contains('blurtext')) {
+		const textboxnode = t.previousSibling.previousSibling;
 		t.classList.remove('blurtext');
+		t.innerText = " [" + textboxnode.dataset.nvoc.replaceAll('$', ', ') + "]";
 		t.classList.add("glishanswers")
 		t.title = "Click to hide answers."
 		t.previousSibling.title = "Click to hide answers."
-		t.previousSibling.previousSibling.style.borderWidth = '0'
-		t.previousSibling.previousSibling.setAttribute("contenteditable", 'false')
-		t.previousSibling.previousSibling.title = "Incorrect. This question is now locked."
+		textboxnode.style.borderWidth = '0'
+		textboxnode.setAttribute("contenteditable", 'false')
+		textboxnode.title = "Incorrect. This question is now locked."
 		setWrong(t.parentNode);
 		return;
 	}
@@ -374,6 +377,7 @@ function rotateWord(t) {
 		if (og_color === "red") return;
 		t.style.color = "red";
 		setTimeout(()=> t.style.color = og_color, 200)
+		return;
 	}
 
 	let i = Number(t.dataset.nvi)
@@ -469,10 +473,14 @@ function wordgame_enterkey_handler(ev) {
 		if (!XLT) {
 			possibleAnswers = possibleAnswers.map((x) => {return latinise(x)});
 			userGuess = latinise(userGuess);
+			possibleAnswers = possibleAnswers.map((x) => {return x.toLowerCase()});
+			userGuess = userGuess.toLowerCase();
+
 		}
 		print(possibleAnswers)
 		print(userGuess)
 		if (possibleAnswers.indexOf(userGuess) >= 0){
+			const answernode = node.nextSibling.nextSibling;
 			node.style.borderWidth = '0'
 			node.style.textDecorationLine = "none";
 			node.style.textDecorationStyle = 'none';
@@ -483,16 +491,17 @@ function wordgame_enterkey_handler(ev) {
 			node.parentNode.style.borderBottomWidth = '1px';
 			node.title = "Well done! You may continue guessing if you'd like.";
 			node.nextSibling.title = "Click to hide answers."
-			node.nextSibling.nextSibling.title = "Click to hide answers."
+			answernode.title = "Click to hide answers."
 
 			print("removing blur")
 			print(node)
 			print(node.nextSibling)
-			print(node.nextSibling.nextSibling)
-			print(node.nextSibling.nextSibling.classList)
+			print(answernode)
+			print(answernode.classList)
 
-			node.nextSibling.nextSibling.classList.remove("blurtext")
-			node.nextSibling.nextSibling.classList.add("glishanswers")
+			answernode.classList.remove("blurtext")
+			answernode.innerText = " [" + node.dataset.nvoc.replaceAll('$', ', ') + "]";
+			answernode.classList.add("glishanswers")
 
 
 		} else {

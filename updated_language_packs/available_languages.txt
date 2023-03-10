@@ -1,21 +1,27 @@
 arabic	ar
+armenian	hy
 chinese	zh
 czech	cs
 esperanto	eo
 estonian	et
+finnish	fi
 french	fr
 german	de
 hebrew	he
 hindi	hi
 italian	it
 japanese	ja
+japanese2	ja2
 korean	ko
+korean2	ko2
+kyrgyz	ky
 low_German	nds
-		maori	mi
-		navajo	nv
+maori	mi
+mongolian	mn
+navajo	nv
+norwegian_Bokmål	no
 old_English	ang
-		ojibwe	oj
-pashto	ps
+ojibwe	oj
 persian	fa
 polish	pl
 portuguese	pt
@@ -29,4 +35,3 @@ turkish	tr
 ukrainian	uk
 vietnamese	vi
 welsh	cy
-		yiddish	yi

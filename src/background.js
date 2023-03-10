@@ -217,26 +217,15 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			getRightToLeft().then(() => sendResponse({payload:RIGHTTOLEFT}), () => {})
 			return true;
 		case "get_lng":
-			if (LANG_DATA !== null) {
-				print("sending langname")
+			getLangData().then(() => {
+				print("Sending lang")
 				sendResponse({
-					payload: LANG_DATA[0]
+					payload: LANG
 				}, () => {
 				});
-			} else {
-				getLangData().then(() => {
-					let pyld = null;
-					if (LANG_DATA !== null) {
-						pyld = LANG_DATA[0];
-					}
-					print("Sending lang (else)")
-					sendResponse({
-						payload: pyld
-					}, () => {
-					});
-					return 1;
-				})
-			}
+				return 1;
+			})
+
 			return true;
 		case "set_act":
 			ACTIVATED = !ACTIVATED;
@@ -508,9 +497,9 @@ function random_word_choice(fwordlst) {
 		return ''
 	}
 	// if randomly chosen word also starts with '-' (ie, it sucks) find another word
-	if (fwordlst[r].startsWith('-')) {
+	if (fwordlst[r].startsWith('-') || fwordlst[r].startsWith('…')) {
 		for (r = 0; r < fwordlst.length - 1; r++){
-			if (! fwordlst[r].startsWith('-')) {
+			if (! (fwordlst[r].startsWith('-') || fwordlst[r].startsWith('…'))) {
 				break;
 			}
 		}
@@ -758,12 +747,12 @@ function loadLangData() {
 }
 
 function loadForeign(){
-	let lang = LANG_DATA[0];
-	if (!lang) {
+	LANG = LANG_DATA[0];
+	if (!LANG) {
 		return Promise.resolve(null);
 	}
-	print("In loadforeign, getting "+lang);
-	let fileloc = chrome.runtime.getURL("../updated_language_packs/" + capitalize(lang) + ".txt");
+	print("In loadforeign, getting "+LANG);
+	let fileloc = chrome.runtime.getURL("../updated_language_packs/" + capitalize(LANG) + ".txt");
 	return fetch(fileloc)
 		.then((response) => response.text())
 		.then((text) => prepareVocab(text))
