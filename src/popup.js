@@ -21,6 +21,7 @@ document.getElementById("Nonowords").addEventListener("input", () => textareaCha
 
 document.getElementById("Activated").addEventListener('change', activate);
 document.getElementById("Bold").addEventListener('change', bold);
+document.getElementById("DistHint").addEventListener('change', toggledisthint);
 document.getElementById("ExactLetter").addEventListener('change', exactletter);
 document.getElementById("EnableGame").addEventListener('change', togglegame);
 document.getElementById("Italic").addEventListener('change', italic);
@@ -124,6 +125,12 @@ function activate() {
 function togglegame() {
     //document.getElementById('ExactLetter').toggleAttribute("checked", true);
     chrome.runtime.sendMessage({message: "set_gme"}, function(response){
+        print("sent gametogg");
+    });
+}
+function toggledisthint() {
+    //document.getElementById('ExactLetter').toggleAttribute("checked", true);
+    chrome.runtime.sendMessage({message: "set_hnt"}, function(response){
         print("sent gametogg");
     });
 }
@@ -245,6 +252,11 @@ function load_page() {
     chrome.runtime.sendMessage({message: "get_r2l"}, function(response){
         if (response.payload) {
             document.getElementById('RightToLeft').toggleAttribute("checked", true);
+        }
+    });
+    chrome.runtime.sendMessage({message: "get_hnt"}, function(response){
+        if (response.payload) {
+            document.getElementById('DistHint').toggleAttribute("checked", true);
         }
     });
 

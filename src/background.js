@@ -14,7 +14,7 @@
  * If chrome extension page Error page is blank, insert this into console:
  * URL=class extends URL { constructor(href, ...rest) { super(href || 'dummy://', ...rest) } }
  */
-const DEBUG = true;
+const DEBUG = false;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
 let SKIP_PROPER = null;
@@ -33,6 +33,7 @@ let GOGOWORDS = null;
 let GOGOWORDS_TEXTBLOCK = null;
 let WORKING_URL = null;
 let BOLD = null;
+let DISTHINT = null;
 let GAME = null;
 let XLETTER = null;
 let ITALIC = null;
@@ -49,6 +50,7 @@ const GOGOWORDS_STORAGE = "GOGOWORDS_STORAGE";
 const NOGOZONES_STORAGE = "NOGOZONES_STORAGE";
 const GAME_STORAGE = "GAME_STORAGE";
 const XLT_STORAGE = "XLT_STORAGE";
+const HNT_STORAGE = "HNT_STORAGE";
 const SKIP_PROPER_STORAGE = "SKIP_PROPER_STORAGE";
 const RIGHT_TO_LEFT_STORAGE = "RIGHT_TO_LEFT_STORAGE";
 const SEEN = new Set();
@@ -59,21 +61,22 @@ chrome.runtime.onInstalled.addListener(function (rsn) {
 	chrome.storage.sync.set({AGGRO_STORAGE_TAG:24},   () => {});
 	chrome.storage.sync.set({CHANCE_STORAGE_TAG:20}, () => {});
 	chrome.storage.sync.set({BOREDOM_STORAGE_TAG:6}, () => {});
-	chrome.storage.sync.set({LANG_STORAGE_TAG:'czech'}, () => {});
-	chrome.storage.sync.set({BOLD_STORAGE:true}, () => {});
-	chrome.storage.sync.set({ITALIC_STORAGE:true}, () => {});
+	chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
 	chrome.storage.sync.set({NOGOZONES_STORAGE:[]}, () => {});
 	chrome.storage.sync.set({NONOWORDS_STORAGE:[]}, () => {});
 	chrome.storage.sync.set({GOGOWORDS_STORAGE:[]}, () => {});
+	chrome.storage.sync.set({BOLD_STORAGE:true}, 	() => {});
+	chrome.storage.sync.set({ITALIC_STORAGE:true}, () => {});
 	chrome.storage.sync.set({GAME_STORAGE:false}, () => {});
 	chrome.storage.sync.set({XLT_STORAGE:false}, () => {});
+	chrome.storage.sync.set({HNT_STORAGE:true}, () => {});
 	chrome.storage.sync.set({SKIP_PROPER_STORAGE:false}, ()=>{});
 	chrome.storage.sync.set({RIGHT_TO_LEFT_STORAGE:false}, ()=>{});
 
 	if (chrome.runtime.OnInstalledReason.INSTALL === rsn.reason) {
 		chrome.tabs.create({'url':"src/popup.html", 'active':true}, ()=>{})
 	}
-})
+});
 
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	print("Background received message, "+request + ", "+ request.message)
@@ -124,9 +127,7 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 					const access = NOGOZONES.some(suburl => WORKING_URL.includes(suburl)) ? "stop" : "go";
 					sendResponse({
 							payload: access
-						},
-						() => {
-						});
+					}, () => {});
 				})
 			});
 			return true;
@@ -215,6 +216,9 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			return true;
 		case "get_r2l":
 			getRightToLeft().then(() => sendResponse({payload:RIGHTTOLEFT}), () => {})
+			return true;
+		case "get_hnt":
+			getDistHint().then(() => sendResponse({payload:DISTHINT}), () => {})
 			return true;
 		case "get_lng":
 			getLangData().then(() => {
@@ -345,6 +349,16 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 				SKIP_PROPER = !SKIP_PROPER;
 				chrome.storage.sync.set({SKIP_PROPER_STORAGE: SKIP_PROPER}, () => {
 					sendmessage({message: "changed"});
+					sendResponse({payload: "200"});
+				})
+				return true;
+			})
+			return true;
+		case "set_hnt":
+			getDistHint().then(() => {
+				DISTHINT = !DISTHINT;
+				chrome.storage.sync.set({HNT_STORAGE: DISTHINT}, () => {
+					sendmessage({message: "hnt", hnt:DISTHINT});
 					sendResponse({payload: "200"});
 				})
 				return true;
@@ -574,7 +588,8 @@ function getEverything() {
 				getItalic(),
 				getXLetter(),
 				getGame(),
-				getRightToLeft()
+				getRightToLeft(),
+				getDistHint()
 			])
 		)
 	);
@@ -861,4 +876,13 @@ function getGame(){
 		});
 	}
 	return Promise.resolve(GAME);
+}
+function getDistHint() {
+	if (DISTHINT === null) {
+		return chrome.storage.sync.get([HNT_STORAGE]).then((response) => {
+			DISTHINT = response.HNT_STORAGE;
+			return DISTHINT;
+		});
+	}
+	return Promise.resolve(DISTHINT);
 }
