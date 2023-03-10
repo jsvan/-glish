@@ -525,7 +525,7 @@ function wordgame_enterkey_handler(ev) {
 					return levenshteinDistance(userGuess, poss)
 				}));
 				//put the min edit distance in the textbox itself
-				node.nextSibling.innerText = " ("+minedit+" letters wrong) ";
+				node.nextSibling.innerText = " ("+minedit+" letter" + ((minedit>1)?"s":"") + " wrong) ";
 			} else {
 				node.nextSibling.innerText = "";
 			}
