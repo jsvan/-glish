@@ -9,34 +9,41 @@ This app is intended for people who'd like to expose themselves to foreign vocab
 Do not learn grammar from this app. The words are translated directly and often incorrectly. Use this app as a type of flashcard practice to adjust to foreign words in the context of an uunderstood sentence.
 
 Available languages in version 1.001 are:
-01) arabic	ar
-02) chinese	zh
-03) czech	cs
-04) esperanto	eo
-05) estonian	et
-06) french	fr
-07) german	de
-08) hebrew	he
-09) hindi	hi
-10) italian	it
-11) japanese	ja
-12) korean	ko
-13) low_German	nds
-14) old_English	ang
-15) pashto	ps
-16) persian	fa
-17) polish	pl
-18) portuguese	pt
-19) russian	ru
-20) sanskrit	sa
-21) spanish	es
-22) swahili	sw
-23) swedish	sv
-24) thai	th
-25) turkish	tr
-26) ukrainian	uk
-27) vietnamese	vi
-28) welsh	cy
+arabic	ar
+armenian	hy
+chinese	zh
+czech	cs
+esperanto	eo
+estonian	et
+finnish	fi
+french	fr
+german	de
+hebrew	he
+hindi	hi
+italian	it
+japanese	ja
+korean	ko
+kyrgyz	ky
+low_German	nds
+maori	mi
+mongolian	mn
+navajo	nv
+norwegian_Bokmål	no
+old_English	ang
+ojibwe	oj
+persian	fa
+polish	pl
+portuguese	pt
+russian	ru
+sanskrit	sa
+spanish	es
+swahili	sw
+swedish	sv
+thai	th
+turkish	tr
+ukrainian	uk
+vietnamese	vi
+welsh	cy
 
 Some languages are better supported than others, depending on the community behind wiktionary. Some languages have most vocab words present, others have many missing.
 
