@@ -4,6 +4,11 @@ from bs4 import BeautifulSoup
 import re
 from pprint import pprint as pp
 
+
+# Regex to remove mongolian bad chars:
+# (ᠪ|ᠠ|ᠶ|ᠢ|ᠬ|ᠤ|ᠴ|ᠳ|ᠨ|ᠢ|ᠭ|ᠡ|ᠷ|ᠨ|ᠣ|ᠵ|ᠠ|ᠮ|ᠰ|ᠢ|ᠨ|᠎|ᠦ|ᠮ|ᠥ|ᠲ|᠋|ᠩ|ᠦ|ᠯ|ᠸ| |ᠱ|ᠺ|ᠧ|ᠫ|ᠽ|ᠻ|᠌|ᠹ)
+
+
 class Scraper:
 
 	def __init__(self):
@@ -11,7 +16,7 @@ class Scraper:
 			self.short_2_langname = {x.split('\t')[1]:self.uppercase(x.split('\t')[0]) for x in F.read().split('\n')}
 			self.cpl_language_dict = {x:dict() for x in self.short_2_langname.values()}
 
-		self.myreg = re.compile("^(" + '|'.join(list(self.short_2_langname.keys())) + "):")
+		self.myreg = re.compile("^(" + '|'.join(list(self.short_2_langname.keys())) + ")$")
 
 	def html_to_filled_vocab_dict(self, engword, force=False):
 		words = None
@@ -71,13 +76,27 @@ class Scraper:
 				htmlpage = _get_soup(newurl)
 				frames = [frame for frame in htmlpage.find_all('div', { 'class' : 'NavFrame' }) if "id" in frame.attrs and frame["id"].startswith("Translation") ]
 
-			groupoflinkedwords = [x.find_all("a", {'title': self.myreg}) for x in frames]
+			groupoflinkedwords = [x.find_all("span", {'lang': self.myreg}) for x in frames]
 
 			for linkedwords in groupoflinkedwords:
 				shortlang_translation_tuple.append([])
 				for linkedword in linkedwords:
-					shortlang_translation_tuple[-1].append(linkedword['title'].split(':'))
+					try:
+						# WANT: shortlang_translation_tuple[-1].append(['cs', 'word'])
 
+						thislang = linkedword.get('lang')
+						thisword = linkedword.find("a").text
+
+						shortlang_translation_tuple[-1].append([thislang, thisword])
+
+						# old: shortlang_translation_tuple[-1].append(linkedword['title'].split(':'))
+						# shortlang_translation_tuple should be:
+						# [
+						#  [['de', 'word'], ['de', 'word']],
+						#  [['cs', 'word']],
+						# ]
+					except:
+						continue
 		except Exception as e:
 			pass
 
@@ -105,15 +124,17 @@ class Scraper:
 			# available, so if a future table includes that language, and that translation of the word is a popular
 			# translation, then there's no reason to not include that version of the word as that language's main translation.
 
-			popular_flag = len(wordgroup) >= int(0.8 * len(self.short_2_langname))
+			popular_flag = len(wordgroup) >= int(0.9 * len(self.short_2_langname))
 			for shortlang, trsdword in wordgroup:
 				if not trsdword:
 					continue
 				lang = self.short_2_langname[shortlang]
 				if word not in self.cpl_language_dict[lang]:
-					self.cpl_language_dict[lang][word] = ['--', set()]
-				if self.cpl_language_dict[lang][word][0] == '--' and popular_flag:
-					self.cpl_language_dict[lang][word][0] = trsdword
+					self.cpl_language_dict[lang][word] = [set(), set()]
+
+				if popular_flag:
+					self.cpl_language_dict[lang][word][0].add(trsdword)
+
 				self.cpl_language_dict[lang][word][1].add(trsdword)
 
 	def uppercase(self, x):
@@ -137,20 +158,19 @@ class Scraper:
 					if engword in self.cpl_language_dict[lang]:
 						if self.cpl_language_dict[lang][engword]:
 							wl = self.cpl_language_dict[lang][engword][1]
-							bestword = self.cpl_language_dict[lang][engword][0]
-							if bestword in wl:
-								wl.remove(bestword)
-								wl = list(wl)
-								wl.append(bestword)
-							elif bestword == '--' and len(wl) == 1:
-								bestword, *_ = wl
-							F.write(bestword + '#' + '$'.join(wl) + '\n')
+							popularwords = self.cpl_language_dict[lang][engword][0]
+							if len(popularwords) == 0:
+								popularwords.add('--')
+							F.write('$'.join(popularwords) + '#' + '$'.join(wl) + '\n')
 						else:
 							F.write('ERROR\n')
 					else:
 						F.write('--\n')
 
+
+
 	"""
+	TODO:
 	This will only save the words themselves
 	Input: Tuples of englishwords and their indexes they should be inserted in
 	"""
@@ -164,14 +184,14 @@ class Scraper:
 			#if trying to insert words into a premade list that isnt long enough...
 			m = max(listofenglishtuples, key=lambda x: x[1])
 			if len(words) < m:
-				raise Exception("Trying to insert at index: "+m+", which is larger than length of englishtuples: "+ len(words)+", for language: "+lang+". ")
+				raise Exception("Trying to insert at index: " + m + ", which is larger than length of englishtuples: "+ len(words)+", for language: "+lang+". ")
 			for tup in listofenglishtuples:
 				word = tup[0]
 				idx = tup[1]
 				newline = None
 				if engword in self.cpl_language_dict[lang]:
 					if self.cpl_language_dict[lang][engword]:
-						newline = self.cpl_language_dict[lang][engword][0]+'#'+'$'.join(self.cpl_language_dict[lang][engword][1])
+						newline = self.cpl_language_dict[lang][engword][0] + '#' + '$'.join(self.cpl_language_dict[lang][engword][1])
 					else:
 						newline = 'ERROR'
 				else:
@@ -181,5 +201,33 @@ class Scraper:
 			with open(dr + lang + "_errorsFIXED.txt", "w") as F:
 				F.write('\n'.join(words))
 
+
+
+# TODO: order words where words have values of
+#		SUM(for all tables (LEN(TABLE) for that word))
+
+
+class sortedList:
+	def __init__(self):
+		self.mylist = []
+
+	def add(self, word, num):
+		idx = self.find(word)
+		if idx < 0:
+			self.mylist.append([word, num])
+		self.mylist[idx][1] += num
+
+	def finish():
+		self.sort()
+		return [x[0] for x in self.mylist]
+
+	def sort(self):
+		self.mylist.sort(key=lambda x: x[1], reversed=True)
+
+	def find(neww):
+		for i, oldw in enumerate(colours):
+			if neww == oldw:
+				return i
+		return -1
 
 
