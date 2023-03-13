@@ -1,0 +1,50 @@
+{
+  "name": "-glish",
+  "version": "1.3",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "glish@jsvan"
+    }
+  },
+  "description": "Vocab learner with common foreign words injected into your english websites.",
+  "permissions": ["storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["src/translate.js"],
+      "css": ["src/hoverover.css"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "-glish",
+    "default_icon": { 
+      "16": "images/-g16.png",
+      "32": "images/-g32.png",
+      "48": "images/-g48.png",
+      "128": "images/-g128.png"
+    }
+  },
+  "background": {
+    "scripts": ["src/background.js"]
+  },
+
+  "icons": {
+    "16": "images/-g16.png",
+    "32": "images/-g32.png",
+    "48": "images/-g48.png",
+    "128": "images/-g128.png"
+  },
+  "web_accessible_resources": [
+    {"resources" :[
+      "external/KoFi.js",
+      "updated_langauge_packs/available_languages.txt",
+      "updated_language_packs/*.txt"
+    ],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "manifest_version": 3
+}
