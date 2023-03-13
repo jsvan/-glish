@@ -15,7 +15,7 @@ iframe::selection {
 
 .blurtext {
     color:transparent;
-    text-shadow:0 0 6px rgba(0,0,0,1);
+    text-shadow:0 0 8px rgba(0,0,0,1);
 }
 .glishtextarea {
     border: 1px lightskyblue dotted;

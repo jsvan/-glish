@@ -14,7 +14,7 @@
  * If chrome extension page Error page is blank, insert this into console:
  * URL=class extends URL { constructor(href, ...rest) { super(href || 'dummy://', ...rest) } }
  */
-const DEBUG = false;
+const DEBUG = true;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
 let SKIP_PROPER = null;
@@ -81,6 +81,9 @@ chrome.runtime.onInstalled.addListener(function (rsn) {
 chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	print("Background received message, "+request + ", "+ request.message)
 	switch(request.message) {
+		case "hardrun":
+			sendmessage({message: "hardrun"});
+			return 1;
 		case "translate":
 			print("Preparing translation:")
 			getActivated().then(() => {
@@ -126,7 +129,8 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 					print(NOGOZONES)
 					const access = NOGOZONES.some(suburl => WORKING_URL.includes(suburl)) ? "stop" : "go";
 					sendResponse({
-							payload: access
+							payload: access,
+							url:WORKING_URL
 					}, () => {});
 				})
 			});

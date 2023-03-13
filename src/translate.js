@@ -13,8 +13,31 @@ let XLT = false;
 let ITALIC = true;
 let RIGHTTOLEFT = null;
 const TIMEOUT = 300;
-const DEBUG = false;
-
+const DEBUG = true;
+let WORKING_URL = "";
+// Options for the observer (which mutations to observe)
+const mutconfig = { characterData: true, childList: true, subtree: true  };
+// Callback function to execute when mutations are observed
+const mutexec = (mutationList, observer) => {
+	for (let mutation of mutationList) {
+		print("MUTATION LIST")
+		print(mutation)
+		if (mutation.type === "childList" || mutation.type === "subtree") {
+			console.log("A child node has been added or removed.");
+			for (let i=0; i<mutation.addedNodes.length; i++) {
+				if (mutation.addedNodes[i].classList)
+					if (mutation.addedNodes[i].classList.contains("glishseen")) {
+						return;
+				} else {
+					grab_and_go(mutation.addedNodes[i]); //false
+				}
+			}
+		} else if (mutation.type === "characterData") {
+			grab_and_go(mutation.target); //false
+		}
+	}
+};
+const observer = new MutationObserver(mutexec);
 /*
 This page is improperly named. All translation happens in Background.js. On load or a setting change, translate.js sends
 the textnodes to background.js. Background.js translates the nodes and returns the updated version. Translate.js then
@@ -35,6 +58,9 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 	print(request)
 	//page no longer valid, send page back to get translated.
 	switch(request.message) {
+		case "hardrun":
+			grab_and_go(); //true
+			break;
 		case "changed":
 			if (OG_TEXT_NODES) {
 				just_go()
@@ -93,7 +119,8 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			sendResponse();
 			break;
 	}
-})
+});
+
 
 function editglishcss(bold, italic) {
 	const b = bold ? "bold" : "none";
@@ -134,48 +161,70 @@ function refreshIframe(url) {
 	PREV_WIKI_IFRAME = iframe;
 }
 
-function grab_and_go() {
+function grab_and_go(startnode=document.body) {
 	print("grabbing and going");
 	if (!ACTIVATE){
 		print("not activated")
 		return;
 	}
-	chrome.runtime.sendMessage({message:"valid_website"}, function(response){
+	let latesturl;
+	chrome.runtime.sendMessage({message: "valid_website"}, function (response) {
 		if (!response || response.payload === "stop") {
 			print("Not allowed!!!")
 			ACTIVATE = false;
 			return;
+		} else {
+			latesturl = response.url;
 		}
 		print("Allowed!!!")
 
-		chrome.runtime.sendMessage({message:"get_gme"}, function(gameresp) {
-			chrome.runtime.sendMessage({message: "get_xlt"}, function (xltresp) {
-				chrome.runtime.sendMessage({message: "get_r2l"}, function (r2lresp) {
-					chrome.runtime.sendMessage({message: "get_hnt"}, function (hntresp) {
-						GAME = gameresp.payload;
-						XLT = xltresp.payload;
-						RIGHTTOLEFT = r2lresp.payload;
-						DISTHINT = hntresp.payload;
-						WEB_PAGE_NODES = getTextNodes(document.body);
-						OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML);
-						OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent);
-						just_go();
+		if (latesturl !== WORKING_URL) {
+				chrome.runtime.sendMessage({message: "get_gme"}, function (gameresp) {
+					chrome.runtime.sendMessage({message: "get_xlt"}, function (xltresp) {
+						chrome.runtime.sendMessage({message: "get_r2l"}, function (r2lresp) {
+							chrome.runtime.sendMessage({message: "get_hnt"}, function (hntresp) {
+								GAME = gameresp.payload;
+								XLT = xltresp.payload;
+								RIGHTTOLEFT = r2lresp.payload;
+								DISTHINT = hntresp.payload;
+								WEB_PAGE_NODES = getTextNodes(document.body);
+								OG_TEXT_NODES = WEB_PAGE_NODES.map((x) => x.outerHTML);
+								OG_TEXT = WEB_PAGE_NODES.map((x) => x.textContent);
+								just_go();
+							});
+						});
 					});
 				});
-			});
-		});
-	})
-
+		} else {
+			let newfoundnodes = getTextNodes(startnode);
+			print("New found nodes: ");
+			print(newfoundnodes);
+			if (newfoundnodes.length < 1){
+				return;
+			}
+			let nodeoffset = WEB_PAGE_NODES.length;
+			WEB_PAGE_NODES = [...WEB_PAGE_NODES, ...newfoundnodes];
+			OG_TEXT_NODES = [...OG_TEXT_NODES, ...newfoundnodes.map((x) => x.outerHTML)];
+			OG_TEXT = [...OG_TEXT, ...newfoundnodes.map((x) => x.textContent)];
+			just_go(nodeoffset);
+		}
+		WORKING_URL = latesturl;
+	});
 }
 
 
-function just_go() {
+function just_go(nodeoffset = 0) {
+
 	print("GOT THIS MANY TEXT SECTIONS: " + OG_TEXT_NODES.length)
-	if (COUNT_TEXT_SECTIONS < 8 || !ACTIVATE){
-		print("Ending because activated is : "+ACTIVATE+", or COUNT is "+COUNT_TEXT_SECTIONS)
+	if (!ACTIVATE){ //COUNT_TEXT_SECTIONS < 8 ||
+		print("Ending because activated is : "+ACTIVATE)//+", or COUNT is "+COUNT_TEXT_SECTIONS)
 		return;
 	}
-	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT}, function(response){
+	console.log("OG TEXT:");
+	console.log(OG_TEXT);
+	console.log("SLICED:")
+	console.log(OG_TEXT.slice(nodeoffset))
+	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT.slice(nodeoffset)}, function(response){
 		print("Received lang data:")
 		if (!response) {
 			return;
@@ -185,32 +234,35 @@ function just_go() {
 
 		editglishcss(response.glishbold, response.glishitalic);
 		const translated_info = response.payload;
-		weave_nodes(translated_info);
+		weave_nodes(translated_info, nodeoffset);
 		print("setting inner HTML");
 	})
 }
 
 
-function weave_nodes(node_list){
+function weave_nodes(node_list, nodeoffset=0){
 	print("weaving nodes")
 	print(node_list)
 	print("WEBPAGENODES")
 	print(WEB_PAGE_NODES)
 	let newnode = null;
+	observer.disconnect()
 	for (let i = 0; i < node_list.length; i++){
-
-		// Only change text items that have been edited. Or change back to normal those that have been
-		if (!node_list[i].includes("<span class=\"glishword\"") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"glishword")) ){
+		print(node_list[i])
+		// Only change text items that have been edited. Or change back to normal those that have been. ie source and dest chunk has an edit.
+		if (!node_list[i].includes("<span class=\"glish") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"glish")) ){
 			continue;
 		}
 		try {
+			let allnodesi = i + nodeoffset;
 			newnode = document.createElement("span");
+			newnode.classList.add("glishseen")
 			newnode.innerHTML = node_list[i];
 			print("webpagenode")
-			print(WEB_PAGE_NODES[i])
-			WEB_PAGE_NODES[i].parentNode.replaceChild(newnode, WEB_PAGE_NODES[i]);
+			print(WEB_PAGE_NODES[allnodesi])
+			WEB_PAGE_NODES[allnodesi].parentNode.replaceChild(newnode, WEB_PAGE_NODES[allnodesi]);
 
-			WEB_PAGE_NODES[i] = newnode;
+			WEB_PAGE_NODES[allnodesi] = newnode;
 		} catch (e) {
 			print(e);
 			print('"'+ node_list[i] +'"');
@@ -223,30 +275,34 @@ function weave_nodes(node_list){
 		let blurnbr = null;
 		let editdist = null;
 		[...document.querySelectorAll(".glishword")].forEach(function (item) {
+			item.classList.remove("glishword")
+			item.classList.add("glishseen")
 			if (!item || !item.parentNode) return;
 			let fathernode = document.createElement('span');
-			//add contenteditable='true'
+			fathernode.classList.add("glishseen")
 			item.setAttribute('contenteditable', 'true');
 			item.setAttribute("spellcheck","false")
 			//add border, background #E95420
 			item.classList.add('glishtextarea')
-			//word ____
-			item.innerText = "____"
+			item.textContent = "____"
 
 			//add location to write edit distance
 			editdist = document.createElement("span");
+			editdist.classList.add("glishseen")
 			editdist.title = "The number of letters off from an answer.";
 
 			//add blur word following
 			hintword = document.createElement("span");
-			hintword.title = "Click to reveal blurred answer (hint).";
-			hintword.innerText = ' (' + item.title+")";
+			hintword.classList.add("glishseen")
+			hintword.title = "Click to hide blurred answer (hint).";
+			hintword.textContent = ' (' + item.title+")";
 			hintword.style.fontStyle=ITALIC;
 			hintword.classList.add("hintword")
 
 			blurnbr = document.createElement("span");
+			blurnbr.classList.add("glishseen")
 			blurnbr.title = "Click to  reveal answers";
-			blurnbr.innerText = " " + item.dataset.nvoc.split("$",1)[0];
+			blurnbr.textContent = " " + item.dataset.nvoc.split("$",1)[0];
 			blurnbr.classList.add("blurtext");
 			blurnbr.style.fontStyle=ITALIC;
 
@@ -256,46 +312,74 @@ function weave_nodes(node_list){
 			fathernode.appendChild(editdist);
 			fathernode.appendChild(hintword);
 			fathernode.appendChild(blurnbr);
-			//remove glishword class
-			// catch all events
-			//wordgame_enterkey_handler
-			//
 		})
 	}
+	if(ACTIVATE) observer.observe(document.body, mutconfig)
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*
 function initMO(root = document.body) {
 	console.log("In mutator")
-	SEARCHED = false;
 	let MO = window.MutationObserver || window.WebKitMutationObserver;
 	let observer = new MO(function(mutations) {
 		observer.disconnect();
 		console.log("NEW GROUP:")
 		console.log(mutations.length)
 		console.log(mutations)
+		sloppy_clear_duplicate_muts(mutations)
+		console.log("after clear")
+		console.log(mutations)
 		mutations.forEach(function(mutation){
 			if (mutation === null){
 				return;
 			}
 			let node = mutation.target;
-			console.log("SEARCHING:")
-			if (node.textContent.length > 75){
-				SEARCHED = true;
-			}
-
-			search(node);
+			grab_and_go(false, node);
 		});
+		//prompt();
 		observe();
 	});
 	let opts = { characterData: true, childList: true, subtree: true };
 	let observe = function() {
 		observer.takeRecords();
-		//setTimeout(()=>{}, 400);
-		observer.observe(root, opts);
+		observer.observe(root, opts)
 	};
 	observe();
 }
+
+//n^2 but it's okay bc it prevents repeat tree traversals and I think the
+// array length is short, like <20 usually. Dunno though.
+function sloppy_clear_duplicate_muts(mutations) {
+	for (let i = 0; i < mutations.length; i++){
+		if (!mutations[i]){
+			continue;
+		}
+		for (let j = i + 1; j < mutations.length; j++){
+			if (!mutations[j]){
+				continue;
+			}
+			if (mutations[i].target === mutations[j].target){
+				mutations[j] = null;
+			}
+		}
+	}
+}
+
+
+ */
+
 
 document.body.addEventListener("mousedown", function(e) {
 	if (e.button !== 0) { // left click for mouse
@@ -364,14 +448,19 @@ function clickhandler(e) {
 	else if (t.classList.contains('blurtext')) {
 		// lol
 		const textboxnode = t.previousSibling.previousSibling.previousSibling;
+		print("NODE:::")
+		print(t)
+		print(t.parentNode)
+		//print(t.nextSibling)
 		t.classList.remove('blurtext');
-		t.innerText = " [" + textboxnode.dataset.nvoc.replaceAll('$', ', ') + "]";
+		t.textContent = " [" + textboxnode.dataset.nvoc.replaceAll('$', ', ') + "]";
 		t.classList.add("glishanswers")
 		t.title = "Click to hide answers."
 		t.previousSibling.title = "Click to hide answers."
 		textboxnode.style.borderWidth = '0'
 		textboxnode.setAttribute("contenteditable", 'false')
 		textboxnode.title = "Incorrect. This question is now locked."
+		textboxnode.nextSibling.style.display = "none";
 		setWrong(t.parentNode);
 		return;
 	}
@@ -381,7 +470,6 @@ function clickhandler(e) {
 
 	rotateWord(t);
 }
-
 
 
 function rotateWord(t) {
@@ -441,12 +529,14 @@ function capitalize(word){
 
 function getTextNodes(parent = document.body){
     let all = [];
-
+	let lookedat = null;
     for (parent = parent.firstChild; parent; parent = parent.nextSibling) {
-        if (['SCRIPT','STYLE', 'A', 'CODE', 'BUTTON', 'META', "NOSCRIPT"].indexOf(parent.tagName) >= 0) {
+        if (!parent || ['SCRIPT','STYLE', 'A', 'CODE', 'BUTTON', 'META', "NOSCRIPT"].indexOf(parent.tagName) >= 0 || (parent.classList && parent.classList.contains("glishseen"))) {
 			continue;
 		}
+
         if (parent.nodeType === Node.TEXT_NODE && parent.data.trim()) {
+			parent.parentElement.classList.add("glishseen");
 			all.push(parent);
 			if (parent.textContent.length > 25) {
 				COUNT_TEXT_SECTIONS += 1;
@@ -457,6 +547,8 @@ function getTextNodes(parent = document.body){
     }
     return all;
 }
+
+
 
 /*
 // if letter input, ignore it
@@ -469,16 +561,16 @@ function wordgame_enterkey_handler(ev) {
 		return;
 	}
 
-	node.innerText = node.innerText.replaceAll("_", "");
-	print(node.innerText.length)
+	node.textContent = node.textContent.replaceAll("_", "");
+	print(node.textContent.length)
 
 	print('enter hit')
 	if (ev.inputType === "insertParagraph" || ev.inputType === "insertLineBreak") {
 		print("Enter Through")
 
-		let userGuess = node.innerText.replaceAll("\n", "");
+		let userGuess = node.textContent.replaceAll("\n", "");
 		userGuess = userGuess.replaceAll("<br>", "");
-		node.innerText = userGuess;
+		node.textContent = userGuess;
 		// CORRECTION CHECK:
 		// orange color is #E95420
 		let possibleAnswers = node.dataset.nvoc.split("$");
@@ -511,9 +603,9 @@ function wordgame_enterkey_handler(ev) {
 			print(answernode.classList)
 
 			answernode.classList.remove("blurtext")
-			answernode.innerText = " [" + node.dataset.nvoc.replaceAll('$', ', ') + "]";
+			answernode.textContent = " [" + node.dataset.nvoc.replaceAll('$', ', ') + "]";
 			answernode.classList.add("glishanswers")
-			node.nextSibling.innerText = "";
+			node.nextSibling.textContent = "";
 
 
 		} else {
@@ -525,16 +617,16 @@ function wordgame_enterkey_handler(ev) {
 					return levenshteinDistance(userGuess, poss)
 				}));
 				//put the min edit distance in the textbox itself
-				node.nextSibling.innerText = " ("+minedit+" letter" + ((minedit>1)?"s":"") + " wrong) ";
+				node.nextSibling.textContent = " ("+minedit+" letter" + ((minedit>1)?"s":"") + " away) ";
 			} else {
-				node.nextSibling.innerText = "";
+				node.nextSibling.textContent = "";
 			}
 			flashred(node);
 		}
 
 	}
-	if (node.innerText.length === 0){
-		node.innerText = "____"
+	if (node.textContent.length === 0){
+		node.textContent = "____"
 	}
 	//reset cursor
 	let range = document.createRange()

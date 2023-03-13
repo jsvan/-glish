@@ -1,4 +1,4 @@
-const DEBUG = false;
+const DEBUG = true;
 let AGR = 0, BRD = 0;
 
 document.getElementById("Aggression").addEventListener("mouseup", sendAggression);
@@ -35,6 +35,7 @@ document.getElementById("Intermediate").addEventListener("click", ()=>quickskill
 document.getElementById("Gogowords_save").addEventListener("click", ()=> saveTextarea("Gogowords"))
 document.getElementById("Nogozones_save").addEventListener("click", ()=> saveTextarea("Nogozones"))
 document.getElementById("Nonowords_save").addEventListener("click", ()=> saveTextarea("Nonowords"))
+document.getElementById("Title").addEventListener("click", hardrun)
 
 
 window.addEventListener('load',
@@ -104,6 +105,7 @@ function hideshow(id) {
     }
 }
 
+
 function set_fgn() {
     const selectmenu = document.getElementById("LanguageSelect");
     selectmenu.style.borderWidth = "0px";
@@ -131,6 +133,11 @@ function togglegame() {
 function toggledisthint() {
     //document.getElementById('ExactLetter').toggleAttribute("checked", true);
     chrome.runtime.sendMessage({message: "set_hnt"}, function(response){
+        print("sent gametogg");
+    });
+}
+function hardrun() {
+    chrome.runtime.sendMessage({message: "hardrun"}, function(response){
         print("sent gametogg");
     });
 }
