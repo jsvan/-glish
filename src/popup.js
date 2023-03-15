@@ -1,4 +1,4 @@
-const DEBUG = true;
+const DEBUG = false;
 let AGR = 0, BRD = 0;
 
 document.getElementById("Aggression").addEventListener("mouseup", sendAggression);

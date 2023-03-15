@@ -13,7 +13,7 @@ let XLT = false;
 let ITALIC = true;
 let RIGHTTOLEFT = null;
 const TIMEOUT = 300;
-const DEBUG = true;
+const DEBUG = false;
 let WORKING_URL = "";
 // Options for the observer (which mutations to observe)
 const mutconfig = { characterData: true, childList: true, subtree: true  };
@@ -509,10 +509,12 @@ function iframe(e) {
 	if (!t || !t.attributes || !t.attributes.class || t.attributes.class.value !== "glishword") {
 		return;
 	}
-	let foreign_word = t.firstChild.textContent;
+	// replacing the accent mark ́ and other fucked chars
+	let foreign_word = t.firstChild.textContent.replace(/[ֵּًَُُِّّْ́]/g, "");
 	if (t.dataset.cpt === 'y') {
 		foreign_word = foreign_word.toLowerCase();
 	}
+
 
 	if (!PREV_IFRAME_WORD || foreign_word !== PREV_IFRAME_WORD) {
 		refreshIframe("https://en.wiktionary.org/wiki/" + foreign_word + "#" + LANGUAGE);

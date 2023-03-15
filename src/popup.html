@@ -63,13 +63,13 @@
         <div class="boxdiv" style="text-align: center">
             <br>
             <div>
-                <label for="Aggression" title="Select what range of the vocabulary you want to translate. 100% means to use every word in the vocab list.">Use up to <span id="AggressionCount">-- %</span> of the dictionary:</label>
+                <label for="Aggression" title="Select what range of the vocabulary you want to translate. 100% means to use every word in the vocab list.">Use up to <span id="AggressionCount">-- %</span> of dictionary:</label>
             </div>
             <input type="range" id="Aggression" min="0" max="100" value="5" step="2" title="Select what range of the vocabulary you want to translate. 100% means to use every word in the vocab list."/>
             <br>
             <br>
             <div>
-                <label for="Boredom" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything.">Ignore the first <span id="BoredomCount">-- %</span> of dictionary:</label>
+                <label for="Boredom" title="Choose what percentage of the early vocab to ignore. 0% means use entire dictionary, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything.">Ignore first <span id="BoredomCount">-- %</span> of dictionary:</label>
             </div>
             <input type="range" id="Boredom" min="0" max="100" value="0" step="2" title="Choose what percentage of the early vocab to ignore. 0% means to cut no words out, 25% means ignoring first quarter of the vocab words, and 100% means ignore everything."/>
             <br>
@@ -164,8 +164,11 @@ indeed: in der Tat, genau
                         One term per line in the form of:
                     </p>
                     <blockquote>
-                        eng<sub>1</sub><strong>:</strong> wrd<sub>a</sub><strong>,</strong> wrd<sub>b</sub><strong>,</strong> wrd<sub>c</sub> ...
+                        en<sub>1</sub><strong>:</strong> wrd<sub>a</sub><strong>,</strong> wrd<sub>b</sub><strong>,</strong> wrd<sub>c</sub> ...
                     </blockquote>
+                    <p>
+                        With a colon following the English word, and the translated possibilities separated by commas.
+                    </p>
 
                 </div>
                 <br>
