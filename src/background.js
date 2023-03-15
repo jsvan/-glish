@@ -14,7 +14,7 @@
  * If chrome extension page Error page is blank, insert this into console:
  * URL=class extends URL { constructor(href, ...rest) { super(href || 'dummy://', ...rest) } }
  */
-const DEBUG = true;
+const DEBUG = false;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
 let SKIP_PROPER = null;
@@ -550,7 +550,7 @@ function random_word_choice(fwordlst) {
 		}
 
 	}
-	return fwordlst[r];// + "<sub style=\"font-weight:normal\">(?)</sub>"
+	return [fwordlst[r], r];// + "<sub style=\"font-weight:normal\">(?)</sub>"
 }
 
 function formatTranslateWord(englishword, idint, upper){
@@ -565,14 +565,14 @@ function formatTranslateWord(englishword, idint, upper){
 	if (!fwordlst[1]){
 		return capitalize(englishword, upper);
 	}
-	let foreignword = fwordlst[0].startsWith("-") ? random_word_choice(fwordlst[1]) : random_word_choice(fwordlst[0]);
+	let [foreignword, r] = fwordlst[0].startsWith("-") ? random_word_choice(fwordlst[1]) : random_word_choice(fwordlst[0]);
 	if (!foreignword){
 		return capitalize(englishword, upper);
 	}
 	let foreignlist = fwordlst[1];
 	foreignword = capitalize(foreignword, upper);
 	//add to foreignlist +"$"+englishword ?
-	foreignword = word_html_replacement(foreignword, englishword, idint, {"eng":"n", "nvoc":foreignlist, "nvi":0, "cpt":(upper ? 'y': 'n')});
+	foreignword = word_html_replacement(foreignword, englishword, idint, {"eng":"n", "nvoc":foreignlist, "nvi":r, "cpt":(upper ? 'y': 'n')});
 	return foreignword;
 }
 
@@ -627,26 +627,6 @@ function getEverything() {
 			])
 		)
 	);
-
-	/*
-	return getProper().then(() =>
-		getNonowords().then(() =>
-			getChance().then(() =>
-				getBoredom().then(() =>
-					getEnglish().then(() =>
-						getLangData().then(() =>
-							getAggression().then(()=>
-								getBold().then(()=>
-									getItalic()
-								)
-							)
-						)
-					)
-				)
-			)
-		)
-	);
-	 */
 }
 
 /*
