@@ -13,7 +13,7 @@ let XLT = false;
 let ITALIC = true;
 let RIGHTTOLEFT = null;
 const TIMEOUT = 300;
-const DEBUG = false;
+const DEBUG = true;
 let WORKING_URL = "";
 // Options for the observer (which mutations to observe)
 const mutconfig = { characterData: true, childList: true, subtree: true  };
@@ -220,10 +220,7 @@ function just_go(nodeoffset = 0) {
 		print("Ending because activated is : "+ACTIVATE)//+", or COUNT is "+COUNT_TEXT_SECTIONS)
 		return;
 	}
-	console.log("OG TEXT:");
-	console.log(OG_TEXT);
-	console.log("SLICED:")
-	console.log(OG_TEXT.slice(nodeoffset))
+
 	chrome.runtime.sendMessage({message:"translate", payload:OG_TEXT.slice(nodeoffset)}, function(response){
 		print("Received lang data:")
 		if (!response) {
@@ -242,13 +239,10 @@ function just_go(nodeoffset = 0) {
 
 function weave_nodes(node_list, nodeoffset=0){
 	print("weaving nodes")
-	print(node_list)
-	print("WEBPAGENODES")
-	print(WEB_PAGE_NODES)
+
 	let newnode = null;
 	observer.disconnect()
 	for (let i = 0; i < node_list.length; i++){
-		print(node_list[i])
 		// Only change text items that have been edited. Or change back to normal those that have been. ie source and dest chunk has an edit.
 		if (!node_list[i].includes("<span class=\"glish") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"glish")) ){
 			continue;
@@ -258,8 +252,7 @@ function weave_nodes(node_list, nodeoffset=0){
 			newnode = document.createElement("span");
 			newnode.classList.add("glishseen")
 			newnode.innerHTML = node_list[i];
-			print("webpagenode")
-			print(WEB_PAGE_NODES[allnodesi])
+
 			WEB_PAGE_NODES[allnodesi].parentNode.replaceChild(newnode, WEB_PAGE_NODES[allnodesi]);
 
 			WEB_PAGE_NODES[allnodesi] = newnode;
@@ -385,7 +378,9 @@ document.body.addEventListener("mousedown", function(e) {
 	if (e.button !== 0) { // left click for mouse
 		return;
 	}
+
 	DOWN = e.timeStamp;
+
 	const localdown = DOWN;
 	setTimeout(()=>{
 		// click & hold
@@ -399,15 +394,26 @@ document.body.addEventListener("mouseup", function(e) {
 	if (e.button !== 0) { // left click for mouse
 		return;
 	}
+	// clever way of seeing doubleclick?
+	if (( e.timeStamp - UP) < TIMEOUT){
+		const t = e.target;
+		if (t.classList.contains('glishword')) {
+			t.textContent = t.title;
+			if (t.dataset.cpt === 'y')
+				t.textContent = capitalize(t.textContent);
+			t.dataset.eng = "y";
+			t.dataset.nvi = '0';
+		}
+		UP = e.timeStamp;
+		return;
+	}
 	UP = e.timeStamp;
+
 	// click
 	if ((UP - DOWN) < TIMEOUT) {
 		clickhandler(e);
 
 		//check to see if iframe window should be closed:
-		if (!document.getElementById("glishdlg")) {
-			attachDialog();
-		}
 		if (document.getElementById('glishdlg').open ){
 			const rectA = document.getElementById("glishdlg").getBoundingClientRect();
 			const rectB = document.getElementById("glishclickoff").getBoundingClientRect();
@@ -448,10 +454,7 @@ function clickhandler(e) {
 	else if (t.classList.contains('blurtext')) {
 		// lol
 		const textboxnode = t.previousSibling.previousSibling.previousSibling;
-		print("NODE:::")
-		print(t)
-		print(t.parentNode)
-		//print(t.nextSibling)
+
 		t.classList.remove('blurtext');
 		t.textContent = " [" + textboxnode.dataset.nvoc.replaceAll('$', ', ') + "]";
 		t.classList.add("glishanswers")
@@ -477,12 +480,12 @@ function rotateWord(t) {
 	if (otherwords.length === 1) {
 		//flash word red
 		flashred(t);
-		return;
+
 	}
 
 	let i = Number(t.dataset.nvi)
 
-	if (i === 0) {
+	if (i === 0 && t.dataset.eng === "n") {
 		//first time clicking
 		// search for main word, remove it from list and postpend it. Coulda done it earlier but whatever
 		const shownword = t.firstChild.textContent.toLowerCase();
@@ -491,14 +494,12 @@ function rotateWord(t) {
 		otherwords[0] = shownword;
 		t.dataset.nvoc = otherwords.join('$');
 	}
-
+	t.dataset.eng = "n";
 	i = (i  + 1) % otherwords.length;
 
 	t.dataset.nvi = "" + i;
 	if (t.dataset.cpt === 'y'){
 		t.firstChild.textContent = capitalize(otherwords[i]);
-		print("WEB NODES");
-		print(WEB_PAGE_NODES);
 	} else {
 		t.firstChild.textContent = otherwords[i];
 	}

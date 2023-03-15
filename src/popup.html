@@ -126,15 +126,19 @@
                 </table>
                 <br>
                 <div>
-                    <p><label title="If the line is found within a url, the app doesn't run." for="Nogozones">
-                        Do not run on these pages:</label></p>
+                    <p><label id="OnlyRunLabel" title="If the line is found within a url, the app doesn't run." for="Nogozones">
+                        Do not run on these pages*:</label>
+                        </p>
+
                     <div style="text-align: center;"><textarea title="If the line is found within a url, the app doesn't run." id="Nogozones" placeholder="Paste one url per line:
 mail.google.com
 twitter.com
 
 If the line is found within a url, the app doesn't run." ></textarea>
                     </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="Nogozones_save">Saved</button>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="Nogozones_save">Saved</button><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="OnlyRun" style="text-align: center;">(*Set to "<i>Only</i> run on these pages")</button>
                 </div>
                 <br>
                 <div>
@@ -179,18 +183,20 @@ indeed: in der Tat, genau
         <p style="text-align: left"><a href="#void" id="Instructions" title="Instructions Menu">Features and Tricks</a></p>
         <div id="Instructions_Menu" style="text-align:left; display: none;">
             <div class="boxdiv myPadding">
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>HOVER</strong> on a word</em> &nbsp;to reveal its original English word.</p>
+
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>CLICK</strong> on a word</em> &nbsp;to rotate through matching translated words. There may be false translations, so click through to find a translation you like.</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>CLICK+HOLD</strong> on a word</em> &nbsp;to access its detailed information page through Wiktionary.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>HOVER</strong> on a word</em> &nbsp;to peak at its original English word.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<em><strong>DOUBLE CLICK</strong> on a word</em> &nbsp;to set it to its original English word.</p>
                 <br><hr><br>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1st slider</strong> (<em>"Use up to 6% of dictionary"</em>): <br>&nbsp;&nbsp;&nbsp;&nbsp;Changes the range of vocabulary you want to translate.
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<strong>1<sup>st</sup> SLIDER </strong><br>&nbsp;&nbsp;&nbsp;&nbsp;(<em>"Use up to 6% of dictionary"</em>): <br>&nbsp;&nbsp;&nbsp;&nbsp;Changes the range of vocabulary you want to translate.
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;100% means to use all 4,000 words in the vocab list.
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;I recommend starting low and working up.
                 </p>
-                <p><strong>2nd slider</strong> (<em>"Ignore the first 2% of dictionary"</em>): <br>&nbsp;&nbsp;&nbsp;&nbsp;Allows you to ignore earlier words that you're comfortable with already.
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<strong>2<sup>nd</sup> SLIDER</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;(<em>"Ignore first 2% of dictionary"</em>):  <br>&nbsp;&nbsp;&nbsp;&nbsp;Allows you to ignore earlier words that you're comfortable with already.
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;100% means ignore every vocabulary word, 25% means ignoring the first quarter of words, and 0% means to not ignore any.
                 </p>
-                <p><strong>3rd slider</strong> (<em>"See fewer/more words on page"</em>): <br>&nbsp;&nbsp;&nbsp;&nbsp;Affects how often you see translated words without altering the set of words you want translated.
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&#9733&nbsp;<strong>3<sup>rd</sup> SLIDER </strong><br>&nbsp;&nbsp;&nbsp;&nbsp;(<em>"See fewer/more words"</em>): <br>&nbsp;&nbsp;&nbsp;&nbsp;Affects how often you see translated words without altering the set of words you want translated.
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;0% means no word on the site will be translated. 100% means every vocabulary word found on the site will be translated.
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;I recommend setting it so that only a few words per paragraph are changed.
                 </p>

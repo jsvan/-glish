@@ -14,7 +14,7 @@
  * If chrome extension page Error page is blank, insert this into console:
  * URL=class extends URL { constructor(href, ...rest) { super(href || 'dummy://', ...rest) } }
  */
-const DEBUG = false;
+const DEBUG = true;
 let AGGRESSION = null;
 let SCALED_AGGRESSION = 0;
 let SKIP_PROPER = null;
@@ -34,10 +34,12 @@ let GOGOWORDS_TEXTBLOCK = null;
 let WORKING_URL = null;
 let BOLD = null;
 let DISTHINT = null;
+let ONLYRUN = null;
 let GAME = null;
 let XLETTER = null;
 let ITALIC = null;
 let RIGHTTOLEFT = null;
+const ONLYRUN_STORAGE_TAG = "ONLYRUN_STORAGE_TAG";
 const AGGRO_STORAGE_TAG = "AGGRO_STORAGE_TAG";
 const CHANCE_STORAGE_TAG = "CHANCE_STORAGE_TAG";
 const BOREDOM_STORAGE_TAG = "BOREDOM_STORAGE_TAG";
@@ -72,6 +74,8 @@ chrome.runtime.onInstalled.addListener(function (rsn) {
 	chrome.storage.sync.set({HNT_STORAGE:true}, () => {});
 	chrome.storage.sync.set({SKIP_PROPER_STORAGE:false}, ()=>{});
 	chrome.storage.sync.set({RIGHT_TO_LEFT_STORAGE:false}, ()=>{});
+	chrome.storage.sync.set({ONLYRUN_STORAGE_TAG:false}, ()=>{});
+
 
 	if (chrome.runtime.OnInstalledReason.INSTALL === rsn.reason) {
 		chrome.tabs.create({'url':"src/popup.html", 'active':true}, ()=>{})
@@ -86,54 +90,55 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			return 1;
 		case "translate":
 			print("Preparing translation:")
-			getActivated().then(() => {
-				if (ACTIVATED) {
-					getEverything().then(() => {
-							print("preparing translation: Got Lang data")
-							if (!FOREIGN) {
-								return 0;
-							}
-							const chunks_to_translate = request.payload;
-							print("chunks")
-							print(chunks_to_translate)
-							const translated_chunks = [];
-							let idint = 0;
-							let newstring = null;
-							for (let i = 0; i < chunks_to_translate.length; i++) {
-								[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
-								translated_chunks.push(newstring);
-							}
-							print("BACKGROUND sending translated response")
-							//print(translated_chunks)
-							print("Lang Data is: " + LANG_DATA[0])
-							sendResponse({
-								payload: translated_chunks,
-								language: capitalize(LANG_DATA[0]),
-								glishbold: BOLD,
-								glishitalic: ITALIC
-							}, () => {
-							});
-							return 1;
+
+
+			getEverything().then(() => {
+				getAuthorized().then((authorized) => {
+					print("Authorized? " + authorized)
+					const chunks_to_translate = request.payload;
+					let translated_chunks;
+
+					if (!authorized) {
+						translated_chunks = chunks_to_translate;
+					} else {
+						print("preparing translation: Got Lang data")
+						if (!FOREIGN) {
+							return 0;
 						}
-					)
-				}
-				return 0;
+						translated_chunks = [];
+						print("chunks")
+						let idint = 0;
+						let newstring = null;
+						for (let i = 0; i < chunks_to_translate.length; i++) {
+							[newstring, idint] = replaceNodeVocab(chunks_to_translate[i], idint);
+							translated_chunks.push(newstring);
+						}
+						print("BACKGROUND sending translated response")
+						//print(translated_chunks)
+						print("Lang Data is: " + LANG_DATA[0])
+
+					}
+					sendResponse({
+						payload: translated_chunks,
+						language: capitalize(LANG_DATA[0]),
+						glishbold: BOLD,
+						glishitalic: ITALIC
+					}, () => {
+					});
+					return 1;
+				})
 			})
 			return true;
 
 		case "valid_website":
-			chrome.tabs.query({active: true, lastFocusedWindow: true}, (tabs) => {
-				WORKING_URL = tabs[0].url;
-				getNogozones().then(() => {
-					print(WORKING_URL + ", Nogozones: " + typeof NOGOZONES)
-					print(NOGOZONES)
-					const access = NOGOZONES.some(suburl => WORKING_URL.includes(suburl)) ? "stop" : "go";
-					sendResponse({
-							payload: access,
-							url:WORKING_URL
-					}, () => {});
-				})
-			});
+			getAuthorized().then((go)=>{
+				print("Authorized? " + go)
+				const access = go ? "go" : "stop";
+				sendResponse({
+					payload: access,
+					url:WORKING_URL
+				}, () => {});
+			})
 			return true;
 
 		case "get_agr":
@@ -151,6 +156,15 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			getChance().then(() => {
 				sendResponse({
 					payload: CHANCE
+				}, () => {
+				});
+			})
+			return true;
+
+		case "get_onlyrun":
+			getOnlyRun().then(() => {
+				sendResponse({
+					payload: ONLYRUN
 				}, () => {
 				});
 			})
@@ -238,12 +252,26 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 		case "set_act":
 			ACTIVATED = !ACTIVATED;
 			chrome.storage.sync.set({ACTIVE_STORAGE_TAG: ACTIVATED}, () => {
+
 				if (ACTIVATED) {
 					sendmessage({message: "activate"})
 				} else {
 					sendmessage({message: "deactivate"})
 				}
 				sendResponse({payload: "200"});
+			})
+			return true;
+		case "set_onlyrun":
+			ONLYRUN = !ONLYRUN;
+			print("ONLYRUN : " + ONLYRUN)
+			chrome.storage.sync.set({ONLYRUN_STORAGE_TAG: ONLYRUN}, () => {
+				getAuthorized().then((go) => {
+					print("Authorized? " + go)
+					sendmessage({message: go? "activate": "deactivate"},	()=>{console.log("Sending callback"); sendmessage({message: "changed"});})
+					sendResponse({payload: ONLYRUN});
+					return true;
+				})
+
 			})
 			return true;
 
@@ -378,20 +406,19 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 			return true;
 		case  "set_nogozones":
 			NOGOZONES = request.payload;
-			chrome.tabs.query({active: true, lastFocusedWindow: true}, (tabs) => {
-				WORKING_URL = tabs[0].url;
-				print("Has working url of " + WORKING_URL)
+
 				chrome.storage.sync.set({NOGOZONES_STORAGE: NOGOZONES}, () => {
-					if (WORKING_URL !== null) {
-						if (NOGOZONES.some(suburl => WORKING_URL.includes(suburl))) {
-							sendmessage({message: "deactivate"})
-						} else {
-							sendmessage({message: "activate"})
-						}
-					}
-					sendResponse({payload: "200"});
+					getAuthorized().then((go) => {
+						print("Authorized? " + go)
+						sendmessage({message: go? "activate": "deactivate"})
+						sendResponse({payload: "200"});
+						return true;
+					})
 				})
-			});
+
+
+
+
 			return true;
 		case  "set_gogowords":
 			let gogowords_list = request.payload;
@@ -406,9 +433,9 @@ chrome.runtime.onMessage.addListener( function (request, sender, sendResponse) {
 });
 
 
-function sendmessage(messagedict) {
-	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-		chrome.tabs.sendMessage(tabs[0].id, messagedict, function (response){	});
+function sendmessage(messagedict, callback=()=>{}) {
+	return chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+		return chrome.tabs.sendMessage(tabs[0].id, messagedict, function (response){ callback(response)	});
 	});
 }
 
@@ -481,11 +508,11 @@ function replaceNodeVocab(node, idint){
 			// or if word is too long
 			// or if word is entirely uppercased
 			if (	(upper && !prevwassentence && SKIP_PROPER) ||
-					(word.length > 1 && word === word.toUpperCase()) ) {
+				(word.length > 1 && word === word.toUpperCase()) ) {
 
-						// do nothing, because the logic is already messy enough without NOTing it.
+				// do nothing, because the logic is already messy enough without NOTing it.
 
- 			} else {
+			} else {
 				if (cleanword.length > 0 && !NONOWORDS.has(cleanword) && in_working(cleanword) && !SEEN.has(cleanword)) {
 					replacementword = formatTranslateWord(cleanword, idint, upper);
 					SEEN.add(cleanword);
@@ -536,7 +563,7 @@ function formatTranslateWord(englishword, idint, upper){
 	}
 
 	if (!fwordlst[1]){
-		return englishword
+		return capitalize(englishword, upper);
 	}
 	let foreignword = fwordlst[0].startsWith("-") ? random_word_choice(fwordlst[1]) : random_word_choice(fwordlst[0]);
 	if (!foreignword){
@@ -544,7 +571,8 @@ function formatTranslateWord(englishword, idint, upper){
 	}
 	let foreignlist = fwordlst[1];
 	foreignword = capitalize(foreignword, upper);
-	foreignword = word_html_replacement(foreignword, englishword, idint, {"nvoc":foreignlist, "nvi":0, "cpt":(upper ? 'y': 'n')});
+	//add to foreignlist +"$"+englishword ?
+	foreignword = word_html_replacement(foreignword, englishword, idint, {"eng":"n", "nvoc":foreignlist, "nvi":0, "cpt":(upper ? 'y': 'n')});
 	return foreignword;
 }
 
@@ -593,7 +621,9 @@ function getEverything() {
 				getXLetter(),
 				getGame(),
 				getRightToLeft(),
-				getDistHint()
+				getDistHint(),
+				getOnlyRun(),
+				getActivated()
 			])
 		)
 	);
@@ -693,21 +723,11 @@ function getGogowords() {
 		return chrome.storage.sync.get([GOGOWORDS_STORAGE]).then((result) => {
 			GOGOWORDS_TEXTBLOCK = result.GOGOWORDS_STORAGE;
 			GOGOWORDS = processGogowords(GOGOWORDS_TEXTBLOCK);
-			print("JUULIAN THESE NEXT TWO:::")
-			print(GOGOWORDS)
-			getLangData().then(()=>	{
-				print("SECOND ONE!!!!!!!!!");
-				print(FOREIGN);
-			});
+			getLangData().then(()=>	{});
 			return GOGOWORDS;
 		})
 	} else{
-		print("JUULIAN THESE NEXT TWO:::")
-		print(GOGOWORDS)
-		getLangData().then(()=>	{
-			print("SECOND ONE!!!!!!!!!");
-			print(FOREIGN);
-		});
+		getLangData().then(()=>	{});
 		return Promise.resolve(GOGOWORDS);
 	}
 }
@@ -889,4 +909,44 @@ function getDistHint() {
 		});
 	}
 	return Promise.resolve(DISTHINT);
+}
+function getOnlyRun() {
+	if (ONLYRUN === null) {
+		return chrome.storage.sync.get([ONLYRUN_STORAGE_TAG]).then((response) => {
+			ONLYRUN = response.ONLYRUN_STORAGE_TAG;
+			return ONLYRUN;
+		});
+	}
+	return Promise.resolve(ONLYRUN);
+}
+
+function getAuthorized() {
+	print("GET AUTHORIZED...")
+
+	return chrome.tabs.query({active: true, lastFocusedWindow: true}).then((tabs) => {
+		print("Got URL: ")
+		print(tabs[0].url)
+		WORKING_URL = tabs[0].url;
+
+		return Promise.all([getActivated(), getNogozones(), getOnlyRun()]).then(() => {
+			print("ONLYRUN in GetAuth : "+ ONLYRUN)
+			print("ACTIVATED in GetAuth : "+ ACTIVATED)
+			let access;
+			if (!ACTIVATED || !WORKING_URL) {
+				access = false;
+				// if the app should only run on one of the given pages...
+				print("retruning false bc not activated in getauth")
+			} else if (ONLYRUN) {
+				// then if a url is present in the page list, go
+				access = NOGOZONES.some(suburl => WORKING_URL.includes(suburl));
+				print("ONLYRUN, only run if in page, so returning "+ access)
+			} else {
+
+				access = !NOGOZONES.some(suburl => WORKING_URL.includes(suburl));
+				print("NOT onlyrun, so running if NOT listed, so returning " + access)
+			}
+			return access;
+		})
+
+	})
 }

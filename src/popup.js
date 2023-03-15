@@ -36,6 +36,8 @@ document.getElementById("Gogowords_save").addEventListener("click", ()=> saveTex
 document.getElementById("Nogozones_save").addEventListener("click", ()=> saveTextarea("Nogozones"))
 document.getElementById("Nonowords_save").addEventListener("click", ()=> saveTextarea("Nonowords"))
 document.getElementById("Title").addEventListener("click", hardrun)
+document.getElementById("OnlyRun").addEventListener("click", onlyrun)
+
 
 
 window.addEventListener('load',
@@ -167,6 +169,15 @@ function italic() {
         print("sent italic");
     });
 }
+
+function onlyrun() {
+    //document.getElementById('Bold').toggleAttribute("checked", true);
+    chrome.runtime.sendMessage({message: "set_onlyrun"}, function(response){
+        print("sent onlyrun");
+        let onlyrun = response.payload;
+        toggle_onlyrun(onlyrun);
+    });
+}
 function skipproper() {
     //document.getElementById('Skipproper').toggleAttribute("checked", true);
     chrome.runtime.sendMessage({message: "set_prp"}, function(response){
@@ -236,6 +247,10 @@ function load_page() {
         if (activated_val) {
             document.getElementById('Activated').toggleAttribute("checked", true);
         }
+    });
+    chrome.runtime.sendMessage({message: "get_onlyrun"}, function(response){
+        let onlyrun = response.payload;
+        toggle_onlyrun(onlyrun)
     });
 
     chrome.runtime.sendMessage({message: "get_sty"}, function(response){
@@ -367,4 +382,14 @@ function set_vocab_size(){
 function aggressionToIdx(aggro){
     const percent = Number(aggro) / 100;
     return ((4372 * (percent * percent)));
+}
+
+function toggle_onlyrun(onlyrun){
+    if (onlyrun) {
+        document.getElementById('OnlyRun').innerHTML = "(*Set to <i>not</i> run on these pages)";
+        document.getElementById('OnlyRunLabel').textContent = "Only run on these pages*:"
+    } else{
+        document.getElementById('OnlyRun').innerHTML = "(*Set to <i>only</i> run on these pages)";
+        document.getElementById('OnlyRunLabel').textContent = "Do not run on these pages*:"
+    }
 }
