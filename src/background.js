@@ -565,7 +565,37 @@ function formatTranslateWord(englishword, idint, upper){
 	if (!fwordlst[1]){
 		return capitalize(englishword, upper);
 	}
-	let [foreignword, r] = fwordlst[0].startsWith("-") ? random_word_choice(fwordlst[1]) : random_word_choice(fwordlst[0]);
+
+	//i think this is faster than splitting and indexof() thousands of times
+	// see line 592
+	// also I know it's a totally unnecessary "optimization" but it's for fun (?) and guilt.
+	function findidxinstring(stringlist, word){
+		let w = stringlist.indexOf(word+"$")
+		if (w === -1) {
+			w = stringlist.length;
+		}
+		let tot = 0;
+		for (let ii=0; ii<w; ii++){
+			if (stringlist[ii] === "$"){
+				tot++;
+			}
+		}
+		return tot;
+	}
+	let foreignword;
+	let r;
+	if (fwordlst[0].startsWith("-")) {
+		//ie there is no good/better word, so we will use the full word list w/ possible bad translations.
+		[foreignword, r] = random_word_choice(fwordlst[1]);
+	} else {
+		//we choose a random choice from the good translations
+		[foreignword, r] = random_word_choice(fwordlst[0]);
+		//we have to reset r to be the idx of where that translation is in the full list of translations
+		//i know what a stupid design decision but i did it months ago and i'm stuck :( :( :( sorry
+		//thankfully computers are fast
+		r = findidxinstring(fwordlst[1], foreignword)
+	}
+	// let [foreignword, r] = fwordlst[0].startsWith("-") ? random_word_choice(fwordlst[1]) : random_word_choice(fwordlst[0]);
 	if (!foreignword){
 		return capitalize(englishword, upper);
 	}
