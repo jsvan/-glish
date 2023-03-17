@@ -9,7 +9,7 @@ Translate random common words within your webpages to a language of your choice.
 This app is intended for people who'd like to expose themselves to foreign vocabulary, but aren't sufficiently knowledgable to read foreign websites.
 Do not learn grammar from this app. The words are translated directly and often incorrectly. Use this app as a type of flashcard practice to adjust to foreign words in the context of an understood sentence.
 
-Available languages in version 1.001 are:
+Available languages are:
 
 arabic	ar
 
