@@ -1,7 +1,7 @@
 # -Glish 
-https://chrome.google.com/webstore/detail/glish/jfheijenmheiialipkmahkhcdmfefclb/related?hl=en&authuser=1
+https://chrome.google.com/webstore/detail/glish/jfheijenmheiialipkmahkhcdmfefclb/
 
-https://addons.mozilla.org/en-US/firefox/addon/-glish/
+https://addons.mozilla.org/en-US/firefox/addon/glish/
 
 #### The Foreign Vocab Learner
 
