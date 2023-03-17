@@ -1,4 +1,7 @@
 # -Glish 
+
+Try them here, for Firefox and Chrome:
+
 https://chrome.google.com/webstore/detail/glish/jfheijenmheiialipkmahkhcdmfefclb/
 
 https://addons.mozilla.org/en-US/firefox/addon/glish/
