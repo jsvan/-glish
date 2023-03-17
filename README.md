@@ -11,6 +11,10 @@ Do not learn grammar from this app. The words are translated directly and often 
 
 Available languages are:
 
+<img src="https://user-images.githubusercontent.com/9337973/225959084-66c63ddf-c638-4d1d-902c-b4f97ec997dd.png" width=50% height=50%>
+(Image: Rough language support)
+
+
 arabic	ar
 
 armenian	hy
@@ -113,8 +117,3 @@ Here are examples of what it does to your page. Words are replaced with foreign 
 <img src="https://user-images.githubusercontent.com/9337973/208025242-c2d285ef-ce45-4960-b7f4-23ac44120d31.png" >
 
 ![image](https://user-images.githubusercontent.com/9337973/208040857-bc6e37e5-7b7a-4ffe-9f1a-4aa166b7e435.png)
-
-Hovering your mouse over translated words will reveal the original text in English. Clicking (& holding) on a word will open that word's foreign language page in wikipedia.
-
-Alpha version
-
