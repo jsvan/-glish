@@ -86,7 +86,7 @@ vietnamese	vi
 welsh	cy
 
 
-Some languages are better supported than others, depending on the community behind wiktionary. Some languages have most vocab words present, others have many missing. This app assumes static textbased webpages. I haven't implemented mutation monitoring and would prefer not to...
+Some languages are better supported than others, depending on the community behind wiktionary. Some languages have most vocab words present, others have many missing.
 
 Written in vanilla javascript/html/css, with python for datascraping. 
 
