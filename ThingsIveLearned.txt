@@ -1,3 +1,5 @@
+This is a list of issues I faced while crunching through this project on my own. This is more or less the first time using Javascript, and I had to balance learning how things should work "properly" with pushing working code out. 
+
 Message passing can send standard types, strings, arrays, etc. but it CANNOT send maps. Maps will be erased on message pass.
 JSONing the map is problematic because char encoding issues. Instead of map, use array if possible.
 
@@ -6,7 +8,7 @@ These methods that send these messages with async payloads will need to RETURN T
 If this sending method has RETURN TRUE, but is also labelled as ASYNC in the function header, the receiver will NOT listen for a longer time for some reason, and the connection will be prematurely closed.
 In the case of a connection being prematurely closed, there is a "ghost" message sent with empty contents, undeclared payload.
 
-Don't expect "await"s to work. Once you start async, its easiest to do everything in nested callbacks.
+I can't get "await"s to work and actually await anything. Once you start async, its easiest to do everything in nested callbacks.
 
 Using fetch().then()'s is pretty nice. Code and variables can be set in the anonymous functions of the then()s, but nothing will be returned.
 The fetch will return a promise.
@@ -16,11 +18,11 @@ an async promise with the future thens.....) . If you don't use brackets, it see
 Stackoverflow has many typo problems, especially with manifest advice.
 
 Setting a dictionary of key value in storage does not set what the key and value refer to.... but the value acts as expected.
-The KEY resolves to the string representation of itself, idk how to make it refer to a variable of that name!!!!!
+The KEY resolves to the string representation of itself, but idk how to make it refer to a variable of that name!
 I have it refer to a string variable refering to itself, because the GET method I think resolves to the representation of the variable,
-not the variable name itself!!!!!
+not the variable name itself!
 
-Nothing happens in any kind of logical order. I have the async GET methods basically all before I need to use any method.
+I know that nothing happens in any kind of logical order, but holy cow. I have the async GET methods basically all before I need to use any method.
 Total callback hell. Yuck.
 
 If you rewrite document.innerHTML, you erase all eventlisteners, thereby ruining some websites.
