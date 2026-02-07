@@ -59,25 +59,23 @@ const SEEN = new Set();
 
 
 chrome.runtime.onInstalled.addListener(function (rsn) {
-	chrome.storage.sync.set({ACTIVE_STORAGE_TAG:true}, () => {});
-	chrome.storage.sync.set({AGGRO_STORAGE_TAG:24},   () => {});
-	chrome.storage.sync.set({CHANCE_STORAGE_TAG:20}, () => {});
-	chrome.storage.sync.set({BOREDOM_STORAGE_TAG:6}, () => {});
-	chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
-	chrome.storage.sync.set({NOGOZONES_STORAGE:[]}, () => {});
-	chrome.storage.sync.set({NONOWORDS_STORAGE:[]}, () => {});
-	chrome.storage.sync.set({GOGOWORDS_STORAGE:[]}, () => {});
-	chrome.storage.sync.set({BOLD_STORAGE:true}, 	() => {});
-	chrome.storage.sync.set({ITALIC_STORAGE:true}, () => {});
-	chrome.storage.sync.set({GAME_STORAGE:false}, () => {});
-	chrome.storage.sync.set({XLT_STORAGE:false}, () => {});
-	chrome.storage.sync.set({HNT_STORAGE:true}, () => {});
-	chrome.storage.sync.set({SKIP_PROPER_STORAGE:false}, ()=>{});
-	chrome.storage.sync.set({RIGHT_TO_LEFT_STORAGE:false}, ()=>{});
-	chrome.storage.sync.set({ONLYRUN_STORAGE_TAG:false}, ()=>{});
-
-
 	if (chrome.runtime.OnInstalledReason.INSTALL === rsn.reason) {
+		chrome.storage.sync.set({ACTIVE_STORAGE_TAG:true}, () => {});
+		chrome.storage.sync.set({AGGRO_STORAGE_TAG:24},   () => {});
+		chrome.storage.sync.set({CHANCE_STORAGE_TAG:20}, () => {});
+		chrome.storage.sync.set({BOREDOM_STORAGE_TAG:6}, () => {});
+		chrome.storage.sync.set({LANG_STORAGE_TAG:null}, () => {});
+		chrome.storage.sync.set({NOGOZONES_STORAGE:[]}, () => {});
+		chrome.storage.sync.set({NONOWORDS_STORAGE:[]}, () => {});
+		chrome.storage.sync.set({GOGOWORDS_STORAGE:[]}, () => {});
+		chrome.storage.sync.set({BOLD_STORAGE:true}, 	() => {});
+		chrome.storage.sync.set({ITALIC_STORAGE:true}, () => {});
+		chrome.storage.sync.set({GAME_STORAGE:false}, () => {});
+		chrome.storage.sync.set({XLT_STORAGE:false}, () => {});
+		chrome.storage.sync.set({HNT_STORAGE:true}, () => {});
+		chrome.storage.sync.set({SKIP_PROPER_STORAGE:false}, ()=>{});
+		chrome.storage.sync.set({RIGHT_TO_LEFT_STORAGE:false}, ()=>{});
+		chrome.storage.sync.set({ONLYRUN_STORAGE_TAG:false}, ()=>{});
 		chrome.tabs.create({'url':"src/popup.html", 'active':true}, ()=>{})
 	}
 });
@@ -610,7 +608,8 @@ const word_html_replacement = function (translated, original, idnum, datadict={}
 	const mydata = Array.from(Object.entries(datadict), ([name, value]) => {
 		return ("data-" + name + "=\"" + value + "\"");
 	}).join(' ');
-	return "<span class=\"glishword\" "+mydata+" id='Nos"+idnum+"Voc' title='"+ original +"'>" + translated + "</span>";
+	const escaped = original.replace(/'/g, "&#39;");
+	return "<span class=\"glishword\" "+mydata+" id='Nos"+idnum+"Voc' title='"+ escaped +"'>" + translated + "</span>";
 };
 
 

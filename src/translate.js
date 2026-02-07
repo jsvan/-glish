@@ -32,11 +32,10 @@ const mutexec = (mutationList, observer) => {
 		if (mutation.type === "childList" || mutation.type === "subtree") {
 			console.log("A child node has been added or removed.");
 			for (let i=0; i<mutation.addedNodes.length; i++) {
-				if (mutation.addedNodes[i].classList)
-					if (mutation.addedNodes[i].classList.contains("glishseen")) {
-						return;
+				if (mutation.addedNodes[i].classList && mutation.addedNodes[i].classList.contains("glishseen")) {
+					return;
 				} else {
-					grab_and_go(mutation.addedNodes[i]); //false
+					grab_and_go(mutation.addedNodes[i]);
 				}
 			}
 		} else if (mutation.type === "characterData") {
@@ -246,11 +245,11 @@ function weave_nodes(node_list, nodeoffset=0){
 	observer.disconnect()
 	for (let i = 0; i < node_list.length; i++){
 		// Only change text items that have been edited. Or change back to normal those that have been. ie source and dest chunk has an edit.
-		if (!node_list[i].includes("<span class=\"glish") && ! (WEB_PAGE_NODES[i].innerHTML && WEB_PAGE_NODES[i].innerHTML.includes("<span class=\"glish")) ){
+		let allnodesi = i + nodeoffset;
+		if (!node_list[i].includes("<span class=\"glish") && ! (WEB_PAGE_NODES[allnodesi].innerHTML && WEB_PAGE_NODES[allnodesi].innerHTML.includes("<span class=\"glish")) ){
 			continue;
 		}
 		try {
-			let allnodesi = i + nodeoffset;
 			newnode = document.createElement("span");
 			newnode.classList.add("glishseen")
 			newnode.innerHTML = node_list[i];

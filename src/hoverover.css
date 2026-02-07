@@ -1,14 +1,4 @@
-.b {
-    display:none;
-}
-
-.act:active +.b{display:block;}
-
-.b:hover {
-    display:block;
-}
-
-.blurtext {
+.glishword.blurtext {
     color:transparent;
     text-shadow:0 0 8px rgba(0,0,0,1);
 }

@@ -1,6 +1,6 @@
 {
   "name": "-glish",
-  "version": "1.009",
+  "version": "1.010",
   "description": "Vocab learner with common foreign words injected into your english websites.",
   "permissions": ["storage", "tabs"],
   "content_scripts": [
@@ -34,7 +34,7 @@
   "web_accessible_resources": [
     {"resources" :[
       "external/KoFi.js",
-      "updated_langauge_packs/available_languages.txt",
+      "updated_language_packs/available_languages.txt",
       "updated_language_packs/*.txt"
     ],
       "matches": ["https://*/*"]

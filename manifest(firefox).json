@@ -40,7 +40,7 @@
   "web_accessible_resources": [
     {"resources" :[
       "external/KoFi.js",
-      "updated_langauge_packs/available_languages.txt",
+      "updated_language_packs/available_languages.txt",
       "updated_language_packs/*.txt"
     ],
       "matches": ["https://*/*"]
