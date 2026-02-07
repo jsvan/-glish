@@ -459,6 +459,11 @@ function iframe(e) {
 	 */
 	let foreign_word = t.dataset.nvoc.split('$')[Number(t.dataset.nvi)]
 
+	// Strip Hebrew niqqud (vowel diacritics) so Wiktionary URLs resolve to the correct consonant-only pages
+	if (LANGUAGE === "Hebrew") {
+		foreign_word = foreign_word.replace(/[\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7]/g, "");
+	}
+
 	if (!PREV_IFRAME_WORD || foreign_word !== PREV_IFRAME_WORD) {
 		refreshIframe("https://en.wiktionary.org/wiki/" + foreign_word + "#" + LANGUAGE);
 	}
