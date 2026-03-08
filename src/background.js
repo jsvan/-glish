@@ -785,10 +785,15 @@ function loadLangData() {
 
 	return chrome.storage.sync.get([LANG_STORAGE_TAG])
 		.then((lang) => {
-			if (lang.LANG_STORAGE_TAG === "none") {
+			let storedLang = lang.LANG_STORAGE_TAG;
+			if (storedLang === "chinese") {
+				storedLang = "chinese_Simplified";
+				chrome.storage.sync.set({LANG_STORAGE_TAG: storedLang});
+			}
+			if (storedLang === "none") {
 				return Promise.resolve("Nothing set, language not defined. Null error basically. ");
 			} else {
-				LANG_DATA.push(lang.LANG_STORAGE_TAG);
+				LANG_DATA.push(storedLang);
 				return loadForeign();
 			}
 		});

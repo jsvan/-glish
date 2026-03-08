@@ -1,6 +1,7 @@
 arabic	ar
 armenian	hy
-chinese	zh
+chinese_Simplified	zh-hans
+chinese_Traditional	zh-hant
 czech	cs
 esperanto	eo
 estonian	et

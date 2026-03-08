@@ -45,11 +45,12 @@ const mutexec = (mutationList, observer) => {
 };
 const observer = new MutationObserver(mutexec);
 
+prepareglishcss();
+attachDialog();
+
 window.addEventListener('load',
 	function () {
-		prepareglishcss();
 		grab_and_go();
-		attachDialog();
 	}, false);
 
 document.addEventListener("input", function(e) {print("INPUT"); print(e); if (GAME){wordgame_enterkey_handler(e)}});
